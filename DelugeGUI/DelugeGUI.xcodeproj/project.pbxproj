@@ -18,8 +18,9 @@
 		1FD04EAD1652642D00113EE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04EAB1652642D00113EE2 /* InfoPlist.strings */; };
 		1FD04EB01652642D00113EE2 /* DelugeGUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD04EAF1652642D00113EE2 /* DelugeGUITests.m */; };
 		1FD04EBA1652644800113EE2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04EB91652644800113EE2 /* README.md */; };
-		1FD04EBE1652CAAC00113EE2 /* description in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04EBD1652CAAC00113EE2 /* description */; };
 		1FD04EC01652D14300113EE2 /* description.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04EBF1652D14300113EE2 /* description.pdf */; };
+		1FD04EC31652D2D000113EE2 /* description.docx in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04EC11652D2D000113EE2 /* description.docx */; };
+		1FD04EC41652D2D000113EE2 /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04EC21652D2D000113EE2 /* description.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,8 +54,9 @@
 		1FD04EAE1652642D00113EE2 /* DelugeGUITests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DelugeGUITests.h; sourceTree = "<group>"; };
 		1FD04EAF1652642D00113EE2 /* DelugeGUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelugeGUITests.m; sourceTree = "<group>"; };
 		1FD04EB91652644800113EE2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = README.md; path = ../../README.md; sourceTree = "<group>"; };
-		1FD04EBD1652CAAC00113EE2 /* description */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = description; path = ../description; sourceTree = "<group>"; };
 		1FD04EBF1652D14300113EE2 /* description.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = description.pdf; sourceTree = SOURCE_ROOT; };
+		1FD04EC11652D2D000113EE2 /* description.docx */ = {isa = PBXFileReference; lastKnownFileType = file; name = description.docx; path = ../description.docx; sourceTree = "<group>"; };
+		1FD04EC21652D2D000113EE2 /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = description.txt; path = ../description.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +126,8 @@
 				1FD04E981652642D00113EE2 /* AppDelegate.m */,
 				1FD04E9A1652642D00113EE2 /* MainMenu.xib */,
 				1FD04EB91652644800113EE2 /* README.md */,
-				1FD04EBD1652CAAC00113EE2 /* description */,
+				1FD04EC21652D2D000113EE2 /* description.txt */,
+				1FD04EC11652D2D000113EE2 /* description.docx */,
 				1FD04EBF1652D14300113EE2 /* description.pdf */,
 				1FD04E8C1652642D00113EE2 /* Supporting Files */,
 			);
@@ -237,8 +240,9 @@
 				1FD04E961652642D00113EE2 /* Credits.rtf in Resources */,
 				1FD04E9C1652642D00113EE2 /* MainMenu.xib in Resources */,
 				1FD04EBA1652644800113EE2 /* README.md in Resources */,
-				1FD04EBE1652CAAC00113EE2 /* description in Resources */,
 				1FD04EC01652D14300113EE2 /* description.pdf in Resources */,
+				1FD04EC31652D2D000113EE2 /* description.docx in Resources */,
+				1FD04EC41652D2D000113EE2 /* description.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
