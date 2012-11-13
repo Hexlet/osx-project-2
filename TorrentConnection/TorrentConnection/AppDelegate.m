@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  DelugeGUI
+//  TorrentConnection
 //
-//  Created by Александр Борунов on 13.11.12.
+//  Created by Александр Борунов on 14.11.12.
 //  Copyright (c) 2012 Александр Борунов. All rights reserved.
 //
 

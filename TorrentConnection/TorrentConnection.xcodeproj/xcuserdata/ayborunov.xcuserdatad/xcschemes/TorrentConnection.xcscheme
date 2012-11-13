@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FD04E801652642D00113EE2"
-               BuildableName = "DelugeGUI.app"
-               BlueprintName = "DelugeGUI"
-               ReferencedContainer = "container:DelugeGUI.xcodeproj">
+               BlueprintIdentifier = "1FD04EFF1652DAEA00113EE2"
+               BuildableName = "TorrentConnection.app"
+               BlueprintName = "TorrentConnection"
+               ReferencedContainer = "container:TorrentConnection.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,20 +32,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FD04EA11652642D00113EE2"
-               BuildableName = "DelugeGUITests.octest"
-               BlueprintName = "DelugeGUITests"
-               ReferencedContainer = "container:DelugeGUI.xcodeproj">
+               BlueprintIdentifier = "1FD04F201652DAEA00113EE2"
+               BuildableName = "TorrentConnectionTests.octest"
+               BlueprintName = "TorrentConnectionTests"
+               ReferencedContainer = "container:TorrentConnection.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FD04E801652642D00113EE2"
-            BuildableName = "DelugeGUI.app"
-            BlueprintName = "DelugeGUI"
-            ReferencedContainer = "container:DelugeGUI.xcodeproj">
+            BlueprintIdentifier = "1FD04EFF1652DAEA00113EE2"
+            BuildableName = "TorrentConnection.app"
+            BlueprintName = "TorrentConnection"
+            ReferencedContainer = "container:TorrentConnection.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -61,10 +61,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FD04E801652642D00113EE2"
-            BuildableName = "DelugeGUI.app"
-            BlueprintName = "DelugeGUI"
-            ReferencedContainer = "container:DelugeGUI.xcodeproj">
+            BlueprintIdentifier = "1FD04EFF1652DAEA00113EE2"
+            BuildableName = "TorrentConnection.app"
+            BlueprintName = "TorrentConnection"
+            ReferencedContainer = "container:TorrentConnection.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -79,10 +79,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FD04E801652642D00113EE2"
-            BuildableName = "DelugeGUI.app"
-            BlueprintName = "DelugeGUI"
-            ReferencedContainer = "container:DelugeGUI.xcodeproj">
+            BlueprintIdentifier = "1FD04EFF1652DAEA00113EE2"
+            BuildableName = "TorrentConnection.app"
+            BlueprintName = "TorrentConnection"
+            ReferencedContainer = "container:TorrentConnection.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
