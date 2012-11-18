@@ -7,6 +7,8 @@
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleIconFile</key>
+	<string>icon</string>
+	<key>CFBundleDisplayName</key>
 	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>mutablebeer.${PRODUCT_NAME:rfc1034identifier}</string>

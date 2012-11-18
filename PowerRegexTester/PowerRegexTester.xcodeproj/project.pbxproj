@@ -16,6 +16,7 @@
 		69AD461F16591A24003F0AEB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AD461E16591A24003F0AEB /* SenTestingKit.framework */; };
 		69AD462016591A24003F0AEB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AD460016591A23003F0AEB /* Cocoa.framework */; };
 		69AD462816591A24003F0AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69AD462616591A24003F0AEB /* InfoPlist.strings */; };
+		69BA6C9F16596DFA008E84B8 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 69BA6C9E16596DFA008E84B8 /* icon.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		69AD461E16591A24003F0AEB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		69AD462516591A24003F0AEB /* PowerRegexTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PowerRegexTesterTests-Info.plist"; sourceTree = "<group>"; };
 		69AD462716591A24003F0AEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		69BA6C9E16596DFA008E84B8 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = icon.iconset; path = ../icon.iconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				69AD460816591A23003F0AEB /* PowerRegexTester-Info.plist */,
+				69BA6C9E16596DFA008E84B8 /* icon.iconset */,
 				69AD460916591A23003F0AEB /* InfoPlist.strings */,
 				69AD460C16591A23003F0AEB /* main.m */,
 				69AD460E16591A23003F0AEB /* PowerRegexTester-Prefix.pch */,
@@ -222,6 +225,7 @@
 				69AD460B16591A23003F0AEB /* InfoPlist.strings in Resources */,
 				69AD461116591A23003F0AEB /* Credits.rtf in Resources */,
 				69AD461716591A24003F0AEB /* MainMenu.xib in Resources */,
+				69BA6C9F16596DFA008E84B8 /* icon.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +444,7 @@
 				69AD463016591A24003F0AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69AD463116591A24003F0AEB /* Build configuration list for PBXNativeTarget "PowerRegexTesterTests" */ = {
 			isa = XCConfigurationList;
@@ -448,6 +453,7 @@
 				69AD463316591A24003F0AEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
