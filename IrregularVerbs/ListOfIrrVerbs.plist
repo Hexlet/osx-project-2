@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<array>
+		<string>be</string>
+		<string>was/were</string>
+		<string>been</string>
+		<string>быть</string>
+		<true/>
+	</array>
+	<array>
+		<string>beat</string>
+		<string>beat</string>
+		<string>beaten</string>
+		<string>бить, колотить</string>
+		<false/>
+	</array>
+	<array>
+		<string>go</string>
+		<string>went</string>
+		<string>gone</string>
+		<string>идти</string>
+		<false/>
+	</array>
+</array>
+</plist>
