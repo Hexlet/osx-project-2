@@ -16,6 +16,10 @@
 		FA2D2BCE165A9D1D00BBE26D /* 1353344361_sound_low.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BCD165A9D1D00BBE26D /* 1353344361_sound_low.png */; };
 		FA2D2BD2165A9EEC00BBE26D /* Card1WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D2BD0165A9EEC00BBE26D /* Card1WindowController.m */; };
 		FA2D2BD3165A9EEC00BBE26D /* Card1WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BD1165A9EEC00BBE26D /* Card1WindowController.xib */; };
+		FA2D2BD7165AA3F600BBE26D /* Card2WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D2BD5165AA3F600BBE26D /* Card2WindowController.m */; };
+		FA2D2BD8165AA3F600BBE26D /* Card2WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BD6165AA3F600BBE26D /* Card2WindowController.xib */; };
+		FA2D2BDC165AA42C00BBE26D /* Card3WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D2BDA165AA42C00BBE26D /* Card3WindowController.m */; };
+		FA2D2BDD165AA42C00BBE26D /* Card3WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BDB165AA42C00BBE26D /* Card3WindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +40,12 @@
 		FA2D2BCF165A9EEC00BBE26D /* Card1WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card1WindowController.h; sourceTree = "<group>"; };
 		FA2D2BD0165A9EEC00BBE26D /* Card1WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card1WindowController.m; sourceTree = "<group>"; };
 		FA2D2BD1165A9EEC00BBE26D /* Card1WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card1WindowController.xib; sourceTree = "<group>"; };
+		FA2D2BD4165AA3F600BBE26D /* Card2WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card2WindowController.h; sourceTree = "<group>"; };
+		FA2D2BD5165AA3F600BBE26D /* Card2WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card2WindowController.m; sourceTree = "<group>"; };
+		FA2D2BD6165AA3F600BBE26D /* Card2WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card2WindowController.xib; sourceTree = "<group>"; };
+		FA2D2BD9165AA42C00BBE26D /* Card3WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card3WindowController.h; sourceTree = "<group>"; };
+		FA2D2BDA165AA42C00BBE26D /* Card3WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card3WindowController.m; sourceTree = "<group>"; };
+		FA2D2BDB165AA42C00BBE26D /* Card3WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card3WindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +107,12 @@
 				FA2D2BCF165A9EEC00BBE26D /* Card1WindowController.h */,
 				FA2D2BD0165A9EEC00BBE26D /* Card1WindowController.m */,
 				FA2D2BD1165A9EEC00BBE26D /* Card1WindowController.xib */,
+				FA2D2BD4165AA3F600BBE26D /* Card2WindowController.h */,
+				FA2D2BD5165AA3F600BBE26D /* Card2WindowController.m */,
+				FA2D2BD6165AA3F600BBE26D /* Card2WindowController.xib */,
+				FA2D2BD9165AA42C00BBE26D /* Card3WindowController.h */,
+				FA2D2BDA165AA42C00BBE26D /* Card3WindowController.m */,
+				FA2D2BDB165AA42C00BBE26D /* Card3WindowController.xib */,
 			);
 			path = WordCards;
 			sourceTree = "<group>";
@@ -177,6 +193,8 @@
 				FA2D2BC4165A918C00BBE26D /* MainMenu.xib in Resources */,
 				FA2D2BCE165A9D1D00BBE26D /* 1353344361_sound_low.png in Resources */,
 				FA2D2BD3165A9EEC00BBE26D /* Card1WindowController.xib in Resources */,
+				FA2D2BD8165AA3F600BBE26D /* Card2WindowController.xib in Resources */,
+				FA2D2BDD165AA42C00BBE26D /* Card3WindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,6 +208,8 @@
 				FA2D2BBA165A918C00BBE26D /* main.m in Sources */,
 				FA2D2BC1165A918C00BBE26D /* AppDelegate.m in Sources */,
 				FA2D2BD2165A9EEC00BBE26D /* Card1WindowController.m in Sources */,
+				FA2D2BD7165AA3F600BBE26D /* Card2WindowController.m in Sources */,
+				FA2D2BDC165AA42C00BBE26D /* Card3WindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
