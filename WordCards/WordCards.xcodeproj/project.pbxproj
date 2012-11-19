@@ -1,0 +1,326 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA2D2BAE165A918C00BBE26D /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA2D2BAD165A918C00BBE26D /* Cocoa.framework */; };
+		FA2D2BB8165A918C00BBE26D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BB6165A918C00BBE26D /* InfoPlist.strings */; };
+		FA2D2BBA165A918C00BBE26D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D2BB9165A918C00BBE26D /* main.m */; };
+		FA2D2BBE165A918C00BBE26D /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BBC165A918C00BBE26D /* Credits.rtf */; };
+		FA2D2BC1165A918C00BBE26D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D2BC0165A918C00BBE26D /* AppDelegate.m */; };
+		FA2D2BC4165A918C00BBE26D /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BC2165A918C00BBE26D /* MainMenu.xib */; };
+		FA2D2BCE165A9D1D00BBE26D /* 1353344361_sound_low.png in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BCD165A9D1D00BBE26D /* 1353344361_sound_low.png */; };
+		FA2D2BD2165A9EEC00BBE26D /* Card1WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA2D2BD0165A9EEC00BBE26D /* Card1WindowController.m */; };
+		FA2D2BD3165A9EEC00BBE26D /* Card1WindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA2D2BD1165A9EEC00BBE26D /* Card1WindowController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FA2D2BA9165A918C00BBE26D /* WordCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WordCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA2D2BAD165A918C00BBE26D /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FA2D2BB0165A918C00BBE26D /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FA2D2BB1165A918C00BBE26D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FA2D2BB2165A918C00BBE26D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FA2D2BB5165A918C00BBE26D /* WordCards-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WordCards-Info.plist"; sourceTree = "<group>"; };
+		FA2D2BB7165A918C00BBE26D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FA2D2BB9165A918C00BBE26D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FA2D2BBB165A918C00BBE26D /* WordCards-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WordCards-Prefix.pch"; sourceTree = "<group>"; };
+		FA2D2BBD165A918C00BBE26D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FA2D2BBF165A918C00BBE26D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		FA2D2BC0165A918C00BBE26D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		FA2D2BC3165A918C00BBE26D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FA2D2BCD165A9D1D00BBE26D /* 1353344361_sound_low.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1353344361_sound_low.png; sourceTree = "<group>"; };
+		FA2D2BCF165A9EEC00BBE26D /* Card1WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card1WindowController.h; sourceTree = "<group>"; };
+		FA2D2BD0165A9EEC00BBE26D /* Card1WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card1WindowController.m; sourceTree = "<group>"; };
+		FA2D2BD1165A9EEC00BBE26D /* Card1WindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Card1WindowController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA2D2BA6165A918C00BBE26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2D2BAE165A918C00BBE26D /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA2D2B9E165A918C00BBE26D = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BB3165A918C00BBE26D /* WordCards */,
+				FA2D2BAC165A918C00BBE26D /* Frameworks */,
+				FA2D2BAA165A918C00BBE26D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA2D2BAA165A918C00BBE26D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BA9165A918C00BBE26D /* WordCards.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA2D2BAC165A918C00BBE26D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BAD165A918C00BBE26D /* Cocoa.framework */,
+				FA2D2BAF165A918C00BBE26D /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA2D2BAF165A918C00BBE26D /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BB0165A918C00BBE26D /* AppKit.framework */,
+				FA2D2BB1165A918C00BBE26D /* CoreData.framework */,
+				FA2D2BB2165A918C00BBE26D /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FA2D2BB3165A918C00BBE26D /* WordCards */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BCC165A9CFF00BBE26D /* Images */,
+				FA2D2BBF165A918C00BBE26D /* AppDelegate.h */,
+				FA2D2BC0165A918C00BBE26D /* AppDelegate.m */,
+				FA2D2BC2165A918C00BBE26D /* MainMenu.xib */,
+				FA2D2BB4165A918C00BBE26D /* Supporting Files */,
+				FA2D2BCF165A9EEC00BBE26D /* Card1WindowController.h */,
+				FA2D2BD0165A9EEC00BBE26D /* Card1WindowController.m */,
+				FA2D2BD1165A9EEC00BBE26D /* Card1WindowController.xib */,
+			);
+			path = WordCards;
+			sourceTree = "<group>";
+		};
+		FA2D2BB4165A918C00BBE26D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BB5165A918C00BBE26D /* WordCards-Info.plist */,
+				FA2D2BB6165A918C00BBE26D /* InfoPlist.strings */,
+				FA2D2BB9165A918C00BBE26D /* main.m */,
+				FA2D2BBB165A918C00BBE26D /* WordCards-Prefix.pch */,
+				FA2D2BBC165A918C00BBE26D /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA2D2BCC165A9CFF00BBE26D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				FA2D2BCD165A9D1D00BBE26D /* 1353344361_sound_low.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA2D2BA8165A918C00BBE26D /* WordCards */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA2D2BC7165A918C00BBE26D /* Build configuration list for PBXNativeTarget "WordCards" */;
+			buildPhases = (
+				FA2D2BA5165A918C00BBE26D /* Sources */,
+				FA2D2BA6165A918C00BBE26D /* Frameworks */,
+				FA2D2BA7165A918C00BBE26D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WordCards;
+			productName = WordCards;
+			productReference = FA2D2BA9165A918C00BBE26D /* WordCards.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA2D2BA0165A918C00BBE26D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = alex;
+			};
+			buildConfigurationList = FA2D2BA3165A918C00BBE26D /* Build configuration list for PBXProject "WordCards" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FA2D2B9E165A918C00BBE26D;
+			productRefGroup = FA2D2BAA165A918C00BBE26D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA2D2BA8165A918C00BBE26D /* WordCards */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA2D2BA7165A918C00BBE26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2D2BB8165A918C00BBE26D /* InfoPlist.strings in Resources */,
+				FA2D2BBE165A918C00BBE26D /* Credits.rtf in Resources */,
+				FA2D2BC4165A918C00BBE26D /* MainMenu.xib in Resources */,
+				FA2D2BCE165A9D1D00BBE26D /* 1353344361_sound_low.png in Resources */,
+				FA2D2BD3165A9EEC00BBE26D /* Card1WindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA2D2BA5165A918C00BBE26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA2D2BBA165A918C00BBE26D /* main.m in Sources */,
+				FA2D2BC1165A918C00BBE26D /* AppDelegate.m in Sources */,
+				FA2D2BD2165A9EEC00BBE26D /* Card1WindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA2D2BB6165A918C00BBE26D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2D2BB7165A918C00BBE26D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FA2D2BBC165A918C00BBE26D /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2D2BBD165A918C00BBE26D /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FA2D2BC2165A918C00BBE26D /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA2D2BC3165A918C00BBE26D /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA2D2BC5165A918C00BBE26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FA2D2BC6165A918C00BBE26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FA2D2BC8165A918C00BBE26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordCards/WordCards-Prefix.pch";
+				INFOPLIST_FILE = "WordCards/WordCards-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FA2D2BC9165A918C00BBE26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WordCards/WordCards-Prefix.pch";
+				INFOPLIST_FILE = "WordCards/WordCards-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA2D2BA3165A918C00BBE26D /* Build configuration list for PBXProject "WordCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2D2BC5165A918C00BBE26D /* Debug */,
+				FA2D2BC6165A918C00BBE26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA2D2BC7165A918C00BBE26D /* Build configuration list for PBXNativeTarget "WordCards" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA2D2BC8165A918C00BBE26D /* Debug */,
+				FA2D2BC9165A918C00BBE26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA2D2BA0165A918C00BBE26D /* Project object */;
+}
