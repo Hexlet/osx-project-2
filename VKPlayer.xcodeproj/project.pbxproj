@@ -28,6 +28,11 @@
 		4702DF0F1659346E008E7E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4702DEDF1659346E008E7E55 /* Foundation.framework */; };
 		4702DF171659346E008E7E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4702DF151659346E008E7E55 /* InfoPlist.strings */; };
 		4702DF1A1659346E008E7E55 /* VKPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702DF191659346E008E7E55 /* VKPlayerTests.m */; };
+		47A483421659468500F0D5DD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483411659468500F0D5DD /* MBProgressHUD.m */; };
+		47A4834E1659554000F0D5DD /* NSString+Gender.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483491659554000F0D5DD /* NSString+Gender.m */; };
+		47A4834F1659554000F0D5DD /* Vkontakte.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A4834B1659554000F0D5DD /* Vkontakte.m */; };
+		47A483501659554000F0D5DD /* VkontakteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A4834D1659554000F0D5DD /* VkontakteViewController.m */; };
+		47A483541659669300F0D5DD /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483531659669300F0D5DD /* ZeroViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +74,16 @@
 		4702DF161659346E008E7E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4702DF181659346E008E7E55 /* VKPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKPlayerTests.h; sourceTree = "<group>"; };
 		4702DF191659346E008E7E55 /* VKPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKPlayerTests.m; sourceTree = "<group>"; };
+		47A483401659468500F0D5DD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		47A483411659468500F0D5DD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		47A483481659554000F0D5DD /* NSString+Gender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gender.h"; sourceTree = "<group>"; };
+		47A483491659554000F0D5DD /* NSString+Gender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Gender.m"; sourceTree = "<group>"; };
+		47A4834A1659554000F0D5DD /* Vkontakte.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vkontakte.h; sourceTree = "<group>"; };
+		47A4834B1659554000F0D5DD /* Vkontakte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vkontakte.m; sourceTree = "<group>"; };
+		47A4834C1659554000F0D5DD /* VkontakteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkontakteViewController.h; sourceTree = "<group>"; };
+		47A4834D1659554000F0D5DD /* VkontakteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkontakteViewController.m; sourceTree = "<group>"; };
+		47A483521659669200F0D5DD /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
+		47A483531659669300F0D5DD /* ZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +143,12 @@
 		4702DEE31659346E008E7E55 /* VKPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				47A4833E1659463C00F0D5DD /* Vendor */,
 				4702DEEC1659346E008E7E55 /* AppDelegate.h */,
 				4702DEED1659346E008E7E55 /* AppDelegate.m */,
 				4702DEF51659346E008E7E55 /* MainStoryboard.storyboard */,
+				47A483521659669200F0D5DD /* ZeroViewController.h */,
+				47A483531659669300F0D5DD /* ZeroViewController.m */,
 				4702DEF81659346E008E7E55 /* FirstViewController.h */,
 				4702DEF91659346E008E7E55 /* FirstViewController.m */,
 				4702DEFB1659346E008E7E55 /* first.png */,
@@ -175,6 +193,37 @@
 				4702DF151659346E008E7E55 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47A4833E1659463C00F0D5DD /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				47A483511659554800F0D5DD /* MBProgressHUD */,
+				47A483471659554000F0D5DD /* Vkontakte */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		47A483471659554000F0D5DD /* Vkontakte */ = {
+			isa = PBXGroup;
+			children = (
+				47A483481659554000F0D5DD /* NSString+Gender.h */,
+				47A483491659554000F0D5DD /* NSString+Gender.m */,
+				47A4834A1659554000F0D5DD /* Vkontakte.h */,
+				47A4834B1659554000F0D5DD /* Vkontakte.m */,
+				47A4834C1659554000F0D5DD /* VkontakteViewController.h */,
+				47A4834D1659554000F0D5DD /* VkontakteViewController.m */,
+			);
+			path = Vkontakte;
+			sourceTree = "<group>";
+		};
+		47A483511659554800F0D5DD /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				47A483401659468500F0D5DD /* MBProgressHUD.h */,
+				47A483411659468500F0D5DD /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -295,6 +344,11 @@
 				4702DEEE1659346E008E7E55 /* AppDelegate.m in Sources */,
 				4702DEFA1659346E008E7E55 /* FirstViewController.m in Sources */,
 				4702DF011659346E008E7E55 /* SecondViewController.m in Sources */,
+				47A483421659468500F0D5DD /* MBProgressHUD.m in Sources */,
+				47A4834E1659554000F0D5DD /* NSString+Gender.m in Sources */,
+				47A4834F1659554000F0D5DD /* Vkontakte.m in Sources */,
+				47A483501659554000F0D5DD /* VkontakteViewController.m in Sources */,
+				47A483541659669300F0D5DD /* ZeroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +454,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKPlayer/VKPlayer-Prefix.pch";
 				INFOPLIST_FILE = "VKPlayer/VKPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -411,6 +466,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VKPlayer/VKPlayer-Prefix.pch";
 				INFOPLIST_FILE = "VKPlayer/VKPlayer-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -469,6 +525,7 @@
 				4702DF1F1659346E008E7E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4702DF201659346E008E7E55 /* Build configuration list for PBXNativeTarget "VKPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -477,6 +534,7 @@
 				4702DF221659346E008E7E55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

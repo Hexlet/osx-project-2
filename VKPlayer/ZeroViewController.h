@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  ZeroViewController.h
 //  VKPlayer
 //
 //  Created by phantom on 18.11.12.
@@ -7,9 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Vkontakte.h"
 
-@interface FirstViewController : UIViewController
-
--(IBAction)test:(id)sender;
-
+@interface ZeroViewController : UIViewController <VkontakteDelegate>
+- (void)gotoMainView;
 @end
