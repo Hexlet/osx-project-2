@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB002AF2165BF08600461956 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BB002AF1165BF08600461956 /* icon.png */; };
 		BBF841D3165BBD4100BF570F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF841D2165BBD4100BF570F /* Cocoa.framework */; };
 		BBF841DD165BBD4100BF570F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBF841DB165BBD4100BF570F /* InfoPlist.strings */; };
 		BBF841DF165BBD4100BF570F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF841DE165BBD4100BF570F /* main.m */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BB002AF1165BF08600461956 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		BBF841CE165BBD4100BF570F /* osx-project-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "osx-project-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF841D2165BBD4100BF570F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BBF841D5165BBD4100BF570F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -82,6 +84,7 @@
 		BBF841D8165BBD4100BF570F /* osx-project-2 */ = {
 			isa = PBXGroup;
 			children = (
+				BB002AF1165BF08600461956 /* icon.png */,
 				BBF841E4165BBD4100BF570F /* AppDelegate.h */,
 				BBF841E5165BBD4100BF570F /* AppDelegate.m */,
 				BBF841E7165BBD4100BF570F /* MainMenu.xib */,
@@ -156,6 +159,7 @@
 				BBF841DD165BBD4100BF570F /* InfoPlist.strings in Resources */,
 				BBF841E3165BBD4100BF570F /* Credits.rtf in Resources */,
 				BBF841E9165BBD4100BF570F /* MainMenu.xib in Resources */,
+				BB002AF2165BF08600461956 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,7 @@
 
 @implementation AppDelegate {
     NSStatusItem *_statusItem;
+    NSImage *statusImage;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
@@ -18,8 +19,14 @@
 }
 
 - (void)awakeFromNib {
+    
+    NSBundle *bundle = [NSBundle mainBundle];
+    
+    statusImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon" ofType:@"png"]];
+    
     _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    [_statusItem setTitle:@"hd_status"];
+    
+    [_statusItem setImage:statusImage];
     [_statusItem setMenu:_statusMenu];
     [_statusItem setHighlightMode:YES];
 
