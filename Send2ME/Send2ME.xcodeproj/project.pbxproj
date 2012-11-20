@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84F38EDE165BE83A00640EC7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F38EDD165BE83A00640EC7 /* Cocoa.framework */; };
+		84F38EE8165BE83A00640EC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F38EE6165BE83A00640EC7 /* InfoPlist.strings */; };
+		84F38EEA165BE83A00640EC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F38EE9165BE83A00640EC7 /* main.m */; };
+		84F38EEE165BE83A00640EC7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 84F38EEC165BE83A00640EC7 /* Credits.rtf */; };
+		84F38EF1165BE83A00640EC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F38EF0165BE83A00640EC7 /* AppDelegate.m */; };
+		84F38EF4165BE83A00640EC7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84F38EF2165BE83A00640EC7 /* MainMenu.xib */; };
+		84F38EFC165BE83B00640EC7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F38EFB165BE83B00640EC7 /* SenTestingKit.framework */; };
+		84F38EFD165BE83B00640EC7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84F38EDD165BE83A00640EC7 /* Cocoa.framework */; };
+		84F38F05165BE83B00640EC7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84F38F03165BE83B00640EC7 /* InfoPlist.strings */; };
+		84F38F08165BE83B00640EC7 /* Send2METests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F38F07165BE83B00640EC7 /* Send2METests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		84F38EFE165BE83B00640EC7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F38ED0165BE83900640EC7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F38ED8165BE83900640EC7;
+			remoteInfo = Send2ME;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		84F38ED9165BE83A00640EC7 /* Send2ME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Send2ME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F38EDD165BE83A00640EC7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		84F38EE0165BE83A00640EC7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		84F38EE1165BE83A00640EC7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		84F38EE2165BE83A00640EC7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		84F38EE5165BE83A00640EC7 /* Send2ME-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Send2ME-Info.plist"; sourceTree = "<group>"; };
+		84F38EE7165BE83A00640EC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F38EE9165BE83A00640EC7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84F38EEB165BE83A00640EC7 /* Send2ME-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Send2ME-Prefix.pch"; sourceTree = "<group>"; };
+		84F38EED165BE83A00640EC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		84F38EEF165BE83A00640EC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		84F38EF0165BE83A00640EC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		84F38EF3165BE83A00640EC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		84F38EFA165BE83B00640EC7 /* Send2METests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Send2METests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		84F38EFB165BE83B00640EC7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		84F38F02165BE83B00640EC7 /* Send2METests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Send2METests-Info.plist"; sourceTree = "<group>"; };
+		84F38F04165BE83B00640EC7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		84F38F06165BE83B00640EC7 /* Send2METests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Send2METests.h; sourceTree = "<group>"; };
+		84F38F07165BE83B00640EC7 /* Send2METests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Send2METests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84F38ED6165BE83900640EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F38EDE165BE83A00640EC7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F38EF6165BE83B00640EC7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F38EFC165BE83B00640EC7 /* SenTestingKit.framework in Frameworks */,
+				84F38EFD165BE83B00640EC7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84F38ECE165BE83900640EC7 = {
+			isa = PBXGroup;
+			children = (
+				84F38EE3165BE83A00640EC7 /* Send2ME */,
+				84F38F00165BE83B00640EC7 /* Send2METests */,
+				84F38EDC165BE83A00640EC7 /* Frameworks */,
+				84F38EDA165BE83A00640EC7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84F38EDA165BE83A00640EC7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84F38ED9165BE83A00640EC7 /* Send2ME.app */,
+				84F38EFA165BE83B00640EC7 /* Send2METests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84F38EDC165BE83A00640EC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F38EDD165BE83A00640EC7 /* Cocoa.framework */,
+				84F38EFB165BE83B00640EC7 /* SenTestingKit.framework */,
+				84F38EDF165BE83A00640EC7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84F38EDF165BE83A00640EC7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84F38EE0165BE83A00640EC7 /* AppKit.framework */,
+				84F38EE1165BE83A00640EC7 /* CoreData.framework */,
+				84F38EE2165BE83A00640EC7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		84F38EE3165BE83A00640EC7 /* Send2ME */ = {
+			isa = PBXGroup;
+			children = (
+				84F38EEF165BE83A00640EC7 /* AppDelegate.h */,
+				84F38EF0165BE83A00640EC7 /* AppDelegate.m */,
+				84F38EF2165BE83A00640EC7 /* MainMenu.xib */,
+				84F38EE4165BE83A00640EC7 /* Supporting Files */,
+			);
+			path = Send2ME;
+			sourceTree = "<group>";
+		};
+		84F38EE4165BE83A00640EC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F38EE5165BE83A00640EC7 /* Send2ME-Info.plist */,
+				84F38EE6165BE83A00640EC7 /* InfoPlist.strings */,
+				84F38EE9165BE83A00640EC7 /* main.m */,
+				84F38EEB165BE83A00640EC7 /* Send2ME-Prefix.pch */,
+				84F38EEC165BE83A00640EC7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84F38F00165BE83B00640EC7 /* Send2METests */ = {
+			isa = PBXGroup;
+			children = (
+				84F38F06165BE83B00640EC7 /* Send2METests.h */,
+				84F38F07165BE83B00640EC7 /* Send2METests.m */,
+				84F38F01165BE83B00640EC7 /* Supporting Files */,
+			);
+			path = Send2METests;
+			sourceTree = "<group>";
+		};
+		84F38F01165BE83B00640EC7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				84F38F02165BE83B00640EC7 /* Send2METests-Info.plist */,
+				84F38F03165BE83B00640EC7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84F38ED8165BE83900640EC7 /* Send2ME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F38F0B165BE83B00640EC7 /* Build configuration list for PBXNativeTarget "Send2ME" */;
+			buildPhases = (
+				84F38ED5165BE83900640EC7 /* Sources */,
+				84F38ED6165BE83900640EC7 /* Frameworks */,
+				84F38ED7165BE83900640EC7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Send2ME;
+			productName = Send2ME;
+			productReference = 84F38ED9165BE83A00640EC7 /* Send2ME.app */;
+			productType = "com.apple.product-type.application";
+		};
+		84F38EF9165BE83B00640EC7 /* Send2METests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84F38F0E165BE83B00640EC7 /* Build configuration list for PBXNativeTarget "Send2METests" */;
+			buildPhases = (
+				84F38EF5165BE83B00640EC7 /* Sources */,
+				84F38EF6165BE83B00640EC7 /* Frameworks */,
+				84F38EF7165BE83B00640EC7 /* Resources */,
+				84F38EF8165BE83B00640EC7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				84F38EFF165BE83B00640EC7 /* PBXTargetDependency */,
+			);
+			name = Send2METests;
+			productName = Send2METests;
+			productReference = 84F38EFA165BE83B00640EC7 /* Send2METests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84F38ED0165BE83900640EC7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = d1sc0nnect0r;
+			};
+			buildConfigurationList = 84F38ED3165BE83900640EC7 /* Build configuration list for PBXProject "Send2ME" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 84F38ECE165BE83900640EC7;
+			productRefGroup = 84F38EDA165BE83A00640EC7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84F38ED8165BE83900640EC7 /* Send2ME */,
+				84F38EF9165BE83B00640EC7 /* Send2METests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84F38ED7165BE83900640EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F38EE8165BE83A00640EC7 /* InfoPlist.strings in Resources */,
+				84F38EEE165BE83A00640EC7 /* Credits.rtf in Resources */,
+				84F38EF4165BE83A00640EC7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F38EF7165BE83B00640EC7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F38F05165BE83B00640EC7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		84F38EF8165BE83B00640EC7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84F38ED5165BE83900640EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F38EEA165BE83A00640EC7 /* main.m in Sources */,
+				84F38EF1165BE83A00640EC7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		84F38EF5165BE83B00640EC7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84F38F08165BE83B00640EC7 /* Send2METests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		84F38EFF165BE83B00640EC7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F38ED8165BE83900640EC7 /* Send2ME */;
+			targetProxy = 84F38EFE165BE83B00640EC7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		84F38EE6165BE83A00640EC7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F38EE7165BE83A00640EC7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		84F38EEC165BE83A00640EC7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F38EED165BE83A00640EC7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		84F38EF2165BE83A00640EC7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F38EF3165BE83A00640EC7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		84F38F03165BE83B00640EC7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84F38F04165BE83B00640EC7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84F38F09165BE83B00640EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		84F38F0A165BE83B00640EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		84F38F0C165BE83B00640EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Send2ME/Send2ME-Prefix.pch";
+				INFOPLIST_FILE = "Send2ME/Send2ME-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		84F38F0D165BE83B00640EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Send2ME/Send2ME-Prefix.pch";
+				INFOPLIST_FILE = "Send2ME/Send2ME-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		84F38F0F165BE83B00640EC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Send2ME.app/Contents/MacOS/Send2ME";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Send2ME/Send2ME-Prefix.pch";
+				INFOPLIST_FILE = "Send2METests/Send2METests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		84F38F10165BE83B00640EC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Send2ME.app/Contents/MacOS/Send2ME";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Send2ME/Send2ME-Prefix.pch";
+				INFOPLIST_FILE = "Send2METests/Send2METests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84F38ED3165BE83900640EC7 /* Build configuration list for PBXProject "Send2ME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F38F09165BE83B00640EC7 /* Debug */,
+				84F38F0A165BE83B00640EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84F38F0B165BE83B00640EC7 /* Build configuration list for PBXNativeTarget "Send2ME" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F38F0C165BE83B00640EC7 /* Debug */,
+				84F38F0D165BE83B00640EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		84F38F0E165BE83B00640EC7 /* Build configuration list for PBXNativeTarget "Send2METests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84F38F0F165BE83B00640EC7 /* Debug */,
+				84F38F10165BE83B00640EC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84F38ED0165BE83900640EC7 /* Project object */;
+}
