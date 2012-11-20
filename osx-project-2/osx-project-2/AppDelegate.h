@@ -10,6 +10,11 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSMenu *statusMenu;
+
+- (IBAction)OnSettingsMenuItemPressed:(id)sender;
+- (IBAction)onQuitMenuItemPressed:(id)sender;
+- (IBAction)onAboutMenuItemPressed:(id)sender;
+
 
 @end

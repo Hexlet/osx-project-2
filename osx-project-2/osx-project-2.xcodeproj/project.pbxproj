@@ -297,6 +297,7 @@
 				BBF841EE165BBD4100BF570F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
