@@ -17,15 +17,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		77831B22165C1000009DA975 /* MiniDent osx-project-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MiniDent osx-project-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		77831B22165C1000009DA975 /* MiniDent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniDent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77831B26165C1000009DA975 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		77831B29165C1000009DA975 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		77831B2A165C1000009DA975 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		77831B2B165C1000009DA975 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		77831B2E165C1000009DA975 /* MiniDent osx-project-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniDent osx-project-2-Info.plist"; sourceTree = "<group>"; };
+		77831B2E165C1000009DA975 /* MiniDent-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MiniDent-Info.plist"; sourceTree = "<group>"; };
 		77831B30165C1000009DA975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		77831B32165C1000009DA975 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		77831B34165C1000009DA975 /* MiniDent osx-project-2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniDent osx-project-2-Prefix.pch"; sourceTree = "<group>"; };
+		77831B34165C1000009DA975 /* MiniDent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MiniDent-Prefix.pch"; sourceTree = "<group>"; };
 		77831B36165C1000009DA975 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		77831B38165C1000009DA975 /* EDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EDAppDelegate.h; sourceTree = "<group>"; };
 		77831B39165C1000009DA975 /* EDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDAppDelegate.m; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		77831B17165C0FFF009DA975 = {
 			isa = PBXGroup;
 			children = (
-				77831B2C165C1000009DA975 /* MiniDent osx-project-2 */,
+				77831B2C165C1000009DA975 /* MiniDent */,
 				77831B25165C1000009DA975 /* Frameworks */,
 				77831B23165C1000009DA975 /* Products */,
 			);
@@ -57,7 +57,7 @@
 		77831B23165C1000009DA975 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				77831B22165C1000009DA975 /* MiniDent osx-project-2.app */,
+				77831B22165C1000009DA975 /* MiniDent.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -81,7 +81,7 @@
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		77831B2C165C1000009DA975 /* MiniDent osx-project-2 */ = {
+		77831B2C165C1000009DA975 /* MiniDent */ = {
 			isa = PBXGroup;
 			children = (
 				77831B38165C1000009DA975 /* EDAppDelegate.h */,
@@ -90,16 +90,17 @@
 				77831B43165C10C1009DA975 /* README.md */,
 				77831B2D165C1000009DA975 /* Supporting Files */,
 			);
+			name = MiniDent;
 			path = "MiniDent osx-project-2";
 			sourceTree = "<group>";
 		};
 		77831B2D165C1000009DA975 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				77831B2E165C1000009DA975 /* MiniDent osx-project-2-Info.plist */,
+				77831B2E165C1000009DA975 /* MiniDent-Info.plist */,
 				77831B2F165C1000009DA975 /* InfoPlist.strings */,
 				77831B32165C1000009DA975 /* main.m */,
-				77831B34165C1000009DA975 /* MiniDent osx-project-2-Prefix.pch */,
+				77831B34165C1000009DA975 /* MiniDent-Prefix.pch */,
 				77831B35165C1000009DA975 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
@@ -108,9 +109,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		77831B21165C1000009DA975 /* MiniDent osx-project-2 */ = {
+		77831B21165C1000009DA975 /* MiniDent */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 77831B40165C1000009DA975 /* Build configuration list for PBXNativeTarget "MiniDent osx-project-2" */;
+			buildConfigurationList = 77831B40165C1000009DA975 /* Build configuration list for PBXNativeTarget "MiniDent" */;
 			buildPhases = (
 				77831B1E165C1000009DA975 /* Sources */,
 				77831B1F165C1000009DA975 /* Frameworks */,
@@ -120,9 +121,9 @@
 			);
 			dependencies = (
 			);
-			name = "MiniDent osx-project-2";
+			name = MiniDent;
 			productName = "MiniDent osx-project-2";
-			productReference = 77831B22165C1000009DA975 /* MiniDent osx-project-2.app */;
+			productReference = 77831B22165C1000009DA975 /* MiniDent.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +136,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = ed;
 			};
-			buildConfigurationList = 77831B1C165C0FFF009DA975 /* Build configuration list for PBXProject "MiniDent osx-project-2" */;
+			buildConfigurationList = 77831B1C165C0FFF009DA975 /* Build configuration list for PBXProject "MiniDent" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -147,7 +148,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				77831B21165C1000009DA975 /* MiniDent osx-project-2 */,
+				77831B21165C1000009DA975 /* MiniDent */,
 			);
 		};
 /* End PBXProject section */
@@ -264,9 +265,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MiniDent osx-project-2/MiniDent osx-project-2-Prefix.pch";
-				INFOPLIST_FILE = "MiniDent osx-project-2/MiniDent osx-project-2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MiniDent osx-project-2/MiniDent-Prefix.pch";
+				INFOPLIST_FILE = "MiniDent osx-project-2/MiniDent-Info.plist";
+				PRODUCT_NAME = MiniDent;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -276,9 +277,9 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MiniDent osx-project-2/MiniDent osx-project-2-Prefix.pch";
-				INFOPLIST_FILE = "MiniDent osx-project-2/MiniDent osx-project-2-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "MiniDent osx-project-2/MiniDent-Prefix.pch";
+				INFOPLIST_FILE = "MiniDent osx-project-2/MiniDent-Info.plist";
+				PRODUCT_NAME = MiniDent;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -286,7 +287,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		77831B1C165C0FFF009DA975 /* Build configuration list for PBXProject "MiniDent osx-project-2" */ = {
+		77831B1C165C0FFF009DA975 /* Build configuration list for PBXProject "MiniDent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77831B3E165C1000009DA975 /* Debug */,
@@ -295,7 +296,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		77831B40165C1000009DA975 /* Build configuration list for PBXNativeTarget "MiniDent osx-project-2" */ = {
+		77831B40165C1000009DA975 /* Build configuration list for PBXNativeTarget "MiniDent" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				77831B41165C1000009DA975 /* Debug */,
