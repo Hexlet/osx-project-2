@@ -16,5 +16,4 @@
 - (IBAction)onQuitMenuItemPressed:(id)sender;
 - (IBAction)onAboutMenuItemPressed:(id)sender;
 
-
 @end

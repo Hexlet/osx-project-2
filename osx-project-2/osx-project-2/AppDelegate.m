@@ -8,38 +8,61 @@
 
 #import "AppDelegate.h"
 
-@implementation AppDelegate {
-    NSStatusItem *_statusItem;
-    NSImage *statusImage;
+@implementation AppDelegate
+{
+    NSStatusItem *statusItem;
+    
+    NSImage *iconOn;
+    NSImage *iconOff;
+    
+    bool on;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    [NSTimer
+     scheduledTimerWithTimeInterval:0.5
+     target:self
+     selector:@selector(OnUpdate:)
+     userInfo:nil
+     repeats:YES];
 }
 
-- (void)awakeFromNib {
+- (void)awakeFromNib
+{
     
     NSBundle *bundle = [NSBundle mainBundle];
     
-    statusImage = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon" ofType:@"png"]];
+    iconOn  = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon_on"  ofType:@"png"]];
+    iconOff = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon_off" ofType:@"png"]];
     
-    _statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
+    statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     
-    [_statusItem setImage:statusImage];
-    [_statusItem setMenu:_statusMenu];
-    [_statusItem setHighlightMode:YES];
+    [statusItem setMenu:_statusMenu];
+    [statusItem setHighlightMode:YES];
+    
+    on = false;
+    [self OnUpdate:nil];
 
 }
 
-- (IBAction)OnSettingsMenuItemPressed:(id)sender {
+- (void)OnUpdate:(NSTimer*)timer
+{
+    on = !on;
+    [statusItem setImage:(on ? iconOn : iconOff)];
 }
 
-- (IBAction)onQuitMenuItemPressed:(id)sender {
+- (IBAction)OnSettingsMenuItemPressed:(id)sender
+{
+}
+
+- (IBAction)onQuitMenuItemPressed:(id)sender
+{
     exit(0);
 }
 
-- (IBAction)onAboutMenuItemPressed:(id)sender {
+- (IBAction)onAboutMenuItemPressed:(id)sender
+{
 }
 
 @end
