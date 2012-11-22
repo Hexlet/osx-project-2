@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "DiskActivity.h"
+#import "DiskActivityRandom.h"
+const float ACTIVITY_CHECK_PERIOD = 0.5f;
+const float ICON_UPDATE_PERIOD = 0.5f;
 
 @implementation AppDelegate
 {
@@ -14,55 +18,62 @@
     
     NSImage *iconOn;
     NSImage *iconOff;
-    
-    bool on;
-}
-
-- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
-{
-    [NSTimer
-     scheduledTimerWithTimeInterval:0.5
-     target:self
-     selector:@selector(OnUpdate:)
-     userInfo:nil
-     repeats:YES];
+        
+    DiskActivity *diskActivity;
 }
 
 - (void)awakeFromNib
 {
-    
+    [self loadIcons];
+    [self setupStatusItem];
+}
+
+- (void)applicationDidFinishLaunching:(NSNotification *)aNotification
+{
+    [self startDiskActivity];
+    [self startIconUpdateTimer];
+}
+
+- (void) startDiskActivity
+{
+    id<DiskActivityProtocol> activityProtocol = [[DiskActivityRandom alloc] init];
+    diskActivity = [[DiskActivity alloc] initWithProtocol:activityProtocol andPeriod:ACTIVITY_CHECK_PERIOD];
+}
+
+- (void) startIconUpdateTimer
+{
+    [NSTimer
+     scheduledTimerWithTimeInterval:ICON_UPDATE_PERIOD
+     target:self
+     selector:@selector(onTimer:)
+     userInfo:nil
+     repeats:YES];
+}
+
+- (void) loadIcons
+{
     NSBundle *bundle = [NSBundle mainBundle];
     
     iconOn  = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon_on"  ofType:@"png"]];
     iconOff = [[NSImage alloc] initWithContentsOfFile:[bundle pathForResource:@"icon_off" ofType:@"png"]];
-    
+}
+
+- (void) setupStatusItem
+{
     statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
-    
     [statusItem setMenu:_statusMenu];
     [statusItem setHighlightMode:YES];
-    
-    on = false;
-    [self OnUpdate:nil];
-
 }
 
-- (void)OnUpdate:(NSTimer*)timer
+- (void)onTimer:(NSTimer*)timer
 {
-    on = !on;
-    [statusItem setImage:(on ? iconOn : iconOff)];
-}
-
-- (IBAction)OnSettingsMenuItemPressed:(id)sender
-{
+    float activityValue = [[diskActivity getCurrent] floatValue];
+    [statusItem setImage:((activityValue > 0) ? iconOn : iconOff)];
 }
 
 - (IBAction)onQuitMenuItemPressed:(id)sender
 {
     exit(0);
-}
-
-- (IBAction)onAboutMenuItemPressed:(id)sender
-{
 }
 
 @end

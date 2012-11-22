@@ -12,8 +12,6 @@
 
 @property (weak) IBOutlet NSMenu *statusMenu;
 
-- (IBAction)OnSettingsMenuItemPressed:(id)sender;
 - (IBAction)onQuitMenuItemPressed:(id)sender;
-- (IBAction)onAboutMenuItemPressed:(id)sender;
 
 @end

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		BB002AF2165BF08600461956 /* icon_on.png in Resources */ = {isa = PBXBuildFile; fileRef = BB002AF1165BF08600461956 /* icon_on.png */; };
 		BB002AFE165D15FC00461956 /* icon_off.png in Resources */ = {isa = PBXBuildFile; fileRef = BB002AFD165D15FC00461956 /* icon_off.png */; };
+		BB0DAAEB165E4FAA009B4A2C /* DiskActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0DAAEA165E4FAA009B4A2C /* DiskActivity.m */; };
+		BB0DAAEE165E596D009B4A2C /* DiskActivityRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = BB0DAAED165E596D009B4A2C /* DiskActivityRandom.m */; };
 		BBF841D3165BBD4100BF570F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBF841D2165BBD4100BF570F /* Cocoa.framework */; };
 		BBF841DD165BBD4100BF570F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BBF841DB165BBD4100BF570F /* InfoPlist.strings */; };
 		BBF841DF165BBD4100BF570F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF841DE165BBD4100BF570F /* main.m */; };
@@ -20,6 +22,11 @@
 /* Begin PBXFileReference section */
 		BB002AF1165BF08600461956 /* icon_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_on.png; sourceTree = "<group>"; };
 		BB002AFD165D15FC00461956 /* icon_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_off.png; sourceTree = "<group>"; };
+		BB0DAAE3165E4EDE009B4A2C /* DiskActivityProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiskActivityProtocol.h; sourceTree = "<group>"; };
+		BB0DAAE9165E4FAA009B4A2C /* DiskActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskActivity.h; sourceTree = "<group>"; };
+		BB0DAAEA165E4FAA009B4A2C /* DiskActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskActivity.m; sourceTree = "<group>"; };
+		BB0DAAEC165E596D009B4A2C /* DiskActivityRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DiskActivityRandom.h; sourceTree = "<group>"; };
+		BB0DAAED165E596D009B4A2C /* DiskActivityRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DiskActivityRandom.m; sourceTree = "<group>"; };
 		BBF841CE165BBD4100BF570F /* osx-project-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "osx-project-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBF841D2165BBD4100BF570F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		BBF841D5165BBD4100BF570F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -47,6 +54,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BB0DAAF3165E5E13009B4A2C /* DiskActivity */ = {
+			isa = PBXGroup;
+			children = (
+				BB0DAAE9165E4FAA009B4A2C /* DiskActivity.h */,
+				BB0DAAEA165E4FAA009B4A2C /* DiskActivity.m */,
+				BB0DAAE3165E4EDE009B4A2C /* DiskActivityProtocol.h */,
+				BB0DAAEC165E596D009B4A2C /* DiskActivityRandom.h */,
+				BB0DAAED165E596D009B4A2C /* DiskActivityRandom.m */,
+			);
+			name = DiskActivity;
+			sourceTree = "<group>";
+		};
+		BB0DAAF5165E5E35009B4A2C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB002AFD165D15FC00461956 /* icon_off.png */,
+				BB002AF1165BF08600461956 /* icon_on.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		BBF841C3165BBD4100BF570F = {
 			isa = PBXGroup;
 			children = (
@@ -86,8 +114,8 @@
 		BBF841D8165BBD4100BF570F /* osx-project-2 */ = {
 			isa = PBXGroup;
 			children = (
-				BB002AFD165D15FC00461956 /* icon_off.png */,
-				BB002AF1165BF08600461956 /* icon_on.png */,
+				BB0DAAF5165E5E35009B4A2C /* Resources */,
+				BB0DAAF3165E5E13009B4A2C /* DiskActivity */,
 				BBF841E4165BBD4100BF570F /* AppDelegate.h */,
 				BBF841E5165BBD4100BF570F /* AppDelegate.m */,
 				BBF841E7165BBD4100BF570F /* MainMenu.xib */,
@@ -176,6 +204,8 @@
 			files = (
 				BBF841DF165BBD4100BF570F /* main.m in Sources */,
 				BBF841E6165BBD4100BF570F /* AppDelegate.m in Sources */,
+				BB0DAAEB165E4FAA009B4A2C /* DiskActivity.m in Sources */,
+				BB0DAAEE165E596D009B4A2C /* DiskActivityRandom.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
