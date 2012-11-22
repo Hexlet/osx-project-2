@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Website blocker' target in the 'Website blocker' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
