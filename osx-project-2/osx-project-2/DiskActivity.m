@@ -32,15 +32,15 @@ const float ACTIVITY_GATHER_TIME = 60.0f;
     return self;
 }
 
-- (NSNumber*)getCurrent
-{
-    return [data objectAtIndex:0];
-}
-
 - (void)update
 {
     [data removeLastObject];
     [data insertObject:[activity getValue] atIndex:0];
+}
+
+- (NSNumber*)getCurrent
+{
+    return [data objectAtIndex:0];
 }
 
 @end

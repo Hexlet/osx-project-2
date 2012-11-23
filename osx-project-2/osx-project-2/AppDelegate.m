@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DiskActivity.h"
 #import "DiskActivityRandom.h"
+#import "DiskActivityIO.h"
 
 const float ACTIVITY_CHECK_PERIOD = 0.5f;
 
@@ -36,7 +37,7 @@ const float ACTIVITY_CHECK_PERIOD = 0.5f;
 
 - (void) startDiskActivity
 {
-    id<DiskActivityProtocol> activityProtocol = [[DiskActivityRandom alloc] init];
+    id<DiskActivityProtocol> activityProtocol = [[DiskActivityIO alloc] init];
     diskActivity = [[DiskActivity alloc] initWithProtocol:activityProtocol andPeriod:ACTIVITY_CHECK_PERIOD];
 }
 
@@ -70,6 +71,8 @@ const float ACTIVITY_CHECK_PERIOD = 0.5f;
     [diskActivity update];
     
     float activityValue = [[diskActivity getCurrent] floatValue];
+    NSLog(@"activity value = %f", activityValue);
+    
     [statusItem setImage:((activityValue > 0) ? iconOn : iconOff)];
 }
 
