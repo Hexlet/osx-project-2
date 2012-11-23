@@ -9,8 +9,8 @@
 #import "AppDelegate.h"
 #import "DiskActivity.h"
 #import "DiskActivityRandom.h"
+
 const float ACTIVITY_CHECK_PERIOD = 0.5f;
-const float ICON_UPDATE_PERIOD = 0.5f;
 
 @implementation AppDelegate
 {
@@ -43,7 +43,7 @@ const float ICON_UPDATE_PERIOD = 0.5f;
 - (void) startIconUpdateTimer
 {
     [NSTimer
-     scheduledTimerWithTimeInterval:ICON_UPDATE_PERIOD
+     scheduledTimerWithTimeInterval:ACTIVITY_CHECK_PERIOD
      target:self
      selector:@selector(onTimer:)
      userInfo:nil
@@ -67,6 +67,8 @@ const float ICON_UPDATE_PERIOD = 0.5f;
 
 - (void)onTimer:(NSTimer*)timer
 {
+    [diskActivity update];
+    
     float activityValue = [[diskActivity getCurrent] floatValue];
     [statusItem setImage:((activityValue > 0) ? iconOn : iconOff)];
 }

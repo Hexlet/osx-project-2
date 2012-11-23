@@ -22,13 +22,12 @@ const float ACTIVITY_GATHER_TIME = 60.0f;
     self = [super init];
     if(self)
     {
+        activity = activityProtocol;
+        
         int arraySize = (int)(ACTIVITY_GATHER_TIME / period);
         data = [NSMutableArray arrayWithCapacity:arraySize];
         for(NSNumber* number in data)
             [number setValue:[NSNumber numberWithFloat:0.0f]];
-        
-        activity = activityProtocol;
-        [self startTimerWithPeriod:period];
     }
     return self;
 }
@@ -38,17 +37,7 @@ const float ACTIVITY_GATHER_TIME = 60.0f;
     return [data objectAtIndex:0];
 }
 
-- (void)startTimerWithPeriod:(float)period
-{
-    [NSTimer
-     scheduledTimerWithTimeInterval:period
-     target:self
-     selector:@selector(onTimer:)
-     userInfo:nil
-     repeats:YES];
-}
-
-- (void)onTimer:(NSTimer*)timer
+- (void)update
 {
     [data removeLastObject];
     [data insertObject:[activity getValue] atIndex:0];

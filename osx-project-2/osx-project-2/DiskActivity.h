@@ -13,6 +13,7 @@
 
 - (DiskActivity*)initWithProtocol:(id<DiskActivityProtocol>)activityProtocol andPeriod:(float)period;
 
+- (void) update;
 - (NSNumber*)getCurrent;
 
 @end
