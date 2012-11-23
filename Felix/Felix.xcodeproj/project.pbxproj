@@ -1,0 +1,303 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DA7316DC165FA1F5006747F7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA7316DB165FA1F5006747F7 /* Cocoa.framework */; };
+		DA7316E6165FA1F5006747F7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DA7316E4165FA1F5006747F7 /* InfoPlist.strings */; };
+		DA7316E8165FA1F5006747F7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7316E7165FA1F5006747F7 /* main.m */; };
+		DA7316EC165FA1F5006747F7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DA7316EA165FA1F5006747F7 /* Credits.rtf */; };
+		DA7316EF165FA1F5006747F7 /* YKAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DA7316EE165FA1F5006747F7 /* YKAppDelegate.m */; };
+		DA7316F2165FA1F6006747F7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DA7316F0165FA1F6006747F7 /* MainMenu.xib */; };
+		DA7316F9165FA254006747F7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = DA7316F8165FA254006747F7 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DA7316D7165FA1F5006747F7 /* Felix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Felix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA7316DB165FA1F5006747F7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		DA7316DE165FA1F5006747F7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		DA7316DF165FA1F5006747F7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		DA7316E0165FA1F5006747F7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		DA7316E3165FA1F5006747F7 /* Felix-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Felix-Info.plist"; sourceTree = "<group>"; };
+		DA7316E5165FA1F5006747F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DA7316E7165FA1F5006747F7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DA7316E9165FA1F5006747F7 /* Felix-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Felix-Prefix.pch"; sourceTree = "<group>"; };
+		DA7316EB165FA1F5006747F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		DA7316ED165FA1F5006747F7 /* YKAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YKAppDelegate.h; sourceTree = "<group>"; };
+		DA7316EE165FA1F5006747F7 /* YKAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YKAppDelegate.m; sourceTree = "<group>"; };
+		DA7316F1165FA1F6006747F7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DA7316F8165FA254006747F7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DA7316D4165FA1F5006747F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7316DC165FA1F5006747F7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DA7316CC165FA1F5006747F7 = {
+			isa = PBXGroup;
+			children = (
+				DA7316E1165FA1F5006747F7 /* Felix */,
+				DA7316DA165FA1F5006747F7 /* Frameworks */,
+				DA7316D8165FA1F5006747F7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DA7316D8165FA1F5006747F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DA7316D7165FA1F5006747F7 /* Felix.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DA7316DA165FA1F5006747F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7316DB165FA1F5006747F7 /* Cocoa.framework */,
+				DA7316DD165FA1F5006747F7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DA7316DD165FA1F5006747F7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA7316DE165FA1F5006747F7 /* AppKit.framework */,
+				DA7316DF165FA1F5006747F7 /* CoreData.framework */,
+				DA7316E0165FA1F5006747F7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		DA7316E1165FA1F5006747F7 /* Felix */ = {
+			isa = PBXGroup;
+			children = (
+				DA7316ED165FA1F5006747F7 /* YKAppDelegate.h */,
+				DA7316EE165FA1F5006747F7 /* YKAppDelegate.m */,
+				DA7316F0165FA1F6006747F7 /* MainMenu.xib */,
+				DA7316F8165FA254006747F7 /* README.md */,
+				DA7316E2165FA1F5006747F7 /* Supporting Files */,
+			);
+			path = Felix;
+			sourceTree = "<group>";
+		};
+		DA7316E2165FA1F5006747F7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DA7316E3165FA1F5006747F7 /* Felix-Info.plist */,
+				DA7316E4165FA1F5006747F7 /* InfoPlist.strings */,
+				DA7316E7165FA1F5006747F7 /* main.m */,
+				DA7316E9165FA1F5006747F7 /* Felix-Prefix.pch */,
+				DA7316EA165FA1F5006747F7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DA7316D6165FA1F5006747F7 /* Felix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DA7316F5165FA1F6006747F7 /* Build configuration list for PBXNativeTarget "Felix" */;
+			buildPhases = (
+				DA7316D3165FA1F5006747F7 /* Sources */,
+				DA7316D4165FA1F5006747F7 /* Frameworks */,
+				DA7316D5165FA1F5006747F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Felix;
+			productName = Felix;
+			productReference = DA7316D7165FA1F5006747F7 /* Felix.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DA7316CE165FA1F5006747F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = YK;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Yuri Kirghisov";
+			};
+			buildConfigurationList = DA7316D1165FA1F5006747F7 /* Build configuration list for PBXProject "Felix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DA7316CC165FA1F5006747F7;
+			productRefGroup = DA7316D8165FA1F5006747F7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DA7316D6165FA1F5006747F7 /* Felix */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DA7316D5165FA1F5006747F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7316E6165FA1F5006747F7 /* InfoPlist.strings in Resources */,
+				DA7316EC165FA1F5006747F7 /* Credits.rtf in Resources */,
+				DA7316F2165FA1F6006747F7 /* MainMenu.xib in Resources */,
+				DA7316F9165FA254006747F7 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DA7316D3165FA1F5006747F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DA7316E8165FA1F5006747F7 /* main.m in Sources */,
+				DA7316EF165FA1F5006747F7 /* YKAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DA7316E4165FA1F5006747F7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7316E5165FA1F5006747F7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DA7316EA165FA1F5006747F7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7316EB165FA1F5006747F7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		DA7316F0165FA1F6006747F7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DA7316F1165FA1F6006747F7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DA7316F3165FA1F6006747F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DA7316F4165FA1F6006747F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DA7316F6165FA1F6006747F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Felix/Felix-Prefix.pch";
+				INFOPLIST_FILE = "Felix/Felix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		DA7316F7165FA1F6006747F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Felix/Felix-Prefix.pch";
+				INFOPLIST_FILE = "Felix/Felix-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DA7316D1165FA1F5006747F7 /* Build configuration list for PBXProject "Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7316F3165FA1F6006747F7 /* Debug */,
+				DA7316F4165FA1F6006747F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DA7316F5165FA1F6006747F7 /* Build configuration list for PBXNativeTarget "Felix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DA7316F6165FA1F6006747F7 /* Debug */,
+				DA7316F7165FA1F6006747F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DA7316CE165FA1F5006747F7 /* Project object */;
+}
