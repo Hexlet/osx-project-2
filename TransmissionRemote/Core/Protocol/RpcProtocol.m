@@ -15,7 +15,7 @@
 -(id)init {
     self = [super init];
     if (self) {
-        NSString *fullTorrentFields = @"\"id\", \"name\", \"status\", \"comment\", \"percentDone\", \"recheckProgress\", \"uploadRatio\"";
+        NSString *fullTorrentFields = @"\"id\", \"name\", \"status\", \"comment\", \"percentDone\", \"recheckProgress\", \"uploadRatio\", \"totalSize\"";
         NSString *torrentFields = @"\"id\", \"status\", \"percentDone\", \"recheckProgress\", \"uploadRatio\"";
         
         sessionGet = @"{ \"method\": \"session-get\" }";
@@ -27,6 +27,8 @@
         torrentStart = @"{ \"method\": \"torrent-start\", \"arguments\": { \"ids\": [%@] } }";
         torrentVerify = @"{ \"method\": \"torrent-verify\", \"arguments\": { \"ids\": [%@] } }";
         torrentRemove = @"{ \"method\": \"torrent-remove\", \"arguments\": { \"ids\": [%@], \"delete-local-data\": %@ } }";
+        torrentAddFile = @"{ \"method\": \"torrent-add\", \"arguments\": { \"paused\": true, \"metainfo\": \"%@\" } }";
+        torrentAddUrl = @"{ \"method\": \"torrent-add\", \"arguments\": { \"paused\": true, \"filename\": \"%@\" } }";
     }
     return self;
 }
@@ -107,6 +109,14 @@
     return [NSString stringWithFormat:torrentRemove, aIds, useDeleteLocalData ? @"true" : @"false"];
 }
 
+-(NSUInteger)torrentAddFileTag {
+    return 9;
+}
+
+-(NSString *)torrentAddFileQueryWithData:(NSString *)fileData {
+    return [NSString stringWithFormat:torrentAddFile, fileData];
+}
+
 
 #pragma mark - Proceeding response
 
@@ -128,6 +138,7 @@
 }
 
 -(void)procceedResult:(NSDictionary *)aResult withTag:(NSUInteger)aTag {
+    id data = nil;
     switch (aTag) {
         case 1:
             // session-get
@@ -158,19 +169,24 @@
         case 8:
             // torrent-remove
             break;
+        case 9:
+            // torrent-add
+            data = [self proceedAddTorrentGetResult:aResult];
+            break;
             
         default:
             // unknown request
             break;
     }
     if (_delegate) {
-        [_delegate didRequestReceivedWithTag:aTag];
+        [_delegate didRequestReceivedWithTag:aTag andData:data];
     }
 }
 
 -(void)proceedSessionGetResult:(NSDictionary *)aResult {
     if (aResult) {
         ServerStatus *serverStatus = [[ServerStatus alloc] init];
+        serverStatus.connected = YES;
         serverStatus.version = [NSString stringWithFormat:@"Transmission %@", [aResult objectForKey:@"version"]];
         [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateServerStatusResponse" object:serverStatus];
     }
@@ -185,6 +201,7 @@
     torrent.torrentDownloadPercent = [[aObject valueForKey:@"percentDone"] doubleValue] * 100;
     torrent.torrentVerifyPercent = [[aObject valueForKey:@"recheckProgress"] doubleValue] * 100;
     torrent.uploadRatio = [[aObject valueForKey:@"uploadRatio"] doubleValue];
+    torrent.totalSize = [[aObject valueForKey:@"totalSize"] unsignedIntegerValue];
     return torrent;
 }
 
@@ -217,6 +234,10 @@
 
 -(void)proceedTorrentFullUpdateGetResult:(NSDictionary *)aResult {
     [self extractTorrentsFromDictionary:[aResult valueForKey:@"torrents"] andPostNotificationWithName:@"FullUpdateTorrentsResponse"];
+}
+
+-(id)proceedAddTorrentGetResult:(NSDictionary *)aResult {
+    return [NSString stringWithFormat:@"%ld", [[[aResult valueForKey:@"torrent-added"] valueForKey:@"id"] unsignedIntegerValue]];
 }
 
 @end

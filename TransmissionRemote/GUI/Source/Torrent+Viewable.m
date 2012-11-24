@@ -7,6 +7,7 @@
 //
 
 #import "Torrent+Viewable.h"
+#import "NSNumber+UnitString.h"
 
 @implementation Torrent (Viewable)
 
@@ -23,7 +24,11 @@
 }
 
 -(NSString *)uploadRatioFormatted {
-    return [NSString stringWithFormat:@"%.2f", self.uploadRatio];
+    if (self.uploadRatio == -1.0) {
+        return @"∞";
+    } else {
+        return [NSString stringWithFormat:@"%.2f", self.uploadRatio];
+    }
 }
 
 #pragma mark - State properties
@@ -46,6 +51,10 @@
 
 -(BOOL)isWaiting {
     return (self.torrentState == STATE_CHECK_WAIT || self.torrentState == STATE_SEED_WAIT || self.torrentState == STATE_DOWNLOAD_WAIT);
+}
+
+-(NSString *)humanizedTotalSize {
+    return [[NSNumber numberWithUnsignedInteger:self.totalSize] unitStringFromBytes];
 }
 
 #pragma mark - KeyPathes
@@ -76,6 +85,10 @@
 
 +(NSSet *)keyPathsForValuesAffectingUploadRatioFormatted {
     return [NSSet setWithObjects:@"uploadRatio", nil];
+}
+
++(NSSet *)keyPathsForValuesAffectingHumanizedTotalSize {
+    return [NSSet setWithObjects:@"totalSize", nil];
 }
 
 @end
