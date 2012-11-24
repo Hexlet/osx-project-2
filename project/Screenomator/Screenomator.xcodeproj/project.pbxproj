@@ -1,0 +1,297 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79D2FD85166149FB00619F7E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D2FD84166149FB00619F7E /* Cocoa.framework */; };
+		79D2FD8F166149FB00619F7E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79D2FD8D166149FB00619F7E /* InfoPlist.strings */; };
+		79D2FD91166149FB00619F7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2FD90166149FB00619F7E /* main.m */; };
+		79D2FD95166149FB00619F7E /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 79D2FD93166149FB00619F7E /* Credits.rtf */; };
+		79D2FD98166149FB00619F7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79D2FD97166149FB00619F7E /* AppDelegate.m */; };
+		79D2FD9B166149FB00619F7E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 79D2FD99166149FB00619F7E /* MainMenu.xib */; };
+		79D2FDA216614A0D00619F7E /* scr.icns in Resources */ = {isa = PBXBuildFile; fileRef = 79D2FDA116614A0D00619F7E /* scr.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		79D2FD80166149FB00619F7E /* Screenomator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Screenomator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D2FD84166149FB00619F7E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		79D2FD87166149FB00619F7E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		79D2FD88166149FB00619F7E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		79D2FD89166149FB00619F7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79D2FD8C166149FB00619F7E /* Screenomator-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Screenomator-Info.plist"; sourceTree = "<group>"; };
+		79D2FD8E166149FB00619F7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79D2FD90166149FB00619F7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79D2FD92166149FB00619F7E /* Screenomator-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Screenomator-Prefix.pch"; sourceTree = "<group>"; };
+		79D2FD94166149FB00619F7E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		79D2FD96166149FB00619F7E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		79D2FD97166149FB00619F7E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		79D2FD9A166149FB00619F7E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		79D2FDA116614A0D00619F7E /* scr.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = scr.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79D2FD7D166149FB00619F7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D2FD85166149FB00619F7E /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79D2FD75166149FA00619F7E = {
+			isa = PBXGroup;
+			children = (
+				79D2FDA116614A0D00619F7E /* scr.icns */,
+				79D2FD8A166149FB00619F7E /* Screenomator */,
+				79D2FD83166149FB00619F7E /* Frameworks */,
+				79D2FD81166149FB00619F7E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79D2FD81166149FB00619F7E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79D2FD80166149FB00619F7E /* Screenomator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79D2FD83166149FB00619F7E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D2FD84166149FB00619F7E /* Cocoa.framework */,
+				79D2FD86166149FB00619F7E /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79D2FD86166149FB00619F7E /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79D2FD87166149FB00619F7E /* AppKit.framework */,
+				79D2FD88166149FB00619F7E /* CoreData.framework */,
+				79D2FD89166149FB00619F7E /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		79D2FD8A166149FB00619F7E /* Screenomator */ = {
+			isa = PBXGroup;
+			children = (
+				79D2FD96166149FB00619F7E /* AppDelegate.h */,
+				79D2FD97166149FB00619F7E /* AppDelegate.m */,
+				79D2FD99166149FB00619F7E /* MainMenu.xib */,
+				79D2FD8B166149FB00619F7E /* Supporting Files */,
+			);
+			path = Screenomator;
+			sourceTree = "<group>";
+		};
+		79D2FD8B166149FB00619F7E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79D2FD8C166149FB00619F7E /* Screenomator-Info.plist */,
+				79D2FD8D166149FB00619F7E /* InfoPlist.strings */,
+				79D2FD90166149FB00619F7E /* main.m */,
+				79D2FD92166149FB00619F7E /* Screenomator-Prefix.pch */,
+				79D2FD93166149FB00619F7E /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79D2FD7F166149FB00619F7E /* Screenomator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D2FD9E166149FB00619F7E /* Build configuration list for PBXNativeTarget "Screenomator" */;
+			buildPhases = (
+				79D2FD7C166149FB00619F7E /* Sources */,
+				79D2FD7D166149FB00619F7E /* Frameworks */,
+				79D2FD7E166149FB00619F7E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Screenomator;
+			productName = Screenomator;
+			productReference = 79D2FD80166149FB00619F7E /* Screenomator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79D2FD77166149FA00619F7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 79D2FD7A166149FA00619F7E /* Build configuration list for PBXProject "Screenomator" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79D2FD75166149FA00619F7E;
+			productRefGroup = 79D2FD81166149FB00619F7E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79D2FD7F166149FB00619F7E /* Screenomator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79D2FD7E166149FB00619F7E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D2FD8F166149FB00619F7E /* InfoPlist.strings in Resources */,
+				79D2FD95166149FB00619F7E /* Credits.rtf in Resources */,
+				79D2FD9B166149FB00619F7E /* MainMenu.xib in Resources */,
+				79D2FDA216614A0D00619F7E /* scr.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79D2FD7C166149FB00619F7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D2FD91166149FB00619F7E /* main.m in Sources */,
+				79D2FD98166149FB00619F7E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79D2FD8D166149FB00619F7E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D2FD8E166149FB00619F7E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79D2FD93166149FB00619F7E /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D2FD94166149FB00619F7E /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		79D2FD99166149FB00619F7E /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79D2FD9A166149FB00619F7E /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79D2FD9C166149FB00619F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		79D2FD9D166149FB00619F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		79D2FD9F166149FB00619F7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screenomator/Screenomator-Prefix.pch";
+				INFOPLIST_FILE = "Screenomator/Screenomator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79D2FDA0166149FB00619F7E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Screenomator/Screenomator-Prefix.pch";
+				INFOPLIST_FILE = "Screenomator/Screenomator-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79D2FD7A166149FA00619F7E /* Build configuration list for PBXProject "Screenomator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D2FD9C166149FB00619F7E /* Debug */,
+				79D2FD9D166149FB00619F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D2FD9E166149FB00619F7E /* Build configuration list for PBXNativeTarget "Screenomator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D2FD9F166149FB00619F7E /* Debug */,
+				79D2FDA0166149FB00619F7E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79D2FD77166149FA00619F7E /* Project object */;
+}
