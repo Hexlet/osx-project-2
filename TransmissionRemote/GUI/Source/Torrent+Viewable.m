@@ -11,11 +11,15 @@
 
 @implementation Torrent (Viewable)
 
+-(NSString *)torrentIdString {
+    return [NSString stringWithFormat:@"%ld", self.torrentId];
+}
+
 -(NSImage *)statusImage {
     return [NSImage imageNamed:[TorrentStatusImageNames[self.torrentState] copy]];
 }
 
--(NSUInteger)torrentComplete {
+-(double)torrentComplete {
     if (self.torrentState == STATE_CHECK_WAIT || self.torrentState == STATE_CHECK) {
         return self.torrentVerifyPercent;
     } else {
@@ -58,6 +62,10 @@
 }
 
 #pragma mark - KeyPathes
+
++(NSSet *)keyPathsForValuesAffectingTorrentIdString {
+    return [NSSet setWithObjects:@"torrentId", nil];
+}
 
 +(NSSet *)keyPathsForValuesAffectingStatusImage {
     return [NSSet setWithObjects:@"torrentState", nil];

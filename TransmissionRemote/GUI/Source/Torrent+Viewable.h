@@ -20,8 +20,9 @@ static const NSString* TorrentStatusImageNames[] = {
 
 @interface Torrent (Viewable)
 
+@property (readonly) NSString *torrentIdString;
 @property (readonly) NSImage *statusImage;
-@property (readonly) NSUInteger torrentComplete;
+@property (readonly) double torrentComplete;
 @property (readonly) BOOL isDownloading;
 @property (readonly) BOOL isWaiting;
 @property (readonly) BOOL isStopping;

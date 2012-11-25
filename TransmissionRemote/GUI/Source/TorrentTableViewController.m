@@ -8,6 +8,7 @@
 
 #import "TorrentTableViewController.h"
 #import "Torrent+Viewable.h"
+#import "TorrentWindowController.h"
 
 @implementation TorrentTableViewController
 
@@ -15,10 +16,16 @@
     self = [super init];
     if (self) {
         self.torrentsArray = [NSMutableArray array];
+        torrentWindows = [NSMutableDictionary dictionary];
         self.sortingType = 0;
         [self registerNotifications];
     }
     return self;
+}
+
+-(void)awakeFromNib {
+    [_tableView setTarget:self];
+    [_tableView setDoubleAction:@selector(tableViewDoubleClick:)];
 }
 
 -(void)dealloc {
@@ -171,7 +178,7 @@
                             }
                         }
                         if (torrent.torrentVerifyPercent != update.torrentVerifyPercent) {
-                            if (torrent.torrentVerifyPercent > 0 && update.torrentVerifyPercent == 0) {
+                            if (torrent.torrentVerifyPercent > 0 && update.torrentVerifyPercent == 0 && torrent.uploadRatio != -1) {
                                 [[NSNotificationCenter defaultCenter] postNotificationName:@"TorrentVerified" object:torrent];
                             }
                             torrent.torrentVerifyPercent = update.torrentVerifyPercent;
@@ -197,6 +204,7 @@
             [self fullUpdateTorrentsRequestWithIds:ids];
         }
         if([removedTorrents count] > 0) {
+            [self removeTorrentWindows:removedTorrents];
             [_arrayController removeObjects:removedTorrents];
         }
     }
@@ -206,8 +214,15 @@
     NSMutableArray *torrents = [notification object];
     if (torrents) {
         @synchronized(_arrayController) {
-            [_torrentsArray addObjectsFromArray:[torrents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"NOT (torrentId IN %@)", [_torrentsArray valueForKeyPath:@"torrentId"]]]];
-            [_arrayController rearrangeObjects];
+            NSArray *newTorrents = [torrents filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"NOT (torrentId IN %@)", [_torrentsArray valueForKeyPath:@"torrentId"]]];
+            if ([newTorrents count] > 0) {
+                [_torrentsArray addObjectsFromArray:newTorrents];
+                [_arrayController rearrangeObjects];
+                [_arrayController setSelectedObjects:newTorrents];
+                for(Torrent *torrent in newTorrents) {
+                    [self showTorrent:torrent];
+                }
+            }
         }
     }
 }
@@ -224,6 +239,10 @@
 
 -(void)torrentsStartRequestWithIds:(NSString *)aIds {
     [[NSNotificationCenter defaultCenter] postNotificationName:@"TorrentsStartRequest" object:aIds];
+}
+
+-(void)torrentsStartNowRequestWithIds:(NSString *)aIds {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"TorrentsStartNowRequest" object:aIds];
 }
 
 -(void)torrentsVerifyRequestWithIds:(NSString *)aIds {
@@ -252,6 +271,14 @@
 }
 
 - (IBAction)startTorrentsAction:(id)sender {
+    NSArray *selected = [self selectedTorrens];
+    if ([selected count] > 0) {
+        NSString * ids = [[selected valueForKeyPath:@"torrentId"] componentsJoinedByString:@","];
+        [self torrentsStartRequestWithIds:ids];
+    }
+}
+
+- (IBAction)startNowTorrentsAction:(id)sender {
     NSArray *selected = [self selectedTorrens];
     if ([selected count] > 0) {
         NSString * ids = [[selected valueForKeyPath:@"torrentId"] componentsJoinedByString:@","];
@@ -301,6 +328,32 @@
         self.menuSortBySize.state = 0;
         item.state = 1;
         self.sortingType = [item tag];
+    }
+}
+
+-(void)removeTorrentWindows:(NSArray *)torrents {
+    for(Torrent *torrent in torrents) {
+        if (torrent) {
+            [torrentWindows removeObjectForKey:torrent.torrentIdString];
+        }
+    }
+}
+
+-(void)showTorrent:(Torrent *)torrent {
+    if (torrent) {
+        TorrentWindowController *controller = [torrentWindows valueForKey:torrent.torrentIdString];
+        if (!controller) {
+            controller = [[TorrentWindowController alloc] initWithTorrent:torrent];
+            [torrentWindows setValue:controller forKey:torrent.torrentIdString];
+        }
+        [controller showWindow:self];
+    }
+}
+
+-(void)tableViewDoubleClick:(id)object {
+    NSInteger row = [_tableView clickedRow];
+    if (row != -1) {
+        [self showTorrent:[[_arrayController arrangedObjects] objectAtIndex:row]];
     }
 }
 

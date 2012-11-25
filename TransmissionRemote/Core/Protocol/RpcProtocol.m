@@ -15,16 +15,18 @@
 -(id)init {
     self = [super init];
     if (self) {
-        NSString *fullTorrentFields = @"\"id\", \"name\", \"status\", \"comment\", \"percentDone\", \"recheckProgress\", \"uploadRatio\", \"totalSize\"";
-        NSString *torrentFields = @"\"id\", \"status\", \"percentDone\", \"recheckProgress\", \"uploadRatio\"";
+        NSArray *fullTorrentFields = @[@"id", @"name", @"status", @"comment", @"percentDone", @"recheckProgress", @"uploadRatio", @"totalSize"];
+        NSArray *torrentFields = @[@"id", @"status", @"percentDone", @"recheckProgress", @"uploadRatio"];
         
-        sessionGet = @"{ \"method\": \"session-get\" }";
-        torrentsInitialize = [NSString stringWithFormat: @"{ \"method\": \"torrent-get\", \"arguments\": { \"fields\" : [%@] } }", fullTorrentFields] ;
-        torrentsUpdate = [NSString stringWithFormat:@"{ \"method\": \"torrent-get\", \"arguments\": { \"fields\" : [%@] } }", torrentFields];
-        torrentsFullUpdate = [NSString stringWithFormat:@"{ \"method\": \"torrent-get\", \"arguments\": { \"fields\" : [%@], \"ids\": [%@] } }", fullTorrentFields, @"%@"];
+        sessionGet = [self jsonQuery:@{ @"method": @"session-get" }];
+        torrentsInitialize = [self jsonQuery:@{@"method": @"torrent-get", @"arguments": @{ @"fields": fullTorrentFields } }];
+        torrentsUpdate = [self jsonQuery:@{@"method": @"torrent-get", @"arguments": @{ @"fields": torrentFields } }];
+
+        torrentsFullUpdate = [NSString stringWithFormat:@"{ \"method\": \"torrent-get\", \"arguments\": { \"fields\" : [\"%@\"], \"ids\": [%@] } }", [fullTorrentFields componentsJoinedByString:@"\",\""], @"%@"];
         
         torrentStop = @"{ \"method\": \"torrent-stop\", \"arguments\": { \"ids\": [%@] } }";
         torrentStart = @"{ \"method\": \"torrent-start\", \"arguments\": { \"ids\": [%@] } }";
+        torrentStartNow = @"{ \"method\": \"torrent-start-now\", \"arguments\": { \"ids\": [%@] } }";
         torrentVerify = @"{ \"method\": \"torrent-verify\", \"arguments\": { \"ids\": [%@] } }";
         torrentRemove = @"{ \"method\": \"torrent-remove\", \"arguments\": { \"ids\": [%@], \"delete-local-data\": %@ } }";
         torrentAddFile = @"{ \"method\": \"torrent-add\", \"arguments\": { \"paused\": true, \"metainfo\": \"%@\" } }";
@@ -41,7 +43,18 @@
     return self;
 }
 
-#pragma mark - Requests
+#pragma mark - Query Builder
+
+-(NSString *)jsonQuery:(NSDictionary *)dictionary {
+    NSError *error;
+    NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dictionary options:0 error:&error];
+    if (error) {
+        NSLog(@"Json Error: %@", error);
+        return nil;
+    } else {
+        return [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    }
+}
 
 #pragma mark - Requests session-get
 -(NSUInteger)sessionGetTag {
@@ -52,17 +65,27 @@
     return sessionGet;
 }
 
+#pragma mark - Requests session-set
+
+-(NSUInteger)sessionSetTag {
+    return 2;
+}
+
+-(NSString *)sessionSetQueryWithStatus:(ServerStatus *)status {
+    return [self jsonQuery:@{ @"method": @"session-set", @"arguments": @{ @"alt-speed-enabled": status.alternativeSpeed ? @"true" : @"false" } }];
+}
+
 #pragma mark - Requests torrent-get
 
 -(NSUInteger)torrentGetInitializeTag {
-    return 2;
+    return 3;
 }
 -(NSString *)torrentGetInitializeQuery {
     return torrentsInitialize;
 }
 
 -(NSUInteger)torrentGetUpdateTag {
-    return 3;
+    return 4;
 }
 
 -(NSString *)torrentGetUpdateQuery {
@@ -70,7 +93,7 @@
 }
 
 -(NSUInteger)torrentGetFullUpdateTag {
-    return 4;
+    return 5;
 }
 
 -(NSString *)torrentGetFullUpdateQueryWithIds:(NSString *)aIds {
@@ -78,7 +101,7 @@
 }
 
 -(NSUInteger)torrentStopTag {
-    return 5;
+    return 6;
 }
 
 -(NSString *)torrentStopQueryWithIds:(NSString *)aIds {
@@ -86,15 +109,24 @@
 }
 
 -(NSUInteger)torrentStartTag {
-    return 6;
+    return 7;
 }
 
 -(NSString *)torrentStartQueryWithIds:(NSString *)aIds {
     return [NSString stringWithFormat:torrentStart, aIds];
 }
 
--(NSUInteger)torrentVerifyTag {
+-(NSUInteger)torrentStartNowTag {
     return 7;
+}
+
+-(NSString *)torrentStartNowQueryWithIds:(NSString *)aIds {
+    return [NSString stringWithFormat:torrentStartNow, aIds];
+}
+
+
+-(NSUInteger)torrentVerifyTag {
+    return 8;
 }
 
 -(NSString *)torrentVerifyQueryWithIds:(NSString *)aIds {
@@ -102,7 +134,7 @@
 }
 
 -(NSUInteger)torrentRemoveTag {
-    return 8;
+    return 9;
 }
 
 -(NSString *)torrentRemoveQueryWithIds:(NSString *)aIds andDeleteLocalData:(BOOL)useDeleteLocalData {
@@ -110,7 +142,7 @@
 }
 
 -(NSUInteger)torrentAddFileTag {
-    return 9;
+    return 10;
 }
 
 -(NSString *)torrentAddFileQueryWithData:(NSString *)fileData {
@@ -119,78 +151,6 @@
 
 
 #pragma mark - Proceeding response
-
--(BOOL)proceedResponse:(NSData *)aResponseData andTag:(NSUInteger)aTag {
-    NSError *error;
-    id jsonData = [NSJSONSerialization JSONObjectWithData:aResponseData options:NSJSONReadingMutableContainers error:&error];
-    BOOL success = [[jsonData valueForKey:@"result"] isEqualToString:@"success"];
-    if (success) {
-        // success request
-        NSDictionary *arguments = [jsonData valueForKey:@"arguments"];
-        if (arguments) {
-            [self procceedResult:arguments withTag:aTag];
-        }
-    } else {
-        // error request
-        NSLog(@"Serialization error: %@", [[NSString alloc] initWithData:aResponseData encoding:NSUTF8StringEncoding]);
-    }
-    return success;
-}
-
--(void)procceedResult:(NSDictionary *)aResult withTag:(NSUInteger)aTag {
-    id data = nil;
-    switch (aTag) {
-        case 1:
-            // session-get
-            [self proceedSessionGetResult:aResult];
-            break;
-            
-        case 2:
-            // torrent-get initialize
-            [self proceedTorrentInitializeGetResult:aResult];
-            break;
-            
-        case 3:
-            // torrent-get update
-            [self proceedTorrentUpdateGetResult:aResult];
-            break;
-            
-        case 4:
-            // torrent-get fullUpdate
-            [self proceedTorrentFullUpdateGetResult:aResult];
-            break;
-            
-        case 5:
-            // torrent-stop
-        case 6:
-            // torrent-start
-        case 7:
-            // torrent-verify
-        case 8:
-            // torrent-remove
-            break;
-        case 9:
-            // torrent-add
-            data = [self proceedAddTorrentGetResult:aResult];
-            break;
-            
-        default:
-            // unknown request
-            break;
-    }
-    if (_delegate) {
-        [_delegate didRequestReceivedWithTag:aTag andData:data];
-    }
-}
-
--(void)proceedSessionGetResult:(NSDictionary *)aResult {
-    if (aResult) {
-        ServerStatus *serverStatus = [[ServerStatus alloc] init];
-        serverStatus.connected = YES;
-        serverStatus.version = [NSString stringWithFormat:@"Transmission %@", [aResult objectForKey:@"version"]];
-        [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateServerStatusResponse" object:serverStatus];
-    }
-}
 
 -(Torrent *)torrentFromObject:(id)aObject {
     Torrent *torrent = [[Torrent alloc] init];
@@ -217,27 +177,105 @@
     }
 }
 
--(void)extractTorrentsFromDictionary:(NSDictionary *)aDictionary andPostNotificationWithName:(NSString *)aNotificationName {
-    NSMutableArray *torrents = [self torrentsFromDictionary:aDictionary];
-    if (torrents && torrents.count > 0) {
-        [[NSNotificationCenter defaultCenter] postNotificationName:aNotificationName object:torrents];
+
+-(BOOL)proceedResponse:(NSData *)aResponseData andTag:(NSUInteger)aTag {
+    NSError *error;
+    id jsonData = [NSJSONSerialization JSONObjectWithData:aResponseData options:NSJSONReadingMutableContainers error:&error];
+    BOOL success = [[jsonData valueForKey:@"result"] isEqualToString:@"success"];
+    if (success) {
+        // success request
+        NSDictionary *arguments = [jsonData valueForKey:@"arguments"];
+        if (arguments) {
+            [self procceedResult:arguments withTag:aTag];
+        }
+    } else {
+        // error request
+        NSLog(@"Serialization error: %@", [[NSString alloc] initWithData:aResponseData encoding:NSUTF8StringEncoding]);
+    }
+    return success;
+}
+
+-(void)procceedResult:(NSDictionary *)aResult withTag:(NSUInteger)aTag {
+    switch (aTag) {
+        case 4:
+            // torrent-get update
+            [self proceedTorrentUpdateGetResult:aResult];
+            break;
+
+        case 5:
+            // torrent-get fullUpdate
+            [self proceedTorrentFullUpdateGetResult:aResult];
+            break;
+            
+        case 1:
+            // session-get
+            [self proceedSessionGetResult:aResult];
+            break;
+
+        case 2:
+            // session-set
+            //[self proceedSessionGetResult:aResult];
+            break;
+            
+        case 3:
+            // torrent-get initialize
+            [self proceedTorrentInitializeGetResult:aResult];
+            break;
+            
+        case 6:
+            // torrent-stop
+        case 7:
+            // torrent-start
+        case 8:
+            // torrent-verify
+        case 9:
+            // torrent-remove
+            break;
+        case 10:
+            // torrent-add
+            [self proceedAddTorrentGetResult:aResult];
+            break;
+            
+        default:
+            // unknown request
+            break;
+    }
+}
+
+-(void)proceedSessionGetResult:(NSDictionary *)aResult {
+    if (aResult) {
+        ServerStatus *serverStatus = [[ServerStatus alloc] init];
+        serverStatus.connected = YES;
+        serverStatus.version = [NSString stringWithFormat:@"Transmission %@", [aResult objectForKey:@"version"]];
+        serverStatus.alternativeSpeed = [[aResult objectForKey:@"alt-speed-enabled"] boolValue];
+        if (_delegate) {
+            [_delegate didSessionGetRequestReceived:serverStatus];
+        }
     }
 }
 
 -(void)proceedTorrentInitializeGetResult:(NSDictionary *)aResult {
-    [self extractTorrentsFromDictionary:[aResult valueForKey:@"torrents"] andPostNotificationWithName:@"InitializeTorrentsResponse"];
+    if (_delegate) {
+        [_delegate didInitializeTorrentsRequestReceived:[self torrentsFromDictionary:[aResult valueForKey:@"torrents"]]];
+    }
 }
 
 -(void)proceedTorrentUpdateGetResult:(NSDictionary *)aResult {
-    [self extractTorrentsFromDictionary:[aResult valueForKey:@"torrents"] andPostNotificationWithName:@"UpdateTorrentsResponse"];
+    if (_delegate) {
+        [_delegate didUpdateTorrentsRequestReceived:[self torrentsFromDictionary:[aResult valueForKey:@"torrents"]]];
+    }
 }
 
 -(void)proceedTorrentFullUpdateGetResult:(NSDictionary *)aResult {
-    [self extractTorrentsFromDictionary:[aResult valueForKey:@"torrents"] andPostNotificationWithName:@"FullUpdateTorrentsResponse"];
+    if (_delegate) {
+        [_delegate didFullUpdateTorrentsRequestReceived:[self torrentsFromDictionary:[aResult valueForKey:@"torrents"]]];
+    }
 }
 
--(id)proceedAddTorrentGetResult:(NSDictionary *)aResult {
-    return [NSString stringWithFormat:@"%ld", [[[aResult valueForKey:@"torrent-added"] valueForKey:@"id"] unsignedIntegerValue]];
+-(void)proceedAddTorrentGetResult:(NSDictionary *)aResult {
+    if (_delegate) {
+        [_delegate didAddTorrentsRequestReceived:[[[aResult valueForKey:@"torrent-added"] valueForKey:@"id"] unsignedIntegerValue]];
+    }
 }
 
 @end

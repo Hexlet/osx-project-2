@@ -40,11 +40,13 @@
     [self unRegisterNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(connectRequestWithNotification:) name:@"ConnectRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sessionRequestWithNotification:) name:@"SessionRequest" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(sessionSetRequestWithNotification:) name:@"SessionSetRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateTorrentsRequestWithNotification:) name:@"UpdateTorrentRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(fullUpdateTorrentsRequestWithNotification:) name:@"FullUpdateTorrentsRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateRequestInterval:) name:@"UpdateRequestInterval" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(torrentsStopRequestWithNotification:) name:@"TorrentsStopRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(torrentsStartRequestWithNotification:) name:@"TorrentsStartRequest" object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(torrentsStartNowRequestWithNotification:) name:@"TorrentsStartNowRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(torrentsVerifyRequestWithNotification:) name:@"TorrentsVerifyRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(torrentsRemoveRequestWithNotification:) name:@"TorrentsRemoveRequest" object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(addTorrentFileRequestWithNotification:) name:@"AddTorrentFileRequest" object:nil];
@@ -73,6 +75,13 @@
     [self sessionGet];
 }
 
+-(void)sessionSetRequestWithNotification:(NSNotification *)notification {
+    ServerStatus *status = [notification object];
+    if (status) {
+        [self sessionSetWithStatus:status];
+    }
+}
+
 -(void)updateTorrentsRequestWithNotification:(NSNotification *)notification {
     [self torrentGetUpdate];
 }
@@ -95,6 +104,13 @@
     NSString *ids = [notification object];
     if (ids) {
         [self torrentsStartWithIds:ids];
+    }
+}
+
+-(void)torrentsStartNowRequestWithNotification:(NSNotification *)notification {
+    NSString *ids = [notification object];
+    if (ids) {
+        [self torrentsStartNowWithIds:ids];
     }
 }
 
@@ -185,6 +201,10 @@
     [self requestWithData:[rpcProtocol sessionGetQuery] andTag:[rpcProtocol sessionGetTag]];
 }
 
+-(void)sessionSetWithStatus:(ServerStatus *)status {
+    [self requestWithData:[rpcProtocol sessionSetQueryWithStatus:status] andTag:[rpcProtocol sessionSetTag]];
+}
+
 -(void)torrentGetInitialize {
     [self requestWithData:[rpcProtocol torrentGetInitializeQuery] andTag:[rpcProtocol torrentGetInitializeTag]];
 }
@@ -203,6 +223,10 @@
 
 -(void)torrentsStartWithIds:(NSString *)aIds {
     [self requestWithData:[rpcProtocol torrentStartQueryWithIds:aIds] andTag:[rpcProtocol torrentStartTag]];
+}
+
+-(void)torrentsStartNowWithIds:(NSString *)aIds {
+    [self requestWithData:[rpcProtocol torrentStartNowQueryWithIds:aIds] andTag:[rpcProtocol torrentStartNowTag]];
 }
 
 -(void)torrentsVerifyWithIds:(NSString *)aIds {
@@ -253,12 +277,34 @@
 
 #pragma mark - <RpcProtocolHandlerDelegate>
 
--(void)didRequestReceivedWithTag:(NSUInteger)aTag andData:(id)data {
-    if (aTag == [rpcProtocol torrentGetUpdateTag] || aTag == [rpcProtocol torrentGetInitializeTag]) {
-        [self performUpdateRequest];
-    } else if (aTag == [rpcProtocol torrentAddFileTag]) {
-        [self torrentGetFullUpdateWithIds:data];
+-(void)didSessionGetRequestReceived:(ServerStatus *)serverStatus {
+    if (serverStatus) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateServerStatusResponse" object:serverStatus];
     }
+}
+
+-(void)didInitializeTorrentsRequestReceived:(NSArray *)torrents {
+    if (torrents && torrents.count > 0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"InitializeTorrentsResponse" object:torrents];
+    }
+    [self performUpdateRequest];
+}
+
+-(void)didUpdateTorrentsRequestReceived:(NSArray *)torrents {
+    if (torrents && torrents.count > 0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateTorrentsResponse" object:torrents];
+    }
+    [self performUpdateRequest];
+}
+
+-(void)didFullUpdateTorrentsRequestReceived:(NSArray *)torrents {
+    if (torrents && torrents.count > 0) {
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"FullUpdateTorrentsResponse" object:torrents];
+    }
+}
+
+-(void)didAddTorrentsRequestReceived:(NSUInteger)torrentId {
+    [self torrentGetFullUpdateWithIds:[NSString stringWithFormat:@"%ld", torrentId]];
 }
 
 @end

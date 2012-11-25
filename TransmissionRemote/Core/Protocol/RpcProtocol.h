@@ -11,11 +11,13 @@
 
 @interface RpcProtocol : NSObject {
     NSString *sessionGet;
+    NSString *sessionSet;
     NSString *torrentsInitialize;
     NSString *torrentsUpdate;
     NSString *torrentsFullUpdate;
     NSString *torrentStop;
     NSString *torrentStart;
+    NSString *torrentStartNow;
     NSString *torrentVerify;
     NSString *torrentRemove;
     NSString *torrentAddFile;
@@ -28,6 +30,9 @@
 
 -(NSUInteger)sessionGetTag;
 -(NSString *)sessionGetQuery;
+
+-(NSUInteger)sessionSetTag;
+-(NSString *)sessionSetQueryWithStatus:(ServerStatus *)status;
 
 -(NSUInteger)torrentGetInitializeTag;
 -(NSString *)torrentGetInitializeQuery;
@@ -43,6 +48,9 @@
 
 -(NSUInteger)torrentStartTag;
 -(NSString *)torrentStartQueryWithIds:(NSString *)aIds;
+
+-(NSUInteger)torrentStartNowTag;
+-(NSString *)torrentStartNowQueryWithIds:(NSString *)aIds;
 
 -(NSUInteger)torrentVerifyTag;
 -(NSString *)torrentVerifyQueryWithIds:(NSString *)aIds;
