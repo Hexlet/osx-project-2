@@ -29,9 +29,9 @@ Remotely, using **iPitbul**, user is able to:
 ***
 ##Behaviour
 ####UML Use Case Diagram
-![Use Case Diagram](http://yuml.me/174421b6)
+![Use Case Diagram](https://raw.github.com/moleksyuk/osx-project-2/master/Docs/UseCaseDiagram.png)
 ####UML Activiy Diagram
-![Activiy Diagram](http://yuml.me/0228960d)
+![Activiy Diagram](https://raw.github.com/moleksyuk/osx-project-2/master/Docs/ActivityDiagram.png)
 
 
 `Check Configuration` - during each start of the application it should check whether it is configured or not.
