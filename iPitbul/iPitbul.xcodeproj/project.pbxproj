@@ -18,12 +18,26 @@
 		CB73CEDC165D73B200FFF9B8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CEDB165D73B200FFF9B8 /* Default-568h@2x.png */; };
 		CB73CEDF165D73B200FFF9B8 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB73CEDD165D73B200FFF9B8 /* MainStoryboard.storyboard */; };
 		CB73CEE2165D73B200FFF9B8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73CEE1165D73B200FFF9B8 /* MainViewController.m */; };
-		CB73CEE5165D73B300FFF9B8 /* FlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73CEE4165D73B300FFF9B8 /* FlipsideViewController.m */; };
+		CB73CEE5165D73B300FFF9B8 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73CEE4165D73B300FFF9B8 /* AboutViewController.m */; };
 		CB73CEED165D73B300FFF9B8 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEEC165D73B300FFF9B8 /* SenTestingKit.framework */; };
 		CB73CEEE165D73B300FFF9B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC5165D73B200FFF9B8 /* UIKit.framework */; };
 		CB73CEEF165D73B300FFF9B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC7165D73B200FFF9B8 /* Foundation.framework */; };
 		CB73CEF7165D73B300FFF9B8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB73CEF5165D73B300FFF9B8 /* InfoPlist.strings */; };
 		CB73CEFA165D73B300FFF9B8 /* iPitbulTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB73CEF9165D73B300FFF9B8 /* iPitbulTests.m */; };
+		CB73CF0A165D746600FFF9B8 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF03165D746600FFF9B8 /* Icon-72.png */; };
+		CB73CF0B165D746600FFF9B8 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF03165D746600FFF9B8 /* Icon-72.png */; };
+		CB73CF0C165D746600FFF9B8 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF04165D746600FFF9B8 /* Icon-Small-50.png */; };
+		CB73CF0D165D746600FFF9B8 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF04165D746600FFF9B8 /* Icon-Small-50.png */; };
+		CB73CF0E165D746600FFF9B8 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF05165D746600FFF9B8 /* Icon-Small.png */; };
+		CB73CF0F165D746600FFF9B8 /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF05165D746600FFF9B8 /* Icon-Small.png */; };
+		CB73CF10165D746600FFF9B8 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF06165D746600FFF9B8 /* Icon-Small@2x.png */; };
+		CB73CF11165D746600FFF9B8 /* Icon-Small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF06165D746600FFF9B8 /* Icon-Small@2x.png */; };
+		CB73CF12165D746600FFF9B8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF07165D746600FFF9B8 /* Icon.png */; };
+		CB73CF13165D746600FFF9B8 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF07165D746600FFF9B8 /* Icon.png */; };
+		CB73CF14165D746600FFF9B8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF08165D746600FFF9B8 /* Icon@2x.png */; };
+		CB73CF15165D746600FFF9B8 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF08165D746600FFF9B8 /* Icon@2x.png */; };
+		CB73CF16165D746600FFF9B8 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF09165D746600FFF9B8 /* iTunesArtwork */; };
+		CB73CF17165D746600FFF9B8 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = CB73CF09165D746600FFF9B8 /* iTunesArtwork */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,14 +67,21 @@
 		CB73CEDE165D73B200FFF9B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CB73CEE0165D73B200FFF9B8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		CB73CEE1165D73B200FFF9B8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		CB73CEE3165D73B200FFF9B8 /* FlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipsideViewController.h; sourceTree = "<group>"; };
-		CB73CEE4165D73B300FFF9B8 /* FlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipsideViewController.m; sourceTree = "<group>"; };
+		CB73CEE3165D73B200FFF9B8 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		CB73CEE4165D73B300FFF9B8 /* AboutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
 		CB73CEEB165D73B300FFF9B8 /* iPitbulTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iPitbulTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB73CEEC165D73B300FFF9B8 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		CB73CEF4165D73B300FFF9B8 /* iPitbulTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iPitbulTests-Info.plist"; sourceTree = "<group>"; };
 		CB73CEF6165D73B300FFF9B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		CB73CEF8165D73B300FFF9B8 /* iPitbulTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iPitbulTests.h; sourceTree = "<group>"; };
 		CB73CEF9165D73B300FFF9B8 /* iPitbulTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iPitbulTests.m; sourceTree = "<group>"; };
+		CB73CF03165D746600FFF9B8 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "../../../../Icon-72.png"; sourceTree = "<group>"; };
+		CB73CF04165D746600FFF9B8 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "../../../../Icon-Small-50.png"; sourceTree = "<group>"; };
+		CB73CF05165D746600FFF9B8 /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small.png"; path = "../../../../Icon-Small.png"; sourceTree = "<group>"; };
+		CB73CF06165D746600FFF9B8 /* Icon-Small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small@2x.png"; path = "../../../../Icon-Small@2x.png"; sourceTree = "<group>"; };
+		CB73CF07165D746600FFF9B8 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = ../../../../Icon.png; sourceTree = "<group>"; };
+		CB73CF08165D746600FFF9B8 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "../../../../Icon@2x.png"; sourceTree = "<group>"; };
+		CB73CF09165D746600FFF9B8 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; name = iTunesArtwork; path = ../../../../iTunesArtwork; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,8 +146,8 @@
 				CB73CEDD165D73B200FFF9B8 /* MainStoryboard.storyboard */,
 				CB73CEE0165D73B200FFF9B8 /* MainViewController.h */,
 				CB73CEE1165D73B200FFF9B8 /* MainViewController.m */,
-				CB73CEE3165D73B200FFF9B8 /* FlipsideViewController.h */,
-				CB73CEE4165D73B300FFF9B8 /* FlipsideViewController.m */,
+				CB73CEE3165D73B200FFF9B8 /* AboutViewController.h */,
+				CB73CEE4165D73B300FFF9B8 /* AboutViewController.m */,
 				CB73CECC165D73B200FFF9B8 /* Supporting Files */,
 			);
 			path = iPitbul;
@@ -135,6 +156,13 @@
 		CB73CECC165D73B200FFF9B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB73CF03165D746600FFF9B8 /* Icon-72.png */,
+				CB73CF04165D746600FFF9B8 /* Icon-Small-50.png */,
+				CB73CF05165D746600FFF9B8 /* Icon-Small.png */,
+				CB73CF06165D746600FFF9B8 /* Icon-Small@2x.png */,
+				CB73CF07165D746600FFF9B8 /* Icon.png */,
+				CB73CF08165D746600FFF9B8 /* Icon@2x.png */,
+				CB73CF09165D746600FFF9B8 /* iTunesArtwork */,
 				CB73CECD165D73B200FFF9B8 /* iPitbul-Info.plist */,
 				CB73CECE165D73B200FFF9B8 /* InfoPlist.strings */,
 				CB73CED1165D73B200FFF9B8 /* main.m */,
@@ -241,6 +269,13 @@
 				CB73CEDA165D73B200FFF9B8 /* Default@2x.png in Resources */,
 				CB73CEDC165D73B200FFF9B8 /* Default-568h@2x.png in Resources */,
 				CB73CEDF165D73B200FFF9B8 /* MainStoryboard.storyboard in Resources */,
+				CB73CF0A165D746600FFF9B8 /* Icon-72.png in Resources */,
+				CB73CF0C165D746600FFF9B8 /* Icon-Small-50.png in Resources */,
+				CB73CF0E165D746600FFF9B8 /* Icon-Small.png in Resources */,
+				CB73CF10165D746600FFF9B8 /* Icon-Small@2x.png in Resources */,
+				CB73CF12165D746600FFF9B8 /* Icon.png in Resources */,
+				CB73CF14165D746600FFF9B8 /* Icon@2x.png in Resources */,
+				CB73CF16165D746600FFF9B8 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +284,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB73CEF7165D73B300FFF9B8 /* InfoPlist.strings in Resources */,
+				CB73CF0B165D746600FFF9B8 /* Icon-72.png in Resources */,
+				CB73CF0D165D746600FFF9B8 /* Icon-Small-50.png in Resources */,
+				CB73CF0F165D746600FFF9B8 /* Icon-Small.png in Resources */,
+				CB73CF11165D746600FFF9B8 /* Icon-Small@2x.png in Resources */,
+				CB73CF13165D746600FFF9B8 /* Icon.png in Resources */,
+				CB73CF15165D746600FFF9B8 /* Icon@2x.png in Resources */,
+				CB73CF17165D746600FFF9B8 /* iTunesArtwork in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +320,7 @@
 				CB73CED2165D73B200FFF9B8 /* main.m in Sources */,
 				CB73CED6165D73B200FFF9B8 /* AppDelegate.m in Sources */,
 				CB73CEE2165D73B200FFF9B8 /* MainViewController.m in Sources */,
-				CB73CEE5165D73B300FFF9B8 /* FlipsideViewController.m in Sources */,
+				CB73CEE5165D73B300FFF9B8 /* AboutViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -453,6 +495,7 @@
 				CB73CEFF165D73B300FFF9B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB73CF00165D73B300FFF9B8 /* Build configuration list for PBXNativeTarget "iPitbulTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +504,7 @@
 				CB73CF02165D73B300FFF9B8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

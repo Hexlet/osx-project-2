@@ -6,8 +6,8 @@
 //  Copyright (c) 2012 Mykhailo Oleksiuk. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "AboutViewController.h"
 
-@interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
+@interface MainViewController : UIViewController <AboutViewControllerDelegate>
 
 @end

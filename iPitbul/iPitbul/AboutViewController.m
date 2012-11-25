@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Mykhailo Oleksiuk. All rights reserved.
 //
 
-#import "FlipsideViewController.h"
+#import "AboutViewController.h"
 
-@interface FlipsideViewController ()
+@interface AboutViewController ()
 
 @end
 
-@implementation FlipsideViewController
+@implementation AboutViewController
 
 - (void)viewDidLoad
 {
@@ -30,7 +30,7 @@
 
 - (IBAction)done:(id)sender
 {
-    [self.delegate flipsideViewControllerDidFinish:self];
+    [self.delegate aboutViewControllerDidFinish:self];
 }
 
 @end

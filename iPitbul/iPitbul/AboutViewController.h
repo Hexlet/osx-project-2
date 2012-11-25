@@ -8,15 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class FlipsideViewController;
+@class AboutViewController;
 
-@protocol FlipsideViewControllerDelegate
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller;
+@protocol AboutViewControllerDelegate
+- (void)aboutViewControllerDidFinish:(AboutViewController *)controller;
 @end
 
-@interface FlipsideViewController : UIViewController
+@interface AboutViewController : UIViewController
 
-@property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (weak, nonatomic) id <AboutViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
 

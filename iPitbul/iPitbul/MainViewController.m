@@ -28,7 +28,7 @@
 
 #pragma mark - Flipside View
 
-- (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
+- (void)aboutViewControllerDidFinish:(AboutViewController *)controller
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }

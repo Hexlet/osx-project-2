@@ -14,15 +14,6 @@
 
 @implementation SettingsViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -34,5 +25,18 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - Actions
+
+- (IBAction)save:(id)sender
+{
+    [self.delegate settingsViewControllerDidFinish:self];
+}
+
+- (IBAction)cancel:(id)sender
+{
+    [self.delegate settingsViewControllerDidFinish:self];
+}
+
 
 @end
