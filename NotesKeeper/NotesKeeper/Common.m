@@ -39,4 +39,12 @@ static EnumEditMode _editmode = ENUM_READ;
     UIAlertView *achtung = [[UIAlertView alloc] initWithTitle:caption message:messageText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     [achtung show];
 }
++ (NSString *) encrypt : (NSString *) text : (NSString *) password
+{
+	return @"under construction";
+}
++ (NSString *) decrypt : (NSString *) text : (NSString *) password
+{
+	return @"under construction";
+}
 @end
