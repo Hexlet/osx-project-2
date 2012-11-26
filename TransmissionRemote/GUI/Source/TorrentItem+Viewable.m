@@ -7,16 +7,28 @@
 //
 
 #import "TorrentItem+Viewable.h"
-#import "NSNumber+UnitString.h"
 
 @implementation TorrentItem (Viewable)
 
 -(NSString *)humanizedItemSize {
-    return [[NSNumber numberWithUnsignedInteger:self.itemSize] unitStringFromBytes];
+    return [NSByteCountFormatter stringFromByteCount:self.itemSize countStyle:NSByteCountFormatterCountStyleBinary];
 }
 
 -(NSString *)humanizedCompletedSize {
-    return [[NSNumber numberWithUnsignedInteger:self.completedSize] unitStringFromBytes];
+    if (self.itemSize) {
+        NSNumberFormatter *formatter = [[NSNumberFormatter alloc] init];
+        [formatter setMinimum:[NSNumber numberWithInt:0]];
+        [formatter setMaximum:[NSNumber numberWithInt:100]];
+        [formatter setMinimumIntegerDigits:1];
+        [formatter setMaximumFractionDigits:2];
+        return [NSString stringWithFormat:@"%@ %%", [formatter stringFromNumber:[NSNumber numberWithDouble:(100.00 * self.completedSize / self.itemSize)]]];
+    } else {
+        return @"∞";
+    }
+}
+
+-(BOOL)isLeaf {
+    return (!self.childs);
 }
 
 #pragma mark - KeyPathes

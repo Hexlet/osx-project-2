@@ -16,12 +16,12 @@
 -(id)init {
     self = [super init];
     if (self) {
-        NSArray *fullTorrentFields = @[@"id", @"name", @"status", @"comment", @"percentDone", @"recheckProgress", @"uploadRatio", @"totalSize", @"files"];
+        NSArray *fullTorrentFields = @[@"id", @"name", @"status", @"comment", @"percentDone", @"recheckProgress", @"uploadRatio", @"totalSize", @"files", @"fileStats"];
         NSArray *torrentFields = @[@"id", @"status", @"percentDone", @"recheckProgress", @"uploadRatio"];
         
         sessionGet = [self jsonQuery:@{ @"method": @"session-get" }];
         torrentsInitialize = [self jsonQuery:@{@"method": @"torrent-get", @"arguments": @{ @"fields": fullTorrentFields } }];
-        torrentsUpdate = [self jsonQuery:@{@"method": @"torrent-get", @"arguments": @{ @"fields": torrentFields } }];
+        torrentsUpdate = [self jsonQuery:@{@"method": @"torrent-get", @"arguments": @{ @"fields": torrentFields, @"ids": @"recently-active" } }];
 
         torrentsFullUpdate = [NSString stringWithFormat:@"{ \"method\": \"torrent-get\", \"arguments\": { \"fields\" : [\"%@\"], \"ids\": [%@] } }", [fullTorrentFields componentsJoinedByString:@"\",\""], @"%@"];
         
@@ -153,20 +153,21 @@
 
 #pragma mark - Proceeding response
 
--(NSArray *)torrentItemsFromObject:(id)aObject {
-    if (aObject) {
-        NSMutableArray *items = [NSMutableArray arrayWithCapacity:[aObject count]];
-        for (NSDictionary *item in aObject) {
-            if (item) {
-                TorrentItem *torrentItem = [[TorrentItem alloc] init];
-                torrentItem.itemName = [item valueForKey:@"name"];
-                torrentItem.itemSize = [[item valueForKey:@"length"] unsignedIntegerValue];
-                torrentItem.completedSize = [[item valueForKey:@"bytesCompleted"] unsignedIntegerValue];
-                torrentItem.isLeaf = YES;
-                [items addObject:torrentItem];
-            }
+-(NSArray *)torrentItemsFor:(NSArray *)files andStats:(NSArray *)stats{
+    if (files) {
+        NSUInteger count = [files count];
+        NSMutableArray *items = [NSMutableArray arrayWithCapacity:count];
+        for(NSUInteger i = 0; i < count; ++i) {
+            id item = [files objectAtIndex:i];
+            id stat = [stats objectAtIndex:i];
+            TorrentItem *torrentItem = [[TorrentItem alloc] init];
+            torrentItem.itemName = [item valueForKey:@"name"];
+            torrentItem.itemSize = [[item valueForKey:@"length"] unsignedIntegerValue];
+            torrentItem.completedSize = [[item valueForKey:@"bytesCompleted"] unsignedIntegerValue];
+            torrentItem.enabled = [stat boolForKey:@"wanted"];
+            [items addObject:torrentItem];
         }
-        return items;
+        return [items copy];
     } else {
         return nil;
     }
@@ -182,7 +183,7 @@
     torrent.torrentVerifyPercent = [[aObject valueForKey:@"recheckProgress"] doubleValue] * 100;
     torrent.uploadRatio = [[aObject valueForKey:@"uploadRatio"] doubleValue];
     torrent.totalSize = [[aObject valueForKey:@"totalSize"] unsignedIntegerValue];
-    torrent.items = [self torrentItemsFromObject:[aObject valueForKey:@"files"]];
+    torrent.items = [self torrentItemsFor:[aObject valueForKey:@"files"] andStats:[aObject valueForKey:@"fileStats"]];
     return torrent;
 }
 
@@ -289,8 +290,11 @@
 -(void)proceedTorrentUpdateGetResult:(NSDictionary *)aResult {
     if (_delegate) {
         [_delegate didUpdateTorrentsRequestReceived:[self torrentsFromDictionary:[aResult valueForKey:@"torrents"]]];
+        [_delegate didRemovedTorrentsRequestReceived:[aResult valueForKey:@"removed"]];
     }
 }
+
+
 
 -(void)proceedTorrentFullUpdateGetResult:(NSDictionary *)aResult {
     if (_delegate) {
