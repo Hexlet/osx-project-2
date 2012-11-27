@@ -49,7 +49,7 @@
             stateFilter = @"isWaiting == YES";
             break;
         case 4:
-            stateFilter = @"isStopping == YES";
+            stateFilter = @"isStopped == YES";
             break;
         default:
             break;
@@ -139,6 +139,7 @@
     NSMutableArray *torrents = [notification object];
     if (torrents) {
         @synchronized(_arrayController) {
+            [torrentWindows removeAllObjects];
             [_torrentsArray removeAllObjects];
             [_torrentsArray addObjectsFromArray:torrents];
             [_arrayController rearrangeObjects];
@@ -164,6 +165,7 @@
     NSMutableArray *torrents = [notification object];
     if (torrents) {
         NSMutableArray *newTorrents = [NSMutableArray array];
+        NSUInteger rateDownload = 0, rateUpload = 0;
         @synchronized(_arrayController) {
             BOOL needRearrange = NO;
             for (Torrent *update in torrents) {
@@ -179,17 +181,16 @@
                     Torrent *torrent = [_torrentsArray objectAtIndex:findedIndex];
                     if (torrent) {
                         if (torrent.torrentState != update.torrentState) {
-                            torrent.torrentState = update.torrentState;
                             if ([self.torrentStatusSegmentedControl selectedSegment] != 0) {
                                 needRearrange = YES;
                             }
                         }
+
                         if (torrent.torrentState == STATE_DOWNLOAD) {
                             if (torrent.torrentDownloadPercent != update.torrentDownloadPercent) {
-                                if (update.torrentDownloadPercent == 100) {
+                                if (update.torrentDownloadPercent >= 1.0) {
                                     [[NSNotificationCenter defaultCenter] postNotificationName:@"TorrentDownloaded" object:torrent];
                                 }
-                                torrent.torrentDownloadPercent = update.torrentDownloadPercent;
                                 if (self.sortingType == 2) {
                                     needRearrange = YES;
                                 }
@@ -200,24 +201,34 @@
                                 if (torrent.torrentVerifyPercent > 0 && update.torrentVerifyPercent == 0 && torrent.uploadRatio != -1) {
                                     [[NSNotificationCenter defaultCenter] postNotificationName:@"TorrentVerified" object:torrent];
                                 }
-                                torrent.torrentVerifyPercent = update.torrentVerifyPercent;
                             }
                         }
                         if (torrent.uploadRatio != update.uploadRatio) {
-                            torrent.uploadRatio = update.uploadRatio;
                             if (self.sortingType == 1) {
                                 needRearrange = YES;
                             }
                         }
+                        
+                        torrent.torrentState = update.torrentState;
+                        torrent.torrentDownloadPercent = update.torrentDownloadPercent;
+                        torrent.torrentVerifyPercent = update.torrentVerifyPercent;
+                        torrent.uploadRatio = update.uploadRatio;
+                        torrent.rateDownload = update.rateDownload;
+                        torrent.rateUpload = update.rateUpload;
+                        torrent.leftUntilDone = update.leftUntilDone;
                     }
                 } else {
                     [newTorrents addObject:update];
                 }
+                rateDownload += update.rateDownload;
+                rateUpload += update.rateUpload;
             }
             if (needRearrange) {
                 [_arrayController rearrangeObjects];
             }
         }
+        self.rateDownload = rateDownload;
+        self.rateUpload = rateUpload;
         if ([newTorrents count] > 0) {
             NSString *ids = [[newTorrents valueForKeyPath:@"torrentId"] componentsJoinedByString:@","];
             [self fullUpdateTorrentsRequestWithIds:ids];
@@ -366,7 +377,7 @@
     if (torrent) {
         TorrentWindowController *controller = [torrentWindows valueForKey:torrent.torrentIdString];
         if (!controller) {
-            controller = [[TorrentWindowController alloc] initWithTorrent:torrent];
+            controller = [[TorrentWindowController alloc] initWithTorrent:torrent andOptions:self.appOptions];
             [torrentWindows setValue:controller forKey:torrent.torrentIdString];
         }
         [controller showWindow:self];
