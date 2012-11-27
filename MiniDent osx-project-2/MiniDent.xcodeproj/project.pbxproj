@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77269A37166523BA00D2A86D /* Pos.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 77269A35166523BA00D2A86D /* Pos.1.png */; };
+		77269A38166523BA00D2A86D /* Pos.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 77269A36166523BA00D2A86D /* Pos.2.png */; };
 		77831B27165C1000009DA975 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77831B26165C1000009DA975 /* Cocoa.framework */; };
 		77831B31165C1000009DA975 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 77831B2F165C1000009DA975 /* InfoPlist.strings */; };
 		77831B33165C1000009DA975 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 77831B32165C1000009DA975 /* main.m */; };
@@ -14,11 +16,11 @@
 		77831B3A165C1000009DA975 /* EDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 77831B39165C1000009DA975 /* EDAppDelegate.m */; };
 		77831B3D165C1000009DA975 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77831B3B165C1000009DA975 /* MainMenu.xib */; };
 		77831B44165C10C1009DA975 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 77831B43165C10C1009DA975 /* README.md */; };
-		779DA4521664AC2E0016B3E1 /* Pos.1.png in Resources */ = {isa = PBXBuildFile; fileRef = 779DA4501664AC2E0016B3E1 /* Pos.1.png */; };
-		779DA4531664AC2E0016B3E1 /* Pos.2.png in Resources */ = {isa = PBXBuildFile; fileRef = 779DA4511664AC2E0016B3E1 /* Pos.2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		77269A35166523BA00D2A86D /* Pos.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pos.1.png; path = ../Pos.1.png; sourceTree = "<group>"; };
+		77269A36166523BA00D2A86D /* Pos.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pos.2.png; path = ../Pos.2.png; sourceTree = "<group>"; };
 		77831B22165C1000009DA975 /* MiniDent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniDent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77831B26165C1000009DA975 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		77831B29165C1000009DA975 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -33,8 +35,6 @@
 		77831B39165C1000009DA975 /* EDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EDAppDelegate.m; sourceTree = "<group>"; };
 		77831B3C165C1000009DA975 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		77831B43165C10C1009DA975 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		779DA4501664AC2E0016B3E1 /* Pos.1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pos.1.png; path = ../../../../../../../Desktop/Pos.1.png; sourceTree = "<group>"; };
-		779DA4511664AC2E0016B3E1 /* Pos.2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Pos.2.png; path = ../../../../../../../Desktop/Pos.2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,8 +100,8 @@
 		77831B2D165C1000009DA975 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				779DA4501664AC2E0016B3E1 /* Pos.1.png */,
-				779DA4511664AC2E0016B3E1 /* Pos.2.png */,
+				77269A35166523BA00D2A86D /* Pos.1.png */,
+				77269A36166523BA00D2A86D /* Pos.2.png */,
 				77831B43165C10C1009DA975 /* README.md */,
 				77831B2E165C1000009DA975 /* MiniDent-Info.plist */,
 				77831B2F165C1000009DA975 /* InfoPlist.strings */,
@@ -168,8 +168,8 @@
 				77831B37165C1000009DA975 /* Credits.rtf in Resources */,
 				77831B3D165C1000009DA975 /* MainMenu.xib in Resources */,
 				77831B44165C10C1009DA975 /* README.md in Resources */,
-				779DA4521664AC2E0016B3E1 /* Pos.1.png in Resources */,
-				779DA4531664AC2E0016B3E1 /* Pos.2.png in Resources */,
+				77269A37166523BA00D2A86D /* Pos.1.png in Resources */,
+				77269A38166523BA00D2A86D /* Pos.2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
