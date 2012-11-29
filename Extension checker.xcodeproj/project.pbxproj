@@ -11,8 +11,7 @@
 		C34C49A61655169700A16E73 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C34C49A41655169700A16E73 /* InfoPlist.strings */; };
 		C34C49A81655169700A16E73 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C34C49A71655169700A16E73 /* main.m */; };
 		C34C49AC1655169700A16E73 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C34C49AA1655169700A16E73 /* Credits.rtf */; };
-		C34C49AF1655169700A16E73 /* ECAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C34C49AE1655169700A16E73 /* ECAppDelegate.m */; };
-		C34C49B21655169700A16E73 /* ExtensionCheckerMain.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34C49B01655169700A16E73 /* ExtensionCheckerMain.xib */; };
+		C34C49B21655169700A16E73 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C34C49B01655169700A16E73 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,9 +25,7 @@
 		C34C49A71655169700A16E73 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C34C49A91655169700A16E73 /* Extension checker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Extension checker-Prefix.pch"; sourceTree = "<group>"; };
 		C34C49AB1655169700A16E73 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		C34C49AD1655169700A16E73 /* ECAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ECAppDelegate.h; sourceTree = "<group>"; };
-		C34C49AE1655169700A16E73 /* ECAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ECAppDelegate.m; sourceTree = "<group>"; };
-		C34C49B11655169700A16E73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ExtensionCheckerMain.xib; sourceTree = "<group>"; };
+		C34C49B11655169700A16E73 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,9 +79,7 @@
 		C34C49A11655169700A16E73 /* Extension checker */ = {
 			isa = PBXGroup;
 			children = (
-				C34C49AD1655169700A16E73 /* ECAppDelegate.h */,
-				C34C49AE1655169700A16E73 /* ECAppDelegate.m */,
-				C34C49B01655169700A16E73 /* ExtensionCheckerMain.xib */,
+				C34C49B01655169700A16E73 /* MainMenu.xib */,
 				C34C49A21655169700A16E73 /* Supporting Files */,
 			);
 			path = "Extension checker";
@@ -156,7 +151,7 @@
 			files = (
 				C34C49A61655169700A16E73 /* InfoPlist.strings in Resources */,
 				C34C49AC1655169700A16E73 /* Credits.rtf in Resources */,
-				C34C49B21655169700A16E73 /* ExtensionCheckerMain.xib in Resources */,
+				C34C49B21655169700A16E73 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,7 +163,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				C34C49A81655169700A16E73 /* main.m in Sources */,
-				C34C49AF1655169700A16E73 /* ECAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,12 +185,12 @@
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		C34C49B01655169700A16E73 /* ExtensionCheckerMain.xib */ = {
+		C34C49B01655169700A16E73 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				C34C49B11655169700A16E73 /* en */,
 			);
-			name = ExtensionCheckerMain.xib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
