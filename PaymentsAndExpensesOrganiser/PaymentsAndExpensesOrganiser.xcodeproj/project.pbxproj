@@ -13,6 +13,7 @@
 		847DD6C81666975E007B3E36 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 847DD6C61666975E007B3E36 /* Credits.rtf */; };
 		847DD6CB1666975E007B3E36 /* OrganizerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DD6CA1666975E007B3E36 /* OrganizerAppDelegate.m */; };
 		847DD6CE1666975E007B3E36 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847DD6CC1666975E007B3E36 /* MainMenu.xib */; };
+		847DD6E216673931007B3E36 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DD6E116673931007B3E36 /* Payment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		847DD6C91666975E007B3E36 /* OrganizerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganizerAppDelegate.h; sourceTree = "<group>"; };
 		847DD6CA1666975E007B3E36 /* OrganizerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizerAppDelegate.m; sourceTree = "<group>"; };
 		847DD6CD1666975E007B3E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		847DD6E016673931007B3E36 /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
+		847DD6E116673931007B3E36 /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				847DD6CA1666975E007B3E36 /* OrganizerAppDelegate.m */,
 				847DD6CC1666975E007B3E36 /* MainMenu.xib */,
 				847DD6BE1666975E007B3E36 /* Supporting Files */,
+				847DD6E016673931007B3E36 /* Payment.h */,
+				847DD6E116673931007B3E36 /* Payment.m */,
 			);
 			path = PaymentsAndExpensesOrganiser;
 			sourceTree = "<group>";
@@ -169,6 +174,7 @@
 			files = (
 				847DD6C41666975E007B3E36 /* main.m in Sources */,
 				847DD6CB1666975E007B3E36 /* OrganizerAppDelegate.m in Sources */,
+				847DD6E216673931007B3E36 /* Payment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +304,7 @@
 				847DD6D31666975E007B3E36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

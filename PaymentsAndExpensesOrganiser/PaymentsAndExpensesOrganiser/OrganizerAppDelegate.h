@@ -8,8 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface OrganizerAppDelegate : NSObject <NSApplicationDelegate>
+@interface OrganizerAppDelegate : NSObject <NSApplicationDelegate>{
+    NSMutableArray* payments;
+}
 
 @property (assign) IBOutlet NSWindow *window;
+@property (weak) IBOutlet NSTableView *tableView;
 
 @end
