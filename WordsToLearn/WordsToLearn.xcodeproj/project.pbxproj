@@ -24,6 +24,7 @@
 		CE47BFAA1669502E0086C57A /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47BFA41669502E0086C57A /* Word.m */; };
 		CE47BFAD16695B4E0086C57A /* iPhoneIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CE47BFAC16695B4E0086C57A /* iPhoneIcon_Small.png */; };
 		CE47BFAF16695B540086C57A /* iPhoneIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = CE47BFAE16695B540086C57A /* iPhoneIcon_Big.png */; };
+		CE774590166977550067F6A0 /* words.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE77458F166977550067F6A0 /* words.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		CE47BFA41669502E0086C57A /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
 		CE47BFAC16695B4E0086C57A /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Small.png; path = ../iPhoneIcon_Small.png; sourceTree = "<group>"; };
 		CE47BFAE16695B540086C57A /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Big.png; path = ../iPhoneIcon_Big.png; sourceTree = "<group>"; };
+		CE77458F166977550067F6A0 /* words.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = words.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				CE2DD18416694B44001B4DAD /* Default.png */,
 				CE2DD18616694B44001B4DAD /* Default@2x.png */,
 				CE2DD18816694B44001B4DAD /* Default-568h@2x.png */,
+				CE77458F166977550067F6A0 /* words.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				CE2DD18C16694B44001B4DAD /* MainStoryboard.storyboard in Resources */,
 				CE47BFAD16695B4E0086C57A /* iPhoneIcon_Small.png in Resources */,
 				CE47BFAF16695B540086C57A /* iPhoneIcon_Big.png in Resources */,
+				CE774590166977550067F6A0 /* words.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
