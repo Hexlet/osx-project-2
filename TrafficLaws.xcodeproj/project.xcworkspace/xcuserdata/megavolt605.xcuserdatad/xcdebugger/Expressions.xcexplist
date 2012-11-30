@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "-[TLAppDelegate typeChanged:]:TLAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.typeList.selectedItem.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "GLOBAL">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.typeList.selectedItem.tag">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TLQuizzArray quizzAtIndex:]:TLQuizzArray.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TLTest parser:foundCharacters:]:TLTest.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TLTestWindow nextQuestion]:TLTestWindow.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TLTest parser:didStartElement:namespaceURI:qualifiedName:attributes:]:TLTest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[attributeDict valueForKey: @&quot;No&quot;]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TLAppDelegate applicationDidFinishLaunching:]:TLAppDelegate.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.test.quizzes.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TLUtils makeRadioGroupWarppableWithWidth:]:TLUtils.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TLTest startNewTest:andQuizzNo:]:TLTest.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "[self.quizzes quizzAtIndex: selectedQuizzNo].questions">
+            </PersistentString>
+            <PersistentString
+               value = "[self.quizzes quizzAtIndex: selectedQuizzNo]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[TLTest parser:didEndElement:namespaceURI:qualifiedName:]:TLTest.m">
+      </ContextState>
+      <ContextState
+         contextName = "-[TLQuestionArray questionAtNumber:]:TLQuestionArray.m">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
