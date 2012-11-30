@@ -68,7 +68,6 @@
 		B3A525BD16616326001F5E75 /* noimage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3A525BC16616326001F5E75 /* noimage.jpg */; };
 		B3B3F5321667C0CA00EE0A94 /* bad.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B3F5301667C0CA00EE0A94 /* bad.jpg */; };
 		B3B3F5341667C0EE00EE0A94 /* ok.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3B3F5331667C0EE00EE0A94 /* ok.jpg */; };
-		B3B3F5361667E76300EE0A94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = B3B3F5351667E76300EE0A94 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -148,7 +147,6 @@
 		B3A525BC16616326001F5E75 /* noimage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = noimage.jpg; sourceTree = "<group>"; };
 		B3B3F5301667C0CA00EE0A94 /* bad.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bad.jpg; sourceTree = "<group>"; };
 		B3B3F5331667C0EE00EE0A94 /* ok.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ok.jpg; sourceTree = "<group>"; };
-		B3B3F5351667E76300EE0A94 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,7 +228,6 @@
 		B380DAFC1653E0BD009FE2D6 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B3B3F5351667E76300EE0A94 /* README.md */,
 				B380DAFD1653E0BD009FE2D6 /* TrafficLaws-Info.plist */,
 				B380DAFE1653E0BD009FE2D6 /* InfoPlist.strings */,
 				B380DB011653E0BD009FE2D6 /* main.m */,
@@ -404,7 +401,6 @@
 				B3A525BD16616326001F5E75 /* noimage.jpg in Resources */,
 				B3B3F5321667C0CA00EE0A94 /* bad.jpg in Resources */,
 				B3B3F5341667C0EE00EE0A94 /* ok.jpg in Resources */,
-				B3B3F5361667E76300EE0A94 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
