@@ -71,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE1603D016697D4800DDA13F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD18A16694B44001B4DAD /* MainStoryboard.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		CE2DD16316694B44001B4DAD = {
 			isa = PBXGroup;
 			children = (
@@ -101,11 +109,11 @@
 		CE2DD17816694B44001B4DAD /* WordsToLearn */ = {
 			isa = PBXGroup;
 			children = (
-				CE47BF991669502E0086C57A /* Controller */,
-				CE47BFA21669502E0086C57A /* Model */,
-				CE47BFA51669502E0086C57A /* View */,
 				CE2DD18116694B44001B4DAD /* AppDelegate.h */,
 				CE2DD18216694B44001B4DAD /* AppDelegate.m */,
+				CE47BFA21669502E0086C57A /* Model */,
+				CE1603D016697D4800DDA13F /* View */,
+				CE47BF991669502E0086C57A /* Controller */,
 				CE2DD17916694B44001B4DAD /* Supporting Files */,
 			);
 			path = WordsToLearn;
@@ -150,14 +158,6 @@
 				CE47BFA41669502E0086C57A /* Word.m */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		CE47BFA51669502E0086C57A /* View */ = {
-			isa = PBXGroup;
-			children = (
-				CE2DD18A16694B44001B4DAD /* MainStoryboard.storyboard */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +256,6 @@
 				CE2DD18B16694B44001B4DAD /* en */,
 			);
 			name = MainStoryboard.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
