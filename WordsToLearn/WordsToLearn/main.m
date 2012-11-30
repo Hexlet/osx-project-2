@@ -1,18 +1,15 @@
-//
-//  main.m
-//  WordsToLearn
-//
-//  Created by undelalune on 30.11.12.
-//  Copyright (c) 2012 hexlet. All rights reserved.
-//
+/**
+ * Created by user on 25.11.12.
+ * version 0.1
+ **/
 
-#import <UIKit/UIKit.h>
 
 #import "AppDelegate.h"
 
 int main(int argc, char *argv[])
 {
-    @autoreleasepool {
+    @autoreleasepool
+    {
         return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
     }
 }

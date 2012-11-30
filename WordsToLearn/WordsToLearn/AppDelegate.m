@@ -1,12 +1,11 @@
-//
-//  AppDelegate.m
-//  WordsToLearn
-//
-//  Created by undelalune on 30.11.12.
-//  Copyright (c) 2012 hexlet. All rights reserved.
-//
+/**
+ * Created by user on 25.11.12.
+ * version 0.1
+ **/
+
 
 #import "AppDelegate.h"
+#import "StorageHelper.h"
 
 @implementation AppDelegate
 
@@ -15,7 +14,7 @@
     // Override point for customization after application launch.
     return YES;
 }
-							
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -24,12 +23,21 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later. 
+    // Save data before exit
+    [StorageHelper saveData];
+    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
+
+    // Storage initialization
+    if (![StorageHelper initStorage])
+    {
+        UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Info" message:@"For some reason plist file wasn't created" delegate:self cancelButtonTitle:nil otherButtonTitles:@"OK", nil];
+        [alertView show];
+    }
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
 }
 

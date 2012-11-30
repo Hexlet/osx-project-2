@@ -13,7 +13,10 @@
 		<key>CFBundlePrimaryIcon</key>
 		<dict>
 			<key>CFBundleIconFiles</key>
-			<array/>
+			<array>
+				<string>iPhoneIcon_Small.png</string>
+				<string>iPhoneIcon_Big.png</string>
+			</array>
 		</dict>
 	</dict>
 	<key>CFBundleIdentifier</key>

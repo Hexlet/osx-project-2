@@ -17,7 +17,13 @@
 		CE2DD18716694B44001B4DAD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2DD18616694B44001B4DAD /* Default@2x.png */; };
 		CE2DD18916694B44001B4DAD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CE2DD18816694B44001B4DAD /* Default-568h@2x.png */; };
 		CE2DD18C16694B44001B4DAD /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE2DD18A16694B44001B4DAD /* MainStoryboard.storyboard */; };
-		CE2DD18F16694B44001B4DAD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE2DD18E16694B44001B4DAD /* ViewController.m */; };
+		CE47BFA61669502E0086C57A /* AddUpdateVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47BF9B1669502E0086C57A /* AddUpdateVC.m */; };
+		CE47BFA71669502E0086C57A /* StorageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47BF9D1669502E0086C57A /* StorageHelper.m */; };
+		CE47BFA81669502E0086C57A /* TestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47BF9F1669502E0086C57A /* TestVC.m */; };
+		CE47BFA91669502E0086C57A /* WordsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47BFA11669502E0086C57A /* WordsVC.m */; };
+		CE47BFAA1669502E0086C57A /* Word.m in Sources */ = {isa = PBXBuildFile; fileRef = CE47BFA41669502E0086C57A /* Word.m */; };
+		CE47BFAD16695B4E0086C57A /* iPhoneIcon_Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CE47BFAC16695B4E0086C57A /* iPhoneIcon_Small.png */; };
+		CE47BFAF16695B540086C57A /* iPhoneIcon_Big.png in Resources */ = {isa = PBXBuildFile; fileRef = CE47BFAE16695B540086C57A /* iPhoneIcon_Big.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,9 +41,18 @@
 		CE2DD18616694B44001B4DAD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CE2DD18816694B44001B4DAD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CE2DD18B16694B44001B4DAD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		CE2DD18D16694B44001B4DAD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CE2DD18E16694B44001B4DAD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		CE2DD19516694DFF001B4DAD /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iPhoneIcon_Small.png; sourceTree = "<group>"; };
+		CE47BF9A1669502E0086C57A /* AddUpdateVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUpdateVC.h; sourceTree = "<group>"; };
+		CE47BF9B1669502E0086C57A /* AddUpdateVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUpdateVC.m; sourceTree = "<group>"; };
+		CE47BF9C1669502E0086C57A /* StorageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StorageHelper.h; sourceTree = "<group>"; };
+		CE47BF9D1669502E0086C57A /* StorageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StorageHelper.m; sourceTree = "<group>"; };
+		CE47BF9E1669502E0086C57A /* TestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestVC.h; sourceTree = "<group>"; };
+		CE47BF9F1669502E0086C57A /* TestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestVC.m; sourceTree = "<group>"; };
+		CE47BFA01669502E0086C57A /* WordsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordsVC.h; sourceTree = "<group>"; };
+		CE47BFA11669502E0086C57A /* WordsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WordsVC.m; sourceTree = "<group>"; };
+		CE47BFA31669502E0086C57A /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
+		CE47BFA41669502E0086C57A /* Word.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Word.m; sourceTree = "<group>"; };
+		CE47BFAC16695B4E0086C57A /* iPhoneIcon_Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Small.png; path = ../iPhoneIcon_Small.png; sourceTree = "<group>"; };
+		CE47BFAE16695B540086C57A /* iPhoneIcon_Big.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = iPhoneIcon_Big.png; path = ../iPhoneIcon_Big.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +72,6 @@
 		CE2DD16316694B44001B4DAD = {
 			isa = PBXGroup;
 			children = (
-				CE2DD19516694DFF001B4DAD /* iPhoneIcon_Small.png */,
 				CE2DD17816694B44001B4DAD /* WordsToLearn */,
 				CE2DD17116694B44001B4DAD /* Frameworks */,
 				CE2DD16F16694B44001B4DAD /* Products */,
@@ -85,11 +99,11 @@
 		CE2DD17816694B44001B4DAD /* WordsToLearn */ = {
 			isa = PBXGroup;
 			children = (
+				CE47BF991669502E0086C57A /* Controller */,
+				CE47BFA21669502E0086C57A /* Model */,
+				CE47BFA51669502E0086C57A /* View */,
 				CE2DD18116694B44001B4DAD /* AppDelegate.h */,
 				CE2DD18216694B44001B4DAD /* AppDelegate.m */,
-				CE2DD18A16694B44001B4DAD /* MainStoryboard.storyboard */,
-				CE2DD18D16694B44001B4DAD /* ViewController.h */,
-				CE2DD18E16694B44001B4DAD /* ViewController.m */,
 				CE2DD17916694B44001B4DAD /* Supporting Files */,
 			);
 			path = WordsToLearn;
@@ -98,6 +112,8 @@
 		CE2DD17916694B44001B4DAD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CE47BFAE16695B540086C57A /* iPhoneIcon_Big.png */,
+				CE47BFAC16695B4E0086C57A /* iPhoneIcon_Small.png */,
 				CE2DD17A16694B44001B4DAD /* WordsToLearn-Info.plist */,
 				CE2DD17B16694B44001B4DAD /* InfoPlist.strings */,
 				CE2DD17E16694B44001B4DAD /* main.m */,
@@ -107,6 +123,38 @@
 				CE2DD18816694B44001B4DAD /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE47BF991669502E0086C57A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CE47BF9A1669502E0086C57A /* AddUpdateVC.h */,
+				CE47BF9B1669502E0086C57A /* AddUpdateVC.m */,
+				CE47BF9C1669502E0086C57A /* StorageHelper.h */,
+				CE47BF9D1669502E0086C57A /* StorageHelper.m */,
+				CE47BF9E1669502E0086C57A /* TestVC.h */,
+				CE47BF9F1669502E0086C57A /* TestVC.m */,
+				CE47BFA01669502E0086C57A /* WordsVC.h */,
+				CE47BFA11669502E0086C57A /* WordsVC.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CE47BFA21669502E0086C57A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE47BFA31669502E0086C57A /* Word.h */,
+				CE47BFA41669502E0086C57A /* Word.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CE47BFA51669502E0086C57A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE2DD18A16694B44001B4DAD /* MainStoryboard.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +213,8 @@
 				CE2DD18716694B44001B4DAD /* Default@2x.png in Resources */,
 				CE2DD18916694B44001B4DAD /* Default-568h@2x.png in Resources */,
 				CE2DD18C16694B44001B4DAD /* MainStoryboard.storyboard in Resources */,
+				CE47BFAD16695B4E0086C57A /* iPhoneIcon_Small.png in Resources */,
+				CE47BFAF16695B540086C57A /* iPhoneIcon_Big.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,7 +227,11 @@
 			files = (
 				CE2DD17F16694B44001B4DAD /* main.m in Sources */,
 				CE2DD18316694B44001B4DAD /* AppDelegate.m in Sources */,
-				CE2DD18F16694B44001B4DAD /* ViewController.m in Sources */,
+				CE47BFA61669502E0086C57A /* AddUpdateVC.m in Sources */,
+				CE47BFA71669502E0086C57A /* StorageHelper.m in Sources */,
+				CE47BFA81669502E0086C57A /* TestVC.m in Sources */,
+				CE47BFA91669502E0086C57A /* WordsVC.m in Sources */,
+				CE47BFAA1669502E0086C57A /* Word.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +252,7 @@
 				CE2DD18B16694B44001B4DAD /* en */,
 			);
 			name = MainStoryboard.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,6 +349,7 @@
 				CE2DD19416694B44001B4DAD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
