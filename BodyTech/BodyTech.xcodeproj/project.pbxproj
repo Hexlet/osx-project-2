@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A56DEB3166BCC3E00A89DBB /* post1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A56DEB2166BCC3E00A89DBB /* post1.png */; };
 		0A5B8784166B99C100C1A3DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5B8783166B99C100C1A3DB /* Cocoa.framework */; };
 		0A5B878E166B99C100C1A3DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B878C166B99C100C1A3DB /* InfoPlist.strings */; };
 		0A5B8790166B99C100C1A3DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B878F166B99C100C1A3DB /* main.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A56DEB2166BCC3E00A89DBB /* post1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = post1.png; path = ../../../../../../../../Downloads/post1.png; sourceTree = "<group>"; };
 		0A5B877F166B99C100C1A3DB /* BodyTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A5B8783166B99C100C1A3DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		0A5B8786166B99C100C1A3DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -125,6 +127,7 @@
 		0A5B878A166B99C100C1A3DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A56DEB2166BCC3E00A89DBB /* post1.png */,
 				0A5B878B166B99C100C1A3DB /* BodyTech-Info.plist */,
 				0A5B878C166B99C100C1A3DB /* InfoPlist.strings */,
 				0A5B878F166B99C100C1A3DB /* main.m */,
@@ -227,6 +230,7 @@
 				0A5B878E166B99C100C1A3DB /* InfoPlist.strings in Resources */,
 				0A5B8794166B99C100C1A3DB /* Credits.rtf in Resources */,
 				0A5B879A166B99C100C1A3DB /* MainMenu.xib in Resources */,
+				0A56DEB3166BCC3E00A89DBB /* post1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,7 @@
 				0A5B87B3166B99C100C1A3DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0A5B87B4166B99C100C1A3DB /* Build configuration list for PBXNativeTarget "BodyTechTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +459,7 @@
 				0A5B87B6166B99C100C1A3DB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
