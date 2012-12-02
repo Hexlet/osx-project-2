@@ -81,15 +81,13 @@
     self.activeField = nil;
 }
 
-
-
 - (void)keyboardWasShown:(NSNotification*)aNotification {
     NSDictionary* info = [aNotification userInfo];
     CGSize kbSize = [[info objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
     CGRect bkgndRect = self.activeField.superview.frame;
-    bkgndRect.size.height += kbSize.height;
+    bkgndRect.size.width += kbSize.width;
     [self.activeField.superview setFrame:bkgndRect];
-    [self.scrollView setContentOffset:CGPointMake(0.0, kbSize.height - 50) animated:YES];
+    [self.scrollView setContentOffset:CGPointMake(0.0, kbSize.width-100) animated:YES];
 }
 
 @end

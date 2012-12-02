@@ -296,6 +296,7 @@
 				B85DA904166B380F00C8CE63 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
