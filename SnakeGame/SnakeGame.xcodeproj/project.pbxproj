@@ -1,0 +1,313 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B87904AE166B7F8300788BE4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87904AD166B7F8300788BE4 /* Cocoa.framework */; };
+		B87904B8166B7F8300788BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B87904B6166B7F8300788BE4 /* InfoPlist.strings */; };
+		B87904BA166B7F8300788BE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B87904B9166B7F8300788BE4 /* main.m */; };
+		B87904BE166B7F8300788BE4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B87904BC166B7F8300788BE4 /* Credits.rtf */; };
+		B87904C1166B7F8300788BE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B87904C0166B7F8300788BE4 /* AppDelegate.m */; };
+		B87904C4166B7F8300788BE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87904C2166B7F8300788BE4 /* MainMenu.xib */; };
+		B87E1686166B8BAA004937F3 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87E1685166B8BAA004937F3 /* SettingsWindow.xib */; };
+		B87E1689166B8D98004937F3 /* AddNewPlayerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87E1688166B8D98004937F3 /* AddNewPlayerWindow.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		B87904A9166B7F8300788BE4 /* SnakeGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnakeGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B87904AD166B7F8300788BE4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B87904B0166B7F8300788BE4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		B87904B1166B7F8300788BE4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		B87904B2166B7F8300788BE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B87904B5166B7F8300788BE4 /* SnakeGame-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SnakeGame-Info.plist"; sourceTree = "<group>"; };
+		B87904B7166B7F8300788BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B87904B9166B7F8300788BE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B87904BB166B7F8300788BE4 /* SnakeGame-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SnakeGame-Prefix.pch"; sourceTree = "<group>"; };
+		B87904BD166B7F8300788BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		B87904BF166B7F8300788BE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B87904C0166B7F8300788BE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B87904C3166B7F8300788BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B87E1685166B8BAA004937F3 /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindow.xib; sourceTree = "<group>"; };
+		B87E1688166B8D98004937F3 /* AddNewPlayerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewPlayerWindow.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B87904A6166B7F8300788BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87904AE166B7F8300788BE4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B879049E166B7F8300788BE4 = {
+			isa = PBXGroup;
+			children = (
+				B87904B3166B7F8300788BE4 /* SnakeGame */,
+				B87904AC166B7F8300788BE4 /* Frameworks */,
+				B87904AA166B7F8300788BE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B87904AA166B7F8300788BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B87904A9166B7F8300788BE4 /* SnakeGame.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B87904AC166B7F8300788BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B87904AD166B7F8300788BE4 /* Cocoa.framework */,
+				B87904AF166B7F8300788BE4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B87904AF166B7F8300788BE4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B87904B0166B7F8300788BE4 /* AppKit.framework */,
+				B87904B1166B7F8300788BE4 /* CoreData.framework */,
+				B87904B2166B7F8300788BE4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		B87904B3166B7F8300788BE4 /* SnakeGame */ = {
+			isa = PBXGroup;
+			children = (
+				B87904BF166B7F8300788BE4 /* AppDelegate.h */,
+				B87904C0166B7F8300788BE4 /* AppDelegate.m */,
+				B87904C2166B7F8300788BE4 /* MainMenu.xib */,
+				B87904B4166B7F8300788BE4 /* Supporting Files */,
+				B87E1685166B8BAA004937F3 /* SettingsWindow.xib */,
+				B87E1688166B8D98004937F3 /* AddNewPlayerWindow.xib */,
+			);
+			path = SnakeGame;
+			sourceTree = "<group>";
+		};
+		B87904B4166B7F8300788BE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B87904B5166B7F8300788BE4 /* SnakeGame-Info.plist */,
+				B87904B6166B7F8300788BE4 /* InfoPlist.strings */,
+				B87904B9166B7F8300788BE4 /* main.m */,
+				B87904BB166B7F8300788BE4 /* SnakeGame-Prefix.pch */,
+				B87904BC166B7F8300788BE4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B87904A8166B7F8300788BE4 /* SnakeGame */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B87904C7166B7F8300788BE4 /* Build configuration list for PBXNativeTarget "SnakeGame" */;
+			buildPhases = (
+				B87904A5166B7F8300788BE4 /* Sources */,
+				B87904A6166B7F8300788BE4 /* Frameworks */,
+				B87904A7166B7F8300788BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SnakeGame;
+			productName = SnakeGame;
+			productReference = B87904A9166B7F8300788BE4 /* SnakeGame.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B87904A0166B7F8300788BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = zhorkov023;
+			};
+			buildConfigurationList = B87904A3166B7F8300788BE4 /* Build configuration list for PBXProject "SnakeGame" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B879049E166B7F8300788BE4;
+			productRefGroup = B87904AA166B7F8300788BE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B87904A8166B7F8300788BE4 /* SnakeGame */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B87904A7166B7F8300788BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87904B8166B7F8300788BE4 /* InfoPlist.strings in Resources */,
+				B87904BE166B7F8300788BE4 /* Credits.rtf in Resources */,
+				B87904C4166B7F8300788BE4 /* MainMenu.xib in Resources */,
+				B87E1686166B8BAA004937F3 /* SettingsWindow.xib in Resources */,
+				B87E1689166B8D98004937F3 /* AddNewPlayerWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B87904A5166B7F8300788BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87904BA166B7F8300788BE4 /* main.m in Sources */,
+				B87904C1166B7F8300788BE4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B87904B6166B7F8300788BE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B87904B7166B7F8300788BE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B87904BC166B7F8300788BE4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B87904BD166B7F8300788BE4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		B87904C2166B7F8300788BE4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B87904C3166B7F8300788BE4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B87904C5166B7F8300788BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B87904C6166B7F8300788BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B87904C8166B7F8300788BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnakeGame/SnakeGame-Prefix.pch";
+				INFOPLIST_FILE = "SnakeGame/SnakeGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		B87904C9166B7F8300788BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SnakeGame/SnakeGame-Prefix.pch";
+				INFOPLIST_FILE = "SnakeGame/SnakeGame-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B87904A3166B7F8300788BE4 /* Build configuration list for PBXProject "SnakeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87904C5166B7F8300788BE4 /* Debug */,
+				B87904C6166B7F8300788BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B87904C7166B7F8300788BE4 /* Build configuration list for PBXNativeTarget "SnakeGame" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B87904C8166B7F8300788BE4 /* Debug */,
+				B87904C9166B7F8300788BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B87904A0166B7F8300788BE4 /* Project object */;
+}
