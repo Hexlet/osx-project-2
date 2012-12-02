@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		540D59D7166AD358005A62EF /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 540D59D6166AD358005A62EF /* Cocoa.framework */; };
+		540D59E1166AD359005A62EF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 540D59DF166AD359005A62EF /* InfoPlist.strings */; };
+		540D59E3166AD359005A62EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D59E2166AD359005A62EF /* main.m */; };
+		540D59E7166AD359005A62EF /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 540D59E5166AD359005A62EF /* Credits.rtf */; };
+		540D59EA166AD359005A62EF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 540D59E9166AD359005A62EF /* AppDelegate.m */; };
+		540D59ED166AD359005A62EF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 540D59EB166AD359005A62EF /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		540D59D2166AD358005A62EF /* SixMinds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixMinds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		540D59D6166AD358005A62EF /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		540D59D9166AD358005A62EF /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		540D59DA166AD358005A62EF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		540D59DB166AD358005A62EF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		540D59DE166AD359005A62EF /* SixMinds-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SixMinds-Info.plist"; sourceTree = "<group>"; };
+		540D59E0166AD359005A62EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		540D59E2166AD359005A62EF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		540D59E4166AD359005A62EF /* SixMinds-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SixMinds-Prefix.pch"; sourceTree = "<group>"; };
+		540D59E6166AD359005A62EF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		540D59E8166AD359005A62EF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		540D59E9166AD359005A62EF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		540D59EC166AD359005A62EF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		540D59CF166AD358005A62EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D59D7166AD358005A62EF /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		540D59C7166AD358005A62EF = {
+			isa = PBXGroup;
+			children = (
+				540D59DC166AD358005A62EF /* SixMinds */,
+				540D59D5166AD358005A62EF /* Frameworks */,
+				540D59D3166AD358005A62EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		540D59D3166AD358005A62EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				540D59D2166AD358005A62EF /* SixMinds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		540D59D5166AD358005A62EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540D59D6166AD358005A62EF /* Cocoa.framework */,
+				540D59D8166AD358005A62EF /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		540D59D8166AD358005A62EF /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				540D59D9166AD358005A62EF /* AppKit.framework */,
+				540D59DA166AD358005A62EF /* CoreData.framework */,
+				540D59DB166AD358005A62EF /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		540D59DC166AD358005A62EF /* SixMinds */ = {
+			isa = PBXGroup;
+			children = (
+				540D59E8166AD359005A62EF /* AppDelegate.h */,
+				540D59E9166AD359005A62EF /* AppDelegate.m */,
+				540D59EB166AD359005A62EF /* MainMenu.xib */,
+				540D59DD166AD359005A62EF /* Supporting Files */,
+			);
+			path = SixMinds;
+			sourceTree = "<group>";
+		};
+		540D59DD166AD359005A62EF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				540D59DE166AD359005A62EF /* SixMinds-Info.plist */,
+				540D59DF166AD359005A62EF /* InfoPlist.strings */,
+				540D59E2166AD359005A62EF /* main.m */,
+				540D59E4166AD359005A62EF /* SixMinds-Prefix.pch */,
+				540D59E5166AD359005A62EF /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		540D59D1166AD358005A62EF /* SixMinds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 540D59F0166AD359005A62EF /* Build configuration list for PBXNativeTarget "SixMinds" */;
+			buildPhases = (
+				540D59CE166AD358005A62EF /* Sources */,
+				540D59CF166AD358005A62EF /* Frameworks */,
+				540D59D0166AD358005A62EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixMinds;
+			productName = SixMinds;
+			productReference = 540D59D2166AD358005A62EF /* SixMinds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		540D59C9166AD358005A62EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Michael Krinitsky";
+			};
+			buildConfigurationList = 540D59CC166AD358005A62EF /* Build configuration list for PBXProject "SixMinds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 540D59C7166AD358005A62EF;
+			productRefGroup = 540D59D3166AD358005A62EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				540D59D1166AD358005A62EF /* SixMinds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		540D59D0166AD358005A62EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D59E1166AD359005A62EF /* InfoPlist.strings in Resources */,
+				540D59E7166AD359005A62EF /* Credits.rtf in Resources */,
+				540D59ED166AD359005A62EF /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		540D59CE166AD358005A62EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540D59E3166AD359005A62EF /* main.m in Sources */,
+				540D59EA166AD359005A62EF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		540D59DF166AD359005A62EF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540D59E0166AD359005A62EF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		540D59E5166AD359005A62EF /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540D59E6166AD359005A62EF /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		540D59EB166AD359005A62EF /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				540D59EC166AD359005A62EF /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		540D59EE166AD359005A62EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		540D59EF166AD359005A62EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		540D59F1166AD359005A62EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SixMinds/SixMinds-Prefix.pch";
+				INFOPLIST_FILE = "SixMinds/SixMinds-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		540D59F2166AD359005A62EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SixMinds/SixMinds-Prefix.pch";
+				INFOPLIST_FILE = "SixMinds/SixMinds-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		540D59CC166AD358005A62EF /* Build configuration list for PBXProject "SixMinds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540D59EE166AD359005A62EF /* Debug */,
+				540D59EF166AD359005A62EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		540D59F0166AD359005A62EF /* Build configuration list for PBXNativeTarget "SixMinds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				540D59F1166AD359005A62EF /* Debug */,
+				540D59F2166AD359005A62EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 540D59C9166AD358005A62EF /* Project object */;
+}
