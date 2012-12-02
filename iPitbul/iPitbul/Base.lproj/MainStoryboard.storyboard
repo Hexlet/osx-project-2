@@ -279,7 +279,11 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jLY-x2-PHR"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jLY-x2-PHR">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="57" id="ZRm-wc-v23"/>
+                                </constraints>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iPitbul" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsK-CG-LI8">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="33" id="JMs-qw-AS1"/>
@@ -289,10 +293,9 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version 1.0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ph-ie-n0J">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ph-ie-n0J">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="4qp-Pi-Haj"/>
-                                    <constraint firstAttribute="width" constant="86" id="dGa-es-lj6"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -307,53 +310,27 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Rate application" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vM7-P7-fjG">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="16" id="fU5-X3-AJ4"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Tell friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CM4-Wd-wlt">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Donate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Q3-hU-Gag">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Email Support" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fit-Dn-XvM">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="myd-FB-okg" firstAttribute="centerX" secondItem="12" secondAttribute="centerX" type="default" id="0am-P3-Cgi"/>
+                            <constraint firstAttribute="trailing" secondItem="6ph-ie-n0J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6cN-cf-L0D"/>
                             <constraint firstItem="6ph-ie-n0J" firstAttribute="bottom" secondItem="jLY-x2-PHR" secondAttribute="bottom" type="default" id="A2G-iv-1he"/>
                             <constraint firstItem="jLY-x2-PHR" firstAttribute="top" secondItem="7" secondAttribute="top" constant="64" id="Fkh-C9-cp2"/>
                             <constraint firstItem="6ph-ie-n0J" firstAttribute="leading" secondItem="jLY-x2-PHR" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="KEp-bv-u1n"/>
-                            <constraint firstItem="CM4-Wd-wlt" firstAttribute="top" secondItem="vM7-P7-fjG" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="RJM-Lg-fcx"/>
                             <constraint firstItem="LsK-CG-LI8" firstAttribute="top" secondItem="jLY-x2-PHR" secondAttribute="top" type="default" id="Rct-LJ-MzG"/>
-                            <constraint firstItem="0Q3-hU-Gag" firstAttribute="top" secondItem="CM4-Wd-wlt" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SSY-bH-W5o"/>
-                            <constraint firstItem="fit-Dn-XvM" firstAttribute="top" secondItem="0Q3-hU-Gag" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="SWL-ob-m5u"/>
-                            <constraint firstItem="CM4-Wd-wlt" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Y9h-cO-RN3"/>
-                            <constraint firstItem="fit-Dn-XvM" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="aZm-Xu-xfT"/>
                             <constraint firstItem="LsK-CG-LI8" firstAttribute="leading" secondItem="jLY-x2-PHR" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eqV-N1-DRk"/>
-                            <constraint firstItem="CM4-Wd-wlt" firstAttribute="top" secondItem="7" secondAttribute="top" constant="195" id="gPl-vz-bAT"/>
                             <constraint firstItem="12" firstAttribute="leading" secondItem="7" secondAttribute="leading" type="default" id="kyL-VC-rMY"/>
                             <constraint firstAttribute="bottom" secondItem="myd-FB-okg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oO2-By-Sx8"/>
                             <constraint firstItem="12" firstAttribute="top" secondItem="7" secondAttribute="top" type="default" id="oQ7-QK-1Ab"/>
-                            <constraint firstItem="0Q3-hU-Gag" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="q8c-MN-NzD"/>
-                            <constraint firstItem="vM7-P7-fjG" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="rfd-TX-9kp"/>
                             <constraint firstItem="12" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" type="default" id="ueA-bu-G1w"/>
                             <constraint firstItem="jLY-x2-PHR" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zXi-fE-bLh"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="labelCopyrights" destination="myd-FB-okg" id="5hx-3t-WVU"/>
+                        <outlet property="labelVersion" destination="6ph-ie-n0J" id="Qf4-vU-uen"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8" sceneMemberID="firstResponder"/>
             </objects>
@@ -433,6 +410,8 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
             <relationships>
                 <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="labelCopyrights" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="labelVersion" candidateClass="UILabel"/>
             </relationships>
         </class>
         <class className="MainViewController" superclassName="UIViewController">

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB588402166A85FD00F4E9E9 /* MainStoryboard.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB588400166A85FD00F4E9E9 /* MainStoryboard.strings */; };
+		CB58844F166A9E8500F4E9E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB588451166A9E8500F4E9E9 /* Localizable.strings */; };
 		CB73CEC6165D73B200FFF9B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC5165D73B200FFF9B8 /* UIKit.framework */; };
 		CB73CEC8165D73B200FFF9B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC7165D73B200FFF9B8 /* Foundation.framework */; };
 		CB73CECA165D73B200FFF9B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC9165D73B200FFF9B8 /* CoreGraphics.framework */; };
@@ -44,6 +46,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CB5883FF166A855300F4E9E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		CB588401166A85FD00F4E9E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		CB588403166A861D00F4E9E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		CB588404166A861D00F4E9E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB588405166A861D00F4E9E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB588406166A862900F4E9E9 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB588407166A862900F4E9E9 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/MainStoryboard.strings; sourceTree = "<group>"; };
+		CB588408166A862900F4E9E9 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CB588450166A9E8500F4E9E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB588452166A9E8F00F4E9E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB588453166A9E9B00F4E9E9 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB73CEC1165D73B200FFF9B8 /* iPitbul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPitbul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB73CEC5165D73B200FFF9B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CB73CEC7165D73B200FFF9B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -57,7 +70,6 @@
 		CB73CED7165D73B200FFF9B8 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		CB73CED9165D73B200FFF9B8 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		CB73CEDB165D73B200FFF9B8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		CB73CEDE165D73B200FFF9B8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		CB73CEE0165D73B200FFF9B8 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		CB73CEE1165D73B200FFF9B8 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		CB73CEE3165D73B200FFF9B8 /* AboutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
@@ -101,6 +113,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB5883FA166A84DE00F4E9E9 /* Base Internationalization */ = {
+			isa = PBXGroup;
+			children = (
+				CB588400166A85FD00F4E9E9 /* MainStoryboard.strings */,
+				CB73CECE165D73B200FFF9B8 /* InfoPlist.strings */,
+				CB73CEDD165D73B200FFF9B8 /* MainStoryboard.storyboard */,
+			);
+			name = "Base Internationalization";
+			sourceTree = "<group>";
+		};
+		CB5883FC166A84F300F4E9E9 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				CB73CED1165D73B200FFF9B8 /* main.m */,
+				CB73CED3165D73B200FFF9B8 /* iPitbul-Prefix.pch */,
+				CB73CED4165D73B200FFF9B8 /* AppDelegate.h */,
+				CB73CED5165D73B200FFF9B8 /* AppDelegate.m */,
+				CB73CEE0165D73B200FFF9B8 /* MainViewController.h */,
+				CB73CEE1165D73B200FFF9B8 /* MainViewController.m */,
+				CB73CEE3165D73B200FFF9B8 /* AboutViewController.h */,
+				CB73CEE4165D73B300FFF9B8 /* AboutViewController.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
 		CB73CEB6165D73B200FFF9B8 = {
 			isa = PBXGroup;
 			children = (
@@ -134,13 +171,8 @@
 		CB73CECB165D73B200FFF9B8 /* iPitbul */ = {
 			isa = PBXGroup;
 			children = (
-				CB73CED4165D73B200FFF9B8 /* AppDelegate.h */,
-				CB73CED5165D73B200FFF9B8 /* AppDelegate.m */,
-				CB73CEDD165D73B200FFF9B8 /* MainStoryboard.storyboard */,
-				CB73CEE0165D73B200FFF9B8 /* MainViewController.h */,
-				CB73CEE1165D73B200FFF9B8 /* MainViewController.m */,
-				CB73CEE3165D73B200FFF9B8 /* AboutViewController.h */,
-				CB73CEE4165D73B300FFF9B8 /* AboutViewController.m */,
+				CB5883FA166A84DE00F4E9E9 /* Base Internationalization */,
+				CB5883FC166A84F300F4E9E9 /* Sources */,
 				CB73CECC165D73B200FFF9B8 /* Supporting Files */,
 			);
 			path = iPitbul;
@@ -149,6 +181,7 @@
 		CB73CECC165D73B200FFF9B8 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CB588451166A9E8500F4E9E9 /* Localizable.strings */,
 				CBCF9F7116622AA700DCC933 /* Icon-72.png */,
 				CBCF9F7216622AA700DCC933 /* Icon-Small-50.png */,
 				CBCF9F7316622AA700DCC933 /* Icon-Small.png */,
@@ -157,9 +190,6 @@
 				CBCF9F7616622AA700DCC933 /* Icon@2x.png */,
 				CBCF9F7D16622AC400DCC933 /* iTunesArtwork */,
 				CB73CECD165D73B200FFF9B8 /* iPitbul-Info.plist */,
-				CB73CECE165D73B200FFF9B8 /* InfoPlist.strings */,
-				CB73CED1165D73B200FFF9B8 /* main.m */,
-				CB73CED3165D73B200FFF9B8 /* iPitbul-Prefix.pch */,
 				CB73CED7165D73B200FFF9B8 /* Default.png */,
 				CB73CED9165D73B200FFF9B8 /* Default@2x.png */,
 				CB73CEDB165D73B200FFF9B8 /* Default-568h@2x.png */,
@@ -240,6 +270,9 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
+				ru,
+				uk,
 			);
 			mainGroup = CB73CEB6165D73B200FFF9B8;
 			productRefGroup = CB73CEC2165D73B200FFF9B8 /* Products */;
@@ -268,6 +301,8 @@
 				CBCF9F7A16622AA700DCC933 /* Icon-Small@2x.png in Resources */,
 				CBCF9F7B16622AA700DCC933 /* Icon.png in Resources */,
 				CBCF9F7C16622AA700DCC933 /* Icon@2x.png in Resources */,
+				CB588402166A85FD00F4E9E9 /* MainStoryboard.strings in Resources */,
+				CB58844F166A9E8500F4E9E9 /* Localizable.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,10 +364,32 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CB588400166A85FD00F4E9E9 /* MainStoryboard.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB588401166A85FD00F4E9E9 /* en */,
+				CB588403166A861D00F4E9E9 /* ru */,
+				CB588407166A862900F4E9E9 /* uk */,
+			);
+			name = MainStoryboard.strings;
+			sourceTree = "<group>";
+		};
+		CB588451166A9E8500F4E9E9 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB588450166A9E8500F4E9E9 /* en */,
+				CB588452166A9E8F00F4E9E9 /* ru */,
+				CB588453166A9E9B00F4E9E9 /* uk */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CB73CECE165D73B200FFF9B8 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
 				CB73CECF165D73B200FFF9B8 /* en */,
+				CB588404166A861D00F4E9E9 /* ru */,
+				CB588408166A862900F4E9E9 /* uk */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -340,7 +397,7 @@
 		CB73CEDD165D73B200FFF9B8 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				CB73CEDE165D73B200FFF9B8 /* en */,
+				CB5883FF166A855300F4E9E9 /* Base */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
@@ -349,6 +406,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				CB73CEF6165D73B300FFF9B8 /* en */,
+				CB588405166A861D00F4E9E9 /* ru */,
+				CB588406166A862900F4E9E9 /* uk */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";

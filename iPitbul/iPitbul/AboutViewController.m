@@ -17,7 +17,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+
+    NSString* currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"];
+    
+    _labelVersion.text = [_labelVersion.text stringByAppendingString:currentVersion];
 }
 
 - (void)didReceiveMemoryWarning

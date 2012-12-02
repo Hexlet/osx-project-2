@@ -15,6 +15,8 @@
 @end
 
 @interface AboutViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *labelVersion;
+@property (weak, nonatomic) IBOutlet UILabel *labelCopyrights;
 
 @property (weak, nonatomic) id <AboutViewControllerDelegate> delegate;
 
