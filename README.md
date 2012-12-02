@@ -1,13 +1,11 @@
-Проект 2. Идея и интерфейс приложения
-=============
+The Problem and The Target Auditory
+===================================
+This app works as a typical metronome and is intended to be used by anyone who requires a metronome - so any musician. It would be redundant to stress the importance of using metronome while playing exercises, rehearsing etc. Also metronome can provide necessary "clicktrack" while performing - be it live or during studio sessions - when provided to the player via headphones.
 
-Придумайте приложение для OS X, разработайте графический интерфейс и сдайте:
+The Solution
+============
+The app provides all necessary features that are expected to be present in modern days metronomes:
+- Tempo can be specified either in BPM, or using a selection of classic tempos from Larghissimo to Prestissimo;
+- A wide selection of time signatures is provided to allow accentuation of "strong" beat;
+- User can also choose whether metronome should sound on quarter, eights of sixteenth notes.
 
-1. Подробное описание в README.md или PDF. Описание должно включать:
-	* Проблему, которую решает приложение
-	* Аудитория приложения
-	* Пример сценария использования приложения
-	* Описание поведения (что происходит при загрузке, что происходит при нажатии на кнопку Х, и так далее).
-2. Вся папка с проектом, в которой обязательно должен быть .xib-файл с графическим интерфейсом.
-
-[Сдать работу](https://u.hexlet.org/courses/4/assignments/6)

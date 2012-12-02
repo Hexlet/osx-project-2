@@ -1,0 +1,462 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18AFE400166AF0020051CE5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AFE3FF166AF0020051CE5C /* Cocoa.framework */; };
+		18AFE40A166AF0020051CE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18AFE408166AF0020051CE5C /* InfoPlist.strings */; };
+		18AFE40C166AF0020051CE5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFE40B166AF0020051CE5C /* main.m */; };
+		18AFE410166AF0020051CE5C /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 18AFE40E166AF0020051CE5C /* Credits.rtf */; };
+		18AFE413166AF0020051CE5C /* XMetronomeAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFE412166AF0020051CE5C /* XMetronomeAppDelegate.m */; };
+		18AFE416166AF0020051CE5C /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18AFE414166AF0020051CE5C /* MainMenu.xib */; };
+		18AFE41E166AF0020051CE5C /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AFE41D166AF0020051CE5C /* SenTestingKit.framework */; };
+		18AFE41F166AF0020051CE5C /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18AFE3FF166AF0020051CE5C /* Cocoa.framework */; };
+		18AFE427166AF0020051CE5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18AFE425166AF0020051CE5C /* InfoPlist.strings */; };
+		18AFE42A166AF0020051CE5C /* XMetronomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18AFE429166AF0020051CE5C /* XMetronomeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18AFE420166AF0020051CE5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AFE3F2166AF0020051CE5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AFE3FA166AF0020051CE5C;
+			remoteInfo = XMetronome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18AFE3FB166AF0020051CE5C /* XMetronome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XMetronome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AFE3FF166AF0020051CE5C /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		18AFE402166AF0020051CE5C /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		18AFE403166AF0020051CE5C /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		18AFE404166AF0020051CE5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18AFE407166AF0020051CE5C /* XMetronome-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XMetronome-Info.plist"; sourceTree = "<group>"; };
+		18AFE409166AF0020051CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18AFE40B166AF0020051CE5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18AFE40D166AF0020051CE5C /* XMetronome-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "XMetronome-Prefix.pch"; sourceTree = "<group>"; };
+		18AFE40F166AF0020051CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		18AFE411166AF0020051CE5C /* XMetronomeAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMetronomeAppDelegate.h; sourceTree = "<group>"; };
+		18AFE412166AF0020051CE5C /* XMetronomeAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMetronomeAppDelegate.m; sourceTree = "<group>"; };
+		18AFE415166AF0020051CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		18AFE41C166AF0020051CE5C /* XMetronomeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XMetronomeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AFE41D166AF0020051CE5C /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		18AFE424166AF0020051CE5C /* XMetronomeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "XMetronomeTests-Info.plist"; sourceTree = "<group>"; };
+		18AFE426166AF0020051CE5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18AFE428166AF0020051CE5C /* XMetronomeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XMetronomeTests.h; sourceTree = "<group>"; };
+		18AFE429166AF0020051CE5C /* XMetronomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XMetronomeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AFE3F8166AF0020051CE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFE400166AF0020051CE5C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AFE418166AF0020051CE5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFE41E166AF0020051CE5C /* SenTestingKit.framework in Frameworks */,
+				18AFE41F166AF0020051CE5C /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18AFE3F0166AF0020051CE5C = {
+			isa = PBXGroup;
+			children = (
+				18AFE405166AF0020051CE5C /* XMetronome */,
+				18AFE422166AF0020051CE5C /* XMetronomeTests */,
+				18AFE3FE166AF0020051CE5C /* Frameworks */,
+				18AFE3FC166AF0020051CE5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18AFE3FC166AF0020051CE5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE3FB166AF0020051CE5C /* XMetronome.app */,
+				18AFE41C166AF0020051CE5C /* XMetronomeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AFE3FE166AF0020051CE5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE3FF166AF0020051CE5C /* Cocoa.framework */,
+				18AFE41D166AF0020051CE5C /* SenTestingKit.framework */,
+				18AFE401166AF0020051CE5C /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18AFE401166AF0020051CE5C /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE402166AF0020051CE5C /* AppKit.framework */,
+				18AFE403166AF0020051CE5C /* CoreData.framework */,
+				18AFE404166AF0020051CE5C /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		18AFE405166AF0020051CE5C /* XMetronome */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE411166AF0020051CE5C /* XMetronomeAppDelegate.h */,
+				18AFE412166AF0020051CE5C /* XMetronomeAppDelegate.m */,
+				18AFE414166AF0020051CE5C /* MainMenu.xib */,
+				18AFE406166AF0020051CE5C /* Supporting Files */,
+			);
+			path = XMetronome;
+			sourceTree = "<group>";
+		};
+		18AFE406166AF0020051CE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE407166AF0020051CE5C /* XMetronome-Info.plist */,
+				18AFE408166AF0020051CE5C /* InfoPlist.strings */,
+				18AFE40B166AF0020051CE5C /* main.m */,
+				18AFE40D166AF0020051CE5C /* XMetronome-Prefix.pch */,
+				18AFE40E166AF0020051CE5C /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18AFE422166AF0020051CE5C /* XMetronomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE428166AF0020051CE5C /* XMetronomeTests.h */,
+				18AFE429166AF0020051CE5C /* XMetronomeTests.m */,
+				18AFE423166AF0020051CE5C /* Supporting Files */,
+			);
+			path = XMetronomeTests;
+			sourceTree = "<group>";
+		};
+		18AFE423166AF0020051CE5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18AFE424166AF0020051CE5C /* XMetronomeTests-Info.plist */,
+				18AFE425166AF0020051CE5C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18AFE3FA166AF0020051CE5C /* XMetronome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AFE42D166AF0020051CE5C /* Build configuration list for PBXNativeTarget "XMetronome" */;
+			buildPhases = (
+				18AFE3F7166AF0020051CE5C /* Sources */,
+				18AFE3F8166AF0020051CE5C /* Frameworks */,
+				18AFE3F9166AF0020051CE5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = XMetronome;
+			productName = XMetronome;
+			productReference = 18AFE3FB166AF0020051CE5C /* XMetronome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18AFE41B166AF0020051CE5C /* XMetronomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AFE430166AF0020051CE5C /* Build configuration list for PBXNativeTarget "XMetronomeTests" */;
+			buildPhases = (
+				18AFE417166AF0020051CE5C /* Sources */,
+				18AFE418166AF0020051CE5C /* Frameworks */,
+				18AFE419166AF0020051CE5C /* Resources */,
+				18AFE41A166AF0020051CE5C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18AFE421166AF0020051CE5C /* PBXTargetDependency */,
+			);
+			name = XMetronomeTests;
+			productName = XMetronomeTests;
+			productReference = 18AFE41C166AF0020051CE5C /* XMetronomeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AFE3F2166AF0020051CE5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = XMetronome;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = mvmn;
+			};
+			buildConfigurationList = 18AFE3F5166AF0020051CE5C /* Build configuration list for PBXProject "XMetronome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18AFE3F0166AF0020051CE5C;
+			productRefGroup = 18AFE3FC166AF0020051CE5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18AFE3FA166AF0020051CE5C /* XMetronome */,
+				18AFE41B166AF0020051CE5C /* XMetronomeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AFE3F9166AF0020051CE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFE40A166AF0020051CE5C /* InfoPlist.strings in Resources */,
+				18AFE410166AF0020051CE5C /* Credits.rtf in Resources */,
+				18AFE416166AF0020051CE5C /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AFE419166AF0020051CE5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFE427166AF0020051CE5C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18AFE41A166AF0020051CE5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AFE3F7166AF0020051CE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFE40C166AF0020051CE5C /* main.m in Sources */,
+				18AFE413166AF0020051CE5C /* XMetronomeAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18AFE417166AF0020051CE5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AFE42A166AF0020051CE5C /* XMetronomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18AFE421166AF0020051CE5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AFE3FA166AF0020051CE5C /* XMetronome */;
+			targetProxy = 18AFE420166AF0020051CE5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18AFE408166AF0020051CE5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AFE409166AF0020051CE5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18AFE40E166AF0020051CE5C /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AFE40F166AF0020051CE5C /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		18AFE414166AF0020051CE5C /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AFE415166AF0020051CE5C /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		18AFE425166AF0020051CE5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AFE426166AF0020051CE5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18AFE42B166AF0020051CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		18AFE42C166AF0020051CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		18AFE42E166AF0020051CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMetronome/XMetronome-Prefix.pch";
+				INFOPLIST_FILE = "XMetronome/XMetronome-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18AFE42F166AF0020051CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMetronome/XMetronome-Prefix.pch";
+				INFOPLIST_FILE = "XMetronome/XMetronome-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18AFE431166AF0020051CE5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XMetronome.app/Contents/MacOS/XMetronome";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMetronome/XMetronome-Prefix.pch";
+				INFOPLIST_FILE = "XMetronomeTests/XMetronomeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		18AFE432166AF0020051CE5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/XMetronome.app/Contents/MacOS/XMetronome";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "XMetronome/XMetronome-Prefix.pch";
+				INFOPLIST_FILE = "XMetronomeTests/XMetronomeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AFE3F5166AF0020051CE5C /* Build configuration list for PBXProject "XMetronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AFE42B166AF0020051CE5C /* Debug */,
+				18AFE42C166AF0020051CE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AFE42D166AF0020051CE5C /* Build configuration list for PBXNativeTarget "XMetronome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AFE42E166AF0020051CE5C /* Debug */,
+				18AFE42F166AF0020051CE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		18AFE430166AF0020051CE5C /* Build configuration list for PBXNativeTarget "XMetronomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AFE431166AF0020051CE5C /* Debug */,
+				18AFE432166AF0020051CE5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AFE3F2166AF0020051CE5C /* Project object */;
+}
