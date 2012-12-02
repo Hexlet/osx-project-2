@@ -30,8 +30,7 @@
     [self updateTempoSelectorByTempo];    
 }
 
-int tempoMin[12];
-int tempoMax[12];
+int tempoBoundary[13];
 
 -(id)init {
     tempo = 120;
@@ -52,30 +51,19 @@ int tempoMax[12];
      Presto – very fast (168–177 BPM)
      Prestissimo – extremely fast (178–208 BPM)
      */
-    tempoMin[0]=0;
-    tempoMax[0]=20;
-    tempoMin[1]=21;
-    tempoMax[1]=40;
-    tempoMin[2]=41;
-    tempoMax[2]=50;
-    tempoMin[3]=51;
-    tempoMax[3]=60;
-    tempoMin[4]=61;
-    tempoMax[4]=80;
-    tempoMin[5]=81;
-    tempoMax[5]=90;
-    tempoMin[6]=91;
-    tempoMax[6]=104;
-    tempoMin[7]=105;
-    tempoMax[7]=130;
-    tempoMin[8]=131;
-    tempoMax[8]=150;
-    tempoMin[9]=151;
-    tempoMax[9]=167;
-    tempoMin[10]=168;
-    tempoMax[10]=177;
-    tempoMin[11]=178;
-    tempoMax[11]=240;
+    tempoBoundary[0]=0;
+    tempoBoundary[1]=21;
+    tempoBoundary[2]=41;
+    tempoBoundary[3]=51;
+    tempoBoundary[4]=61;
+    tempoBoundary[5]=81;
+    tempoBoundary[6]=91;
+    tempoBoundary[7]=105;
+    tempoBoundary[8]=131;
+    tempoBoundary[9]=151;
+    tempoBoundary[10]=168;
+    tempoBoundary[11]=178;
+    tempoBoundary[12]=240;
     
     return self;
 }
@@ -94,13 +82,13 @@ int tempoMax[12];
 }
 
 -(long)getTempoForTempoSelectorIndex:(long)tempoSelectorIndex {
-    return (tempoMax[tempoSelectorIndex]+tempoMin[tempoSelectorIndex])/2;
+    return (tempoBoundary[tempoSelectorIndex+1]+tempoBoundary[tempoSelectorIndex])/2;
 }
 
 -(int)getTempoSelectorIndexForTempo:(long)tempoValue {
     int result = 0;
     for(int i=0; i<12; i++) {
-        if(tempoMin[i]<=tempoValue && tempoMax[i]>=tempoValue) {
+        if(tempoBoundary[i]<=tempoValue && tempoBoundary[i+1]>=tempoValue) {
             result = i;
             break;
         }
