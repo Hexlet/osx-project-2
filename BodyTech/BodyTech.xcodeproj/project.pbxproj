@@ -1,0 +1,467 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A56DEB3166BCC3E00A89DBB /* post1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A56DEB2166BCC3E00A89DBB /* post1.png */; };
+		0A5B8784166B99C100C1A3DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5B8783166B99C100C1A3DB /* Cocoa.framework */; };
+		0A5B878E166B99C100C1A3DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B878C166B99C100C1A3DB /* InfoPlist.strings */; };
+		0A5B8790166B99C100C1A3DB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B878F166B99C100C1A3DB /* main.m */; };
+		0A5B8794166B99C100C1A3DB /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B8792166B99C100C1A3DB /* Credits.rtf */; };
+		0A5B8797166B99C100C1A3DB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B8796166B99C100C1A3DB /* AppDelegate.m */; };
+		0A5B879A166B99C100C1A3DB /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B8798166B99C100C1A3DB /* MainMenu.xib */; };
+		0A5B87A2166B99C100C1A3DB /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5B87A1166B99C100C1A3DB /* SenTestingKit.framework */; };
+		0A5B87A3166B99C100C1A3DB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A5B8783166B99C100C1A3DB /* Cocoa.framework */; };
+		0A5B87AB166B99C100C1A3DB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0A5B87A9166B99C100C1A3DB /* InfoPlist.strings */; };
+		0A5B87AE166B99C100C1A3DB /* BodyTechTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A5B87AD166B99C100C1A3DB /* BodyTechTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A5B87A4166B99C100C1A3DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A5B8776166B99C100C1A3DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A5B877E166B99C100C1A3DB;
+			remoteInfo = BodyTech;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A56DEB2166BCC3E00A89DBB /* post1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = post1.png; path = ../../../../../../../../Downloads/post1.png; sourceTree = "<group>"; };
+		0A5B877F166B99C100C1A3DB /* BodyTech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BodyTech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5B8783166B99C100C1A3DB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		0A5B8786166B99C100C1A3DB /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		0A5B8787166B99C100C1A3DB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		0A5B8788166B99C100C1A3DB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0A5B878B166B99C100C1A3DB /* BodyTech-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BodyTech-Info.plist"; sourceTree = "<group>"; };
+		0A5B878D166B99C100C1A3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A5B878F166B99C100C1A3DB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0A5B8791166B99C100C1A3DB /* BodyTech-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BodyTech-Prefix.pch"; sourceTree = "<group>"; };
+		0A5B8793166B99C100C1A3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		0A5B8795166B99C100C1A3DB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0A5B8796166B99C100C1A3DB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0A5B8799166B99C100C1A3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		0A5B87A0166B99C100C1A3DB /* BodyTechTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BodyTechTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A5B87A1166B99C100C1A3DB /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0A5B87A8166B99C100C1A3DB /* BodyTechTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BodyTechTests-Info.plist"; sourceTree = "<group>"; };
+		0A5B87AA166B99C100C1A3DB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0A5B87AC166B99C100C1A3DB /* BodyTechTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BodyTechTests.h; sourceTree = "<group>"; };
+		0A5B87AD166B99C100C1A3DB /* BodyTechTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BodyTechTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A5B877C166B99C100C1A3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5B8784166B99C100C1A3DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A5B879C166B99C100C1A3DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5B87A2166B99C100C1A3DB /* SenTestingKit.framework in Frameworks */,
+				0A5B87A3166B99C100C1A3DB /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A5B8774166B99C100C1A3DB = {
+			isa = PBXGroup;
+			children = (
+				0A5B8789166B99C100C1A3DB /* BodyTech */,
+				0A5B87A6166B99C100C1A3DB /* BodyTechTests */,
+				0A5B8782166B99C100C1A3DB /* Frameworks */,
+				0A5B8780166B99C100C1A3DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0A5B8780166B99C100C1A3DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B877F166B99C100C1A3DB /* BodyTech.app */,
+				0A5B87A0166B99C100C1A3DB /* BodyTechTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A5B8782166B99C100C1A3DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B8783166B99C100C1A3DB /* Cocoa.framework */,
+				0A5B87A1166B99C100C1A3DB /* SenTestingKit.framework */,
+				0A5B8785166B99C100C1A3DB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A5B8785166B99C100C1A3DB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B8786166B99C100C1A3DB /* AppKit.framework */,
+				0A5B8787166B99C100C1A3DB /* CoreData.framework */,
+				0A5B8788166B99C100C1A3DB /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		0A5B8789166B99C100C1A3DB /* BodyTech */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B8795166B99C100C1A3DB /* AppDelegate.h */,
+				0A5B8796166B99C100C1A3DB /* AppDelegate.m */,
+				0A5B8798166B99C100C1A3DB /* MainMenu.xib */,
+				0A5B878A166B99C100C1A3DB /* Supporting Files */,
+			);
+			path = BodyTech;
+			sourceTree = "<group>";
+		};
+		0A5B878A166B99C100C1A3DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A56DEB2166BCC3E00A89DBB /* post1.png */,
+				0A5B878B166B99C100C1A3DB /* BodyTech-Info.plist */,
+				0A5B878C166B99C100C1A3DB /* InfoPlist.strings */,
+				0A5B878F166B99C100C1A3DB /* main.m */,
+				0A5B8791166B99C100C1A3DB /* BodyTech-Prefix.pch */,
+				0A5B8792166B99C100C1A3DB /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0A5B87A6166B99C100C1A3DB /* BodyTechTests */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B87AC166B99C100C1A3DB /* BodyTechTests.h */,
+				0A5B87AD166B99C100C1A3DB /* BodyTechTests.m */,
+				0A5B87A7166B99C100C1A3DB /* Supporting Files */,
+			);
+			path = BodyTechTests;
+			sourceTree = "<group>";
+		};
+		0A5B87A7166B99C100C1A3DB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0A5B87A8166B99C100C1A3DB /* BodyTechTests-Info.plist */,
+				0A5B87A9166B99C100C1A3DB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A5B877E166B99C100C1A3DB /* BodyTech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5B87B1166B99C100C1A3DB /* Build configuration list for PBXNativeTarget "BodyTech" */;
+			buildPhases = (
+				0A5B877B166B99C100C1A3DB /* Sources */,
+				0A5B877C166B99C100C1A3DB /* Frameworks */,
+				0A5B877D166B99C100C1A3DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BodyTech;
+			productName = BodyTech;
+			productReference = 0A5B877F166B99C100C1A3DB /* BodyTech.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A5B879F166B99C100C1A3DB /* BodyTechTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A5B87B4166B99C100C1A3DB /* Build configuration list for PBXNativeTarget "BodyTechTests" */;
+			buildPhases = (
+				0A5B879B166B99C100C1A3DB /* Sources */,
+				0A5B879C166B99C100C1A3DB /* Frameworks */,
+				0A5B879D166B99C100C1A3DB /* Resources */,
+				0A5B879E166B99C100C1A3DB /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A5B87A5166B99C100C1A3DB /* PBXTargetDependency */,
+			);
+			name = BodyTechTests;
+			productName = BodyTechTests;
+			productReference = 0A5B87A0166B99C100C1A3DB /* BodyTechTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A5B8776166B99C100C1A3DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Dmitry Davidov";
+			};
+			buildConfigurationList = 0A5B8779166B99C100C1A3DB /* Build configuration list for PBXProject "BodyTech" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0A5B8774166B99C100C1A3DB;
+			productRefGroup = 0A5B8780166B99C100C1A3DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A5B877E166B99C100C1A3DB /* BodyTech */,
+				0A5B879F166B99C100C1A3DB /* BodyTechTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A5B877D166B99C100C1A3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5B878E166B99C100C1A3DB /* InfoPlist.strings in Resources */,
+				0A5B8794166B99C100C1A3DB /* Credits.rtf in Resources */,
+				0A5B879A166B99C100C1A3DB /* MainMenu.xib in Resources */,
+				0A56DEB3166BCC3E00A89DBB /* post1.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A5B879D166B99C100C1A3DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5B87AB166B99C100C1A3DB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5B879E166B99C100C1A3DB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A5B877B166B99C100C1A3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5B8790166B99C100C1A3DB /* main.m in Sources */,
+				0A5B8797166B99C100C1A3DB /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A5B879B166B99C100C1A3DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A5B87AE166B99C100C1A3DB /* BodyTechTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A5B87A5166B99C100C1A3DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A5B877E166B99C100C1A3DB /* BodyTech */;
+			targetProxy = 0A5B87A4166B99C100C1A3DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A5B878C166B99C100C1A3DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5B878D166B99C100C1A3DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0A5B8792166B99C100C1A3DB /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5B8793166B99C100C1A3DB /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		0A5B8798166B99C100C1A3DB /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5B8799166B99C100C1A3DB /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		0A5B87A9166B99C100C1A3DB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A5B87AA166B99C100C1A3DB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A5B87AF166B99C100C1A3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		0A5B87B0166B99C100C1A3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		0A5B87B2166B99C100C1A3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BodyTech/BodyTech-Prefix.pch";
+				INFOPLIST_FILE = "BodyTech/BodyTech-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0A5B87B3166B99C100C1A3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BodyTech/BodyTech-Prefix.pch";
+				INFOPLIST_FILE = "BodyTech/BodyTech-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		0A5B87B5166B99C100C1A3DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BodyTech.app/Contents/MacOS/BodyTech";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BodyTech/BodyTech-Prefix.pch";
+				INFOPLIST_FILE = "BodyTechTests/BodyTechTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0A5B87B6166B99C100C1A3DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BodyTech.app/Contents/MacOS/BodyTech";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BodyTech/BodyTech-Prefix.pch";
+				INFOPLIST_FILE = "BodyTechTests/BodyTechTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A5B8779166B99C100C1A3DB /* Build configuration list for PBXProject "BodyTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5B87AF166B99C100C1A3DB /* Debug */,
+				0A5B87B0166B99C100C1A3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A5B87B1166B99C100C1A3DB /* Build configuration list for PBXNativeTarget "BodyTech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5B87B2166B99C100C1A3DB /* Debug */,
+				0A5B87B3166B99C100C1A3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A5B87B4166B99C100C1A3DB /* Build configuration list for PBXNativeTarget "BodyTechTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A5B87B5166B99C100C1A3DB /* Debug */,
+				0A5B87B6166B99C100C1A3DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A5B8776166B99C100C1A3DB /* Project object */;
+}
