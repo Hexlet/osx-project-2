@@ -13,6 +13,8 @@
 		B87904BE166B7F8300788BE4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B87904BC166B7F8300788BE4 /* Credits.rtf */; };
 		B87904C1166B7F8300788BE4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B87904C0166B7F8300788BE4 /* AppDelegate.m */; };
 		B87904C4166B7F8300788BE4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87904C2166B7F8300788BE4 /* MainMenu.xib */; };
+		B87E1686166B8BAA004937F3 /* SettingsWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87E1685166B8BAA004937F3 /* SettingsWindow.xib */; };
+		B87E1689166B8D98004937F3 /* AddNewPlayerWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B87E1688166B8D98004937F3 /* AddNewPlayerWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		B87904BF166B7F8300788BE4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B87904C0166B7F8300788BE4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		B87904C3166B7F8300788BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B87E1685166B8BAA004937F3 /* SettingsWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsWindow.xib; sourceTree = "<group>"; };
+		B87E1688166B8D98004937F3 /* AddNewPlayerWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddNewPlayerWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				B87904C0166B7F8300788BE4 /* AppDelegate.m */,
 				B87904C2166B7F8300788BE4 /* MainMenu.xib */,
 				B87904B4166B7F8300788BE4 /* Supporting Files */,
+				B87E1685166B8BAA004937F3 /* SettingsWindow.xib */,
+				B87E1688166B8D98004937F3 /* AddNewPlayerWindow.xib */,
 			);
 			path = SnakeGame;
 			sourceTree = "<group>";
@@ -156,6 +162,8 @@
 				B87904B8166B7F8300788BE4 /* InfoPlist.strings in Resources */,
 				B87904BE166B7F8300788BE4 /* Credits.rtf in Resources */,
 				B87904C4166B7F8300788BE4 /* MainMenu.xib in Resources */,
+				B87E1686166B8BAA004937F3 /* SettingsWindow.xib in Resources */,
+				B87E1689166B8D98004937F3 /* AddNewPlayerWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +305,7 @@
 				B87904C9166B7F8300788BE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
