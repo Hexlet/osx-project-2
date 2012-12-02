@@ -15,6 +15,8 @@
 @property (weak) IBOutlet NSTextField *textField;
 
 @property (weak) IBOutlet NSTextField *labelResult;
+@property (weak) IBOutlet NSPopUpButton *srcLang;
+@property (weak) IBOutlet NSPopUpButton *destLang;
 
 - (IBAction)translateText:(id)sender;
 

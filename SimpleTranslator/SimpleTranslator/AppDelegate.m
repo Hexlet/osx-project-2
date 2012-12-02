@@ -19,7 +19,9 @@ NSMutableData *responseData;
 
 - (IBAction)translateText:(id)sender {
     NSString* textForTranslate = [_textField stringValue];
-   
+    NSString* srcLang = [_srcLang titleOfSelectedItem];
+    NSString* destLang = [_destLang titleOfSelectedItem];
+    
     /*
     //добавить возможность перевода текста из буффера
     NSPasteboard* pb = [NSPasteboard generalPasteboard];
@@ -30,7 +32,7 @@ NSMutableData *responseData;
     
     //для перевода используем api яндекса //to do инкапсулировать
     responseData = [[NSMutableData alloc] init];
-    NSString *urlString = [NSString stringWithFormat:@"http://translate.yandex.net/api/v1/tr.json/translate?lang=en-ru&text=%@", textForTranslate];
+    NSString *urlString = [NSString stringWithFormat:@"http://translate.yandex.net/api/v1/tr.json/translate?lang=%@-%@&text=%@", srcLang, destLang, textForTranslate];
     urlString = [urlString stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
     
     NSURL *url = [NSURL URLWithString: urlString];
