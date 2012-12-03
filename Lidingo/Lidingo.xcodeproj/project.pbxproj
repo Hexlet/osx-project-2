@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9DB8B3AD166CA49F00AA02ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB8B3AC166CA49F00AA02ED /* Cocoa.framework */; };
+		9DB8B3B7166CA49F00AA02ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8B3B5166CA49F00AA02ED /* InfoPlist.strings */; };
+		9DB8B3B9166CA49F00AA02ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8B3B8166CA49F00AA02ED /* main.m */; };
+		9DB8B3BD166CA49F00AA02ED /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8B3BB166CA49F00AA02ED /* Credits.rtf */; };
+		9DB8B3C0166CA4A000AA02ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8B3BF166CA4A000AA02ED /* AppDelegate.m */; };
+		9DB8B3C3166CA4A000AA02ED /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8B3C1166CA4A000AA02ED /* MainMenu.xib */; };
+		9DB8B3CB166CA4A100AA02ED /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB8B3CA166CA4A100AA02ED /* SenTestingKit.framework */; };
+		9DB8B3CC166CA4A100AA02ED /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DB8B3AC166CA49F00AA02ED /* Cocoa.framework */; };
+		9DB8B3D4166CA4A100AA02ED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9DB8B3D2166CA4A100AA02ED /* InfoPlist.strings */; };
+		9DB8B3D7166CA4A100AA02ED /* LidingoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DB8B3D6166CA4A100AA02ED /* LidingoTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9DB8B3CD166CA4A100AA02ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9DB8B39F166CA49F00AA02ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9DB8B3A7166CA49F00AA02ED;
+			remoteInfo = Lidingo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9DB8B3A8166CA49F00AA02ED /* Lidingo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lidingo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB8B3AC166CA49F00AA02ED /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9DB8B3AF166CA49F00AA02ED /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		9DB8B3B0166CA49F00AA02ED /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9DB8B3B1166CA49F00AA02ED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9DB8B3B4166CA49F00AA02ED /* Lidingo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Lidingo-Info.plist"; sourceTree = "<group>"; };
+		9DB8B3B6166CA49F00AA02ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9DB8B3B8166CA49F00AA02ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9DB8B3BA166CA49F00AA02ED /* Lidingo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Lidingo-Prefix.pch"; sourceTree = "<group>"; };
+		9DB8B3BC166CA49F00AA02ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		9DB8B3BE166CA49F00AA02ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9DB8B3BF166CA4A000AA02ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9DB8B3C2166CA4A000AA02ED /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		9DB8B3C9166CA4A100AA02ED /* LidingoTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LidingoTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DB8B3CA166CA4A100AA02ED /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9DB8B3D1166CA4A100AA02ED /* LidingoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LidingoTests-Info.plist"; sourceTree = "<group>"; };
+		9DB8B3D3166CA4A100AA02ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9DB8B3D5166CA4A100AA02ED /* LidingoTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LidingoTests.h; sourceTree = "<group>"; };
+		9DB8B3D6166CA4A100AA02ED /* LidingoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LidingoTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DB8B3A5166CA49F00AA02ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8B3AD166CA49F00AA02ED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB8B3C5166CA4A100AA02ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8B3CB166CA4A100AA02ED /* SenTestingKit.framework in Frameworks */,
+				9DB8B3CC166CA4A100AA02ED /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9DB8B39D166CA49F00AA02ED = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3B2166CA49F00AA02ED /* Lidingo */,
+				9DB8B3CF166CA4A100AA02ED /* LidingoTests */,
+				9DB8B3AB166CA49F00AA02ED /* Frameworks */,
+				9DB8B3A9166CA49F00AA02ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DB8B3A9166CA49F00AA02ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3A8166CA49F00AA02ED /* Lidingo.app */,
+				9DB8B3C9166CA4A100AA02ED /* LidingoTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DB8B3AB166CA49F00AA02ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3AC166CA49F00AA02ED /* Cocoa.framework */,
+				9DB8B3CA166CA4A100AA02ED /* SenTestingKit.framework */,
+				9DB8B3AE166CA49F00AA02ED /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9DB8B3AE166CA49F00AA02ED /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3AF166CA49F00AA02ED /* AppKit.framework */,
+				9DB8B3B0166CA49F00AA02ED /* CoreData.framework */,
+				9DB8B3B1166CA49F00AA02ED /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		9DB8B3B2166CA49F00AA02ED /* Lidingo */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3BE166CA49F00AA02ED /* AppDelegate.h */,
+				9DB8B3BF166CA4A000AA02ED /* AppDelegate.m */,
+				9DB8B3C1166CA4A000AA02ED /* MainMenu.xib */,
+				9DB8B3B3166CA49F00AA02ED /* Supporting Files */,
+			);
+			path = Lidingo;
+			sourceTree = "<group>";
+		};
+		9DB8B3B3166CA49F00AA02ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3B4166CA49F00AA02ED /* Lidingo-Info.plist */,
+				9DB8B3B5166CA49F00AA02ED /* InfoPlist.strings */,
+				9DB8B3B8166CA49F00AA02ED /* main.m */,
+				9DB8B3BA166CA49F00AA02ED /* Lidingo-Prefix.pch */,
+				9DB8B3BB166CA49F00AA02ED /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9DB8B3CF166CA4A100AA02ED /* LidingoTests */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3D5166CA4A100AA02ED /* LidingoTests.h */,
+				9DB8B3D6166CA4A100AA02ED /* LidingoTests.m */,
+				9DB8B3D0166CA4A100AA02ED /* Supporting Files */,
+			);
+			path = LidingoTests;
+			sourceTree = "<group>";
+		};
+		9DB8B3D0166CA4A100AA02ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9DB8B3D1166CA4A100AA02ED /* LidingoTests-Info.plist */,
+				9DB8B3D2166CA4A100AA02ED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DB8B3A7166CA49F00AA02ED /* Lidingo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB8B3DA166CA4A100AA02ED /* Build configuration list for PBXNativeTarget "Lidingo" */;
+			buildPhases = (
+				9DB8B3A4166CA49F00AA02ED /* Sources */,
+				9DB8B3A5166CA49F00AA02ED /* Frameworks */,
+				9DB8B3A6166CA49F00AA02ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Lidingo;
+			productName = Lidingo;
+			productReference = 9DB8B3A8166CA49F00AA02ED /* Lidingo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9DB8B3C8166CA4A100AA02ED /* LidingoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DB8B3DD166CA4A100AA02ED /* Build configuration list for PBXNativeTarget "LidingoTests" */;
+			buildPhases = (
+				9DB8B3C4166CA4A100AA02ED /* Sources */,
+				9DB8B3C5166CA4A100AA02ED /* Frameworks */,
+				9DB8B3C6166CA4A100AA02ED /* Resources */,
+				9DB8B3C7166CA4A100AA02ED /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DB8B3CE166CA4A100AA02ED /* PBXTargetDependency */,
+			);
+			name = LidingoTests;
+			productName = LidingoTests;
+			productReference = 9DB8B3C9166CA4A100AA02ED /* LidingoTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DB8B39F166CA49F00AA02ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Michael Onoprienko";
+			};
+			buildConfigurationList = 9DB8B3A2166CA49F00AA02ED /* Build configuration list for PBXProject "Lidingo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9DB8B39D166CA49F00AA02ED;
+			productRefGroup = 9DB8B3A9166CA49F00AA02ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DB8B3A7166CA49F00AA02ED /* Lidingo */,
+				9DB8B3C8166CA4A100AA02ED /* LidingoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DB8B3A6166CA49F00AA02ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8B3B7166CA49F00AA02ED /* InfoPlist.strings in Resources */,
+				9DB8B3BD166CA49F00AA02ED /* Credits.rtf in Resources */,
+				9DB8B3C3166CA4A000AA02ED /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB8B3C6166CA4A100AA02ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8B3D4166CA4A100AA02ED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DB8B3C7166CA4A100AA02ED /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DB8B3A4166CA49F00AA02ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8B3B9166CA49F00AA02ED /* main.m in Sources */,
+				9DB8B3C0166CA4A000AA02ED /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DB8B3C4166CA4A100AA02ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DB8B3D7166CA4A100AA02ED /* LidingoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DB8B3CE166CA4A100AA02ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9DB8B3A7166CA49F00AA02ED /* Lidingo */;
+			targetProxy = 9DB8B3CD166CA4A100AA02ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9DB8B3B5166CA49F00AA02ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB8B3B6166CA49F00AA02ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9DB8B3BB166CA49F00AA02ED /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB8B3BC166CA49F00AA02ED /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		9DB8B3C1166CA4A000AA02ED /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB8B3C2166CA4A000AA02ED /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		9DB8B3D2166CA4A100AA02ED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DB8B3D3166CA4A100AA02ED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DB8B3D8166CA4A100AA02ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9DB8B3D9166CA4A100AA02ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9DB8B3DB166CA4A100AA02ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lidingo/Lidingo-Prefix.pch";
+				INFOPLIST_FILE = "Lidingo/Lidingo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9DB8B3DC166CA4A100AA02ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lidingo/Lidingo-Prefix.pch";
+				INFOPLIST_FILE = "Lidingo/Lidingo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9DB8B3DE166CA4A100AA02ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lidingo.app/Contents/MacOS/Lidingo";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lidingo/Lidingo-Prefix.pch";
+				INFOPLIST_FILE = "LidingoTests/LidingoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9DB8B3DF166CA4A100AA02ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Lidingo.app/Contents/MacOS/Lidingo";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Lidingo/Lidingo-Prefix.pch";
+				INFOPLIST_FILE = "LidingoTests/LidingoTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DB8B3A2166CA49F00AA02ED /* Build configuration list for PBXProject "Lidingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB8B3D8166CA4A100AA02ED /* Debug */,
+				9DB8B3D9166CA4A100AA02ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DB8B3DA166CA4A100AA02ED /* Build configuration list for PBXNativeTarget "Lidingo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB8B3DB166CA4A100AA02ED /* Debug */,
+				9DB8B3DC166CA4A100AA02ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9DB8B3DD166CA4A100AA02ED /* Build configuration list for PBXNativeTarget "LidingoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DB8B3DE166CA4A100AA02ED /* Debug */,
+				9DB8B3DF166CA4A100AA02ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9DB8B39F166CA49F00AA02ED /* Project object */;
+}
