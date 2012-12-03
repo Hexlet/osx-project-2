@@ -21,10 +21,6 @@
 
     
     [self.LeftPanel addSubview:leftPanel.view];
-    //[leftPanel.view setAutoresizingMask:NSViewMaxXMargin];
-    //[leftPanel.view setAutoresizingMask:NSViewMaxYMargin];
-    //[[leftPanel.view superview] setNeedsLayout:YES];
-    [leftPanel.view layoutSubtreeIfNeeded];
     [self.RightPanel addSubview:rightPanel.view];
     
 }
