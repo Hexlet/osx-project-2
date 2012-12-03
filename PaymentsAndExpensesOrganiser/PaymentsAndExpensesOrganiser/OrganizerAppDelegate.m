@@ -10,9 +10,13 @@
 
 @implementation OrganizerAppDelegate
 
+@synthesize payments = _payments;
+@synthesize nearestEvents = _nearestEvents;
+
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    // Insert code here to initialize your application
+    self.payments = [[NSMutableArray alloc]init];
+    self.nearestEvents = [[NSMutableArray alloc]init];
 }
 
 @end

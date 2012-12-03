@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847C7339166D0BCB005439E0 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847C7337166D0BCB005439E0 /* MainMenu.xib */; };
 		847DD6B81666975E007B3E36 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 847DD6B71666975E007B3E36 /* Cocoa.framework */; };
 		847DD6C21666975E007B3E36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 847DD6C01666975E007B3E36 /* InfoPlist.strings */; };
 		847DD6C41666975E007B3E36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DD6C31666975E007B3E36 /* main.m */; };
 		847DD6C81666975E007B3E36 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 847DD6C61666975E007B3E36 /* Credits.rtf */; };
 		847DD6CB1666975E007B3E36 /* OrganizerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DD6CA1666975E007B3E36 /* OrganizerAppDelegate.m */; };
-		847DD6CE1666975E007B3E36 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 847DD6CC1666975E007B3E36 /* MainMenu.xib */; };
 		847DD6E216673931007B3E36 /* Payment.m in Sources */ = {isa = PBXBuildFile; fileRef = 847DD6E116673931007B3E36 /* Payment.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		847C7338166D0BCB005439E0 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = PaymentsAndExpensesOrganiser/en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		847DD6B31666975E007B3E36 /* PaymentsAndExpensesOrganiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaymentsAndExpensesOrganiser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		847DD6B71666975E007B3E36 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		847DD6BA1666975E007B3E36 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -29,7 +30,6 @@
 		847DD6C71666975E007B3E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		847DD6C91666975E007B3E36 /* OrganizerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrganizerAppDelegate.h; sourceTree = "<group>"; };
 		847DD6CA1666975E007B3E36 /* OrganizerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrganizerAppDelegate.m; sourceTree = "<group>"; };
-		847DD6CD1666975E007B3E36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		847DD6E016673931007B3E36 /* Payment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Payment.h; sourceTree = "<group>"; };
 		847DD6E116673931007B3E36 /* Payment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Payment.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -85,9 +85,9 @@
 		847DD6BD1666975E007B3E36 /* PaymentsAndExpensesOrganiser */ = {
 			isa = PBXGroup;
 			children = (
+				847C7337166D0BCB005439E0 /* MainMenu.xib */,
 				847DD6C91666975E007B3E36 /* OrganizerAppDelegate.h */,
 				847DD6CA1666975E007B3E36 /* OrganizerAppDelegate.m */,
-				847DD6CC1666975E007B3E36 /* MainMenu.xib */,
 				847DD6BE1666975E007B3E36 /* Supporting Files */,
 				847DD6E016673931007B3E36 /* Payment.h */,
 				847DD6E116673931007B3E36 /* Payment.m */,
@@ -161,7 +161,7 @@
 			files = (
 				847DD6C21666975E007B3E36 /* InfoPlist.strings in Resources */,
 				847DD6C81666975E007B3E36 /* Credits.rtf in Resources */,
-				847DD6CE1666975E007B3E36 /* MainMenu.xib in Resources */,
+				847C7339166D0BCB005439E0 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -181,6 +181,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		847C7337166D0BCB005439E0 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				847C7338166D0BCB005439E0 /* en */,
+			);
+			name = MainMenu.xib;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		847DD6C01666975E007B3E36 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -195,14 +204,6 @@
 				847DD6C71666975E007B3E36 /* en */,
 			);
 			name = Credits.rtf;
-			sourceTree = "<group>";
-		};
-		847DD6CC1666975E007B3E36 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				847DD6CD1666975E007B3E36 /* en */,
-			);
-			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

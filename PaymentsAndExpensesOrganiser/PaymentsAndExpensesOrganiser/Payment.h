@@ -12,8 +12,8 @@
 
 @property NSString* description;
 @property float amount;
-@property NSDate* dates;
-@property NSDate* dateOfRemaining;
+@property NSDate* fromDate;
+@property NSDate* toDate;
 @property NSString* category;
 
 @end

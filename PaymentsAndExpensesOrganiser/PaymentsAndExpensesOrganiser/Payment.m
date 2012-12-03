@@ -12,7 +12,18 @@
 
 - (id)init{
     if (self = [super init]) {
-        _description<#statements#>
+        _description = @"Enter description of payment/expense";
+       
+        _amount = 0;
+        //todo dates
+        
+        NSDateFormatter *format = [[NSDateFormatter alloc]init];
+        [format setDateStyle: NSDateFormatterShortStyle];
+        NSString *stringDate = @"01/01/12";
+        _fromDate = [format dateFromString: stringDate];
+        _toDate = [format dateFromString: stringDate];
+       
+        _category = @"Define category";
     }
     return self;
 }
