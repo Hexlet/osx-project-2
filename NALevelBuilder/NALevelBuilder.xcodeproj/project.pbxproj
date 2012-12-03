@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE86BC6E1654F7F100369DDA /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE86BC6D1654F7F100369DDA /* Cocoa.framework */; };
+		CE86BC781654F7F100369DDA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE86BC761654F7F100369DDA /* InfoPlist.strings */; };
+		CE86BC7A1654F7F200369DDA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86BC791654F7F200369DDA /* main.m */; };
+		CE86BC7E1654F7F200369DDA /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE86BC7C1654F7F200369DDA /* Credits.rtf */; };
+		CE86BC811654F7F200369DDA /* NAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE86BC801654F7F200369DDA /* NAAppDelegate.m */; };
+		CE86BC841654F7F200369DDA /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE86BC821654F7F200369DDA /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CE86BC691654F7F100369DDA /* NALevelBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NALevelBuilder.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE86BC6D1654F7F100369DDA /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE86BC701654F7F100369DDA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE86BC711654F7F100369DDA /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE86BC721654F7F100369DDA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE86BC751654F7F100369DDA /* NALevelBuilder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "NALevelBuilder-Info.plist"; sourceTree = "<group>"; };
+		CE86BC771654F7F100369DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE86BC791654F7F200369DDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE86BC7B1654F7F200369DDA /* NALevelBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NALevelBuilder-Prefix.pch"; sourceTree = "<group>"; };
+		CE86BC7D1654F7F200369DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE86BC7F1654F7F200369DDA /* NAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NAAppDelegate.h; sourceTree = "<group>"; };
+		CE86BC801654F7F200369DDA /* NAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NAAppDelegate.m; sourceTree = "<group>"; };
+		CE86BC831654F7F200369DDA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE86BC661654F7F100369DDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE86BC6E1654F7F100369DDA /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE86BC5E1654F7F100369DDA = {
+			isa = PBXGroup;
+			children = (
+				CE86BC731654F7F100369DDA /* NALevelBuilder */,
+				CE86BC6C1654F7F100369DDA /* Frameworks */,
+				CE86BC6A1654F7F100369DDA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE86BC6A1654F7F100369DDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE86BC691654F7F100369DDA /* NALevelBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE86BC6C1654F7F100369DDA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE86BC6D1654F7F100369DDA /* Cocoa.framework */,
+				CE86BC6F1654F7F100369DDA /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE86BC6F1654F7F100369DDA /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE86BC701654F7F100369DDA /* AppKit.framework */,
+				CE86BC711654F7F100369DDA /* CoreData.framework */,
+				CE86BC721654F7F100369DDA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE86BC731654F7F100369DDA /* NALevelBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				CE86BC7F1654F7F200369DDA /* NAAppDelegate.h */,
+				CE86BC801654F7F200369DDA /* NAAppDelegate.m */,
+				CE86BC821654F7F200369DDA /* MainMenu.xib */,
+				CE86BC741654F7F100369DDA /* Supporting Files */,
+			);
+			path = NALevelBuilder;
+			sourceTree = "<group>";
+		};
+		CE86BC741654F7F100369DDA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE86BC751654F7F100369DDA /* NALevelBuilder-Info.plist */,
+				CE86BC761654F7F100369DDA /* InfoPlist.strings */,
+				CE86BC791654F7F200369DDA /* main.m */,
+				CE86BC7B1654F7F200369DDA /* NALevelBuilder-Prefix.pch */,
+				CE86BC7C1654F7F200369DDA /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE86BC681654F7F100369DDA /* NALevelBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE86BC871654F7F200369DDA /* Build configuration list for PBXNativeTarget "NALevelBuilder" */;
+			buildPhases = (
+				CE86BC651654F7F100369DDA /* Sources */,
+				CE86BC661654F7F100369DDA /* Frameworks */,
+				CE86BC671654F7F100369DDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NALevelBuilder;
+			productName = NALevelBuilder;
+			productReference = CE86BC691654F7F100369DDA /* NALevelBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE86BC601654F7F100369DDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = NA;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = naoG;
+			};
+			buildConfigurationList = CE86BC631654F7F100369DDA /* Build configuration list for PBXProject "NALevelBuilder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE86BC5E1654F7F100369DDA;
+			productRefGroup = CE86BC6A1654F7F100369DDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE86BC681654F7F100369DDA /* NALevelBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE86BC671654F7F100369DDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE86BC781654F7F100369DDA /* InfoPlist.strings in Resources */,
+				CE86BC7E1654F7F200369DDA /* Credits.rtf in Resources */,
+				CE86BC841654F7F200369DDA /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE86BC651654F7F100369DDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE86BC7A1654F7F200369DDA /* main.m in Sources */,
+				CE86BC811654F7F200369DDA /* NAAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		CE86BC761654F7F100369DDA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE86BC771654F7F100369DDA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE86BC7C1654F7F200369DDA /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE86BC7D1654F7F200369DDA /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE86BC821654F7F200369DDA /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE86BC831654F7F200369DDA /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE86BC851654F7F200369DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE86BC861654F7F200369DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE86BC881654F7F200369DDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NALevelBuilder/NALevelBuilder-Prefix.pch";
+				INFOPLIST_FILE = "NALevelBuilder/NALevelBuilder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE86BC891654F7F200369DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "NALevelBuilder/NALevelBuilder-Prefix.pch";
+				INFOPLIST_FILE = "NALevelBuilder/NALevelBuilder-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE86BC631654F7F100369DDA /* Build configuration list for PBXProject "NALevelBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE86BC851654F7F200369DDA /* Debug */,
+				CE86BC861654F7F200369DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE86BC871654F7F200369DDA /* Build configuration list for PBXNativeTarget "NALevelBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE86BC881654F7F200369DDA /* Debug */,
+				CE86BC891654F7F200369DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE86BC601654F7F100369DDA /* Project object */;
+}
