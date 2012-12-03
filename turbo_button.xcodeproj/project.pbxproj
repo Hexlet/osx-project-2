@@ -13,7 +13,6 @@
 		CE275EEA165E49BA009829BC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE275EE8165E49BA009829BC /* Credits.rtf */; };
 		CE275EED165E49BA009829BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE275EEC165E49BA009829BC /* AppDelegate.m */; };
 		CE275EF0165E49BB009829BC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE275EEE165E49BB009829BC /* MainMenu.xib */; };
-		CE275EFB165E5308009829BC /* TimerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = CE275EFA165E5308009829BC /* TimerButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +29,6 @@
 		CE275EEB165E49BA009829BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CE275EEC165E49BA009829BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		CE275EEF165E49BB009829BC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		CE275EF9165E5308009829BC /* TimerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerButton.h; sourceTree = "<group>"; };
-		CE275EFA165E5308009829BC /* TimerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,8 +86,6 @@
 				CE275EEC165E49BA009829BC /* AppDelegate.m */,
 				CE275EEE165E49BB009829BC /* MainMenu.xib */,
 				CE275EE0165E49BA009829BC /* Supporting Files */,
-				CE275EF9165E5308009829BC /* TimerButton.h */,
-				CE275EFA165E5308009829BC /* TimerButton.m */,
 			);
 			path = turbo_button;
 			sourceTree = "<group>";
@@ -173,7 +168,6 @@
 			files = (
 				CE275EE6165E49BA009829BC /* main.m in Sources */,
 				CE275EED165E49BA009829BC /* AppDelegate.m in Sources */,
-				CE275EFB165E5308009829BC /* TimerButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,6 +297,7 @@
 				CE275EF5165E49BB009829BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
