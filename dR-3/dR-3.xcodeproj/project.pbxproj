@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B604762166CF95400BC9688 /* ReadMe.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 6B604761166CF95400BC9688 /* ReadMe.rtf */; };
 		6BB289AE1669C27B00F3602E /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BB289AD1669C27B00F3602E /* Cocoa.framework */; };
 		6BB289B81669C27B00F3602E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6BB289B61669C27B00F3602E /* InfoPlist.strings */; };
 		6BB289BA1669C27B00F3602E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB289B91669C27B00F3602E /* main.m */; };
@@ -16,10 +15,10 @@
 		6BB289C41669C27B00F3602E /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6BB289C21669C27B00F3602E /* MainMenu.xib */; };
 		6BB289CC1669C3A700F3602E /* RData.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB289CB1669C3A700F3602E /* RData.m */; };
 		6BB289CF1669C4B800F3602E /* DataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BB289CE1669C4B800F3602E /* DataTableViewController.m */; };
+		6BEDA5FA166D491A00389191 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 6BEDA5F9166D491A00389191 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6B604761166CF95400BC9688 /* ReadMe.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = ReadMe.rtf; sourceTree = "<group>"; };
 		6BB289A91669C27B00F3602E /* dR-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "dR-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BB289AD1669C27B00F3602E /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		6BB289B01669C27B00F3602E /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -37,6 +36,7 @@
 		6BB289CB1669C3A700F3602E /* RData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RData.m; sourceTree = "<group>"; };
 		6BB289CD1669C4B800F3602E /* DataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataTableViewController.h; sourceTree = "<group>"; };
 		6BB289CE1669C4B800F3602E /* DataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataTableViewController.m; sourceTree = "<group>"; };
+		6BEDA5F9166D491A00389191 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		6BB2899E1669C27B00F3602E = {
 			isa = PBXGroup;
 			children = (
-				6B604761166CF95400BC9688 /* ReadMe.rtf */,
+				6BEDA5F9166D491A00389191 /* README.md */,
 				6BB289B31669C27B00F3602E /* dR-3 */,
 				6BB289AC1669C27B00F3602E /* Frameworks */,
 				6BB289AA1669C27B00F3602E /* Products */,
@@ -169,7 +169,7 @@
 				6BB289B81669C27B00F3602E /* InfoPlist.strings in Resources */,
 				6BB289BE1669C27B00F3602E /* Credits.rtf in Resources */,
 				6BB289C41669C27B00F3602E /* MainMenu.xib in Resources */,
-				6B604762166CF95400BC9688 /* ReadMe.rtf in Resources */,
+				6BEDA5FA166D491A00389191 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
