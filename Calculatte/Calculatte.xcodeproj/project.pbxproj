@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C77873F3166B95BE0076ACE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77873F2166B95BE0076ACE6 /* Cocoa.framework */; };
+		C77873FD166B95BE0076ACE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C77873FB166B95BE0076ACE6 /* InfoPlist.strings */; };
+		C77873FF166B95BE0076ACE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C77873FE166B95BE0076ACE6 /* main.m */; };
+		C7787403166B95BE0076ACE6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C7787401166B95BE0076ACE6 /* Credits.rtf */; };
+		C7787406166B95BE0076ACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787405166B95BE0076ACE6 /* AppDelegate.m */; };
+		C7787409166B95BE0076ACE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7787407166B95BE0076ACE6 /* MainMenu.xib */; };
+		C7787410166B9C770076ACE6 /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = C778740F166B9C770076ACE6 /* calculator.png */; };
+		C7787417166D0B5D0076ACE6 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787416166D0B5D0076ACE6 /* AppController.m */; };
+		C778741A166D0E540076ACE6 /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787419166D0E540076ACE6 /* HistoryModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C77873EE166B95BE0076ACE6 /* Calculatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77873F2166B95BE0076ACE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C77873F5166B95BE0076ACE6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C77873F6166B95BE0076ACE6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C77873F7166B95BE0076ACE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C77873FA166B95BE0076ACE6 /* Calculatte-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calculatte-Info.plist"; sourceTree = "<group>"; };
+		C77873FC166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C77873FE166B95BE0076ACE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7787400166B95BE0076ACE6 /* Calculatte-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculatte-Prefix.pch"; sourceTree = "<group>"; };
+		C7787402166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C7787404166B95BE0076ACE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7787405166B95BE0076ACE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7787408166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C778740F166B9C770076ACE6 /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
+		C7787415166D0B5D0076ACE6 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
+		C7787416166D0B5D0076ACE6 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
+		C7787418166D0E540076ACE6 /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
+		C7787419166D0E540076ACE6 /* HistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C77873EB166B95BE0076ACE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77873F3166B95BE0076ACE6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C77873E3166B95BE0076ACE6 = {
+			isa = PBXGroup;
+			children = (
+				C778740F166B9C770076ACE6 /* calculator.png */,
+				C77873F8166B95BE0076ACE6 /* Calculatte */,
+				C77873F1166B95BE0076ACE6 /* Frameworks */,
+				C77873EF166B95BE0076ACE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C77873EF166B95BE0076ACE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C77873EE166B95BE0076ACE6 /* Calculatte.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C77873F1166B95BE0076ACE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77873F2166B95BE0076ACE6 /* Cocoa.framework */,
+				C77873F4166B95BE0076ACE6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C77873F4166B95BE0076ACE6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77873F5166B95BE0076ACE6 /* AppKit.framework */,
+				C77873F6166B95BE0076ACE6 /* CoreData.framework */,
+				C77873F7166B95BE0076ACE6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C77873F8166B95BE0076ACE6 /* Calculatte */ = {
+			isa = PBXGroup;
+			children = (
+				C7787404166B95BE0076ACE6 /* AppDelegate.h */,
+				C7787405166B95BE0076ACE6 /* AppDelegate.m */,
+				C7787407166B95BE0076ACE6 /* MainMenu.xib */,
+				C7787418166D0E540076ACE6 /* HistoryModel.h */,
+				C7787419166D0E540076ACE6 /* HistoryModel.m */,
+				C77873F9166B95BE0076ACE6 /* Supporting Files */,
+				C7787415166D0B5D0076ACE6 /* AppController.h */,
+				C7787416166D0B5D0076ACE6 /* AppController.m */,
+			);
+			path = Calculatte;
+			sourceTree = "<group>";
+		};
+		C77873F9166B95BE0076ACE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C77873FA166B95BE0076ACE6 /* Calculatte-Info.plist */,
+				C77873FB166B95BE0076ACE6 /* InfoPlist.strings */,
+				C77873FE166B95BE0076ACE6 /* main.m */,
+				C7787400166B95BE0076ACE6 /* Calculatte-Prefix.pch */,
+				C7787401166B95BE0076ACE6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C77873ED166B95BE0076ACE6 /* Calculatte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C778740C166B95BE0076ACE6 /* Build configuration list for PBXNativeTarget "Calculatte" */;
+			buildPhases = (
+				C77873EA166B95BE0076ACE6 /* Sources */,
+				C77873EB166B95BE0076ACE6 /* Frameworks */,
+				C77873EC166B95BE0076ACE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calculatte;
+			productName = Calculatte;
+			productReference = C77873EE166B95BE0076ACE6 /* Calculatte.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C77873E5166B95BE0076ACE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Alex Bakoushin";
+			};
+			buildConfigurationList = C77873E8166B95BE0076ACE6 /* Build configuration list for PBXProject "Calculatte" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C77873E3166B95BE0076ACE6;
+			productRefGroup = C77873EF166B95BE0076ACE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C77873ED166B95BE0076ACE6 /* Calculatte */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C77873EC166B95BE0076ACE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77873FD166B95BE0076ACE6 /* InfoPlist.strings in Resources */,
+				C7787403166B95BE0076ACE6 /* Credits.rtf in Resources */,
+				C7787409166B95BE0076ACE6 /* MainMenu.xib in Resources */,
+				C7787410166B9C770076ACE6 /* calculator.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C77873EA166B95BE0076ACE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77873FF166B95BE0076ACE6 /* main.m in Sources */,
+				C7787406166B95BE0076ACE6 /* AppDelegate.m in Sources */,
+				C7787417166D0B5D0076ACE6 /* AppController.m in Sources */,
+				C778741A166D0E540076ACE6 /* HistoryModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C77873FB166B95BE0076ACE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77873FC166B95BE0076ACE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7787401166B95BE0076ACE6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7787402166B95BE0076ACE6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C7787407166B95BE0076ACE6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7787408166B95BE0076ACE6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C778740A166B95BE0076ACE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C778740B166B95BE0076ACE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C778740D166B95BE0076ACE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Calculatte/Calculatte-Prefix.pch";
+				INFOPLIST_FILE = "Calculatte/Calculatte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C778740E166B95BE0076ACE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Calculatte/Calculatte-Prefix.pch";
+				INFOPLIST_FILE = "Calculatte/Calculatte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C77873E8166B95BE0076ACE6 /* Build configuration list for PBXProject "Calculatte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C778740A166B95BE0076ACE6 /* Debug */,
+				C778740B166B95BE0076ACE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C778740C166B95BE0076ACE6 /* Build configuration list for PBXNativeTarget "Calculatte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C778740D166B95BE0076ACE6 /* Debug */,
+				C778740E166B95BE0076ACE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C77873E5166B95BE0076ACE6 /* Project object */;
+}
