@@ -19,6 +19,8 @@
 		BBF841E3165BBD4100BF570F /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BBF841E1165BBD4100BF570F /* Credits.rtf */; };
 		BBF841E6165BBD4100BF570F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BBF841E5165BBD4100BF570F /* AppDelegate.m */; };
 		BBF841E9165BBD4100BF570F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBF841E7165BBD4100BF570F /* MainMenu.xib */; };
+		DE270EA6166D5B13005FE19A /* ActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = DE270EA5166D5B13005FE19A /* ActivityView.m */; };
+		DE270EAA166D5B7D005FE19A /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE270EA9166D5B7D005FE19A /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +47,9 @@
 		BBF841E4165BBD4100BF570F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BBF841E5165BBD4100BF570F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BBF841E8165BBD4100BF570F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		DE270EA4166D5B13005FE19A /* ActivityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityView.h; sourceTree = "<group>"; };
+		DE270EA5166D5B13005FE19A /* ActivityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityView.m; sourceTree = "<group>"; };
+		DE270EA9166D5B7D005FE19A /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE270EAA166D5B7D005FE19A /* OpenGL.framework in Frameworks */,
 				BB74B19F165FBC9A0081D64A /* IOKit.framework in Frameworks */,
 				BBF841D3165BBD4100BF570F /* Cocoa.framework in Frameworks */,
 			);
@@ -112,6 +118,7 @@
 		BBF841D4165BBD4100BF570F /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DE270EA9166D5B7D005FE19A /* OpenGL.framework */,
 				BB74B19E165FBC9A0081D64A /* IOKit.framework */,
 				BBF841D5165BBD4100BF570F /* AppKit.framework */,
 				BBF841D6165BBD4100BF570F /* CoreData.framework */,
@@ -123,6 +130,7 @@
 		BBF841D8165BBD4100BF570F /* osx-project-2 */ = {
 			isa = PBXGroup;
 			children = (
+				DE270EA8166D5B1A005FE19A /* Views */,
 				BB0DAAF5165E5E35009B4A2C /* Resources */,
 				BB0DAAF3165E5E13009B4A2C /* DiskActivity */,
 				BBF841E4165BBD4100BF570F /* AppDelegate.h */,
@@ -143,6 +151,15 @@
 				BBF841E1165BBD4100BF570F /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DE270EA8166D5B1A005FE19A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DE270EA4166D5B13005FE19A /* ActivityView.h */,
+				DE270EA5166D5B13005FE19A /* ActivityView.m */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +233,7 @@
 				BB0DAAEB165E4FAA009B4A2C /* DiskActivity.m in Sources */,
 				BB0DAAEE165E596D009B4A2C /* DiskActivityRandom.m in Sources */,
 				BB74B19C165FBA770081D64A /* DiskActivityIO.m in Sources */,
+				DE270EA6166D5B13005FE19A /* ActivityView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

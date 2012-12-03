@@ -1411,7 +1411,6 @@
 							<string key="NSFrame">{{70, 20}, {403, 196}}</string>
 							<reference key="NSSuperview" ref="541528526"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:24</string>
 							<object class="NSOpenGLPixelFormat" key="NSPixelFormat">
 								<object class="NSMutableData" key="NSPixelAttributes">
@@ -1449,7 +1448,6 @@
 							<string key="NSFrame">{{17, 20}, {241, 34}}</string>
 							<reference key="NSSuperview" ref="338644851"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:1535</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="338243714">
@@ -3753,6 +3751,7 @@
 				<string key="571.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="573.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="574.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
+				<string key="575.CustomClassName">ActivityView</string>
 				<boolean value="NO" key="575.IBNSViewMetadataTranslatesAutoresizingMaskIntoConstraints"/>
 				<string key="575.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="576.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3797,27 +3796,27 @@
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<object class="IBPartialClassDescription">
+					<string key="className">ActivityView</string>
+					<string key="superclassName">NSOpenGLView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ActivityView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="OnSettingsMenuItemPressed:">id</string>
-						<string key="onAboutMenuItemPressed:">id</string>
-						<string key="onQuitMenuItemPressed:">id</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="OnSettingsMenuItemPressed:">
-							<string key="name">OnSettingsMenuItemPressed:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="onAboutMenuItemPressed:">
-							<string key="name">onAboutMenuItemPressed:</string>
-							<string key="candidateClassName">id</string>
-						</object>
-						<object class="IBActionInfo" key="onQuitMenuItemPressed:">
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">onQuitMenuItemPressed:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">onQuitMenuItemPressed:</string>
+						<object class="IBActionInfo" key="NS.object.0">
 							<string key="name">onQuitMenuItemPressed:</string>
 							<string key="candidateClassName">id</string>
 						</object>
-					</dictionary>
+					</object>
 					<object class="NSMutableDictionary" key="outlets">
 						<string key="NS.key.0">statusMenu</string>
 						<string key="NS.object.0">NSMenu</string>
