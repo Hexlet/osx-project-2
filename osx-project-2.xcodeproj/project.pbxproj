@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CE6BF3731668B684008C1CE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6BF3721668B684008C1CE7 /* Cocoa.framework */; };
+		CE6BF37D1668B684008C1CE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6BF37B1668B684008C1CE7 /* InfoPlist.strings */; };
+		CE6BF37F1668B684008C1CE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6BF37E1668B684008C1CE7 /* main.m */; };
+		CE6BF3831668B684008C1CE7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = CE6BF3811668B684008C1CE7 /* Credits.rtf */; };
+		CE6BF3861668B684008C1CE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6BF3851668B684008C1CE7 /* AppDelegate.m */; };
+		CE6BF3891668B684008C1CE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE6BF3871668B684008C1CE7 /* MainMenu.xib */; };
+		CE6BF3911668B684008C1CE7 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6BF3901668B684008C1CE7 /* SenTestingKit.framework */; };
+		CE6BF3921668B684008C1CE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE6BF3721668B684008C1CE7 /* Cocoa.framework */; };
+		CE6BF39A1668B684008C1CE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CE6BF3981668B684008C1CE7 /* InfoPlist.strings */; };
+		CE6BF39D1668B684008C1CE7 /* osx_project_2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE6BF39C1668B684008C1CE7 /* osx_project_2Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CE6BF3931668B684008C1CE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CE6BF3651668B684008C1CE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE6BF36D1668B684008C1CE7;
+			remoteInfo = "osx-project-2";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CE6BF36E1668B684008C1CE7 /* osx-project-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "osx-project-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6BF3721668B684008C1CE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CE6BF3751668B684008C1CE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CE6BF3761668B684008C1CE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CE6BF3771668B684008C1CE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CE6BF37A1668B684008C1CE7 /* osx-project-2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "osx-project-2-Info.plist"; sourceTree = "<group>"; };
+		CE6BF37C1668B684008C1CE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE6BF37E1668B684008C1CE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CE6BF3801668B684008C1CE7 /* osx-project-2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "osx-project-2-Prefix.pch"; sourceTree = "<group>"; };
+		CE6BF3821668B684008C1CE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		CE6BF3841668B684008C1CE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CE6BF3851668B684008C1CE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CE6BF3881668B684008C1CE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		CE6BF38F1668B684008C1CE7 /* osx-project-2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "osx-project-2Tests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE6BF3901668B684008C1CE7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CE6BF3971668B684008C1CE7 /* osx-project-2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "osx-project-2Tests-Info.plist"; sourceTree = "<group>"; };
+		CE6BF3991668B684008C1CE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CE6BF39B1668B684008C1CE7 /* osx_project_2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = osx_project_2Tests.h; sourceTree = "<group>"; };
+		CE6BF39C1668B684008C1CE7 /* osx_project_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = osx_project_2Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CE6BF36B1668B684008C1CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6BF3731668B684008C1CE7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6BF38B1668B684008C1CE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6BF3911668B684008C1CE7 /* SenTestingKit.framework in Frameworks */,
+				CE6BF3921668B684008C1CE7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CE6BF3631668B684008C1CE7 = {
+			isa = PBXGroup;
+			children = (
+				CE6BF3781668B684008C1CE7 /* osx-project-2 */,
+				CE6BF3951668B684008C1CE7 /* osx-project-2Tests */,
+				CE6BF3711668B684008C1CE7 /* Frameworks */,
+				CE6BF36F1668B684008C1CE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CE6BF36F1668B684008C1CE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF36E1668B684008C1CE7 /* osx-project-2.app */,
+				CE6BF38F1668B684008C1CE7 /* osx-project-2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CE6BF3711668B684008C1CE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF3721668B684008C1CE7 /* Cocoa.framework */,
+				CE6BF3901668B684008C1CE7 /* SenTestingKit.framework */,
+				CE6BF3741668B684008C1CE7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE6BF3741668B684008C1CE7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF3751668B684008C1CE7 /* AppKit.framework */,
+				CE6BF3761668B684008C1CE7 /* CoreData.framework */,
+				CE6BF3771668B684008C1CE7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CE6BF3781668B684008C1CE7 /* osx-project-2 */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF3841668B684008C1CE7 /* AppDelegate.h */,
+				CE6BF3851668B684008C1CE7 /* AppDelegate.m */,
+				CE6BF3871668B684008C1CE7 /* MainMenu.xib */,
+				CE6BF3791668B684008C1CE7 /* Supporting Files */,
+			);
+			path = "osx-project-2";
+			sourceTree = "<group>";
+		};
+		CE6BF3791668B684008C1CE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF37A1668B684008C1CE7 /* osx-project-2-Info.plist */,
+				CE6BF37B1668B684008C1CE7 /* InfoPlist.strings */,
+				CE6BF37E1668B684008C1CE7 /* main.m */,
+				CE6BF3801668B684008C1CE7 /* osx-project-2-Prefix.pch */,
+				CE6BF3811668B684008C1CE7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CE6BF3951668B684008C1CE7 /* osx-project-2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF39B1668B684008C1CE7 /* osx_project_2Tests.h */,
+				CE6BF39C1668B684008C1CE7 /* osx_project_2Tests.m */,
+				CE6BF3961668B684008C1CE7 /* Supporting Files */,
+			);
+			path = "osx-project-2Tests";
+			sourceTree = "<group>";
+		};
+		CE6BF3961668B684008C1CE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CE6BF3971668B684008C1CE7 /* osx-project-2Tests-Info.plist */,
+				CE6BF3981668B684008C1CE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE6BF36D1668B684008C1CE7 /* osx-project-2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6BF3A01668B684008C1CE7 /* Build configuration list for PBXNativeTarget "osx-project-2" */;
+			buildPhases = (
+				CE6BF36A1668B684008C1CE7 /* Sources */,
+				CE6BF36B1668B684008C1CE7 /* Frameworks */,
+				CE6BF36C1668B684008C1CE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "osx-project-2";
+			productName = "osx-project-2";
+			productReference = CE6BF36E1668B684008C1CE7 /* osx-project-2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CE6BF38E1668B684008C1CE7 /* osx-project-2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE6BF3A31668B684008C1CE7 /* Build configuration list for PBXNativeTarget "osx-project-2Tests" */;
+			buildPhases = (
+				CE6BF38A1668B684008C1CE7 /* Sources */,
+				CE6BF38B1668B684008C1CE7 /* Frameworks */,
+				CE6BF38C1668B684008C1CE7 /* Resources */,
+				CE6BF38D1668B684008C1CE7 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CE6BF3941668B684008C1CE7 /* PBXTargetDependency */,
+			);
+			name = "osx-project-2Tests";
+			productName = "osx-project-2Tests";
+			productReference = CE6BF38F1668B684008C1CE7 /* osx-project-2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CE6BF3651668B684008C1CE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Kirill Gorshkov";
+			};
+			buildConfigurationList = CE6BF3681668B684008C1CE7 /* Build configuration list for PBXProject "osx-project-2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CE6BF3631668B684008C1CE7;
+			productRefGroup = CE6BF36F1668B684008C1CE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE6BF36D1668B684008C1CE7 /* osx-project-2 */,
+				CE6BF38E1668B684008C1CE7 /* osx-project-2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CE6BF36C1668B684008C1CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6BF37D1668B684008C1CE7 /* InfoPlist.strings in Resources */,
+				CE6BF3831668B684008C1CE7 /* Credits.rtf in Resources */,
+				CE6BF3891668B684008C1CE7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6BF38C1668B684008C1CE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6BF39A1668B684008C1CE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CE6BF38D1668B684008C1CE7 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CE6BF36A1668B684008C1CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6BF37F1668B684008C1CE7 /* main.m in Sources */,
+				CE6BF3861668B684008C1CE7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE6BF38A1668B684008C1CE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE6BF39D1668B684008C1CE7 /* osx_project_2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CE6BF3941668B684008C1CE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE6BF36D1668B684008C1CE7 /* osx-project-2 */;
+			targetProxy = CE6BF3931668B684008C1CE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CE6BF37B1668B684008C1CE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6BF37C1668B684008C1CE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CE6BF3811668B684008C1CE7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6BF3821668B684008C1CE7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		CE6BF3871668B684008C1CE7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6BF3881668B684008C1CE7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		CE6BF3981668B684008C1CE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE6BF3991668B684008C1CE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CE6BF39E1668B684008C1CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CE6BF39F1668B684008C1CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CE6BF3A11668B684008C1CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osx-project-2/osx-project-2-Prefix.pch";
+				INFOPLIST_FILE = "osx-project-2/osx-project-2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CE6BF3A21668B684008C1CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osx-project-2/osx-project-2-Prefix.pch";
+				INFOPLIST_FILE = "osx-project-2/osx-project-2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CE6BF3A41668B684008C1CE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/osx-project-2.app/Contents/MacOS/osx-project-2";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osx-project-2/osx-project-2-Prefix.pch";
+				INFOPLIST_FILE = "osx-project-2Tests/osx-project-2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CE6BF3A51668B684008C1CE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/osx-project-2.app/Contents/MacOS/osx-project-2";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "osx-project-2/osx-project-2-Prefix.pch";
+				INFOPLIST_FILE = "osx-project-2Tests/osx-project-2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CE6BF3681668B684008C1CE7 /* Build configuration list for PBXProject "osx-project-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6BF39E1668B684008C1CE7 /* Debug */,
+				CE6BF39F1668B684008C1CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE6BF3A01668B684008C1CE7 /* Build configuration list for PBXNativeTarget "osx-project-2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6BF3A11668B684008C1CE7 /* Debug */,
+				CE6BF3A21668B684008C1CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CE6BF3A31668B684008C1CE7 /* Build configuration list for PBXNativeTarget "osx-project-2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE6BF3A41668B684008C1CE7 /* Debug */,
+				CE6BF3A51668B684008C1CE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CE6BF3651668B684008C1CE7 /* Project object */;
+}
