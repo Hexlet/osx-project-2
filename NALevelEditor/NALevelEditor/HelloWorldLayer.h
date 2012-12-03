@@ -1,0 +1,23 @@
+//
+//  HelloWorldLayer.h
+//  NALvlBuilder
+//
+//  Created by User on 15.11.12.
+//  Copyright __MyCompanyName__ 2012. All rights reserved.
+//
+
+
+// When you import this file, you import all the cocos2d classes
+#import "cocos2d.h"
+
+#define SPRITE_SIZE 32
+
+// HelloWorldLayer
+@interface HelloWorldLayer : CCLayer
+{
+}
+
+// returns a CCScene that contains the HelloWorldLayer as the only child
++(CCScene *) scene;
+
+@end
