@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63734B9E166D19DC00B91A97 /* Note.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63734B9D166D19DC00B91A97 /* Note.xib */; };
+		63734BA1166D1BCE00B91A97 /* Notes management.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63734BA0166D1BCD00B91A97 /* Notes management.xib */; };
 		63E2187D166D152900412F30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E2187C166D152900412F30 /* Cocoa.framework */; };
 		63E21887166D152900412F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E21885166D152900412F30 /* InfoPlist.strings */; };
 		63E21889166D152900412F30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E21888166D152900412F30 /* main.m */; };
@@ -17,6 +19,7 @@
 		63E2189C166D152A00412F30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E2187C166D152900412F30 /* Cocoa.framework */; };
 		63E218A4166D152A00412F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E218A2166D152A00412F30 /* InfoPlist.strings */; };
 		63E218A7166D152A00412F30 /* LeaveANoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E218A6166D152A00412F30 /* LeaveANoteTests.m */; };
+		63E218B1166D167B00412F30 /* Leave a Note!.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E218B0166D167B00412F30 /* Leave a Note!.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,25 +33,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		63734B9D166D19DC00B91A97 /* Note.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Note.xib; sourceTree = "<group>"; };
+		63734BA0166D1BCD00B91A97 /* Notes management.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Notes management.xib"; sourceTree = "<group>"; };
 		63E21878166D152900412F30 /* LeaveANote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaveANote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E2187C166D152900412F30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		63E2187F166D152900412F30 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		63E21880166D152900412F30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		63E21881166D152900412F30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		63E21884166D152900412F30 /* LeaveANote-Info.plist */ = {isa = PBXFileReference; path = "LeaveANote-Info.plist"; sourceTree = "<group>"; };
+		63E21884166D152900412F30 /* LeaveANote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeaveANote-Info.plist"; sourceTree = "<group>"; };
 		63E21886166D152900412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		63E21888166D152900412F30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		63E2188A166D152900412F30 /* LeaveANote-Prefix.pch */ = {isa = PBXFileReference; path = "LeaveANote-Prefix.pch"; sourceTree = "<group>"; };
+		63E2188A166D152900412F30 /* LeaveANote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LeaveANote-Prefix.pch"; sourceTree = "<group>"; };
 		63E2188C166D152900412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		63E2188E166D152900412F30 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		63E2188E166D152900412F30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		63E2188F166D152900412F30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		63E21892166D152900412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		63E21899166D152A00412F30 /* LeaveANoteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaveANoteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63E2189A166D152A00412F30 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		63E218A1166D152A00412F30 /* LeaveANoteTests-Info.plist */ = {isa = PBXFileReference; path = "LeaveANoteTests-Info.plist"; sourceTree = "<group>"; };
+		63E218A1166D152A00412F30 /* LeaveANoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LeaveANoteTests-Info.plist"; sourceTree = "<group>"; };
 		63E218A3166D152A00412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		63E218A5166D152A00412F30 /* LeaveANoteTests.h */ = {isa = PBXFileReference; path = LeaveANoteTests.h; sourceTree = "<group>"; };
+		63E218A5166D152A00412F30 /* LeaveANoteTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeaveANoteTests.h; sourceTree = "<group>"; };
 		63E218A6166D152A00412F30 /* LeaveANoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaveANoteTests.m; sourceTree = "<group>"; };
+		63E218B0166D167B00412F30 /* Leave a Note!.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "Leave a Note!.xib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +122,9 @@
 			children = (
 				63E2188E166D152900412F30 /* AppDelegate.h */,
 				63E2188F166D152900412F30 /* AppDelegate.m */,
+				63E218B0166D167B00412F30 /* Leave a Note!.xib */,
+				63734BA0166D1BCD00B91A97 /* Notes management.xib */,
+				63734B9D166D19DC00B91A97 /* Note.xib */,
 				63E21891166D152900412F30 /* MainMenu.xib */,
 				63E21883166D152900412F30 /* Supporting Files */,
 			);
@@ -226,6 +235,9 @@
 				63E21887166D152900412F30 /* InfoPlist.strings in Resources */,
 				63E2188D166D152900412F30 /* Credits.rtf in Resources */,
 				63E21893166D152900412F30 /* MainMenu.xib in Resources */,
+				63E218B1166D167B00412F30 /* Leave a Note!.xib in Resources */,
+				63734B9E166D19DC00B91A97 /* Note.xib in Resources */,
+				63734BA1166D1BCE00B91A97 /* Notes management.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +335,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -349,7 +361,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -433,6 +445,7 @@
 				63E218AC166D152A00412F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63E218AD166D152A00412F30 /* Build configuration list for PBXNativeTarget "LeaveANoteTests" */ = {
 			isa = XCConfigurationList;
@@ -441,6 +454,7 @@
 				63E218AF166D152A00412F30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
