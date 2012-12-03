@@ -20,9 +20,14 @@
     timer = [NSTimer scheduledTimerWithTimeInterval:0.01f target:self selector:@selector(onTick) userInfo:nil repeats:YES];
 }
 
+///
+/// Вызывается таймером, при несовпадении copyCount и текущего числа изменений буфера перезаписывает
+/// copyCount и вызывает copy
+///
 -(void) onTick {
     if (copyCount != [mainPasteboard changeCount]) {
         copyCount = [mainPasteboard changeCount];
+        /// для предотвращения коллизий при изменении буфера функцией pasteNow
         if (pasteboardSemaphore) {
             [self copy];
         }
@@ -31,9 +36,19 @@
         }
     }
 }
+
+///
+/// Вытаскивает строку из буфера обмена и записывает ее в pasteboardContainer,
+/// а ее укороченное представление - в ComboBox
+///
 - (void)copy {
-    NSString *pasteboardString = [mainPasteboard stringForType:NSStringPboardType];
+    NSString *pasteboardString;
+    /// для предотвращения ошибок типа NSString == nil
+    while (!pasteboardString) {
+         pasteboardString = [mainPasteboard stringForType:NSStringPboardType];
+    }
     NSString *comboString;
+    /// проверяем, есть ли уже такая строка
     BOOL copyFlag = YES;
     for (int i = 0; i < [pasteboardContainer count]; i++) {
         if ([pasteboardString isEqualToString:[pasteboardContainer objectAtIndex:i]]) {
@@ -41,6 +56,7 @@
             break;
         }
     }
+    /// собираем строку для отображения в comboBox
     if ([pasteboardString length] > 50)
         comboString = [[[pasteboardString stringByReplacingOccurrencesOfString:@"\n" withString: @" "] substringToIndex:47] stringByAppendingString:@"..."];
     else
@@ -53,6 +69,9 @@
     [_comboBox setStringValue:comboString];
 }
 
+///
+/// Записывает текущую строку из ComboBox в буфер обмена
+///
 - (IBAction)pasteNow:(id)sender {
     pasteboardSemaphore = NO;
     [mainPasteboard declareTypes:[NSArray arrayWithObject:NSStringPboardType] owner:nil];
