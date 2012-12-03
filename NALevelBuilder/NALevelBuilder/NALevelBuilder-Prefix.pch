@@ -1,7 +1,0 @@
-//
-// Prefix header for all source files of the 'NALevelBuilder' target in the 'NALevelBuilder' project
-//
-
-#ifdef __OBJC__
-    #import <Cocoa/Cocoa.h>
-#endif
