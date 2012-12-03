@@ -1,0 +1,448 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		63E2187D166D152900412F30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E2187C166D152900412F30 /* Cocoa.framework */; };
+		63E21887166D152900412F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E21885166D152900412F30 /* InfoPlist.strings */; };
+		63E21889166D152900412F30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E21888166D152900412F30 /* main.m */; };
+		63E2188D166D152900412F30 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 63E2188B166D152900412F30 /* Credits.rtf */; };
+		63E21890166D152900412F30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2188F166D152900412F30 /* AppDelegate.m */; };
+		63E21893166D152900412F30 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 63E21891166D152900412F30 /* MainMenu.xib */; };
+		63E2189B166D152A00412F30 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E2189A166D152A00412F30 /* SenTestingKit.framework */; };
+		63E2189C166D152A00412F30 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E2187C166D152900412F30 /* Cocoa.framework */; };
+		63E218A4166D152A00412F30 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 63E218A2166D152A00412F30 /* InfoPlist.strings */; };
+		63E218A7166D152A00412F30 /* LeaveANoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E218A6166D152A00412F30 /* LeaveANoteTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63E2189D166D152A00412F30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63E2186F166D152900412F30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63E21877166D152900412F30;
+			remoteInfo = LeaveANote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		63E21878166D152900412F30 /* LeaveANote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeaveANote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E2187C166D152900412F30 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		63E2187F166D152900412F30 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		63E21880166D152900412F30 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		63E21881166D152900412F30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		63E21884166D152900412F30 /* LeaveANote-Info.plist */ = {isa = PBXFileReference; path = "LeaveANote-Info.plist"; sourceTree = "<group>"; };
+		63E21886166D152900412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63E21888166D152900412F30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		63E2188A166D152900412F30 /* LeaveANote-Prefix.pch */ = {isa = PBXFileReference; path = "LeaveANote-Prefix.pch"; sourceTree = "<group>"; };
+		63E2188C166D152900412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		63E2188E166D152900412F30 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		63E2188F166D152900412F30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		63E21892166D152900412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		63E21899166D152A00412F30 /* LeaveANoteTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeaveANoteTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E2189A166D152A00412F30 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		63E218A1166D152A00412F30 /* LeaveANoteTests-Info.plist */ = {isa = PBXFileReference; path = "LeaveANoteTests-Info.plist"; sourceTree = "<group>"; };
+		63E218A3166D152A00412F30 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		63E218A5166D152A00412F30 /* LeaveANoteTests.h */ = {isa = PBXFileReference; path = LeaveANoteTests.h; sourceTree = "<group>"; };
+		63E218A6166D152A00412F30 /* LeaveANoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeaveANoteTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63E21875166D152900412F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E2187D166D152900412F30 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E21895166D152A00412F30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E2189B166D152A00412F30 /* SenTestingKit.framework in Frameworks */,
+				63E2189C166D152A00412F30 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63E2186D166D152900412F30 = {
+			isa = PBXGroup;
+			children = (
+				63E21882166D152900412F30 /* LeaveANote */,
+				63E2189F166D152A00412F30 /* LeaveANoteTests */,
+				63E2187B166D152900412F30 /* Frameworks */,
+				63E21879166D152900412F30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		63E21879166D152900412F30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63E21878166D152900412F30 /* LeaveANote.app */,
+				63E21899166D152A00412F30 /* LeaveANoteTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63E2187B166D152900412F30 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E2187C166D152900412F30 /* Cocoa.framework */,
+				63E2189A166D152A00412F30 /* SenTestingKit.framework */,
+				63E2187E166D152900412F30 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		63E2187E166D152900412F30 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63E2187F166D152900412F30 /* AppKit.framework */,
+				63E21880166D152900412F30 /* CoreData.framework */,
+				63E21881166D152900412F30 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		63E21882166D152900412F30 /* LeaveANote */ = {
+			isa = PBXGroup;
+			children = (
+				63E2188E166D152900412F30 /* AppDelegate.h */,
+				63E2188F166D152900412F30 /* AppDelegate.m */,
+				63E21891166D152900412F30 /* MainMenu.xib */,
+				63E21883166D152900412F30 /* Supporting Files */,
+			);
+			path = LeaveANote;
+			sourceTree = "<group>";
+		};
+		63E21883166D152900412F30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63E21884166D152900412F30 /* LeaveANote-Info.plist */,
+				63E21885166D152900412F30 /* InfoPlist.strings */,
+				63E21888166D152900412F30 /* main.m */,
+				63E2188A166D152900412F30 /* LeaveANote-Prefix.pch */,
+				63E2188B166D152900412F30 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		63E2189F166D152A00412F30 /* LeaveANoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				63E218A5166D152A00412F30 /* LeaveANoteTests.h */,
+				63E218A6166D152A00412F30 /* LeaveANoteTests.m */,
+				63E218A0166D152A00412F30 /* Supporting Files */,
+			);
+			path = LeaveANoteTests;
+			sourceTree = "<group>";
+		};
+		63E218A0166D152A00412F30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				63E218A1166D152A00412F30 /* LeaveANoteTests-Info.plist */,
+				63E218A2166D152A00412F30 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63E21877166D152900412F30 /* LeaveANote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E218AA166D152A00412F30 /* Build configuration list for PBXNativeTarget "LeaveANote" */;
+			buildPhases = (
+				63E21874166D152900412F30 /* Sources */,
+				63E21875166D152900412F30 /* Frameworks */,
+				63E21876166D152900412F30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeaveANote;
+			productName = LeaveANote;
+			productReference = 63E21878166D152900412F30 /* LeaveANote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63E21898166D152A00412F30 /* LeaveANoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63E218AD166D152A00412F30 /* Build configuration list for PBXNativeTarget "LeaveANoteTests" */;
+			buildPhases = (
+				63E21894166D152A00412F30 /* Sources */,
+				63E21895166D152A00412F30 /* Frameworks */,
+				63E21896166D152A00412F30 /* Resources */,
+				63E21897166D152A00412F30 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63E2189E166D152A00412F30 /* PBXTargetDependency */,
+			);
+			name = LeaveANoteTests;
+			productName = LeaveANoteTests;
+			productReference = 63E21899166D152A00412F30 /* LeaveANoteTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63E2186F166D152900412F30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 63E21872166D152900412F30 /* Build configuration list for PBXProject "LeaveANote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 63E2186D166D152900412F30;
+			productRefGroup = 63E21879166D152900412F30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63E21877166D152900412F30 /* LeaveANote */,
+				63E21898166D152A00412F30 /* LeaveANoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63E21876166D152900412F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E21887166D152900412F30 /* InfoPlist.strings in Resources */,
+				63E2188D166D152900412F30 /* Credits.rtf in Resources */,
+				63E21893166D152900412F30 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E21896166D152A00412F30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E218A4166D152A00412F30 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63E21897166D152A00412F30 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63E21874166D152900412F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E21889166D152900412F30 /* main.m in Sources */,
+				63E21890166D152900412F30 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63E21894166D152A00412F30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63E218A7166D152A00412F30 /* LeaveANoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63E2189E166D152A00412F30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63E21877166D152900412F30 /* LeaveANote */;
+			targetProxy = 63E2189D166D152A00412F30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		63E21885166D152900412F30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E21886166D152900412F30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		63E2188B166D152900412F30 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E2188C166D152900412F30 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		63E21891166D152900412F30 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E21892166D152900412F30 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		63E218A2166D152A00412F30 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				63E218A3166D152A00412F30 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63E218A8166D152A00412F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		63E218A9166D152A00412F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		63E218AB166D152A00412F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeaveANote/LeaveANote-Prefix.pch";
+				INFOPLIST_FILE = "LeaveANote/LeaveANote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		63E218AC166D152A00412F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeaveANote/LeaveANote-Prefix.pch";
+				INFOPLIST_FILE = "LeaveANote/LeaveANote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		63E218AE166D152A00412F30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeaveANote.app/Contents/MacOS/LeaveANote";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeaveANote/LeaveANote-Prefix.pch";
+				INFOPLIST_FILE = "LeaveANoteTests/LeaveANoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		63E218AF166D152A00412F30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LeaveANote.app/Contents/MacOS/LeaveANote";
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LeaveANote/LeaveANote-Prefix.pch";
+				INFOPLIST_FILE = "LeaveANoteTests/LeaveANoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63E21872166D152900412F30 /* Build configuration list for PBXProject "LeaveANote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E218A8166D152A00412F30 /* Debug */,
+				63E218A9166D152A00412F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63E218AA166D152A00412F30 /* Build configuration list for PBXNativeTarget "LeaveANote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E218AB166D152A00412F30 /* Debug */,
+				63E218AC166D152A00412F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		63E218AD166D152A00412F30 /* Build configuration list for PBXNativeTarget "LeaveANoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63E218AE166D152A00412F30 /* Debug */,
+				63E218AF166D152A00412F30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 63E2186F166D152900412F30 /* Project object */;
+}
