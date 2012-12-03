@@ -1,0 +1,325 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1CE0F76E166AB6CD00C6A046 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CE0F76D166AB6CD00C6A046 /* Cocoa.framework */; };
+		1CE0F778166AB6CD00C6A046 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F776166AB6CD00C6A046 /* InfoPlist.strings */; };
+		1CE0F77A166AB6CD00C6A046 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F779166AB6CD00C6A046 /* main.m */; };
+		1CE0F77E166AB6CD00C6A046 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F77C166AB6CD00C6A046 /* Credits.rtf */; };
+		1CE0F781166AB6CD00C6A046 /* SCMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F780166AB6CD00C6A046 /* SCMAppDelegate.m */; };
+		1CE0F784166AB6CE00C6A046 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F782166AB6CE00C6A046 /* MainMenu.xib */; };
+		1CE0F78D166AB8DF00C6A046 /* SCMRightPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F78B166AB8DF00C6A046 /* SCMRightPanelViewController.m */; };
+		1CE0F78E166AB8DF00C6A046 /* SCMRightPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F78C166AB8DF00C6A046 /* SCMRightPanelViewController.xib */; };
+		1CE0F792166AB8FA00C6A046 /* SCMLeftPanelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CE0F790166AB8FA00C6A046 /* SCMLeftPanelViewController.m */; };
+		1CE0F793166AB8FA00C6A046 /* SCMLeftPanelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE0F791166AB8FA00C6A046 /* SCMLeftPanelViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1CE0F769166AB6CD00C6A046 /* simple connection manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "simple connection manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1CE0F76D166AB6CD00C6A046 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1CE0F770166AB6CD00C6A046 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1CE0F771166AB6CD00C6A046 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1CE0F772166AB6CD00C6A046 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1CE0F775166AB6CD00C6A046 /* simple connection manager-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "simple connection manager-Info.plist"; sourceTree = "<group>"; };
+		1CE0F777166AB6CD00C6A046 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1CE0F779166AB6CD00C6A046 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CE0F77B166AB6CD00C6A046 /* simple connection manager-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "simple connection manager-Prefix.pch"; sourceTree = "<group>"; };
+		1CE0F77D166AB6CD00C6A046 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1CE0F77F166AB6CD00C6A046 /* SCMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCMAppDelegate.h; sourceTree = "<group>"; };
+		1CE0F780166AB6CD00C6A046 /* SCMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCMAppDelegate.m; sourceTree = "<group>"; };
+		1CE0F783166AB6CE00C6A046 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1CE0F78A166AB8DF00C6A046 /* SCMRightPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMRightPanelViewController.h; sourceTree = "<group>"; };
+		1CE0F78B166AB8DF00C6A046 /* SCMRightPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMRightPanelViewController.m; sourceTree = "<group>"; };
+		1CE0F78C166AB8DF00C6A046 /* SCMRightPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMRightPanelViewController.xib; sourceTree = "<group>"; };
+		1CE0F78F166AB8FA00C6A046 /* SCMLeftPanelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCMLeftPanelViewController.h; sourceTree = "<group>"; };
+		1CE0F790166AB8FA00C6A046 /* SCMLeftPanelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCMLeftPanelViewController.m; sourceTree = "<group>"; };
+		1CE0F791166AB8FA00C6A046 /* SCMLeftPanelViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMLeftPanelViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE0F766166AB6CD00C6A046 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0F76E166AB6CD00C6A046 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CE0F75E166AB6CD00C6A046 = {
+			isa = PBXGroup;
+			children = (
+				1CE0F773166AB6CD00C6A046 /* simple connection manager */,
+				1CE0F76C166AB6CD00C6A046 /* Frameworks */,
+				1CE0F76A166AB6CD00C6A046 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1CE0F76A166AB6CD00C6A046 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0F769166AB6CD00C6A046 /* simple connection manager.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1CE0F76C166AB6CD00C6A046 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0F76D166AB6CD00C6A046 /* Cocoa.framework */,
+				1CE0F76F166AB6CD00C6A046 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1CE0F76F166AB6CD00C6A046 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0F770166AB6CD00C6A046 /* AppKit.framework */,
+				1CE0F771166AB6CD00C6A046 /* CoreData.framework */,
+				1CE0F772166AB6CD00C6A046 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1CE0F773166AB6CD00C6A046 /* simple connection manager */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0F77F166AB6CD00C6A046 /* SCMAppDelegate.h */,
+				1CE0F780166AB6CD00C6A046 /* SCMAppDelegate.m */,
+				1CE0F782166AB6CE00C6A046 /* MainMenu.xib */,
+				1CE0F774166AB6CD00C6A046 /* Supporting Files */,
+				1CE0F78A166AB8DF00C6A046 /* SCMRightPanelViewController.h */,
+				1CE0F78B166AB8DF00C6A046 /* SCMRightPanelViewController.m */,
+				1CE0F78C166AB8DF00C6A046 /* SCMRightPanelViewController.xib */,
+				1CE0F78F166AB8FA00C6A046 /* SCMLeftPanelViewController.h */,
+				1CE0F790166AB8FA00C6A046 /* SCMLeftPanelViewController.m */,
+				1CE0F791166AB8FA00C6A046 /* SCMLeftPanelViewController.xib */,
+			);
+			path = "simple connection manager";
+			sourceTree = "<group>";
+		};
+		1CE0F774166AB6CD00C6A046 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CE0F775166AB6CD00C6A046 /* simple connection manager-Info.plist */,
+				1CE0F776166AB6CD00C6A046 /* InfoPlist.strings */,
+				1CE0F779166AB6CD00C6A046 /* main.m */,
+				1CE0F77B166AB6CD00C6A046 /* simple connection manager-Prefix.pch */,
+				1CE0F77C166AB6CD00C6A046 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1CE0F768166AB6CD00C6A046 /* simple connection manager */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1CE0F787166AB6CE00C6A046 /* Build configuration list for PBXNativeTarget "simple connection manager" */;
+			buildPhases = (
+				1CE0F765166AB6CD00C6A046 /* Sources */,
+				1CE0F766166AB6CD00C6A046 /* Frameworks */,
+				1CE0F767166AB6CD00C6A046 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "simple connection manager";
+			productName = "simple connection manager";
+			productReference = 1CE0F769166AB6CD00C6A046 /* simple connection manager.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1CE0F760166AB6CD00C6A046 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SCM;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = sysadmin.su;
+			};
+			buildConfigurationList = 1CE0F763166AB6CD00C6A046 /* Build configuration list for PBXProject "simple connection manager" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1CE0F75E166AB6CD00C6A046;
+			productRefGroup = 1CE0F76A166AB6CD00C6A046 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1CE0F768166AB6CD00C6A046 /* simple connection manager */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1CE0F767166AB6CD00C6A046 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0F778166AB6CD00C6A046 /* InfoPlist.strings in Resources */,
+				1CE0F77E166AB6CD00C6A046 /* Credits.rtf in Resources */,
+				1CE0F784166AB6CE00C6A046 /* MainMenu.xib in Resources */,
+				1CE0F78E166AB8DF00C6A046 /* SCMRightPanelViewController.xib in Resources */,
+				1CE0F793166AB8FA00C6A046 /* SCMLeftPanelViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1CE0F765166AB6CD00C6A046 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CE0F77A166AB6CD00C6A046 /* main.m in Sources */,
+				1CE0F781166AB6CD00C6A046 /* SCMAppDelegate.m in Sources */,
+				1CE0F78D166AB8DF00C6A046 /* SCMRightPanelViewController.m in Sources */,
+				1CE0F792166AB8FA00C6A046 /* SCMLeftPanelViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1CE0F776166AB6CD00C6A046 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CE0F777166AB6CD00C6A046 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1CE0F77C166AB6CD00C6A046 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CE0F77D166AB6CD00C6A046 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1CE0F782166AB6CE00C6A046 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1CE0F783166AB6CE00C6A046 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1CE0F785166AB6CE00C6A046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1CE0F786166AB6CE00C6A046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1CE0F788166AB6CE00C6A046 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simple connection manager/simple connection manager-Prefix.pch";
+				INFOPLIST_FILE = "simple connection manager/simple connection manager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1CE0F789166AB6CE00C6A046 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "simple connection manager/simple connection manager-Prefix.pch";
+				INFOPLIST_FILE = "simple connection manager/simple connection manager-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1CE0F763166AB6CD00C6A046 /* Build configuration list for PBXProject "simple connection manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0F785166AB6CE00C6A046 /* Debug */,
+				1CE0F786166AB6CE00C6A046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1CE0F787166AB6CE00C6A046 /* Build configuration list for PBXNativeTarget "simple connection manager" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1CE0F788166AB6CE00C6A046 /* Debug */,
+				1CE0F789166AB6CE00C6A046 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1CE0F760166AB6CD00C6A046 /* Project object */;
+}
