@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11F5DE28166D10EA000A4F65 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F5DE27166D10EA000A4F65 /* PreferencesWindow.xib */; };
+		1FD04F051652DAEA00113EE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD04F041652DAEA00113EE2 /* Cocoa.framework */; };
+		1FD04F0F1652DAEA00113EE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F0D1652DAEA00113EE2 /* InfoPlist.strings */; };
+		1FD04F111652DAEA00113EE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD04F101652DAEA00113EE2 /* main.m */; };
+		1FD04F151652DAEA00113EE2 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F131652DAEA00113EE2 /* Credits.rtf */; };
+		1FD04F181652DAEA00113EE2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD04F171652DAEA00113EE2 /* AppDelegate.m */; };
+		1FD04F1B1652DAEA00113EE2 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F191652DAEA00113EE2 /* MainMenu.xib */; };
+		1FD04F231652DAEA00113EE2 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD04F221652DAEA00113EE2 /* SenTestingKit.framework */; };
+		1FD04F241652DAEA00113EE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD04F041652DAEA00113EE2 /* Cocoa.framework */; };
+		1FD04F2C1652DAEA00113EE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F2A1652DAEA00113EE2 /* InfoPlist.strings */; };
+		1FD04F2F1652DAEA00113EE2 /* TorrentConnectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD04F2E1652DAEA00113EE2 /* TorrentConnectionTests.m */; };
+		1FD04F3E1652DB1800113EE2 /* deluge.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F381652DB1800113EE2 /* deluge.png */; };
+		1FD04F3F1652DB1800113EE2 /* transmission.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F391652DB1800113EE2 /* transmission.png */; };
+		1FD04F401652DB1800113EE2 /* utorrent.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3A1652DB1800113EE2 /* utorrent.png */; };
+		1FD04F411652DB1800113EE2 /* description.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3B1652DB1800113EE2 /* description.pdf */; };
+		1FD04F421652DB1800113EE2 /* description.docx in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3C1652DB1800113EE2 /* description.docx */; };
+		1FD04F451652DB3F00113EE2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F441652DB3F00113EE2 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FD04F251652DAEA00113EE2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FD04EF71652DAEA00113EE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FD04EFF1652DAEA00113EE2;
+			remoteInfo = TorrentConnection;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11F5DE27166D10EA000A4F65 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		1FD04F001652DAEA00113EE2 /* TorrentConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorrentConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD04F041652DAEA00113EE2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1FD04F071652DAEA00113EE2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1FD04F081652DAEA00113EE2 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1FD04F091652DAEA00113EE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FD04F0C1652DAEA00113EE2 /* TorrentConnection-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TorrentConnection-Info.plist"; sourceTree = "<group>"; };
+		1FD04F0E1652DAEA00113EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FD04F101652DAEA00113EE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FD04F121652DAEA00113EE2 /* TorrentConnection-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TorrentConnection-Prefix.pch"; sourceTree = "<group>"; };
+		1FD04F141652DAEA00113EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1FD04F161652DAEA00113EE2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1FD04F171652DAEA00113EE2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1FD04F1A1652DAEA00113EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1FD04F211652DAEA00113EE2 /* TorrentConnectionTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TorrentConnectionTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FD04F221652DAEA00113EE2 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1FD04F291652DAEA00113EE2 /* TorrentConnectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TorrentConnectionTests-Info.plist"; sourceTree = "<group>"; };
+		1FD04F2B1652DAEA00113EE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FD04F2D1652DAEA00113EE2 /* TorrentConnectionTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TorrentConnectionTests.h; sourceTree = "<group>"; };
+		1FD04F2E1652DAEA00113EE2 /* TorrentConnectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TorrentConnectionTests.m; sourceTree = "<group>"; };
+		1FD04F381652DB1800113EE2 /* deluge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deluge.png; sourceTree = "<group>"; };
+		1FD04F391652DB1800113EE2 /* transmission.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transmission.png; sourceTree = "<group>"; };
+		1FD04F3A1652DB1800113EE2 /* utorrent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = utorrent.png; sourceTree = "<group>"; };
+		1FD04F3B1652DB1800113EE2 /* description.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = description.pdf; sourceTree = "<group>"; };
+		1FD04F3C1652DB1800113EE2 /* description.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = description.docx; sourceTree = "<group>"; };
+		1FD04F441652DB3F00113EE2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FD04EFD1652DAEA00113EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD04F051652DAEA00113EE2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD04F1D1652DAEA00113EE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD04F231652DAEA00113EE2 /* SenTestingKit.framework in Frameworks */,
+				1FD04F241652DAEA00113EE2 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FD04EF51652DAEA00113EE2 = {
+			isa = PBXGroup;
+			children = (
+				1FD04F441652DB3F00113EE2 /* README.md */,
+				1FD04F381652DB1800113EE2 /* deluge.png */,
+				1FD04F391652DB1800113EE2 /* transmission.png */,
+				1FD04F3A1652DB1800113EE2 /* utorrent.png */,
+				1FD04F0A1652DAEA00113EE2 /* TorrentConnection */,
+				1FD04F3B1652DB1800113EE2 /* description.pdf */,
+				1FD04F3C1652DB1800113EE2 /* description.docx */,
+				1FD04F271652DAEA00113EE2 /* TorrentConnectionTests */,
+				1FD04F031652DAEA00113EE2 /* Frameworks */,
+				1FD04F011652DAEA00113EE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FD04F011652DAEA00113EE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F001652DAEA00113EE2 /* TorrentConnection.app */,
+				1FD04F211652DAEA00113EE2 /* TorrentConnectionTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FD04F031652DAEA00113EE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F041652DAEA00113EE2 /* Cocoa.framework */,
+				1FD04F221652DAEA00113EE2 /* SenTestingKit.framework */,
+				1FD04F061652DAEA00113EE2 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FD04F061652DAEA00113EE2 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F071652DAEA00113EE2 /* AppKit.framework */,
+				1FD04F081652DAEA00113EE2 /* CoreData.framework */,
+				1FD04F091652DAEA00113EE2 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1FD04F0A1652DAEA00113EE2 /* TorrentConnection */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F161652DAEA00113EE2 /* AppDelegate.h */,
+				1FD04F171652DAEA00113EE2 /* AppDelegate.m */,
+				1FD04F191652DAEA00113EE2 /* MainMenu.xib */,
+				11F5DE27166D10EA000A4F65 /* PreferencesWindow.xib */,
+				1FD04F0B1652DAEA00113EE2 /* Supporting Files */,
+			);
+			path = TorrentConnection;
+			sourceTree = "<group>";
+		};
+		1FD04F0B1652DAEA00113EE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F0C1652DAEA00113EE2 /* TorrentConnection-Info.plist */,
+				1FD04F0D1652DAEA00113EE2 /* InfoPlist.strings */,
+				1FD04F101652DAEA00113EE2 /* main.m */,
+				1FD04F121652DAEA00113EE2 /* TorrentConnection-Prefix.pch */,
+				1FD04F131652DAEA00113EE2 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FD04F271652DAEA00113EE2 /* TorrentConnectionTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F2D1652DAEA00113EE2 /* TorrentConnectionTests.h */,
+				1FD04F2E1652DAEA00113EE2 /* TorrentConnectionTests.m */,
+				1FD04F281652DAEA00113EE2 /* Supporting Files */,
+			);
+			path = TorrentConnectionTests;
+			sourceTree = "<group>";
+		};
+		1FD04F281652DAEA00113EE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FD04F291652DAEA00113EE2 /* TorrentConnectionTests-Info.plist */,
+				1FD04F2A1652DAEA00113EE2 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FD04EFF1652DAEA00113EE2 /* TorrentConnection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD04F321652DAEA00113EE2 /* Build configuration list for PBXNativeTarget "TorrentConnection" */;
+			buildPhases = (
+				1FD04EFC1652DAEA00113EE2 /* Sources */,
+				1FD04EFD1652DAEA00113EE2 /* Frameworks */,
+				1FD04EFE1652DAEA00113EE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TorrentConnection;
+			productName = TorrentConnection;
+			productReference = 1FD04F001652DAEA00113EE2 /* TorrentConnection.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FD04F201652DAEA00113EE2 /* TorrentConnectionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FD04F351652DAEA00113EE2 /* Build configuration list for PBXNativeTarget "TorrentConnectionTests" */;
+			buildPhases = (
+				1FD04F1C1652DAEA00113EE2 /* Sources */,
+				1FD04F1D1652DAEA00113EE2 /* Frameworks */,
+				1FD04F1E1652DAEA00113EE2 /* Resources */,
+				1FD04F1F1652DAEA00113EE2 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FD04F261652DAEA00113EE2 /* PBXTargetDependency */,
+			);
+			name = TorrentConnectionTests;
+			productName = TorrentConnectionTests;
+			productReference = 1FD04F211652DAEA00113EE2 /* TorrentConnectionTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FD04EF71652DAEA00113EE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Александр Борунов";
+			};
+			buildConfigurationList = 1FD04EFA1652DAEA00113EE2 /* Build configuration list for PBXProject "TorrentConnection" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1FD04EF51652DAEA00113EE2;
+			productRefGroup = 1FD04F011652DAEA00113EE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FD04EFF1652DAEA00113EE2 /* TorrentConnection */,
+				1FD04F201652DAEA00113EE2 /* TorrentConnectionTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FD04EFE1652DAEA00113EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD04F0F1652DAEA00113EE2 /* InfoPlist.strings in Resources */,
+				1FD04F151652DAEA00113EE2 /* Credits.rtf in Resources */,
+				1FD04F1B1652DAEA00113EE2 /* MainMenu.xib in Resources */,
+				1FD04F3E1652DB1800113EE2 /* deluge.png in Resources */,
+				1FD04F3F1652DB1800113EE2 /* transmission.png in Resources */,
+				1FD04F401652DB1800113EE2 /* utorrent.png in Resources */,
+				1FD04F411652DB1800113EE2 /* description.pdf in Resources */,
+				1FD04F421652DB1800113EE2 /* description.docx in Resources */,
+				1FD04F451652DB3F00113EE2 /* README.md in Resources */,
+				11F5DE28166D10EA000A4F65 /* PreferencesWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD04F1E1652DAEA00113EE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD04F2C1652DAEA00113EE2 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1FD04F1F1652DAEA00113EE2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FD04EFC1652DAEA00113EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD04F111652DAEA00113EE2 /* main.m in Sources */,
+				1FD04F181652DAEA00113EE2 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FD04F1C1652DAEA00113EE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FD04F2F1652DAEA00113EE2 /* TorrentConnectionTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FD04F261652DAEA00113EE2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FD04EFF1652DAEA00113EE2 /* TorrentConnection */;
+			targetProxy = 1FD04F251652DAEA00113EE2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FD04F0D1652DAEA00113EE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FD04F0E1652DAEA00113EE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FD04F131652DAEA00113EE2 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FD04F141652DAEA00113EE2 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1FD04F191652DAEA00113EE2 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FD04F1A1652DAEA00113EE2 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		1FD04F2A1652DAEA00113EE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FD04F2B1652DAEA00113EE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FD04F301652DAEA00113EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1FD04F311652DAEA00113EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1FD04F331652DAEA00113EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TorrentConnection/TorrentConnection-Prefix.pch";
+				INFOPLIST_FILE = "TorrentConnection/TorrentConnection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FD04F341652DAEA00113EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TorrentConnection/TorrentConnection-Prefix.pch";
+				INFOPLIST_FILE = "TorrentConnection/TorrentConnection-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1FD04F361652DAEA00113EE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TorrentConnection.app/Contents/MacOS/TorrentConnection";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TorrentConnection/TorrentConnection-Prefix.pch";
+				INFOPLIST_FILE = "TorrentConnectionTests/TorrentConnectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		1FD04F371652DAEA00113EE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/TorrentConnection.app/Contents/MacOS/TorrentConnection";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TorrentConnection/TorrentConnection-Prefix.pch";
+				INFOPLIST_FILE = "TorrentConnectionTests/TorrentConnectionTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FD04EFA1652DAEA00113EE2 /* Build configuration list for PBXProject "TorrentConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD04F301652DAEA00113EE2 /* Debug */,
+				1FD04F311652DAEA00113EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD04F321652DAEA00113EE2 /* Build configuration list for PBXNativeTarget "TorrentConnection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD04F331652DAEA00113EE2 /* Debug */,
+				1FD04F341652DAEA00113EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FD04F351652DAEA00113EE2 /* Build configuration list for PBXNativeTarget "TorrentConnectionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD04F361652DAEA00113EE2 /* Debug */,
+				1FD04F371652DAEA00113EE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FD04EF71652DAEA00113EE2 /* Project object */;
+}
