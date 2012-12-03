@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11F5DE28166D10EA000A4F65 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11F5DE27166D10EA000A4F65 /* PreferencesWindow.xib */; };
 		1FD04F051652DAEA00113EE2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD04F041652DAEA00113EE2 /* Cocoa.framework */; };
 		1FD04F0F1652DAEA00113EE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F0D1652DAEA00113EE2 /* InfoPlist.strings */; };
 		1FD04F111652DAEA00113EE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD04F101652DAEA00113EE2 /* main.m */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11F5DE27166D10EA000A4F65 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
 		1FD04F001652DAEA00113EE2 /* TorrentConnection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TorrentConnection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD04F041652DAEA00113EE2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		1FD04F071652DAEA00113EE2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -138,6 +140,7 @@
 				1FD04F161652DAEA00113EE2 /* AppDelegate.h */,
 				1FD04F171652DAEA00113EE2 /* AppDelegate.m */,
 				1FD04F191652DAEA00113EE2 /* MainMenu.xib */,
+				11F5DE27166D10EA000A4F65 /* PreferencesWindow.xib */,
 				1FD04F0B1652DAEA00113EE2 /* Supporting Files */,
 			);
 			path = TorrentConnection;
@@ -255,6 +258,7 @@
 				1FD04F421652DB1800113EE2 /* description.docx in Resources */,
 				1FD04F431652DB1800113EE2 /* description.txt in Resources */,
 				1FD04F451652DB3F00113EE2 /* README.md in Resources */,
+				11F5DE28166D10EA000A4F65 /* PreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +478,7 @@
 				1FD04F341652DAEA00113EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FD04F351652DAEA00113EE2 /* Build configuration list for PBXNativeTarget "TorrentConnectionTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +487,7 @@
 				1FD04F371652DAEA00113EE2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
