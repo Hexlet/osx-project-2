@@ -1,0 +1,557 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A51689A6162B58630045EFDB /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = A51689A5162B58630045EFDB /* Post.m */; };
+		A51689A8162B5BC20045EFDB /* habrahabr_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A51689A7162B5BC20045EFDB /* habrahabr_02.png */; };
+		A5329BA21635EA980065CE4D /* habrahabr_01.png in Resources */ = {isa = PBXBuildFile; fileRef = A5329BA11635EA980065CE4D /* habrahabr_01.png */; };
+		A5329BA51635EACE0065CE4D /* habrahabr-iphone_02.png in Resources */ = {isa = PBXBuildFile; fileRef = A5329BA41635EACE0065CE4D /* habrahabr-iphone_02.png */; };
+		A56D8132162467AE00BD2159 /* HabraReader_Prototype.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A56D8130162467AE00BD2159 /* HabraReader_Prototype.xcdatamodeld */; };
+		A56D8135162468F000BD2159 /* GenericHub.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D8134162468F000BD2159 /* GenericHub.m */; };
+		A56D813B162468F000BD2159 /* Company.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D813A162468F000BD2159 /* Company.m */; };
+		A56D813E162468F000BD2159 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D813D162468F000BD2159 /* Tag.m */; };
+		A56D8141162468F000BD2159 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D8140162468F000BD2159 /* Message.m */; };
+		A56D8144162468F100BD2159 /* Hub.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D8143162468F100BD2159 /* Hub.m */; };
+		A56D814A162468F100BD2159 /* Author.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D8149162468F100BD2159 /* Author.m */; };
+		A56D814D1624693800BD2159 /* Comment.m in Sources */ = {isa = PBXBuildFile; fileRef = A56D814C1624693800BD2159 /* Comment.m */; };
+		A5A4BE7C15F90ADB0043F896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A4BE7B15F90ADB0043F896 /* UIKit.framework */; };
+		A5A4BE7E15F90ADB0043F896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A4BE7D15F90ADB0043F896 /* Foundation.framework */; };
+		A5A4BE8015F90ADB0043F896 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A4BE7F15F90ADB0043F896 /* CoreGraphics.framework */; };
+		A5A4BE8615F90ADB0043F896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BE8415F90ADB0043F896 /* InfoPlist.strings */; };
+		A5A4BE8815F90ADB0043F896 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BE8715F90ADB0043F896 /* main.m */; };
+		A5A4BE8C15F90ADB0043F896 /* HRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BE8B15F90ADB0043F896 /* HRAppDelegate.m */; };
+		A5A4BE8F15F90ADB0043F896 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BE8D15F90ADB0043F896 /* MainStoryboard_iPhone.storyboard */; };
+		A5A4BE9D15F90ADB0043F896 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A4BE9C15F90ADB0043F896 /* SenTestingKit.framework */; };
+		A5A4BE9E15F90ADB0043F896 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A4BE7B15F90ADB0043F896 /* UIKit.framework */; };
+		A5A4BE9F15F90ADB0043F896 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5A4BE7D15F90ADB0043F896 /* Foundation.framework */; };
+		A5A4BEA715F90ADB0043F896 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5A4BEA515F90ADB0043F896 /* InfoPlist.strings */; };
+		A5A4BEAA15F90ADB0043F896 /* HabraReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A5A4BEA915F90ADB0043F896 /* HabraReaderTests.m */; };
+		A5AF70A2166D1649008EAF50 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A5AF70A1166D1649008EAF50 /* README.md */; };
+		A5E75C17162443D30024C3C0 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E75C16162443D30024C3C0 /* Default-568h@2x.png */; };
+		A5E75C191624443B0024C3C0 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E75C181624443B0024C3C0 /* CoreData.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A5A4BEA015F90ADB0043F896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5A4BE6E15F90ADB0043F896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A5A4BE7615F90ADB0043F896;
+			remoteInfo = HabraReader;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A51689A4162B58630045EFDB /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		A51689A5162B58630045EFDB /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		A51689A7162B5BC20045EFDB /* habrahabr_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = habrahabr_02.png; sourceTree = "<group>"; };
+		A5329BA11635EA980065CE4D /* habrahabr_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = habrahabr_01.png; sourceTree = "<group>"; };
+		A5329BA41635EACE0065CE4D /* habrahabr-iphone_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "habrahabr-iphone_02.png"; sourceTree = "<group>"; };
+		A56D8131162467AE00BD2159 /* HabraReader_Prototype.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HabraReader_Prototype.xcdatamodel; sourceTree = "<group>"; };
+		A56D8133162468F000BD2159 /* GenericHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GenericHub.h; sourceTree = "<group>"; };
+		A56D8134162468F000BD2159 /* GenericHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GenericHub.m; sourceTree = "<group>"; };
+		A56D8139162468F000BD2159 /* Company.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Company.h; sourceTree = "<group>"; };
+		A56D813A162468F000BD2159 /* Company.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Company.m; sourceTree = "<group>"; };
+		A56D813C162468F000BD2159 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		A56D813D162468F000BD2159 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		A56D813F162468F000BD2159 /* Message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		A56D8140162468F000BD2159 /* Message.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		A56D8142162468F000BD2159 /* Hub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hub.h; sourceTree = "<group>"; };
+		A56D8143162468F100BD2159 /* Hub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hub.m; sourceTree = "<group>"; };
+		A56D8148162468F100BD2159 /* Author.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Author.h; sourceTree = "<group>"; };
+		A56D8149162468F100BD2159 /* Author.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Author.m; sourceTree = "<group>"; };
+		A56D814B1624693800BD2159 /* Comment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Comment.h; sourceTree = "<group>"; };
+		A56D814C1624693800BD2159 /* Comment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Comment.m; sourceTree = "<group>"; };
+		A5A4BE7715F90ADB0043F896 /* HabraReader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabraReader.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A4BE7B15F90ADB0043F896 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5A4BE7D15F90ADB0043F896 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5A4BE7F15F90ADB0043F896 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A5A4BE8315F90ADB0043F896 /* HabraReader-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HabraReader-Info.plist"; sourceTree = "<group>"; };
+		A5A4BE8515F90ADB0043F896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5A4BE8715F90ADB0043F896 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5A4BE8915F90ADB0043F896 /* HabraReader-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HabraReader-Prefix.pch"; sourceTree = "<group>"; };
+		A5A4BE8A15F90ADB0043F896 /* HRAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HRAppDelegate.h; sourceTree = "<group>"; };
+		A5A4BE8B15F90ADB0043F896 /* HRAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HRAppDelegate.m; sourceTree = "<group>"; };
+		A5A4BE8E15F90ADB0043F896 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		A5A4BE9B15F90ADB0043F896 /* HabraReaderTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabraReaderTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5A4BE9C15F90ADB0043F896 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5A4BEA415F90ADB0043F896 /* HabraReaderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HabraReaderTests-Info.plist"; sourceTree = "<group>"; };
+		A5A4BEA615F90ADB0043F896 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5A4BEA815F90ADB0043F896 /* HabraReaderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HabraReaderTests.h; sourceTree = "<group>"; };
+		A5A4BEA915F90ADB0043F896 /* HabraReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HabraReaderTests.m; sourceTree = "<group>"; };
+		A5AF70A1166D1649008EAF50 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
+		A5E75C16162443D30024C3C0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
+		A5E75C181624443B0024C3C0 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5A4BE7415F90ADB0043F896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E75C191624443B0024C3C0 /* CoreData.framework in Frameworks */,
+				A5A4BE7C15F90ADB0043F896 /* UIKit.framework in Frameworks */,
+				A5A4BE7E15F90ADB0043F896 /* Foundation.framework in Frameworks */,
+				A5A4BE8015F90ADB0043F896 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A4BE9715F90ADB0043F896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A4BE9D15F90ADB0043F896 /* SenTestingKit.framework in Frameworks */,
+				A5A4BE9E15F90ADB0043F896 /* UIKit.framework in Frameworks */,
+				A5A4BE9F15F90ADB0043F896 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A56D815416246A7900BD2159 /* CoreData Classes */ = {
+			isa = PBXGroup;
+			children = (
+				A51689A4162B58630045EFDB /* Post.h */,
+				A51689A5162B58630045EFDB /* Post.m */,
+				A56D814B1624693800BD2159 /* Comment.h */,
+				A56D814C1624693800BD2159 /* Comment.m */,
+				A56D8148162468F100BD2159 /* Author.h */,
+				A56D8149162468F100BD2159 /* Author.m */,
+				A56D8142162468F000BD2159 /* Hub.h */,
+				A56D8143162468F100BD2159 /* Hub.m */,
+				A56D813F162468F000BD2159 /* Message.h */,
+				A56D8140162468F000BD2159 /* Message.m */,
+				A56D813C162468F000BD2159 /* Tag.h */,
+				A56D813D162468F000BD2159 /* Tag.m */,
+				A56D8139162468F000BD2159 /* Company.h */,
+				A56D813A162468F000BD2159 /* Company.m */,
+				A56D8133162468F000BD2159 /* GenericHub.h */,
+				A56D8134162468F000BD2159 /* GenericHub.m */,
+			);
+			name = "CoreData Classes";
+			sourceTree = "<group>";
+		};
+		A56D815516246A9500BD2159 /* CoreData Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CoreData Categories";
+			sourceTree = "<group>";
+		};
+		A5A4BE6C15F90ADB0043F896 = {
+			isa = PBXGroup;
+			children = (
+				A5A4BE8115F90ADB0043F896 /* HabraReader */,
+				A5A4BEA215F90ADB0043F896 /* HabraReaderTests */,
+				A5A4BE7A15F90ADB0043F896 /* Frameworks */,
+				A5A4BE7815F90ADB0043F896 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A5A4BE7815F90ADB0043F896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5A4BE7715F90ADB0043F896 /* HabraReader.app */,
+				A5A4BE9B15F90ADB0043F896 /* HabraReaderTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5A4BE7A15F90ADB0043F896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75C181624443B0024C3C0 /* CoreData.framework */,
+				A5A4BE7B15F90ADB0043F896 /* UIKit.framework */,
+				A5A4BE7D15F90ADB0043F896 /* Foundation.framework */,
+				A5A4BE7F15F90ADB0043F896 /* CoreGraphics.framework */,
+				A5A4BE9C15F90ADB0043F896 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5A4BE8115F90ADB0043F896 /* HabraReader */ = {
+			isa = PBXGroup;
+			children = (
+				A5A4BE8A15F90ADB0043F896 /* HRAppDelegate.h */,
+				A5A4BE8B15F90ADB0043F896 /* HRAppDelegate.m */,
+				A5A4BE8D15F90ADB0043F896 /* MainStoryboard_iPhone.storyboard */,
+				A56D8130162467AE00BD2159 /* HabraReader_Prototype.xcdatamodeld */,
+				A56D815516246A9500BD2159 /* CoreData Categories */,
+				A56D815416246A7900BD2159 /* CoreData Classes */,
+				A5A4BE8215F90ADB0043F896 /* Supporting Files */,
+			);
+			path = HabraReader;
+			sourceTree = "<group>";
+		};
+		A5A4BE8215F90ADB0043F896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5AF70A1166D1649008EAF50 /* README.md */,
+				A5329BA11635EA980065CE4D /* habrahabr_01.png */,
+				A51689A7162B5BC20045EFDB /* habrahabr_02.png */,
+				A5329BA41635EACE0065CE4D /* habrahabr-iphone_02.png */,
+				A5E75C16162443D30024C3C0 /* Default-568h@2x.png */,
+				A5A4BE8315F90ADB0043F896 /* HabraReader-Info.plist */,
+				A5A4BE8415F90ADB0043F896 /* InfoPlist.strings */,
+				A5A4BE8715F90ADB0043F896 /* main.m */,
+				A5A4BE8915F90ADB0043F896 /* HabraReader-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5A4BEA215F90ADB0043F896 /* HabraReaderTests */ = {
+			isa = PBXGroup;
+			children = (
+				A5A4BEA815F90ADB0043F896 /* HabraReaderTests.h */,
+				A5A4BEA915F90ADB0043F896 /* HabraReaderTests.m */,
+				A5A4BEA315F90ADB0043F896 /* Supporting Files */,
+			);
+			path = HabraReaderTests;
+			sourceTree = "<group>";
+		};
+		A5A4BEA315F90ADB0043F896 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5A4BEA415F90ADB0043F896 /* HabraReaderTests-Info.plist */,
+				A5A4BEA515F90ADB0043F896 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5A4BE7615F90ADB0043F896 /* HabraReader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A4BEAD15F90ADB0043F896 /* Build configuration list for PBXNativeTarget "HabraReader" */;
+			buildPhases = (
+				A5A4BE7315F90ADB0043F896 /* Sources */,
+				A5A4BE7415F90ADB0043F896 /* Frameworks */,
+				A5A4BE7515F90ADB0043F896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HabraReader;
+			productName = HabraReader;
+			productReference = A5A4BE7715F90ADB0043F896 /* HabraReader.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5A4BE9A15F90ADB0043F896 /* HabraReaderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5A4BEB015F90ADB0043F896 /* Build configuration list for PBXNativeTarget "HabraReaderTests" */;
+			buildPhases = (
+				A5A4BE9615F90ADB0043F896 /* Sources */,
+				A5A4BE9715F90ADB0043F896 /* Frameworks */,
+				A5A4BE9815F90ADB0043F896 /* Resources */,
+				A5A4BE9915F90ADB0043F896 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5A4BEA115F90ADB0043F896 /* PBXTargetDependency */,
+			);
+			name = HabraReaderTests;
+			productName = HabraReaderTests;
+			productReference = A5A4BE9B15F90ADB0043F896 /* HabraReaderTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5A4BE6E15F90ADB0043F896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HR;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Sergey Starukhin";
+			};
+			buildConfigurationList = A5A4BE7115F90ADB0043F896 /* Build configuration list for PBXProject "HabraReader" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5A4BE6C15F90ADB0043F896;
+			productRefGroup = A5A4BE7815F90ADB0043F896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5A4BE7615F90ADB0043F896 /* HabraReader */,
+				A5A4BE9A15F90ADB0043F896 /* HabraReaderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5A4BE7515F90ADB0043F896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A4BE8615F90ADB0043F896 /* InfoPlist.strings in Resources */,
+				A5A4BE8F15F90ADB0043F896 /* MainStoryboard_iPhone.storyboard in Resources */,
+				A5E75C17162443D30024C3C0 /* Default-568h@2x.png in Resources */,
+				A51689A8162B5BC20045EFDB /* habrahabr_02.png in Resources */,
+				A5329BA21635EA980065CE4D /* habrahabr_01.png in Resources */,
+				A5329BA51635EACE0065CE4D /* habrahabr-iphone_02.png in Resources */,
+				A5AF70A2166D1649008EAF50 /* README.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A4BE9815F90ADB0043F896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A4BEA715F90ADB0043F896 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5A4BE9915F90ADB0043F896 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5A4BE7315F90ADB0043F896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A4BE8815F90ADB0043F896 /* main.m in Sources */,
+				A5A4BE8C15F90ADB0043F896 /* HRAppDelegate.m in Sources */,
+				A56D8132162467AE00BD2159 /* HabraReader_Prototype.xcdatamodeld in Sources */,
+				A56D8135162468F000BD2159 /* GenericHub.m in Sources */,
+				A56D813B162468F000BD2159 /* Company.m in Sources */,
+				A56D813E162468F000BD2159 /* Tag.m in Sources */,
+				A56D8141162468F000BD2159 /* Message.m in Sources */,
+				A56D8144162468F100BD2159 /* Hub.m in Sources */,
+				A56D814A162468F100BD2159 /* Author.m in Sources */,
+				A56D814D1624693800BD2159 /* Comment.m in Sources */,
+				A51689A6162B58630045EFDB /* Post.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5A4BE9615F90ADB0043F896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5A4BEAA15F90ADB0043F896 /* HabraReaderTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5A4BEA115F90ADB0043F896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A5A4BE7615F90ADB0043F896 /* HabraReader */;
+			targetProxy = A5A4BEA015F90ADB0043F896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A5A4BE8415F90ADB0043F896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A4BE8515F90ADB0043F896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5A4BE8D15F90ADB0043F896 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A4BE8E15F90ADB0043F896 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		A5A4BEA515F90ADB0043F896 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5A4BEA615F90ADB0043F896 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5A4BEAB15F90ADB0043F896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5A4BEAC15F90ADB0043F896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5A4BEAE15F90ADB0043F896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HabraReader/HabraReader-Prefix.pch";
+				INFOPLIST_FILE = "HabraReader/HabraReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5A4BEAF15F90ADB0043F896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HabraReader/HabraReader-Prefix.pch";
+				INFOPLIST_FILE = "HabraReader/HabraReader-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5A4BEB115F90ADB0043F896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HabraReader.app/HabraReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HabraReader/HabraReader-Prefix.pch";
+				INFOPLIST_FILE = "HabraReaderTests/HabraReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		A5A4BEB215F90ADB0043F896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HabraReader.app/HabraReader";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "HabraReader/HabraReader-Prefix.pch";
+				INFOPLIST_FILE = "HabraReaderTests/HabraReaderTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5A4BE7115F90ADB0043F896 /* Build configuration list for PBXProject "HabraReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A4BEAB15F90ADB0043F896 /* Debug */,
+				A5A4BEAC15F90ADB0043F896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A4BEAD15F90ADB0043F896 /* Build configuration list for PBXNativeTarget "HabraReader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A4BEAE15F90ADB0043F896 /* Debug */,
+				A5A4BEAF15F90ADB0043F896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5A4BEB015F90ADB0043F896 /* Build configuration list for PBXNativeTarget "HabraReaderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5A4BEB115F90ADB0043F896 /* Debug */,
+				A5A4BEB215F90ADB0043F896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A56D8130162467AE00BD2159 /* HabraReader_Prototype.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A56D8131162467AE00BD2159 /* HabraReader_Prototype.xcdatamodel */,
+			);
+			currentVersion = A56D8131162467AE00BD2159 /* HabraReader_Prototype.xcdatamodel */;
+			path = HabraReader_Prototype.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A5A4BE6E15F90ADB0043F896 /* Project object */;
+}
