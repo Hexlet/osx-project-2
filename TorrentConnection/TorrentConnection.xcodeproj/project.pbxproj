@@ -23,7 +23,6 @@
 		1FD04F401652DB1800113EE2 /* utorrent.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3A1652DB1800113EE2 /* utorrent.png */; };
 		1FD04F411652DB1800113EE2 /* description.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3B1652DB1800113EE2 /* description.pdf */; };
 		1FD04F421652DB1800113EE2 /* description.docx in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3C1652DB1800113EE2 /* description.docx */; };
-		1FD04F431652DB1800113EE2 /* description.txt in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F3D1652DB1800113EE2 /* description.txt */; };
 		1FD04F451652DB3F00113EE2 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1FD04F441652DB3F00113EE2 /* README.md */; };
 /* End PBXBuildFile section */
 
@@ -63,7 +62,6 @@
 		1FD04F3A1652DB1800113EE2 /* utorrent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = utorrent.png; sourceTree = "<group>"; };
 		1FD04F3B1652DB1800113EE2 /* description.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = description.pdf; sourceTree = "<group>"; };
 		1FD04F3C1652DB1800113EE2 /* description.docx */ = {isa = PBXFileReference; lastKnownFileType = file; path = description.docx; sourceTree = "<group>"; };
-		1FD04F3D1652DB1800113EE2 /* description.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = description.txt; sourceTree = "<group>"; };
 		1FD04F441652DB3F00113EE2 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,7 +96,6 @@
 				1FD04F0A1652DAEA00113EE2 /* TorrentConnection */,
 				1FD04F3B1652DB1800113EE2 /* description.pdf */,
 				1FD04F3C1652DB1800113EE2 /* description.docx */,
-				1FD04F3D1652DB1800113EE2 /* description.txt */,
 				1FD04F271652DAEA00113EE2 /* TorrentConnectionTests */,
 				1FD04F031652DAEA00113EE2 /* Frameworks */,
 				1FD04F011652DAEA00113EE2 /* Products */,
@@ -256,7 +253,6 @@
 				1FD04F401652DB1800113EE2 /* utorrent.png in Resources */,
 				1FD04F411652DB1800113EE2 /* description.pdf in Resources */,
 				1FD04F421652DB1800113EE2 /* description.docx in Resources */,
-				1FD04F431652DB1800113EE2 /* description.txt in Resources */,
 				1FD04F451652DB3F00113EE2 /* README.md in Resources */,
 				11F5DE28166D10EA000A4F65 /* PreferencesWindow.xib in Resources */,
 			);
