@@ -1,7 +1,8 @@
 POMODORO
 ========
 
-The [Pomodoro technique](http://en.wikipedia.org/wiki/Pomodoro_Technique)is a time management method.
+The [Pomodoro technique](http://en.wikipedia.org/wiki/Pomodoro_Technique) 
+([по-русски](http://personaleffect.ru/the-pomodoro-technique/)) is a time management method.
 The technique uses a timer to break down periods of work into 25-minute intervals called 'Pomodoros' (from the Italian word for 'tomato') separated by breaks.
 The method is based on the idea that frequent breaks can improve mental agility.
 There are five basic steps to implementing the technique:
