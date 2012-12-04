@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "polishBrain.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    polishBrain *calc;
+}
+
+@property (weak, nonatomic) IBOutlet UITextField *display;
+- (IBAction)pressed:(UIButton *)sender;
+- (IBAction)buttonPressed:(UIButton *)sender;
 
 @end
