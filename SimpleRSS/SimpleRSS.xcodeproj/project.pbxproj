@@ -1,0 +1,312 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42A44297166E5B1A004400B7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42A44296166E5B1A004400B7 /* Cocoa.framework */; };
+		42A442A1166E5B1A004400B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42A4429F166E5B1A004400B7 /* InfoPlist.strings */; };
+		42A442A3166E5B1A004400B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A442A2166E5B1A004400B7 /* main.m */; };
+		42A442A7166E5B1A004400B7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 42A442A5166E5B1A004400B7 /* Credits.rtf */; };
+		42A442AA166E5B1A004400B7 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = 42A442A9166E5B1A004400B7 /* Document.m */; };
+		42A442AD166E5B1A004400B7 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A442AB166E5B1A004400B7 /* Document.xib */; };
+		42A442B0166E5B1B004400B7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42A442AE166E5B1B004400B7 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		42A44292166E5B1A004400B7 /* SimpleRSS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleRSS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42A44296166E5B1A004400B7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		42A44299166E5B1A004400B7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		42A4429A166E5B1A004400B7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		42A4429B166E5B1A004400B7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		42A4429E166E5B1A004400B7 /* SimpleRSS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleRSS-Info.plist"; sourceTree = "<group>"; };
+		42A442A0166E5B1A004400B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		42A442A2166E5B1A004400B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		42A442A4166E5B1A004400B7 /* SimpleRSS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SimpleRSS-Prefix.pch"; sourceTree = "<group>"; };
+		42A442A6166E5B1A004400B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		42A442A8166E5B1A004400B7 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		42A442A9166E5B1A004400B7 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		42A442AC166E5B1A004400B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
+		42A442AF166E5B1B004400B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42A4428F166E5B1A004400B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A44297166E5B1A004400B7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42A44287166E5B1A004400B7 = {
+			isa = PBXGroup;
+			children = (
+				42A4429C166E5B1A004400B7 /* SimpleRSS */,
+				42A44295166E5B1A004400B7 /* Frameworks */,
+				42A44293166E5B1A004400B7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42A44293166E5B1A004400B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42A44292166E5B1A004400B7 /* SimpleRSS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42A44295166E5B1A004400B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42A44296166E5B1A004400B7 /* Cocoa.framework */,
+				42A44298166E5B1A004400B7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		42A44298166E5B1A004400B7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42A44299166E5B1A004400B7 /* AppKit.framework */,
+				42A4429A166E5B1A004400B7 /* CoreData.framework */,
+				42A4429B166E5B1A004400B7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		42A4429C166E5B1A004400B7 /* SimpleRSS */ = {
+			isa = PBXGroup;
+			children = (
+				42A442A8166E5B1A004400B7 /* Document.h */,
+				42A442A9166E5B1A004400B7 /* Document.m */,
+				42A442AB166E5B1A004400B7 /* Document.xib */,
+				42A442AE166E5B1B004400B7 /* MainMenu.xib */,
+				42A4429D166E5B1A004400B7 /* Supporting Files */,
+			);
+			path = SimpleRSS;
+			sourceTree = "<group>";
+		};
+		42A4429D166E5B1A004400B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42A4429E166E5B1A004400B7 /* SimpleRSS-Info.plist */,
+				42A4429F166E5B1A004400B7 /* InfoPlist.strings */,
+				42A442A2166E5B1A004400B7 /* main.m */,
+				42A442A4166E5B1A004400B7 /* SimpleRSS-Prefix.pch */,
+				42A442A5166E5B1A004400B7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42A44291166E5B1A004400B7 /* SimpleRSS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42A442B3166E5B1B004400B7 /* Build configuration list for PBXNativeTarget "SimpleRSS" */;
+			buildPhases = (
+				42A4428E166E5B1A004400B7 /* Sources */,
+				42A4428F166E5B1A004400B7 /* Frameworks */,
+				42A44290166E5B1A004400B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleRSS;
+			productName = SimpleRSS;
+			productReference = 42A44292166E5B1A004400B7 /* SimpleRSS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42A44289166E5B1A004400B7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Dmitry Katsubo";
+			};
+			buildConfigurationList = 42A4428C166E5B1A004400B7 /* Build configuration list for PBXProject "SimpleRSS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 42A44287166E5B1A004400B7;
+			productRefGroup = 42A44293166E5B1A004400B7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42A44291166E5B1A004400B7 /* SimpleRSS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42A44290166E5B1A004400B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A442A1166E5B1A004400B7 /* InfoPlist.strings in Resources */,
+				42A442A7166E5B1A004400B7 /* Credits.rtf in Resources */,
+				42A442AD166E5B1A004400B7 /* Document.xib in Resources */,
+				42A442B0166E5B1B004400B7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42A4428E166E5B1A004400B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42A442A3166E5B1A004400B7 /* main.m in Sources */,
+				42A442AA166E5B1A004400B7 /* Document.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		42A4429F166E5B1A004400B7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A442A0166E5B1A004400B7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		42A442A5166E5B1A004400B7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A442A6166E5B1A004400B7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		42A442AB166E5B1A004400B7 /* Document.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A442AC166E5B1A004400B7 /* en */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		42A442AE166E5B1B004400B7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42A442AF166E5B1B004400B7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42A442B1166E5B1B004400B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		42A442B2166E5B1B004400B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		42A442B4166E5B1B004400B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleRSS/SimpleRSS-Prefix.pch";
+				INFOPLIST_FILE = "SimpleRSS/SimpleRSS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		42A442B5166E5B1B004400B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SimpleRSS/SimpleRSS-Prefix.pch";
+				INFOPLIST_FILE = "SimpleRSS/SimpleRSS-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42A4428C166E5B1A004400B7 /* Build configuration list for PBXProject "SimpleRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A442B1166E5B1B004400B7 /* Debug */,
+				42A442B2166E5B1B004400B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42A442B3166E5B1B004400B7 /* Build configuration list for PBXNativeTarget "SimpleRSS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42A442B4166E5B1B004400B7 /* Debug */,
+				42A442B5166E5B1B004400B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42A44289166E5B1A004400B7 /* Project object */;
+}
