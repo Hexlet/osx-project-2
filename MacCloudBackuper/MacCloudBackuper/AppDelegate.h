@@ -10,10 +10,10 @@
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (weak) IBOutlet NSMenu *statusMenu;
+@property (strong, nonatomic) IBOutlet NSMenu *statusMenu;
 @property (strong, nonatomic) NSStatusItem *statusBar;
-@property (weak) IBOutlet NSMenuItem *syncLable;
-@property (weak) IBOutlet NSMenuItem *swithSyncMode;
+@property (strong, nonatomic) IBOutlet NSMenuItem *syncLable;
+@property (strong, nonatomic) IBOutlet NSMenuItem *swithSyncMode;
 
 - (IBAction)swithSyncMode:(id)sender;
 - (IBAction)about:(id)sender;
