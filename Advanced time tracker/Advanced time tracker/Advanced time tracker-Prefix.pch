@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Advanced time tracker' target in the 'Advanced time tracker' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
