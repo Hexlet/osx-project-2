@@ -26,4 +26,4 @@
 4. Для того, чтобы удалить курс или задание есть нужно выбрать необходимую сущность и нажать на кнопку "Delete". 
 
 ----
-![DeadlineTracker mockup](/images/mockup.png)
+![DeadlineTracker mockup](/krkmetal/osx-project-2/images/mockup.png)
