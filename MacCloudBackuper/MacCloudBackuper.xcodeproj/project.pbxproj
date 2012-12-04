@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C01C4544166E498A00F32095 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01C4543166E498A00F32095 /* Cocoa.framework */; };
+		C01C454E166E498A00F32095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C01C454C166E498A00F32095 /* InfoPlist.strings */; };
+		C01C4550166E498A00F32095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C454F166E498A00F32095 /* main.m */; };
+		C01C4554166E498A00F32095 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C01C4552166E498A00F32095 /* Credits.rtf */; };
+		C01C4557166E498A00F32095 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C4556166E498A00F32095 /* AppDelegate.m */; };
+		C01C455A166E498A00F32095 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C01C4558166E498A00F32095 /* MainMenu.xib */; };
+		C01C4562166E498B00F32095 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01C4561166E498B00F32095 /* SenTestingKit.framework */; };
+		C01C4563166E498B00F32095 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01C4543166E498A00F32095 /* Cocoa.framework */; };
+		C01C456B166E498B00F32095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C01C4569166E498B00F32095 /* InfoPlist.strings */; };
+		C01C456E166E498B00F32095 /* MacCloudBackuperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C456D166E498B00F32095 /* MacCloudBackuperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C01C4564166E498B00F32095 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C01C4536166E498A00F32095 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C01C453E166E498A00F32095;
+			remoteInfo = MacCloudBackuper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C01C453F166E498A00F32095 /* MacCloudBackuper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacCloudBackuper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01C4543166E498A00F32095 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C01C4546166E498A00F32095 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C01C4547166E498A00F32095 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C01C4548166E498A00F32095 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C01C454B166E498A00F32095 /* MacCloudBackuper-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacCloudBackuper-Info.plist"; sourceTree = "<group>"; };
+		C01C454D166E498A00F32095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C01C454F166E498A00F32095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C01C4551166E498A00F32095 /* MacCloudBackuper-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MacCloudBackuper-Prefix.pch"; sourceTree = "<group>"; };
+		C01C4553166E498A00F32095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C01C4555166E498A00F32095 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C01C4556166E498A00F32095 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C01C4559166E498A00F32095 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C01C4560166E498B00F32095 /* MacCloudBackuperTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCloudBackuperTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C01C4561166E498B00F32095 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C01C4568166E498B00F32095 /* MacCloudBackuperTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MacCloudBackuperTests-Info.plist"; sourceTree = "<group>"; };
+		C01C456A166E498B00F32095 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C01C456C166E498B00F32095 /* MacCloudBackuperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacCloudBackuperTests.h; sourceTree = "<group>"; };
+		C01C456D166E498B00F32095 /* MacCloudBackuperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacCloudBackuperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C01C453C166E498A00F32095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01C4544166E498A00F32095 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01C455C166E498B00F32095 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01C4562166E498B00F32095 /* SenTestingKit.framework in Frameworks */,
+				C01C4563166E498B00F32095 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C01C4534166E498A00F32095 = {
+			isa = PBXGroup;
+			children = (
+				C01C4549166E498A00F32095 /* MacCloudBackuper */,
+				C01C4566166E498B00F32095 /* MacCloudBackuperTests */,
+				C01C4542166E498A00F32095 /* Frameworks */,
+				C01C4540166E498A00F32095 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C01C4540166E498A00F32095 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C01C453F166E498A00F32095 /* MacCloudBackuper.app */,
+				C01C4560166E498B00F32095 /* MacCloudBackuperTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C01C4542166E498A00F32095 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C01C4543166E498A00F32095 /* Cocoa.framework */,
+				C01C4561166E498B00F32095 /* SenTestingKit.framework */,
+				C01C4545166E498A00F32095 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C01C4545166E498A00F32095 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C01C4546166E498A00F32095 /* AppKit.framework */,
+				C01C4547166E498A00F32095 /* CoreData.framework */,
+				C01C4548166E498A00F32095 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C01C4549166E498A00F32095 /* MacCloudBackuper */ = {
+			isa = PBXGroup;
+			children = (
+				C01C4555166E498A00F32095 /* AppDelegate.h */,
+				C01C4556166E498A00F32095 /* AppDelegate.m */,
+				C01C4558166E498A00F32095 /* MainMenu.xib */,
+				C01C454A166E498A00F32095 /* Supporting Files */,
+			);
+			path = MacCloudBackuper;
+			sourceTree = "<group>";
+		};
+		C01C454A166E498A00F32095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01C454B166E498A00F32095 /* MacCloudBackuper-Info.plist */,
+				C01C454C166E498A00F32095 /* InfoPlist.strings */,
+				C01C454F166E498A00F32095 /* main.m */,
+				C01C4551166E498A00F32095 /* MacCloudBackuper-Prefix.pch */,
+				C01C4552166E498A00F32095 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C01C4566166E498B00F32095 /* MacCloudBackuperTests */ = {
+			isa = PBXGroup;
+			children = (
+				C01C456C166E498B00F32095 /* MacCloudBackuperTests.h */,
+				C01C456D166E498B00F32095 /* MacCloudBackuperTests.m */,
+				C01C4567166E498B00F32095 /* Supporting Files */,
+			);
+			path = MacCloudBackuperTests;
+			sourceTree = "<group>";
+		};
+		C01C4567166E498B00F32095 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C01C4568166E498B00F32095 /* MacCloudBackuperTests-Info.plist */,
+				C01C4569166E498B00F32095 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C01C453E166E498A00F32095 /* MacCloudBackuper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01C4571166E498B00F32095 /* Build configuration list for PBXNativeTarget "MacCloudBackuper" */;
+			buildPhases = (
+				C01C453B166E498A00F32095 /* Sources */,
+				C01C453C166E498A00F32095 /* Frameworks */,
+				C01C453D166E498A00F32095 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacCloudBackuper;
+			productName = MacCloudBackuper;
+			productReference = C01C453F166E498A00F32095 /* MacCloudBackuper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C01C455F166E498B00F32095 /* MacCloudBackuperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01C4574166E498B00F32095 /* Build configuration list for PBXNativeTarget "MacCloudBackuperTests" */;
+			buildPhases = (
+				C01C455B166E498B00F32095 /* Sources */,
+				C01C455C166E498B00F32095 /* Frameworks */,
+				C01C455D166E498B00F32095 /* Resources */,
+				C01C455E166E498B00F32095 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C01C4565166E498B00F32095 /* PBXTargetDependency */,
+			);
+			name = MacCloudBackuperTests;
+			productName = MacCloudBackuperTests;
+			productReference = C01C4560166E498B00F32095 /* MacCloudBackuperTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C01C4536166E498A00F32095 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Maxim Zhukov";
+			};
+			buildConfigurationList = C01C4539166E498A00F32095 /* Build configuration list for PBXProject "MacCloudBackuper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C01C4534166E498A00F32095;
+			productRefGroup = C01C4540166E498A00F32095 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C01C453E166E498A00F32095 /* MacCloudBackuper */,
+				C01C455F166E498B00F32095 /* MacCloudBackuperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C01C453D166E498A00F32095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01C454E166E498A00F32095 /* InfoPlist.strings in Resources */,
+				C01C4554166E498A00F32095 /* Credits.rtf in Resources */,
+				C01C455A166E498A00F32095 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01C455D166E498B00F32095 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01C456B166E498B00F32095 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C01C455E166E498B00F32095 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C01C453B166E498A00F32095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01C4550166E498A00F32095 /* main.m in Sources */,
+				C01C4557166E498A00F32095 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C01C455B166E498B00F32095 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C01C456E166E498B00F32095 /* MacCloudBackuperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C01C4565166E498B00F32095 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C01C453E166E498A00F32095 /* MacCloudBackuper */;
+			targetProxy = C01C4564166E498B00F32095 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C01C454C166E498A00F32095 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01C454D166E498A00F32095 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C01C4552166E498A00F32095 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01C4553166E498A00F32095 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C01C4558166E498A00F32095 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01C4559166E498A00F32095 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C01C4569166E498B00F32095 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C01C456A166E498B00F32095 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01C456F166E498B00F32095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C01C4570166E498B00F32095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C01C4572166E498B00F32095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacCloudBackuper/MacCloudBackuper-Prefix.pch";
+				INFOPLIST_FILE = "MacCloudBackuper/MacCloudBackuper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C01C4573166E498B00F32095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacCloudBackuper/MacCloudBackuper-Prefix.pch";
+				INFOPLIST_FILE = "MacCloudBackuper/MacCloudBackuper-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C01C4575166E498B00F32095 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacCloudBackuper.app/Contents/MacOS/MacCloudBackuper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacCloudBackuper/MacCloudBackuper-Prefix.pch";
+				INFOPLIST_FILE = "MacCloudBackuperTests/MacCloudBackuperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C01C4576166E498B00F32095 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MacCloudBackuper.app/Contents/MacOS/MacCloudBackuper";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MacCloudBackuper/MacCloudBackuper-Prefix.pch";
+				INFOPLIST_FILE = "MacCloudBackuperTests/MacCloudBackuperTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01C4539166E498A00F32095 /* Build configuration list for PBXProject "MacCloudBackuper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01C456F166E498B00F32095 /* Debug */,
+				C01C4570166E498B00F32095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01C4571166E498B00F32095 /* Build configuration list for PBXNativeTarget "MacCloudBackuper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01C4572166E498B00F32095 /* Debug */,
+				C01C4573166E498B00F32095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C01C4574166E498B00F32095 /* Build configuration list for PBXNativeTarget "MacCloudBackuperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01C4575166E498B00F32095 /* Debug */,
+				C01C4576166E498B00F32095 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C01C4536166E498A00F32095 /* Project object */;
+}
