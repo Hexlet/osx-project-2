@@ -1,0 +1,477 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C39E3A91166E140C000167E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3A90166E140C000167E6 /* Cocoa.framework */; };
+		C39E3A9B166E140C000167E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C39E3A99166E140C000167E6 /* InfoPlist.strings */; };
+		C39E3A9D166E140C000167E6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E3A9C166E140C000167E6 /* main.m */; };
+		C39E3AA1166E140D000167E6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C39E3A9F166E140D000167E6 /* Credits.rtf */; };
+		C39E3AA4166E140D000167E6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E3AA3166E140D000167E6 /* AppDelegate.m */; };
+		C39E3AA7166E140E000167E6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C39E3AA5166E140E000167E6 /* MainMenu.xib */; };
+		C39E3AAF166E1411000167E6 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3AAE166E1411000167E6 /* SenTestingKit.framework */; };
+		C39E3AB0166E1411000167E6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C39E3A90166E140C000167E6 /* Cocoa.framework */; };
+		C39E3AB8166E1411000167E6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C39E3AB6166E1411000167E6 /* InfoPlist.strings */; };
+		C39E3ABB166E1411000167E6 /* RememberItTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C39E3ABA166E1411000167E6 /* RememberItTests.m */; };
+		C39E3AED166E168F000167E6 /* facebook.png in Resources */ = {isa = PBXBuildFile; fileRef = C39E3AEB166E168F000167E6 /* facebook.png */; };
+		C39E3AEE166E168F000167E6 /* twitter.png in Resources */ = {isa = PBXBuildFile; fileRef = C39E3AEC166E168F000167E6 /* twitter.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C39E3AB1166E1411000167E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C39E3A83166E140A000167E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C39E3A8B166E140B000167E6;
+			remoteInfo = RememberIt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C39E3A8C166E140C000167E6 /* RememberIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RememberIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39E3A90166E140C000167E6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C39E3A93166E140C000167E6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C39E3A94166E140C000167E6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C39E3A95166E140C000167E6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C39E3A98166E140C000167E6 /* RememberIt-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RememberIt-Info.plist"; sourceTree = "<group>"; };
+		C39E3A9A166E140C000167E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C39E3A9C166E140C000167E6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C39E3A9E166E140C000167E6 /* RememberIt-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RememberIt-Prefix.pch"; sourceTree = "<group>"; };
+		C39E3AA0166E140D000167E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C39E3AA2166E140D000167E6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C39E3AA3166E140D000167E6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C39E3AA6166E140E000167E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C39E3AAD166E1411000167E6 /* RememberItTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RememberItTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C39E3AAE166E1411000167E6 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		C39E3AB5166E1411000167E6 /* RememberItTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RememberItTests-Info.plist"; sourceTree = "<group>"; };
+		C39E3AB7166E1411000167E6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C39E3AB9166E1411000167E6 /* RememberItTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RememberItTests.h; sourceTree = "<group>"; };
+		C39E3ABA166E1411000167E6 /* RememberItTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RememberItTests.m; sourceTree = "<group>"; };
+		C39E3AEB166E168F000167E6 /* facebook.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = facebook.png; sourceTree = "<group>"; };
+		C39E3AEC166E168F000167E6 /* twitter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = twitter.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C39E3A89166E140B000167E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39E3A91166E140C000167E6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39E3AA9166E1411000167E6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39E3AAF166E1411000167E6 /* SenTestingKit.framework in Frameworks */,
+				C39E3AB0166E1411000167E6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C39E3A81166E140A000167E6 = {
+			isa = PBXGroup;
+			children = (
+				C39E3A96166E140C000167E6 /* RememberIt */,
+				C39E3AB3166E1411000167E6 /* RememberItTests */,
+				C39E3A8F166E140C000167E6 /* Frameworks */,
+				C39E3A8D166E140C000167E6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C39E3A8D166E140C000167E6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3A8C166E140C000167E6 /* RememberIt.app */,
+				C39E3AAD166E1411000167E6 /* RememberItTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C39E3A8F166E140C000167E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3A90166E140C000167E6 /* Cocoa.framework */,
+				C39E3AAE166E1411000167E6 /* SenTestingKit.framework */,
+				C39E3A92166E140C000167E6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C39E3A92166E140C000167E6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3A93166E140C000167E6 /* AppKit.framework */,
+				C39E3A94166E140C000167E6 /* CoreData.framework */,
+				C39E3A95166E140C000167E6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C39E3A96166E140C000167E6 /* RememberIt */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3AA2166E140D000167E6 /* AppDelegate.h */,
+				C39E3AA3166E140D000167E6 /* AppDelegate.m */,
+				C39E3AA5166E140E000167E6 /* MainMenu.xib */,
+				C39E3A97166E140C000167E6 /* Supporting Files */,
+			);
+			path = RememberIt;
+			sourceTree = "<group>";
+		};
+		C39E3A97166E140C000167E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3AEA166E168F000167E6 /* images */,
+				C39E3A98166E140C000167E6 /* RememberIt-Info.plist */,
+				C39E3A99166E140C000167E6 /* InfoPlist.strings */,
+				C39E3A9C166E140C000167E6 /* main.m */,
+				C39E3A9E166E140C000167E6 /* RememberIt-Prefix.pch */,
+				C39E3A9F166E140D000167E6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C39E3AB3166E1411000167E6 /* RememberItTests */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3AB9166E1411000167E6 /* RememberItTests.h */,
+				C39E3ABA166E1411000167E6 /* RememberItTests.m */,
+				C39E3AB4166E1411000167E6 /* Supporting Files */,
+			);
+			path = RememberItTests;
+			sourceTree = "<group>";
+		};
+		C39E3AB4166E1411000167E6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3AB5166E1411000167E6 /* RememberItTests-Info.plist */,
+				C39E3AB6166E1411000167E6 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C39E3AEA166E168F000167E6 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				C39E3AEB166E168F000167E6 /* facebook.png */,
+				C39E3AEC166E168F000167E6 /* twitter.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C39E3A8B166E140B000167E6 /* RememberIt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39E3ABE166E1411000167E6 /* Build configuration list for PBXNativeTarget "RememberIt" */;
+			buildPhases = (
+				C39E3A88166E140B000167E6 /* Sources */,
+				C39E3A89166E140B000167E6 /* Frameworks */,
+				C39E3A8A166E140B000167E6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RememberIt;
+			productName = RememberIt;
+			productReference = C39E3A8C166E140C000167E6 /* RememberIt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C39E3AAC166E1411000167E6 /* RememberItTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C39E3AC1166E1411000167E6 /* Build configuration list for PBXNativeTarget "RememberItTests" */;
+			buildPhases = (
+				C39E3AA8166E1411000167E6 /* Sources */,
+				C39E3AA9166E1411000167E6 /* Frameworks */,
+				C39E3AAA166E1411000167E6 /* Resources */,
+				C39E3AAB166E1411000167E6 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C39E3AB2166E1411000167E6 /* PBXTargetDependency */,
+			);
+			name = RememberItTests;
+			productName = RememberItTests;
+			productReference = C39E3AAD166E1411000167E6 /* RememberItTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C39E3A83166E140A000167E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = RightWay;
+			};
+			buildConfigurationList = C39E3A86166E140A000167E6 /* Build configuration list for PBXProject "RememberIt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C39E3A81166E140A000167E6;
+			productRefGroup = C39E3A8D166E140C000167E6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C39E3A8B166E140B000167E6 /* RememberIt */,
+				C39E3AAC166E1411000167E6 /* RememberItTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C39E3A8A166E140B000167E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39E3A9B166E140C000167E6 /* InfoPlist.strings in Resources */,
+				C39E3AA1166E140D000167E6 /* Credits.rtf in Resources */,
+				C39E3AA7166E140E000167E6 /* MainMenu.xib in Resources */,
+				C39E3AED166E168F000167E6 /* facebook.png in Resources */,
+				C39E3AEE166E168F000167E6 /* twitter.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39E3AAA166E1411000167E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39E3AB8166E1411000167E6 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C39E3AAB166E1411000167E6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C39E3A88166E140B000167E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39E3A9D166E140C000167E6 /* main.m in Sources */,
+				C39E3AA4166E140D000167E6 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C39E3AA8166E1411000167E6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C39E3ABB166E1411000167E6 /* RememberItTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C39E3AB2166E1411000167E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C39E3A8B166E140B000167E6 /* RememberIt */;
+			targetProxy = C39E3AB1166E1411000167E6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C39E3A99166E140C000167E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39E3A9A166E140C000167E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C39E3A9F166E140D000167E6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39E3AA0166E140D000167E6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C39E3AA5166E140E000167E6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39E3AA6166E140E000167E6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		C39E3AB6166E1411000167E6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C39E3AB7166E1411000167E6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C39E3ABC166E1411000167E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C39E3ABD166E1411000167E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C39E3ABF166E1411000167E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RememberIt/RememberIt-Prefix.pch";
+				INFOPLIST_FILE = "RememberIt/RememberIt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C39E3AC0166E1411000167E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RememberIt/RememberIt-Prefix.pch";
+				INFOPLIST_FILE = "RememberIt/RememberIt-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		C39E3AC2166E1411000167E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RememberIt.app/Contents/MacOS/RememberIt";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RememberIt/RememberIt-Prefix.pch";
+				INFOPLIST_FILE = "RememberItTests/RememberItTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		C39E3AC3166E1411000167E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/RememberIt.app/Contents/MacOS/RememberIt";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RememberIt/RememberIt-Prefix.pch";
+				INFOPLIST_FILE = "RememberItTests/RememberItTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C39E3A86166E140A000167E6 /* Build configuration list for PBXProject "RememberIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39E3ABC166E1411000167E6 /* Debug */,
+				C39E3ABD166E1411000167E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C39E3ABE166E1411000167E6 /* Build configuration list for PBXNativeTarget "RememberIt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39E3ABF166E1411000167E6 /* Debug */,
+				C39E3AC0166E1411000167E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C39E3AC1166E1411000167E6 /* Build configuration list for PBXNativeTarget "RememberItTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C39E3AC2166E1411000167E6 /* Debug */,
+				C39E3AC3166E1411000167E6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C39E3A83166E140A000167E6 /* Project object */;
+}
