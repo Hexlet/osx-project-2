@@ -30,25 +30,26 @@
 - (IBAction)pressed:(UIButton *)sender {
     NSString *s = sender.titleLabel.text;
     NSLog(@"pressed: %@", s);
-    _display.text = s;
-}
+    
+    NSArray *postFixString = [calc RPNFromInfixString:_display.text];
+    NSLog(@"postfix stack: %@", postFixString);
+    for (id part in postFixString) {
+        if ([part isKindOfClass:[NSDecimalNumber class]]) {
+            NSLog(@"number: %@", part);
+            [calc addOperand:[((NSDecimalNumber *)part) doubleValue]];
+        } else {
+            NSLog(@"operation: %@", part);
+            [calc operationWithOpKey:part];
+        }
+        NSLog(@"brain: %@", calc);
+    }
 
-//NSArray *postFixString = [polishBrain RPNFromInfixString:formula];
-//NSLog(@"postfix stack: %@", postFixString);
-//for (id part in postFixString) {
-//    if ([part isKindOfClass:[NSDecimalNumber class]]) {
-//        NSLog(@"number: %@", part);
-//        [polishBrain addOperand:[((NSDecimalNumber *)part) doubleValue]];
-//    } else {
-//        NSLog(@"operation: %@", part);
-//        [polishBrain operationWithOpKey:part];
-//    }
-//    NSLog(@"brain: %@", polishBrain);
-//}
-//
-//printf("result: %.15lf\n", [polishBrain result]);
-//if (polishBrain.error)
-//printf("error: %.4X", polishBrain.error);
+    printf("result: %.15lf\n", [calc result]);
+    if (calc.error)
+    printf("error: %.4X", calc.error);
+    
+    _display.text = [NSString stringWithFormat:@"%lf", [calc result]];
+}
 
 - (IBAction)buttonPressed:(UIButton *)sender {
     NSString *s = sender.titleLabel.text;
