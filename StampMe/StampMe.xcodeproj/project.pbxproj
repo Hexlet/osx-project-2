@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E2DCC2B166DCE64009AE2D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2DCC2A166DCE64009AE2D4 /* Cocoa.framework */; };
+		7E2DCC35166DCE64009AE2D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DCC33166DCE64009AE2D4 /* InfoPlist.strings */; };
+		7E2DCC37166DCE64009AE2D4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DCC36166DCE64009AE2D4 /* main.m */; };
+		7E2DCC3B166DCE64009AE2D4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DCC39166DCE64009AE2D4 /* Credits.rtf */; };
+		7E2DCC3E166DCE64009AE2D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DCC3D166DCE64009AE2D4 /* AppDelegate.m */; };
+		7E2DCC41166DCE65009AE2D4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DCC3F166DCE65009AE2D4 /* MainMenu.xib */; };
+		7E2DCC49166DCE65009AE2D4 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2DCC48166DCE65009AE2D4 /* SenTestingKit.framework */; };
+		7E2DCC4A166DCE65009AE2D4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7E2DCC2A166DCE64009AE2D4 /* Cocoa.framework */; };
+		7E2DCC52166DCE65009AE2D4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DCC50166DCE65009AE2D4 /* InfoPlist.strings */; };
+		7E2DCC55166DCE65009AE2D4 /* StampMeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2DCC54166DCE65009AE2D4 /* StampMeTests.m */; };
+		7E2DCC5F166DD271009AE2D4 /* StampMe.icns in Resources */ = {isa = PBXBuildFile; fileRef = 7E2DCC5E166DD271009AE2D4 /* StampMe.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7E2DCC4B166DCE65009AE2D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E2DCC1D166DCE64009AE2D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7E2DCC25166DCE64009AE2D4;
+			remoteInfo = StampMe;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7E2DCC26166DCE64009AE2D4 /* StampMe.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StampMe.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2DCC2A166DCE64009AE2D4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		7E2DCC2D166DCE64009AE2D4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		7E2DCC2E166DCE64009AE2D4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		7E2DCC2F166DCE64009AE2D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		7E2DCC32166DCE64009AE2D4 /* StampMe-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StampMe-Info.plist"; sourceTree = "<group>"; };
+		7E2DCC34166DCE64009AE2D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E2DCC36166DCE64009AE2D4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7E2DCC38166DCE64009AE2D4 /* StampMe-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "StampMe-Prefix.pch"; sourceTree = "<group>"; };
+		7E2DCC3A166DCE64009AE2D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		7E2DCC3C166DCE64009AE2D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7E2DCC3D166DCE64009AE2D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7E2DCC40166DCE65009AE2D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		7E2DCC47166DCE65009AE2D4 /* StampMeTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StampMeTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E2DCC48166DCE65009AE2D4 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		7E2DCC4F166DCE65009AE2D4 /* StampMeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "StampMeTests-Info.plist"; sourceTree = "<group>"; };
+		7E2DCC51166DCE65009AE2D4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7E2DCC53166DCE65009AE2D4 /* StampMeTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StampMeTests.h; sourceTree = "<group>"; };
+		7E2DCC54166DCE65009AE2D4 /* StampMeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StampMeTests.m; sourceTree = "<group>"; };
+		7E2DCC5E166DD271009AE2D4 /* StampMe.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = StampMe.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E2DCC23166DCE64009AE2D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCC2B166DCE64009AE2D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2DCC43166DCE65009AE2D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCC49166DCE65009AE2D4 /* SenTestingKit.framework in Frameworks */,
+				7E2DCC4A166DCE65009AE2D4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E2DCC1B166DCE64009AE2D4 = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC5E166DD271009AE2D4 /* StampMe.icns */,
+				7E2DCC30166DCE64009AE2D4 /* StampMe */,
+				7E2DCC4D166DCE65009AE2D4 /* StampMeTests */,
+				7E2DCC29166DCE64009AE2D4 /* Frameworks */,
+				7E2DCC27166DCE64009AE2D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E2DCC27166DCE64009AE2D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC26166DCE64009AE2D4 /* StampMe.app */,
+				7E2DCC47166DCE65009AE2D4 /* StampMeTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E2DCC29166DCE64009AE2D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC2A166DCE64009AE2D4 /* Cocoa.framework */,
+				7E2DCC48166DCE65009AE2D4 /* SenTestingKit.framework */,
+				7E2DCC2C166DCE64009AE2D4 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7E2DCC2C166DCE64009AE2D4 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC2D166DCE64009AE2D4 /* AppKit.framework */,
+				7E2DCC2E166DCE64009AE2D4 /* CoreData.framework */,
+				7E2DCC2F166DCE64009AE2D4 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		7E2DCC30166DCE64009AE2D4 /* StampMe */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC3C166DCE64009AE2D4 /* AppDelegate.h */,
+				7E2DCC3D166DCE64009AE2D4 /* AppDelegate.m */,
+				7E2DCC3F166DCE65009AE2D4 /* MainMenu.xib */,
+				7E2DCC31166DCE64009AE2D4 /* Supporting Files */,
+			);
+			path = StampMe;
+			sourceTree = "<group>";
+		};
+		7E2DCC31166DCE64009AE2D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC32166DCE64009AE2D4 /* StampMe-Info.plist */,
+				7E2DCC33166DCE64009AE2D4 /* InfoPlist.strings */,
+				7E2DCC36166DCE64009AE2D4 /* main.m */,
+				7E2DCC38166DCE64009AE2D4 /* StampMe-Prefix.pch */,
+				7E2DCC39166DCE64009AE2D4 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7E2DCC4D166DCE65009AE2D4 /* StampMeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC53166DCE65009AE2D4 /* StampMeTests.h */,
+				7E2DCC54166DCE65009AE2D4 /* StampMeTests.m */,
+				7E2DCC4E166DCE65009AE2D4 /* Supporting Files */,
+			);
+			path = StampMeTests;
+			sourceTree = "<group>";
+		};
+		7E2DCC4E166DCE65009AE2D4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7E2DCC4F166DCE65009AE2D4 /* StampMeTests-Info.plist */,
+				7E2DCC50166DCE65009AE2D4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E2DCC25166DCE64009AE2D4 /* StampMe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2DCC58166DCE65009AE2D4 /* Build configuration list for PBXNativeTarget "StampMe" */;
+			buildPhases = (
+				7E2DCC22166DCE64009AE2D4 /* Sources */,
+				7E2DCC23166DCE64009AE2D4 /* Frameworks */,
+				7E2DCC24166DCE64009AE2D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StampMe;
+			productName = StampMe;
+			productReference = 7E2DCC26166DCE64009AE2D4 /* StampMe.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7E2DCC46166DCE65009AE2D4 /* StampMeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E2DCC5B166DCE65009AE2D4 /* Build configuration list for PBXNativeTarget "StampMeTests" */;
+			buildPhases = (
+				7E2DCC42166DCE65009AE2D4 /* Sources */,
+				7E2DCC43166DCE65009AE2D4 /* Frameworks */,
+				7E2DCC44166DCE65009AE2D4 /* Resources */,
+				7E2DCC45166DCE65009AE2D4 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7E2DCC4C166DCE65009AE2D4 /* PBXTargetDependency */,
+			);
+			name = StampMeTests;
+			productName = StampMeTests;
+			productReference = 7E2DCC47166DCE65009AE2D4 /* StampMeTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E2DCC1D166DCE64009AE2D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Evgeny Golubev";
+			};
+			buildConfigurationList = 7E2DCC20166DCE64009AE2D4 /* Build configuration list for PBXProject "StampMe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7E2DCC1B166DCE64009AE2D4;
+			productRefGroup = 7E2DCC27166DCE64009AE2D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E2DCC25166DCE64009AE2D4 /* StampMe */,
+				7E2DCC46166DCE65009AE2D4 /* StampMeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E2DCC24166DCE64009AE2D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCC35166DCE64009AE2D4 /* InfoPlist.strings in Resources */,
+				7E2DCC3B166DCE64009AE2D4 /* Credits.rtf in Resources */,
+				7E2DCC41166DCE65009AE2D4 /* MainMenu.xib in Resources */,
+				7E2DCC5F166DD271009AE2D4 /* StampMe.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2DCC44166DCE65009AE2D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCC52166DCE65009AE2D4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7E2DCC45166DCE65009AE2D4 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E2DCC22166DCE64009AE2D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCC37166DCE64009AE2D4 /* main.m in Sources */,
+				7E2DCC3E166DCE64009AE2D4 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E2DCC42166DCE65009AE2D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E2DCC55166DCE65009AE2D4 /* StampMeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7E2DCC4C166DCE65009AE2D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7E2DCC25166DCE64009AE2D4 /* StampMe */;
+			targetProxy = 7E2DCC4B166DCE65009AE2D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7E2DCC33166DCE64009AE2D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2DCC34166DCE64009AE2D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7E2DCC39166DCE64009AE2D4 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2DCC3A166DCE64009AE2D4 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		7E2DCC3F166DCE65009AE2D4 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2DCC40166DCE65009AE2D4 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		7E2DCC50166DCE65009AE2D4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7E2DCC51166DCE65009AE2D4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7E2DCC56166DCE65009AE2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		7E2DCC57166DCE65009AE2D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7E2DCC59166DCE65009AE2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StampMe/StampMe-Prefix.pch";
+				INFOPLIST_FILE = "StampMe/StampMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		7E2DCC5A166DCE65009AE2D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StampMe/StampMe-Prefix.pch";
+				INFOPLIST_FILE = "StampMe/StampMe-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		7E2DCC5C166DCE65009AE2D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StampMe.app/Contents/MacOS/StampMe";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StampMe/StampMe-Prefix.pch";
+				INFOPLIST_FILE = "StampMeTests/StampMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		7E2DCC5D166DCE65009AE2D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/StampMe.app/Contents/MacOS/StampMe";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StampMe/StampMe-Prefix.pch";
+				INFOPLIST_FILE = "StampMeTests/StampMeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E2DCC20166DCE64009AE2D4 /* Build configuration list for PBXProject "StampMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2DCC56166DCE65009AE2D4 /* Debug */,
+				7E2DCC57166DCE65009AE2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E2DCC58166DCE65009AE2D4 /* Build configuration list for PBXNativeTarget "StampMe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2DCC59166DCE65009AE2D4 /* Debug */,
+				7E2DCC5A166DCE65009AE2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7E2DCC5B166DCE65009AE2D4 /* Build configuration list for PBXNativeTarget "StampMeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2DCC5C166DCE65009AE2D4 /* Debug */,
+				7E2DCC5D166DCE65009AE2D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7E2DCC1D166DCE64009AE2D4 /* Project object */;
+}
