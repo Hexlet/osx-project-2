@@ -18,6 +18,14 @@
 		C01C456B166E498B00F32095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C01C4569166E498B00F32095 /* InfoPlist.strings */; };
 		C01C456E166E498B00F32095 /* MacCloudBackuperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C456D166E498B00F32095 /* MacCloudBackuperTests.m */; };
 		C0886B71166EB40300535F01 /* GTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0886B55166EAA2B00535F01 /* GTL.framework */; };
+		C0886B7F166EB70E00535F01 /* GeneralPerferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0886B7D166EB70E00535F01 /* GeneralPerferenceViewController.m */; };
+		C0886B80166EB70E00535F01 /* GeneralPerferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0886B7E166EB70E00535F01 /* GeneralPerferenceViewController.xib */; };
+		C0886B84166EB75D00535F01 /* UserPerferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0886B82166EB75D00535F01 /* UserPerferenceViewController.m */; };
+		C0886B85166EB75D00535F01 /* UserPerferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0886B83166EB75D00535F01 /* UserPerferenceViewController.xib */; };
+		C0886B8C166EB7B300535F01 /* ProxyPerferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0886B8A166EB7B300535F01 /* ProxyPerferenceViewController.m */; };
+		C0886B8D166EB7B300535F01 /* ProxyPerferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0886B8B166EB7B300535F01 /* ProxyPerferenceViewController.xib */; };
+		C0886B91166EB7CC00535F01 /* AdvancedPerferenceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C0886B8F166EB7CC00535F01 /* AdvancedPerferenceViewController.m */; };
+		C0886B92166EB7CC00535F01 /* AdvancedPerferenceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0886B90166EB7CC00535F01 /* AdvancedPerferenceViewController.xib */; };
 		C09ABCD0166E767B004BAE51 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C09ABCCD166E767B004BAE51 /* MASPreferencesWindow.xib */; };
 		C09ABCD1166E767B004BAE51 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09ABCCF166E767B004BAE51 /* MASPreferencesWindowController.m */; };
 /* End PBXBuildFile section */
@@ -81,6 +89,18 @@
 		C01C456C166E498B00F32095 /* MacCloudBackuperTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MacCloudBackuperTests.h; sourceTree = "<group>"; };
 		C01C456D166E498B00F32095 /* MacCloudBackuperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MacCloudBackuperTests.m; sourceTree = "<group>"; };
 		C0886B49166EAA2B00535F01 /* GTL.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GTL.xcodeproj; path = "../../../../google-api-objectivec-client/Source/GTL.xcodeproj"; sourceTree = "<group>"; };
+		C0886B7C166EB70E00535F01 /* GeneralPerferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralPerferenceViewController.h; sourceTree = "<group>"; };
+		C0886B7D166EB70E00535F01 /* GeneralPerferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralPerferenceViewController.m; sourceTree = "<group>"; };
+		C0886B7E166EB70E00535F01 /* GeneralPerferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GeneralPerferenceViewController.xib; sourceTree = "<group>"; };
+		C0886B81166EB75D00535F01 /* UserPerferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserPerferenceViewController.h; sourceTree = "<group>"; };
+		C0886B82166EB75D00535F01 /* UserPerferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserPerferenceViewController.m; sourceTree = "<group>"; };
+		C0886B83166EB75D00535F01 /* UserPerferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UserPerferenceViewController.xib; sourceTree = "<group>"; };
+		C0886B89166EB7B300535F01 /* ProxyPerferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProxyPerferenceViewController.h; sourceTree = "<group>"; };
+		C0886B8A166EB7B300535F01 /* ProxyPerferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProxyPerferenceViewController.m; sourceTree = "<group>"; };
+		C0886B8B166EB7B300535F01 /* ProxyPerferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProxyPerferenceViewController.xib; sourceTree = "<group>"; };
+		C0886B8E166EB7CC00535F01 /* AdvancedPerferenceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvancedPerferenceViewController.h; sourceTree = "<group>"; };
+		C0886B8F166EB7CC00535F01 /* AdvancedPerferenceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvancedPerferenceViewController.m; sourceTree = "<group>"; };
+		C0886B90166EB7CC00535F01 /* AdvancedPerferenceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvancedPerferenceViewController.xib; sourceTree = "<group>"; };
 		C09ABCCC166E767B004BAE51 /* MASPreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = ../MASPreferences/MASPreferencesViewController.h; sourceTree = "<group>"; };
 		C09ABCCD166E767B004BAE51 /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = ../MASPreferences/MASPreferencesWindow.xib; sourceTree = "<group>"; };
 		C09ABCCE166E767B004BAE51 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = ../MASPreferences/MASPreferencesWindowController.h; sourceTree = "<group>"; };
@@ -204,6 +224,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C0886B86166EB78100535F01 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				C0886B7C166EB70E00535F01 /* GeneralPerferenceViewController.h */,
+				C0886B7D166EB70E00535F01 /* GeneralPerferenceViewController.m */,
+				C0886B7E166EB70E00535F01 /* GeneralPerferenceViewController.xib */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		C0886B88166EB79500535F01 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				C0886B81166EB75D00535F01 /* UserPerferenceViewController.h */,
+				C0886B82166EB75D00535F01 /* UserPerferenceViewController.m */,
+				C0886B83166EB75D00535F01 /* UserPerferenceViewController.xib */,
+			);
+			name = User;
+			sourceTree = "<group>";
+		};
+		C0886B93166EB7D200535F01 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				C0886B89166EB7B300535F01 /* ProxyPerferenceViewController.h */,
+				C0886B8A166EB7B300535F01 /* ProxyPerferenceViewController.m */,
+				C0886B8B166EB7B300535F01 /* ProxyPerferenceViewController.xib */,
+			);
+			name = Proxy;
+			sourceTree = "<group>";
+		};
+		C0886B94166EB7DB00535F01 /* Advanced */ = {
+			isa = PBXGroup;
+			children = (
+				C0886B8E166EB7CC00535F01 /* AdvancedPerferenceViewController.h */,
+				C0886B8F166EB7CC00535F01 /* AdvancedPerferenceViewController.m */,
+				C0886B90166EB7CC00535F01 /* AdvancedPerferenceViewController.xib */,
+			);
+			name = Advanced;
+			sourceTree = "<group>";
+		};
 		C09ABCD3166E768F004BAE51 /* MASPreferences */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +278,10 @@
 		C09ABCD4166E76A3004BAE51 /* Perferences */ = {
 			isa = PBXGroup;
 			children = (
+				C0886B86166EB78100535F01 /* General */,
+				C0886B88166EB79500535F01 /* User */,
+				C0886B93166EB7D200535F01 /* Proxy */,
+				C0886B94166EB7DB00535F01 /* Advanced */,
 			);
 			name = Perferences;
 			sourceTree = "<group>";
@@ -334,6 +398,10 @@
 				C01C4554166E498A00F32095 /* Credits.rtf in Resources */,
 				C01C455A166E498A00F32095 /* MainMenu.xib in Resources */,
 				C09ABCD0166E767B004BAE51 /* MASPreferencesWindow.xib in Resources */,
+				C0886B80166EB70E00535F01 /* GeneralPerferenceViewController.xib in Resources */,
+				C0886B85166EB75D00535F01 /* UserPerferenceViewController.xib in Resources */,
+				C0886B8D166EB7B300535F01 /* ProxyPerferenceViewController.xib in Resources */,
+				C0886B92166EB7CC00535F01 /* AdvancedPerferenceViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,6 +439,10 @@
 				C01C4550166E498A00F32095 /* main.m in Sources */,
 				C01C4557166E498A00F32095 /* AppDelegate.m in Sources */,
 				C09ABCD1166E767B004BAE51 /* MASPreferencesWindowController.m in Sources */,
+				C0886B7F166EB70E00535F01 /* GeneralPerferenceViewController.m in Sources */,
+				C0886B84166EB75D00535F01 /* UserPerferenceViewController.m in Sources */,
+				C0886B8C166EB7B300535F01 /* ProxyPerferenceViewController.m in Sources */,
+				C0886B91166EB7CC00535F01 /* AdvancedPerferenceViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
