@@ -1,0 +1,196 @@
+TSchulte Tables
+v7
+r0
+t376344022.971955
+cCheck dependencies
+cProcessInfoPlistFile "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Info.plist" Schulte_Tables-Info.plist
+cCopyStringsFile "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+cCompileXIB /Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/MainMenu.xib
+cProcessPCH /var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch.gch Schulte_Tables_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/main.o" /Users/MacBook/Projects/edu/objc/osx-project-2/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cCompileC "build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte_TablesAppDelegate.o" /Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+cLd "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/MacOS/Schulte Tables" normal x86_64
+cTouch "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004D5A274300000000000000EE
+t1297753923
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Cocoa.framework/Headers/Cocoa.h
+c0000000040C4AA6800000000000001E5
+t1086630504
+s485
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/InfoPlist.strings
+c0000000050BE5201000000000000002D
+t1354650113
+s45
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/MainMenu.xib
+c0000000050BE5651000000000003A0B1
+t1354651217
+s237745
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.h
+c0000000050BE52010000000000000149
+t1354650113
+s329
+i<Cocoa/Cocoa.h>
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m
+c0000000050BE52010000000000000185
+t1354650113
+s389
+i"Schulte_TablesAppDelegate.h"
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_Tables_Prefix.pch
+c0000000050BE5201000000000000009F
+t1354650113
+s159
+i<Cocoa/Cocoa.h>
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app
+t1354651222
+s102
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Info.plist
+t1354650147
+s1305
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/MacOS/Schulte Tables
+t1354650152
+s14688
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/PkgInfo
+t1354650147
+s8
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj/InfoPlist.strings
+t1354650147
+s92
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj/MainMenu.nib
+t1354651222
+s45707
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte Tables.LinkFileList
+c0000000050BE52230000000000000119
+t1354650147
+s281
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte_TablesAppDelegate.o
+t1354650152
+s21304
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/main.o
+t1354650152
+s5016
+
+N/Users/MacBook/Projects/edu/objc/osx-project-2/main.m
+c0000000050BE520100000000000000FD
+t1354650113
+s253
+i<Cocoa/Cocoa.h>
+
+N/var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch.gch
+t1354650151
+s54306576
+
+NSchulte_Tables-Info.plist
+c0000000050BE520100000000000003EA
+t1354650113
+s1002
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies376344021#376344021#0(0"0(0#1#0"8607366912#0"0#
+
+CCompileC "build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte_TablesAppDelegate.o" /Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s376342951.863785
+e376342952.053857
+r1
+xCompileC
+xbuild/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte_TablesAppDelegate.o
+x/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@82"Compile /Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m376342951#376342952#0(0"0(0#0#74"/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m8601131136#1734"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-generated-files.hmap" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-own-target-headers.hmap" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-all-target-headers.hmap" -iquote "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-project-headers.hmap" -F/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug -I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/include "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/DerivedSources/x86_64" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/DerivedSources" -include /var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch -c /Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_TablesAppDelegate.m -o "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte_TablesAppDelegate.o"0#
+
+CCompileC "build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/main.o" /Users/MacBook/Projects/edu/objc/osx-project-2/main.m normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s376342951.848281
+e376342952.027015
+r1
+xCompileC
+xbuild/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/main.o
+x/Users/MacBook/Projects/edu/objc/osx-project-2/main.m
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@61"Compile /Users/MacBook/Projects/edu/objc/osx-project-2/main.m376342951#376342952#0(0"0(0#0#53"/Users/MacBook/Projects/edu/objc/osx-project-2/main.m8603950336#1692"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-generated-files.hmap" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-own-target-headers.hmap" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-all-target-headers.hmap" -iquote "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-project-headers.hmap" -F/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug -I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/include "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/DerivedSources/x86_64" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/DerivedSources" -include /var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch -c /Users/MacBook/Projects/edu/objc/osx-project-2/main.m -o "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/main.o"0#
+
+CCompileXIB /Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/MainMenu.xib
+s376344021.607304
+e376344022.919710
+r1
+xCompileXIB
+x/Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/MainMenu.xib
+lSLF07#2@37"CompileXIB English.lproj/MainMenu.xib376344021#376344022#0(0"0(0#0#73"/Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/MainMenu.xib8606575328#397"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj/MainMenu.nib" /Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/MainMenu.xib --sdk /Developer/SDKs/MacOSX10.6.sdk0#
+
+CCopyStringsFile "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj/InfoPlist.strings" English.lproj/InfoPlist.strings
+s376342947.048325
+e376342947.124731
+r1
+xCopyStringsFile
+x/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj/InfoPlist.strings
+xEnglish.lproj/InfoPlist.strings
+lSLF07#2@36"Copy English.lproj/InfoPlist.strings376342947#376342947#0(0"0(0#0#78"/Users/MacBook/Projects/edu/objc/osx-project-2/English.lproj/InfoPlist.strings8603808160#390"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    setenv ICONV /usr/bin/iconv    /Developer/Library/Xcode/Plug-ins/CoreBuildTasks.xcplugin/Contents/Resources/copystrings --validate --inputencoding utf-8 --outputencoding UTF-16 English.lproj/InfoPlist.strings --outdir "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Resources/English.lproj"0#
+
+CLd "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/MacOS/Schulte Tables" normal x86_64
+s376342952.054094
+e376342952.148313
+r1
+xLd
+x/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/MacOS/Schulte Tables
+xnormal
+xx86_64
+lSLF07#2@112"Link /Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/MacOS/Schulte Tables376342952#376342952#0(0"0(0#0#0"8600959328#621"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/gcc-4.2 -arch x86_64 -isysroot /Developer/SDKs/MacOSX10.6.sdk -L/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug -F/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug -filelist "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Objects-normal/x86_64/Schulte Tables.LinkFileList" -mmacosx-version-min=10.6 -framework Cocoa -o "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/MacOS/Schulte Tables"0#
+
+CProcessInfoPlistFile "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Info.plist" Schulte_Tables-Info.plist
+s376342947.036532
+e376342947.048220
+r1
+xProcessInfoPlistFile
+x/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Info.plist
+xSchulte_Tables-Info.plist
+lSLF07#2@33"Process Schulte_Tables-Info.plist376342947#376342947#0(0"0(0#0#72"/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_Tables-Info.plist8605367328#359"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    builtin-infoPlistUtility Schulte_Tables-Info.plist -genpkginfo "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/PkgInfo" -expandbuildsettings -platform macosx -o "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app/Contents/Info.plist"0#
+
+CProcessPCH /var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch.gch Schulte_Tables_Prefix.pch normal x86_64 objective-c com.apple.compilers.gcc.4_2
+s376342947.740645
+e376342951.847824
+r1
+xProcessPCH
+x/var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch.gch
+xSchulte_Tables_Prefix.pch
+xnormal
+xx86_64
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile Schulte_Tables_Prefix.pch376342947#376342951#0(0"0(0#0#72"/Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_Tables_Prefix.pch8604924416#1581"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x objective-c-header -arch x86_64 -fmessage-length=0 -pipe -std=gnu99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -mmacosx-version-min=10.6 -gdwarf-2 -iquote "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-generated-files.hmap" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-own-target-headers.hmap" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-all-target-headers.hmap" -iquote "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/Schulte Tables-project-headers.hmap" -F/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug -I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/include "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/DerivedSources/x86_64" "-I/Users/MacBook/Projects/edu/objc/osx-project-2/build/Schulte Tables.build/Debug/Schulte Tables.build/DerivedSources" -c /Users/MacBook/Projects/edu/objc/osx-project-2/Schulte_Tables_Prefix.pch -o /var/folders/or/orcWN56DGoGu4HCxkoUUSk+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Schulte_Tables_Prefix-eixkcckkprwixuggrzmkenxdqpqk/Schulte_Tables_Prefix.pch.gch0#
+
+CTouch "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app"
+s376344022.920168
+e376344022.971906
+r1
+xTouch
+x/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app
+lSLF07#2@83"Touch /Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app376344022#376344022#0(0"0(0#0#0"8605851456#156"    cd /Users/MacBook/Projects/edu/objc/osx-project-2    /usr/bin/touch -c "/Users/MacBook/Projects/edu/objc/osx-project-2/build/Debug/Schulte Tables.app"0#
+
