@@ -14,6 +14,8 @@
 		C232CC19166E7A6C00E35D02 /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C232CC18166E7A6C00E35D02 /* SLAppDelegate.m */; };
 		C232CC1C166E7A6C00E35D02 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C232CC1A166E7A6C00E35D02 /* MainMenu.xib */; };
 		C232CC1F166E7A6C00E35D02 /* BookShelf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C232CC1D166E7A6C00E35D02 /* BookShelf.xcdatamodeld */; };
+		C232CC26166E805700E35D02 /* NewBook.xib in Resources */ = {isa = PBXBuildFile; fileRef = C232CC25166E805700E35D02 /* NewBook.xib */; };
+		C232CC28166E871E00E35D02 /* Shelf.xib in Resources */ = {isa = PBXBuildFile; fileRef = C232CC27166E871E00E35D02 /* Shelf.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		C232CC18166E7A6C00E35D02 /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
 		C232CC1B166E7A6C00E35D02 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C232CC1E166E7A6C00E35D02 /* BookShelf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BookShelf.xcdatamodel; sourceTree = "<group>"; };
+		C232CC25166E805700E35D02 /* NewBook.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewBook.xib; sourceTree = "<group>"; };
+		C232CC27166E871E00E35D02 /* Shelf.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Shelf.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 				C232CC17166E7A6C00E35D02 /* SLAppDelegate.h */,
 				C232CC18166E7A6C00E35D02 /* SLAppDelegate.m */,
 				C232CC1A166E7A6C00E35D02 /* MainMenu.xib */,
+				C232CC25166E805700E35D02 /* NewBook.xib */,
+				C232CC27166E871E00E35D02 /* Shelf.xib */,
 				C232CC1D166E7A6C00E35D02 /* BookShelf.xcdatamodeld */,
 				C232CC0C166E7A6C00E35D02 /* Supporting Files */,
 			);
@@ -160,6 +166,8 @@
 				C232CC10166E7A6C00E35D02 /* InfoPlist.strings in Resources */,
 				C232CC16166E7A6C00E35D02 /* Credits.rtf in Resources */,
 				C232CC1C166E7A6C00E35D02 /* MainMenu.xib in Resources */,
+				C232CC26166E805700E35D02 /* NewBook.xib in Resources */,
+				C232CC28166E871E00E35D02 /* Shelf.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
