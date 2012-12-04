@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		CB588402166A85FD00F4E9E9 /* MainStoryboard.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB588400166A85FD00F4E9E9 /* MainStoryboard.strings */; };
 		CB58844F166A9E8500F4E9E9 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CB588451166A9E8500F4E9E9 /* Localizable.strings */; };
+		CB588457166B8F6900F4E9E9 /* PitbulCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = CB588456166B8F6900F4E9E9 /* PitbulCommand.m */; };
+		CB58845A166B9BB500F4E9E9 /* PitbulCommandProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CB588459166B9BB500F4E9E9 /* PitbulCommandProvider.m */; };
+		CB58845C166BBF1B00F4E9E9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB58845B166BBF1A00F4E9E9 /* MessageUI.framework */; };
 		CB73CEC6165D73B200FFF9B8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC5165D73B200FFF9B8 /* UIKit.framework */; };
 		CB73CEC8165D73B200FFF9B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC7165D73B200FFF9B8 /* Foundation.framework */; };
 		CB73CECA165D73B200FFF9B8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73CEC9165D73B200FFF9B8 /* CoreGraphics.framework */; };
@@ -57,6 +60,11 @@
 		CB588450166A9E8500F4E9E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB588452166A9E8F00F4E9E9 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		CB588453166A9E9B00F4E9E9 /* uk */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = uk; path = uk.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CB588455166B8F6900F4E9E9 /* PitbulCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitbulCommand.h; sourceTree = "<group>"; };
+		CB588456166B8F6900F4E9E9 /* PitbulCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PitbulCommand.m; sourceTree = "<group>"; };
+		CB588458166B9BB400F4E9E9 /* PitbulCommandProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PitbulCommandProvider.h; sourceTree = "<group>"; };
+		CB588459166B9BB500F4E9E9 /* PitbulCommandProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PitbulCommandProvider.m; sourceTree = "<group>"; };
+		CB58845B166BBF1A00F4E9E9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		CB73CEC1165D73B200FFF9B8 /* iPitbul.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iPitbul.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB73CEC5165D73B200FFF9B8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		CB73CEC7165D73B200FFF9B8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -94,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB58845C166BBF1B00F4E9E9 /* MessageUI.framework in Frameworks */,
 				CB73CEC6165D73B200FFF9B8 /* UIKit.framework in Frameworks */,
 				CB73CEC8165D73B200FFF9B8 /* Foundation.framework in Frameworks */,
 				CB73CECA165D73B200FFF9B8 /* CoreGraphics.framework in Frameworks */,
@@ -134,6 +143,10 @@
 				CB73CEE1165D73B200FFF9B8 /* MainViewController.m */,
 				CB73CEE3165D73B200FFF9B8 /* AboutViewController.h */,
 				CB73CEE4165D73B300FFF9B8 /* AboutViewController.m */,
+				CB588455166B8F6900F4E9E9 /* PitbulCommand.h */,
+				CB588456166B8F6900F4E9E9 /* PitbulCommand.m */,
+				CB588458166B9BB400F4E9E9 /* PitbulCommandProvider.h */,
+				CB588459166B9BB500F4E9E9 /* PitbulCommandProvider.m */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -160,6 +173,7 @@
 		CB73CEC4165D73B200FFF9B8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CB58845B166BBF1A00F4E9E9 /* MessageUI.framework */,
 				CB73CEC5165D73B200FFF9B8 /* UIKit.framework */,
 				CB73CEC7165D73B200FFF9B8 /* Foundation.framework */,
 				CB73CEC9165D73B200FFF9B8 /* CoreGraphics.framework */,
@@ -342,6 +356,8 @@
 				CB73CED6165D73B200FFF9B8 /* AppDelegate.m in Sources */,
 				CB73CEE2165D73B200FFF9B8 /* MainViewController.m in Sources */,
 				CB73CEE5165D73B300FFF9B8 /* AboutViewController.m in Sources */,
+				CB588457166B8F6900F4E9E9 /* PitbulCommand.m in Sources */,
+				CB58845A166B9BB500F4E9E9 /* PitbulCommandProvider.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +487,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPitbul/iPitbul-Prefix.pch";
 				INFOPLIST_FILE = "iPitbul/iPitbul-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -482,6 +499,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iPitbul/iPitbul-Prefix.pch";
 				INFOPLIST_FILE = "iPitbul/iPitbul-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

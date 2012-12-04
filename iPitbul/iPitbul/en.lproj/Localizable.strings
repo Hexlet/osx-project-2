@@ -12,7 +12,7 @@
 "SM" = "Replenish balance";
 
 /* ABOUT VIEW */
-"RATE.APPLICATION" = "Rate Application";
-"TELL.FRIENDS" = "Tell Friends";
-"EMAIL.SUPPORT" = "Email Support";
-"DONATE" = "Donate";
+"tellFriends.email.subject" = "iPitbul - GSM Alarm System Manager";
+"tellFriends.email.body" = "Hi,\n\niPitbul is already in iTunes AppStore!\n\nTry this the best application to manage your PITBUL Security GSM Alarm System";
+"emailSupport.email.subject" = "";
+"emailSupport.email.body" = "";

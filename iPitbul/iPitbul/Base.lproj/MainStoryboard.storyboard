@@ -18,7 +18,7 @@
                                 </constraints>
                                 <items>
                                     <navigationItem title="iPitbul" id="XcU-Cr-v9L">
-                                        <barButtonItem key="leftBarButtonItem" style="plain" id="Gy3-ud-Ofc">
+                                        <barButtonItem key="leftBarButtonItem" id="Gy3-ud-Ofc">
                                             <button key="customView" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="infoLight" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" id="10" userLabel="About">
                                                 <rect key="frame" x="5" y="11" width="18" height="20"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" size="button"/>
@@ -58,72 +58,132 @@
         <scene sceneID="9">
             <objects>
                 <viewController id="6" customClass="AboutViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7">
+                    <view key="view" contentMode="scaleToFill" id="O4Q-M2-dYO">
                         <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="12">
+                            <navigationBar contentMode="scaleToFill" barStyle="blackOpaque" translatesAutoresizingMaskIntoConstraints="NO" id="4xp-vb-H5O">
                                 <items>
-                                    <navigationItem title="About" id="13">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="14">
+                                    <navigationItem title="About" id="x3q-Xf-eHa">
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JCU-7O-3fj">
                                             <connections>
-                                                <action selector="done:" destination="6" id="16"/>
+                                                <action selector="done:" destination="6" id="Gnu-Q4-9Ol"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="jLY-x2-PHR">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="Icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Vw-Za-I1t">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="57" id="ZRm-wc-v23"/>
+                                    <constraint firstAttribute="width" constant="57" id="nyE-7v-xR0"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iPitbul" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LsK-CG-LI8">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="iPitbul" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ker-FY-KII">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="33" id="JMs-qw-AS1"/>
-                                    <constraint firstAttribute="width" constant="118" id="L7D-QR-8ZS"/>
+                                    <constraint firstAttribute="height" constant="33" id="Ixv-Ht-ga5"/>
+                                    <constraint firstAttribute="width" constant="118" id="Tqe-5U-RW3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="30"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ph-ie-n0J">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="4qp-Pi-Haj"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Version " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-oF-6Wi">
                                 <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="© Mykhailo Oleksiuk, 2012-2013." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="myd-FB-okg">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="© Mykhailo Oleksiuk, 2012-2013." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ONI-do-HHd">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="296" id="FqO-j6-nIk"/>
-                                    <constraint firstAttribute="height" constant="21" id="S2T-k0-q5X"/>
+                                    <constraint firstAttribute="height" constant="21" id="Jsa-Z2-tkB"/>
+                                    <constraint firstAttribute="width" constant="296" id="YnH-qI-Ek3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="13"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nW-AT-8qk">
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Rate Application">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="rateApplication:" destination="6" eventType="touchUpInside" id="B3Z-2Y-xeH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c0H-f4-8mn">
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Tell Friends">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tellFriends:" destination="6" eventType="touchUpInside" id="yka-Lh-Fj0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUg-Ff-cvu">
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Email Support">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="emailSupport:" destination="6" eventType="touchUpInside" id="20w-PM-gmZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wK7-np-jdR">
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="15"/>
+                                <state key="normal" title="Donate">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="donate:" destination="6" eventType="touchUpInside" id="nAJ-2U-C6s"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="myd-FB-okg" firstAttribute="centerX" secondItem="12" secondAttribute="centerX" type="default" id="0am-P3-Cgi"/>
-                            <constraint firstAttribute="trailing" secondItem="6ph-ie-n0J" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="6cN-cf-L0D"/>
-                            <constraint firstItem="6ph-ie-n0J" firstAttribute="bottom" secondItem="jLY-x2-PHR" secondAttribute="bottom" type="default" id="A2G-iv-1he"/>
-                            <constraint firstItem="jLY-x2-PHR" firstAttribute="top" secondItem="7" secondAttribute="top" constant="64" id="Fkh-C9-cp2"/>
-                            <constraint firstItem="6ph-ie-n0J" firstAttribute="leading" secondItem="jLY-x2-PHR" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="KEp-bv-u1n"/>
-                            <constraint firstItem="LsK-CG-LI8" firstAttribute="top" secondItem="jLY-x2-PHR" secondAttribute="top" type="default" id="Rct-LJ-MzG"/>
-                            <constraint firstItem="LsK-CG-LI8" firstAttribute="leading" secondItem="jLY-x2-PHR" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="eqV-N1-DRk"/>
-                            <constraint firstItem="12" firstAttribute="leading" secondItem="7" secondAttribute="leading" type="default" id="kyL-VC-rMY"/>
-                            <constraint firstAttribute="bottom" secondItem="myd-FB-okg" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="oO2-By-Sx8"/>
-                            <constraint firstItem="12" firstAttribute="top" secondItem="7" secondAttribute="top" type="default" id="oQ7-QK-1Ab"/>
-                            <constraint firstItem="12" firstAttribute="trailing" secondItem="7" secondAttribute="trailing" type="default" id="ueA-bu-G1w"/>
-                            <constraint firstItem="jLY-x2-PHR" firstAttribute="leading" secondItem="7" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zXi-fE-bLh"/>
+                            <constraint firstItem="wK7-np-jdR" firstAttribute="leading" secondItem="O4Q-M2-dYO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="0vO-PI-mM7"/>
+                            <constraint firstAttribute="bottom" secondItem="ONI-do-HHd" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="1s8-S5-SrF"/>
+                            <constraint firstAttribute="trailing" secondItem="c0H-f4-8mn" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="5SK-6F-Iex"/>
+                            <constraint firstItem="nOk-oF-6Wi" firstAttribute="bottom" secondItem="7Vw-Za-I1t" secondAttribute="bottom" type="default" id="75H-Wl-JKD"/>
+                            <constraint firstAttribute="trailing" secondItem="nOk-oF-6Wi" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="9Pn-r8-Oob"/>
+                            <constraint firstItem="4xp-vb-H5O" firstAttribute="trailing" secondItem="O4Q-M2-dYO" secondAttribute="trailing" type="default" id="D5A-Ik-HY2"/>
+                            <constraint firstItem="Ker-FY-KII" firstAttribute="top" secondItem="7Vw-Za-I1t" secondAttribute="top" type="default" id="FrW-RR-lIl"/>
+                            <constraint firstItem="rUg-Ff-cvu" firstAttribute="top" secondItem="c0H-f4-8mn" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="MJD-0q-I26"/>
+                            <constraint firstItem="wK7-np-jdR" firstAttribute="centerX" secondItem="ONI-do-HHd" secondAttribute="centerX" type="default" id="MNH-hE-O9i"/>
+                            <constraint firstItem="4xp-vb-H5O" firstAttribute="leading" secondItem="O4Q-M2-dYO" secondAttribute="leading" type="default" id="Mk8-eU-Mf4"/>
+                            <constraint firstAttribute="trailing" secondItem="rUg-Ff-cvu" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="P2x-h5-TrI"/>
+                            <constraint firstItem="c0H-f4-8mn" firstAttribute="top" secondItem="5nW-AT-8qk" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="QGc-RZ-AgJ"/>
+                            <constraint firstItem="5nW-AT-8qk" firstAttribute="top" secondItem="O4Q-M2-dYO" secondAttribute="top" constant="176" id="RCI-eb-oFB"/>
+                            <constraint firstItem="7Vw-Za-I1t" firstAttribute="top" secondItem="O4Q-M2-dYO" secondAttribute="top" constant="64" id="RvW-0G-g1P"/>
+                            <constraint firstItem="5nW-AT-8qk" firstAttribute="leading" secondItem="O4Q-M2-dYO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="bQL-NE-6Uu"/>
+                            <constraint firstItem="nOk-oF-6Wi" firstAttribute="leading" secondItem="7Vw-Za-I1t" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="bho-mR-mJB"/>
+                            <constraint firstItem="Ker-FY-KII" firstAttribute="leading" secondItem="7Vw-Za-I1t" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="cpc-A1-jnM"/>
+                            <constraint firstItem="7Vw-Za-I1t" firstAttribute="leading" secondItem="O4Q-M2-dYO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="eZS-r0-beb"/>
+                            <constraint firstItem="wK7-np-jdR" firstAttribute="top" secondItem="rUg-Ff-cvu" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="j2z-0z-2Xq"/>
+                            <constraint firstAttribute="trailing" secondItem="5nW-AT-8qk" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="pb3-W3-Joh"/>
+                            <constraint firstAttribute="trailing" secondItem="wK7-np-jdR" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="t7u-41-R05"/>
+                            <constraint firstItem="4xp-vb-H5O" firstAttribute="top" secondItem="O4Q-M2-dYO" secondAttribute="top" type="default" id="tbB-kc-dSL"/>
+                            <constraint firstItem="c0H-f4-8mn" firstAttribute="leading" secondItem="O4Q-M2-dYO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="tsY-mM-zAN"/>
+                            <constraint firstItem="rUg-Ff-cvu" firstAttribute="leading" secondItem="O4Q-M2-dYO" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="zA1-dV-Bn5"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="labelCopyrights" destination="myd-FB-okg" id="5hx-3t-WVU"/>
-                        <outlet property="labelVersion" destination="6ph-ie-n0J" id="Qf4-vU-uen"/>
+                        <outlet property="labelVersion" destination="nOk-oF-6Wi" id="hok-vE-fWR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8" sceneMemberID="firstResponder"/>
@@ -150,10 +210,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-VQ-hKO">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="geK-DR-vS9"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pitbul Phone Number" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xhV-VQ-hKO">
                                 <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                 <color key="textColor" red="0.96862745100000003" green="0.96862745100000003" blue="0.96862745100000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -162,10 +219,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixg-BF-8t6">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="7Gc-Vj-BRb"/>
-                                </constraints>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Pitbul System Password" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ixg-BF-8t6">
                                 <fontDescription key="fontDescription" name="Avenir-BookOblique" family="Avenir" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
@@ -208,8 +262,11 @@
         <class className="AboutViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/AboutViewController.h"/>
             <relationships>
+                <relationship kind="action" name="donate:"/>
                 <relationship kind="action" name="done:"/>
-                <relationship kind="outlet" name="labelCopyrights" candidateClass="UILabel"/>
+                <relationship kind="action" name="emailSupport:"/>
+                <relationship kind="action" name="rateApplication:"/>
+                <relationship kind="action" name="tellFriends:"/>
                 <relationship kind="outlet" name="labelVersion" candidateClass="UILabel"/>
             </relationships>
         </class>

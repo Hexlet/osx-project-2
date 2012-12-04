@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MessageUI/MessageUI.h>
 
 @class AboutViewController;
 
@@ -14,12 +15,15 @@
 - (void)aboutViewControllerDidFinish:(AboutViewController *)controller;
 @end
 
-@interface AboutViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UILabel *labelVersion;
-@property (weak, nonatomic) IBOutlet UILabel *labelCopyrights;
+@interface AboutViewController : UIViewController<MFMailComposeViewControllerDelegate>
 
+@property (weak, nonatomic) IBOutlet UILabel *labelVersion;
 @property (weak, nonatomic) id <AboutViewControllerDelegate> delegate;
 
 - (IBAction)done:(id)sender;
+- (IBAction)rateApplication:(id)sender;
+- (IBAction)tellFriends:(id)sender;
+- (IBAction)emailSupport:(id)sender;
+- (IBAction)donate:(id)sender;
 
 @end
