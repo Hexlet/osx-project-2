@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E2367E2F166E718D00C82C3F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E2367E2E166E718D00C82C3F /* README.md */; };
 		E2F09381166E68F500724C91 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2F09380166E68F500724C91 /* Cocoa.framework */; };
 		E2F0938B166E68F500724C91 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E2F09389166E68F500724C91 /* InfoPlist.strings */; };
 		E2F0938D166E68F500724C91 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E2F0938C166E68F500724C91 /* main.m */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E2367E2E166E718D00C82C3F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E2F0937C166E68F500724C91 /* LearnKana.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnKana.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2F09380166E68F500724C91 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E2F09383166E68F500724C91 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -118,6 +120,7 @@
 				E2F09393166E68F500724C91 /* AppDelegate.m */,
 				E2F09395166E68F500724C91 /* MainMenu.xib */,
 				E2F09387166E68F500724C91 /* Supporting Files */,
+				E2367E2E166E718D00C82C3F /* README.md */,
 			);
 			path = LearnKana;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				E2F0938B166E68F500724C91 /* InfoPlist.strings in Resources */,
 				E2F09391166E68F500724C91 /* Credits.rtf in Resources */,
 				E2F09397166E68F500724C91 /* MainMenu.xib in Resources */,
+				E2367E2F166E718D00C82C3F /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +450,7 @@
 				E2F093B0166E68F600724C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E2F093B1166E68F600724C91 /* Build configuration list for PBXNativeTarget "LearnKanaTests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +459,7 @@
 				E2F093B3166E68F600724C91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
