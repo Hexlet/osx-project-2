@@ -1,0 +1,3 @@
+[submodule "PlayBar"]
+	path = PlayBar
+	url = https://github.com/stuartjmoore/PlayBar.git
