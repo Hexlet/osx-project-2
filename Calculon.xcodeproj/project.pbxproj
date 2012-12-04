@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D6D918D2166E8A41006C661E /* polishBrain.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D918D1166E8A40006C661E /* polishBrain.m */; };
+		D6D918D6166E8AB5006C661E /* Operand.m in Sources */ = {isa = PBXBuildFile; fileRef = D6D918D5166E8AB5006C661E /* Operand.m */; };
 		D6DC87FC166DCE67000A91F1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DC87FB166DCE67000A91F1 /* UIKit.framework */; };
 		D6DC87FE166DCE67000A91F1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DC87FD166DCE67000A91F1 /* Foundation.framework */; };
 		D6DC8800166DCE67000A91F1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DC87FF166DCE67000A91F1 /* CoreGraphics.framework */; };
@@ -36,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D6D918D0166E8A40006C661E /* polishBrain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = polishBrain.h; sourceTree = "<group>"; };
+		D6D918D1166E8A40006C661E /* polishBrain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = polishBrain.m; sourceTree = "<group>"; };
+		D6D918D4166E8AB5006C661E /* Operand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Operand.h; sourceTree = "<group>"; };
+		D6D918D5166E8AB5006C661E /* Operand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Operand.m; sourceTree = "<group>"; };
 		D6DC87F7166DCE67000A91F1 /* Calculon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6DC87FB166DCE67000A91F1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		D6DC87FD166DCE67000A91F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -117,12 +123,16 @@
 		D6DC8801166DCE67000A91F1 /* Calculon */ = {
 			isa = PBXGroup;
 			children = (
+				D6D918D0166E8A40006C661E /* polishBrain.h */,
+				D6D918D1166E8A40006C661E /* polishBrain.m */,
 				D6DC880A166DCE68000A91F1 /* AppDelegate.h */,
 				D6DC880B166DCE68000A91F1 /* AppDelegate.m */,
 				D6DC8813166DCE68000A91F1 /* ViewController.h */,
 				D6DC8814166DCE68000A91F1 /* ViewController.m */,
 				D6DC8816166DCE68000A91F1 /* ViewController.xib */,
 				D6DC8802166DCE68000A91F1 /* Supporting Files */,
+				D6D918D4166E8AB5006C661E /* Operand.h */,
+				D6D918D5166E8AB5006C661E /* Operand.m */,
 			);
 			path = Calculon;
 			sourceTree = "<group>";
@@ -273,6 +283,8 @@
 				D6DC8808166DCE68000A91F1 /* main.m in Sources */,
 				D6DC880C166DCE68000A91F1 /* AppDelegate.m in Sources */,
 				D6DC8815166DCE68000A91F1 /* ViewController.m in Sources */,
+				D6D918D2166E8A41006C661E /* polishBrain.m in Sources */,
+				D6D918D6166E8AB5006C661E /* Operand.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,6 +459,7 @@
 				D6DC8832166DCE69000A91F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D6DC8833166DCE69000A91F1 /* Build configuration list for PBXNativeTarget "CalculonTests" */ = {
 			isa = XCConfigurationList;
@@ -455,6 +468,7 @@
 				D6DC8835166DCE69000A91F1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
