@@ -17,6 +17,7 @@
 		C01C4563166E498B00F32095 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C01C4543166E498A00F32095 /* Cocoa.framework */; };
 		C01C456B166E498B00F32095 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C01C4569166E498B00F32095 /* InfoPlist.strings */; };
 		C01C456E166E498B00F32095 /* MacCloudBackuperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C01C456D166E498B00F32095 /* MacCloudBackuperTests.m */; };
+		C0886B71166EB40300535F01 /* GTL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0886B55166EAA2B00535F01 /* GTL.framework */; };
 		C09ABCD0166E767B004BAE51 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C09ABCCD166E767B004BAE51 /* MASPreferencesWindow.xib */; };
 		C09ABCD1166E767B004BAE51 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C09ABCCF166E767B004BAE51 /* MASPreferencesWindowController.m */; };
 /* End PBXBuildFile section */
@@ -91,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0886B71166EB40300535F01 /* GTL.framework in Frameworks */,
 				C01C4544166E498A00F32095 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
