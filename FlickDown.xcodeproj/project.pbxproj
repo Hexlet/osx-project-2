@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		70D4DEA6166DE860006D7B13 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D4DEA5166DE860006D7B13 /* Cocoa.framework */; };
+		70D4DEB0166DE860006D7B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D4DEAE166DE860006D7B13 /* InfoPlist.strings */; };
+		70D4DEB2166DE860006D7B13 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D4DEB1166DE860006D7B13 /* main.m */; };
+		70D4DEB6166DE860006D7B13 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 70D4DEB4166DE860006D7B13 /* Credits.rtf */; };
+		70D4DEB9166DE860006D7B13 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D4DEB8166DE860006D7B13 /* AppDelegate.m */; };
+		70D4DEBC166DE860006D7B13 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70D4DEBA166DE860006D7B13 /* MainMenu.xib */; };
+		70D4DEC4166DE860006D7B13 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D4DEC3166DE860006D7B13 /* SenTestingKit.framework */; };
+		70D4DEC5166DE860006D7B13 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70D4DEA5166DE860006D7B13 /* Cocoa.framework */; };
+		70D4DECD166DE860006D7B13 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70D4DECB166DE860006D7B13 /* InfoPlist.strings */; };
+		70D4DED0166DE860006D7B13 /* FlickDownTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70D4DECF166DE860006D7B13 /* FlickDownTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		70D4DEC6166DE860006D7B13 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 70D4DE98166DE860006D7B13 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70D4DEA0166DE860006D7B13;
+			remoteInfo = FlickDown;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		70D4DEA1166DE860006D7B13 /* FlickDown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlickDown.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D4DEA5166DE860006D7B13 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		70D4DEA8166DE860006D7B13 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		70D4DEA9166DE860006D7B13 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		70D4DEAA166DE860006D7B13 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		70D4DEAD166DE860006D7B13 /* FlickDown-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickDown-Info.plist"; sourceTree = "<group>"; };
+		70D4DEAF166DE860006D7B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70D4DEB1166DE860006D7B13 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		70D4DEB3166DE860006D7B13 /* FlickDown-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlickDown-Prefix.pch"; sourceTree = "<group>"; };
+		70D4DEB5166DE860006D7B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		70D4DEB7166DE860006D7B13 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		70D4DEB8166DE860006D7B13 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		70D4DEBB166DE860006D7B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		70D4DEC2166DE860006D7B13 /* FlickDownTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlickDownTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D4DEC3166DE860006D7B13 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		70D4DECA166DE860006D7B13 /* FlickDownTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickDownTests-Info.plist"; sourceTree = "<group>"; };
+		70D4DECC166DE860006D7B13 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		70D4DECE166DE860006D7B13 /* FlickDownTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlickDownTests.h; sourceTree = "<group>"; };
+		70D4DECF166DE860006D7B13 /* FlickDownTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickDownTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		70D4DE9E166DE860006D7B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D4DEA6166DE860006D7B13 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D4DEBE166DE860006D7B13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D4DEC4166DE860006D7B13 /* SenTestingKit.framework in Frameworks */,
+				70D4DEC5166DE860006D7B13 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		70D4DE96166DE860006D7B13 = {
+			isa = PBXGroup;
+			children = (
+				70D4DEAB166DE860006D7B13 /* FlickDown */,
+				70D4DEC8166DE860006D7B13 /* FlickDownTests */,
+				70D4DEA4166DE860006D7B13 /* Frameworks */,
+				70D4DEA2166DE860006D7B13 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		70D4DEA2166DE860006D7B13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DEA1166DE860006D7B13 /* FlickDown.app */,
+				70D4DEC2166DE860006D7B13 /* FlickDownTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		70D4DEA4166DE860006D7B13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DEA5166DE860006D7B13 /* Cocoa.framework */,
+				70D4DEC3166DE860006D7B13 /* SenTestingKit.framework */,
+				70D4DEA7166DE860006D7B13 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		70D4DEA7166DE860006D7B13 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DEA8166DE860006D7B13 /* AppKit.framework */,
+				70D4DEA9166DE860006D7B13 /* CoreData.framework */,
+				70D4DEAA166DE860006D7B13 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		70D4DEAB166DE860006D7B13 /* FlickDown */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DEB7166DE860006D7B13 /* AppDelegate.h */,
+				70D4DEB8166DE860006D7B13 /* AppDelegate.m */,
+				70D4DEBA166DE860006D7B13 /* MainMenu.xib */,
+				70D4DEAC166DE860006D7B13 /* Supporting Files */,
+			);
+			path = FlickDown;
+			sourceTree = "<group>";
+		};
+		70D4DEAC166DE860006D7B13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DEAD166DE860006D7B13 /* FlickDown-Info.plist */,
+				70D4DEAE166DE860006D7B13 /* InfoPlist.strings */,
+				70D4DEB1166DE860006D7B13 /* main.m */,
+				70D4DEB3166DE860006D7B13 /* FlickDown-Prefix.pch */,
+				70D4DEB4166DE860006D7B13 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		70D4DEC8166DE860006D7B13 /* FlickDownTests */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DECE166DE860006D7B13 /* FlickDownTests.h */,
+				70D4DECF166DE860006D7B13 /* FlickDownTests.m */,
+				70D4DEC9166DE860006D7B13 /* Supporting Files */,
+			);
+			path = FlickDownTests;
+			sourceTree = "<group>";
+		};
+		70D4DEC9166DE860006D7B13 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				70D4DECA166DE860006D7B13 /* FlickDownTests-Info.plist */,
+				70D4DECB166DE860006D7B13 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		70D4DEA0166DE860006D7B13 /* FlickDown */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D4DED3166DE860006D7B13 /* Build configuration list for PBXNativeTarget "FlickDown" */;
+			buildPhases = (
+				70D4DE9D166DE860006D7B13 /* Sources */,
+				70D4DE9E166DE860006D7B13 /* Frameworks */,
+				70D4DE9F166DE860006D7B13 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlickDown;
+			productName = FlickDown;
+			productReference = 70D4DEA1166DE860006D7B13 /* FlickDown.app */;
+			productType = "com.apple.product-type.application";
+		};
+		70D4DEC1166DE860006D7B13 /* FlickDownTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 70D4DED6166DE860006D7B13 /* Build configuration list for PBXNativeTarget "FlickDownTests" */;
+			buildPhases = (
+				70D4DEBD166DE860006D7B13 /* Sources */,
+				70D4DEBE166DE860006D7B13 /* Frameworks */,
+				70D4DEBF166DE860006D7B13 /* Resources */,
+				70D4DEC0166DE860006D7B13 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				70D4DEC7166DE860006D7B13 /* PBXTargetDependency */,
+			);
+			name = FlickDownTests;
+			productName = FlickDownTests;
+			productReference = 70D4DEC2166DE860006D7B13 /* FlickDownTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		70D4DE98166DE860006D7B13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Paul Dmitryev";
+			};
+			buildConfigurationList = 70D4DE9B166DE860006D7B13 /* Build configuration list for PBXProject "FlickDown" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 70D4DE96166DE860006D7B13;
+			productRefGroup = 70D4DEA2166DE860006D7B13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				70D4DEA0166DE860006D7B13 /* FlickDown */,
+				70D4DEC1166DE860006D7B13 /* FlickDownTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		70D4DE9F166DE860006D7B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D4DEB0166DE860006D7B13 /* InfoPlist.strings in Resources */,
+				70D4DEB6166DE860006D7B13 /* Credits.rtf in Resources */,
+				70D4DEBC166DE860006D7B13 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D4DEBF166DE860006D7B13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D4DECD166DE860006D7B13 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		70D4DEC0166DE860006D7B13 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		70D4DE9D166DE860006D7B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D4DEB2166DE860006D7B13 /* main.m in Sources */,
+				70D4DEB9166DE860006D7B13 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		70D4DEBD166DE860006D7B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				70D4DED0166DE860006D7B13 /* FlickDownTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		70D4DEC7166DE860006D7B13 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 70D4DEA0166DE860006D7B13 /* FlickDown */;
+			targetProxy = 70D4DEC6166DE860006D7B13 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		70D4DEAE166DE860006D7B13 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D4DEAF166DE860006D7B13 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		70D4DEB4166DE860006D7B13 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D4DEB5166DE860006D7B13 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		70D4DEBA166DE860006D7B13 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D4DEBB166DE860006D7B13 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		70D4DECB166DE860006D7B13 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				70D4DECC166DE860006D7B13 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		70D4DED1166DE860006D7B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		70D4DED2166DE860006D7B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		70D4DED4166DE860006D7B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickDown/FlickDown-Prefix.pch";
+				INFOPLIST_FILE = "FlickDown/FlickDown-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		70D4DED5166DE860006D7B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickDown/FlickDown-Prefix.pch";
+				INFOPLIST_FILE = "FlickDown/FlickDown-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		70D4DED7166DE860006D7B13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlickDown.app/Contents/MacOS/FlickDown";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickDown/FlickDown-Prefix.pch";
+				INFOPLIST_FILE = "FlickDownTests/FlickDownTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		70D4DED8166DE860006D7B13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FlickDown.app/Contents/MacOS/FlickDown";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlickDown/FlickDown-Prefix.pch";
+				INFOPLIST_FILE = "FlickDownTests/FlickDownTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		70D4DE9B166DE860006D7B13 /* Build configuration list for PBXProject "FlickDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D4DED1166DE860006D7B13 /* Debug */,
+				70D4DED2166DE860006D7B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		70D4DED3166DE860006D7B13 /* Build configuration list for PBXNativeTarget "FlickDown" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D4DED4166DE860006D7B13 /* Debug */,
+				70D4DED5166DE860006D7B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		70D4DED6166DE860006D7B13 /* Build configuration list for PBXNativeTarget "FlickDownTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				70D4DED7166DE860006D7B13 /* Debug */,
+				70D4DED8166DE860006D7B13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 70D4DE98166DE860006D7B13 /* Project object */;
+}
