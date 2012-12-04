@@ -1,0 +1,316 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A5713333166A3222006D35BE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5713332166A3222006D35BE /* UIKit.framework */; };
+		A5713335166A3222006D35BE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5713334166A3222006D35BE /* Foundation.framework */; };
+		A5713337166A3222006D35BE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5713336166A3222006D35BE /* CoreGraphics.framework */; };
+		A571333D166A3222006D35BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A571333B166A3222006D35BE /* InfoPlist.strings */; };
+		A571333F166A3222006D35BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A571333E166A3222006D35BE /* main.m */; };
+		A5713343166A3222006D35BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5713342166A3222006D35BE /* AppDelegate.m */; };
+		A5713346166A3222006D35BE /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5713345166A3222006D35BE /* MasterViewController.m */; };
+		A5713349166A3222006D35BE /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5713348166A3222006D35BE /* DetailViewController.m */; };
+		A571334C166A3222006D35BE /* MasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571334A166A3222006D35BE /* MasterViewController.xib */; };
+		A571334F166A3222006D35BE /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A571334D166A3222006D35BE /* DetailViewController.xib */; };
+		A576AD59166B78F900F8A0A3 /* RecipesArray.plist in Resources */ = {isa = PBXBuildFile; fileRef = A576AD58166B78F900F8A0A3 /* RecipesArray.plist */; };
+		A576AD5B166B806A00F8A0A3 /* RecipesDirections.plist in Resources */ = {isa = PBXBuildFile; fileRef = A576AD5A166B806A00F8A0A3 /* RecipesDirections.plist */; };
+		A57CB0C6166BA91C00A2AE0A /* AddRecipesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A57CB0C5166BA91C00A2AE0A /* AddRecipesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A571332E166A3222006D35BE /* Recipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Recipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5713332166A3222006D35BE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A5713334166A3222006D35BE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A5713336166A3222006D35BE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A571333A166A3222006D35BE /* Recipes-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Recipes-Info.plist"; sourceTree = "<group>"; };
+		A571333C166A3222006D35BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A571333E166A3222006D35BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5713340166A3222006D35BE /* Recipes-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Recipes-Prefix.pch"; sourceTree = "<group>"; };
+		A5713341166A3222006D35BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5713342166A3222006D35BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5713344166A3222006D35BE /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		A5713345166A3222006D35BE /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		A5713347166A3222006D35BE /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		A5713348166A3222006D35BE /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		A571334B166A3222006D35BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MasterViewController.xib; sourceTree = "<group>"; };
+		A571334E166A3222006D35BE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailViewController.xib; sourceTree = "<group>"; };
+		A576AD58166B78F900F8A0A3 /* RecipesArray.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = RecipesArray.plist; path = "../../../Downloads/Head-First-iPhone-iPad-Development-Code/Chapter_4/app/DrinkMixer-part2/RecipesArray.plist"; sourceTree = "<group>"; };
+		A576AD5A166B806A00F8A0A3 /* RecipesDirections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = RecipesDirections.plist; path = "../../../Downloads/Head-First-iPhone-iPad-Development-Code/Chapter_4/app/DrinkMixer-part3/RecipesDirections.plist"; sourceTree = "<group>"; };
+		A576AD5E166B886300F8A0A3 /* RecipesConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipesConstants.h; sourceTree = "<group>"; };
+		A57CB0C4166BA91C00A2AE0A /* AddRecipesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddRecipesViewController.h; sourceTree = "<group>"; };
+		A57CB0C5166BA91C00A2AE0A /* AddRecipesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddRecipesViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A571332B166A3222006D35BE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5713333166A3222006D35BE /* UIKit.framework in Frameworks */,
+				A5713335166A3222006D35BE /* Foundation.framework in Frameworks */,
+				A5713337166A3222006D35BE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A5713323166A3221006D35BE = {
+			isa = PBXGroup;
+			children = (
+				A5713338166A3222006D35BE /* Recipes */,
+				A5713331166A3222006D35BE /* Frameworks */,
+				A571332F166A3222006D35BE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A571332F166A3222006D35BE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A571332E166A3222006D35BE /* Recipes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5713331166A3222006D35BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A5713332166A3222006D35BE /* UIKit.framework */,
+				A5713334166A3222006D35BE /* Foundation.framework */,
+				A5713336166A3222006D35BE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5713338166A3222006D35BE /* Recipes */ = {
+			isa = PBXGroup;
+			children = (
+				A5713341166A3222006D35BE /* AppDelegate.h */,
+				A576AD5E166B886300F8A0A3 /* RecipesConstants.h */,
+				A5713342166A3222006D35BE /* AppDelegate.m */,
+				A5713344166A3222006D35BE /* MasterViewController.h */,
+				A5713345166A3222006D35BE /* MasterViewController.m */,
+				A5713347166A3222006D35BE /* DetailViewController.h */,
+				A5713348166A3222006D35BE /* DetailViewController.m */,
+				A57CB0C4166BA91C00A2AE0A /* AddRecipesViewController.h */,
+				A57CB0C5166BA91C00A2AE0A /* AddRecipesViewController.m */,
+				A571334A166A3222006D35BE /* MasterViewController.xib */,
+				A571334D166A3222006D35BE /* DetailViewController.xib */,
+				A5713339166A3222006D35BE /* Supporting Files */,
+			);
+			path = Recipes;
+			sourceTree = "<group>";
+		};
+		A5713339166A3222006D35BE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A576AD5A166B806A00F8A0A3 /* RecipesDirections.plist */,
+				A576AD58166B78F900F8A0A3 /* RecipesArray.plist */,
+				A571333A166A3222006D35BE /* Recipes-Info.plist */,
+				A571333B166A3222006D35BE /* InfoPlist.strings */,
+				A571333E166A3222006D35BE /* main.m */,
+				A5713340166A3222006D35BE /* Recipes-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A571332D166A3222006D35BE /* Recipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5713352166A3222006D35BE /* Build configuration list for PBXNativeTarget "Recipes" */;
+			buildPhases = (
+				A571332A166A3222006D35BE /* Sources */,
+				A571332B166A3222006D35BE /* Frameworks */,
+				A571332C166A3222006D35BE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Recipes;
+			productName = Recipes;
+			productReference = A571332E166A3222006D35BE /* Recipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5713325166A3221006D35BE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = A5713328166A3221006D35BE /* Build configuration list for PBXProject "Recipes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A5713323166A3221006D35BE;
+			productRefGroup = A571332F166A3222006D35BE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A571332D166A3222006D35BE /* Recipes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A571332C166A3222006D35BE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A571333D166A3222006D35BE /* InfoPlist.strings in Resources */,
+				A571334C166A3222006D35BE /* MasterViewController.xib in Resources */,
+				A571334F166A3222006D35BE /* DetailViewController.xib in Resources */,
+				A576AD59166B78F900F8A0A3 /* RecipesArray.plist in Resources */,
+				A576AD5B166B806A00F8A0A3 /* RecipesDirections.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A571332A166A3222006D35BE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A571333F166A3222006D35BE /* main.m in Sources */,
+				A5713343166A3222006D35BE /* AppDelegate.m in Sources */,
+				A5713346166A3222006D35BE /* MasterViewController.m in Sources */,
+				A5713349166A3222006D35BE /* DetailViewController.m in Sources */,
+				A57CB0C6166BA91C00A2AE0A /* AddRecipesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A571333B166A3222006D35BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A571333C166A3222006D35BE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A571334A166A3222006D35BE /* MasterViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A571334B166A3222006D35BE /* en */,
+			);
+			name = MasterViewController.xib;
+			sourceTree = "<group>";
+		};
+		A571334D166A3222006D35BE /* DetailViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A571334E166A3222006D35BE /* en */,
+			);
+			name = DetailViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5713350166A3222006D35BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A5713351166A3222006D35BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5713353166A3222006D35BE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipes/Recipes-Prefix.pch";
+				INFOPLIST_FILE = "Recipes/Recipes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5713354166A3222006D35BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Recipes/Recipes-Prefix.pch";
+				INFOPLIST_FILE = "Recipes/Recipes-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5713328166A3221006D35BE /* Build configuration list for PBXProject "Recipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5713350166A3222006D35BE /* Debug */,
+				A5713351166A3222006D35BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5713352166A3222006D35BE /* Build configuration list for PBXNativeTarget "Recipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5713353166A3222006D35BE /* Debug */,
+				A5713354166A3222006D35BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A5713325166A3221006D35BE /* Project object */;
+}
