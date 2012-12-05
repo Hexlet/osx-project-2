@@ -1,0 +1,18 @@
+/* MAIN VIEW */
+"AM" = "Arm";
+"DM" = "Disarm";
+"GM" = "Get balance";
+"ST" = "Current alarm status";
+"PW" = "Current power status";
+"ID" = "Software version";
+"IM" = "Get IMEI";
+"GL" = "GSM Level in %";
+"S1" = "Turn on alarm";
+"S0" = "Turn off alarm";
+"SM" = "Replenish balance";
+
+/* ABOUT VIEW */
+"tellFriends.email.subject" = "iPitbul - GSM Alarm System Manager";
+"tellFriends.email.body" = "Hi,\n\niPitbul is already in iTunes AppStore!\n\nTry this the best application to manage your PITBUL Security GSM Alarm System";
+"emailSupport.email.subject" = "";
+"emailSupport.email.body" = "";

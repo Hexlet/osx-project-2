@@ -1,13 +1,100 @@
-Проект 2. Идея и интерфейс приложения
-=============
+#Project 2. iPitbul
 
-Придумайте приложение для OS X, разработайте графический интерфейс и сдайте:
+##Problem
+**iPitbul** is the utility application that helps control of [Pitbul Security GSM Alarm Systems](http://pitbul.com.ua) via SMS or Call.
 
-1. Подробное описание в README.md или PDF. Описание должно включать:
-	* Проблему, которую решает приложение
-	* Аудитория приложения
-	* Пример сценария использования приложения
-	* Описание поведения (что происходит при загрузке, что происходит при нажатии на кнопку Х, и так далее).
-2. Вся папка с проектом, в которой обязательно должен быть .xib-файл с графическим интерфейсом.
+##Customer
+Owners of [Pitbul Security GSM Alarm Systems](http://pitbul.com.ua).
 
-[Сдать работу](https://u.hexlet.org/courses/4/assignments/6)
+##Usage
+Remotely, using **iPitbul**, user is able to:
+                 
+**DO:**
+
+- *arm*
+- *disarm*
+- *turn on alarm*
+- *turn off alarm*
+- *replenish balance*
+
+**REQUEST:**
+
+- *balance*
+- *current alarm status*
+- *current power status*
+- *software version*
+- *IMEI*
+- *GSM level in percentage*
+
+***
+##Behaviour
+####UML Use Case Diagram
+![Use Case Diagram](https://raw.github.com/moleksyuk/osx-project-2/master/Docs/UseCaseDiagram.png)
+####UML Activiy Diagram
+![Activiy Diagram](https://raw.github.com/moleksyuk/osx-project-2/master/Docs/ActivityDiagram.png)
+
+
+`Check Configuration` - during each start of the application it should check whether it is configured or not.
+In case when the application is **NOT CONFIGURED** a user should see `Settings View`. There user have to specify *phone number* & *password* required to correct managment of GSM Alarm System. These settings can be changed in any time from `Main View` via *Settings Button* on toolbar.
+
+`Main View` - contains all available commands for managment of [Pitbul Security GSM Alarm Systems](http://pitbul.com.ua) devided in two sections:
+
+- **Managment**
+	- *Phone Number*
+	- *Arm*
+	- *Disarm*
+- **Service Functions**
+	- *Balance*
+	- *Current alarm status*
+	- *Current power status*
+	- *Software version*
+	- *IMEI*
+	- *GSM level in percentage*
+	- *Turn on alarm*
+	- *Turn off alarm*
+	- *Replenish balance*
+
+`Execute Command` - clicking on *Phone Number* makes a call. Clicking on one of other commands opens SMS Window with predefined *Phone Number* and *Appropriate Message Body*.
+
+`About View` - contains information about version, author etc. On this view user can `Rate Application`, `Tell Friends` about application via email, `Email Support` and of course `Donate` some money for food :)
+
+**iPitbul** has to support 3 languages:
+
+- English
+- Ukrainian
+- Russian
+
+---
+##And more…
+
+[Yuml](http://yuml.me/) code for UML Use Case Diagram
+
+````
+[Customer]-(Run Application)
+(Run Application)>(Check User's Settings)
+[Customer]-(Open Main View)
+(Open Main View)<(Open Settings View)
+(Open Main View)<(Open About View)
+(Open Main View)<(Execute Command)
+(Execute Command)>(Use User's Settings)
+(Open Settings View)<(Change User's Settings)
+(Open About View)<(Rate Application)
+(Open About View)<(Tell Friends)
+(Open About View)<(Donate)
+(Open About View)<(Email Support)
+````
+
+
+[Yuml](http://yuml.me/) code for UML Activity Diagram
+
+````
+(start)->(Check Configuration)-><a>-CONFIGURED>[Main View],
+<a>-NOT CONFIGURED>[Settings View]->(Set/Change Settings)->[Main View],
+[Main View]->[Settings View],
+[Main View]->(Execute Command)->(end),
+[Main View]->[About View]->[Main View],
+[About View]->(Rate Application)->(end),
+[About View]->(Tell Friends)->(end),
+[About View]->(Donate)->(end),
+[About View]->(Email Support)->(end)
+````
