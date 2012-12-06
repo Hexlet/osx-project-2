@@ -7,5 +7,3 @@ The Solution
 The app provides all necessary features that are expected to be present in modern days metronomes:
 - Tempo can be specified either in BPM, or using a selection of classic tempos from Larghissimo to Prestissimo;
 - A wide selection of time signatures is provided to allow accentuation of "strong" beat;
-- User can also choose whether metronome should sound on quarter, eights of sixteenth notes.
-
