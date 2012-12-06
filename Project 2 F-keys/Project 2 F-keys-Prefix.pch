@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Project 2 F-keys' target in the 'Project 2 F-keys' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
