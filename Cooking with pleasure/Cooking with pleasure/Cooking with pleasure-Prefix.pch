@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'Cooking with pleasure' target in the 'Cooking with pleasure' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
