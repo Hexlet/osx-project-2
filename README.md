@@ -50,6 +50,10 @@
 
 ## Особенности организации интерфейса
 
+Примерный вариант интерфейса:
+
+![AskMe SS](http://github.com/deksden/osx-project-2/blob/master/Images/AskMe-1.png)
+
 Если делать на iOS, то можно использовать [MGBox2](https://github.com/sobri909/MGBox2).
 
 Для портирования на OS X можно использовать [Chameleon Project](http://chameleonproject.org/).
