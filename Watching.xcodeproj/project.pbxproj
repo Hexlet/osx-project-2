@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8657535F1671D59A00D04E71 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8657535E1671D59A00D04E71 /* Cocoa.framework */; };
+		865753691671D59A00D04E71 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 865753671671D59A00D04E71 /* InfoPlist.strings */; };
+		8657536B1671D59A00D04E71 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8657536A1671D59A00D04E71 /* main.m */; };
+		8657536F1671D59A00D04E71 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 8657536D1671D59A00D04E71 /* Credits.rtf */; };
+		865753721671D59A00D04E71 /* WatchingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 865753711671D59A00D04E71 /* WatchingAppDelegate.m */; };
+		865753751671D59A00D04E71 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 865753731671D59A00D04E71 /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8657535A1671D59A00D04E71 /* Watching.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watching.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8657535E1671D59A00D04E71 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		865753611671D59A00D04E71 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		865753621671D59A00D04E71 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		865753631671D59A00D04E71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		865753661671D59A00D04E71 /* Watching-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Watching-Info.plist"; sourceTree = "<group>"; };
+		865753681671D59A00D04E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8657536A1671D59A00D04E71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8657536C1671D59A00D04E71 /* Watching-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Watching-Prefix.pch"; sourceTree = "<group>"; };
+		8657536E1671D59A00D04E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		865753701671D59A00D04E71 /* WatchingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WatchingAppDelegate.h; sourceTree = "<group>"; };
+		865753711671D59A00D04E71 /* WatchingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WatchingAppDelegate.m; sourceTree = "<group>"; };
+		865753741671D59A00D04E71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		865753571671D59A00D04E71 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8657535F1671D59A00D04E71 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8657534F1671D59A00D04E71 = {
+			isa = PBXGroup;
+			children = (
+				865753641671D59A00D04E71 /* Watching */,
+				8657535D1671D59A00D04E71 /* Frameworks */,
+				8657535B1671D59A00D04E71 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8657535B1671D59A00D04E71 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8657535A1671D59A00D04E71 /* Watching.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8657535D1671D59A00D04E71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8657535E1671D59A00D04E71 /* Cocoa.framework */,
+				865753601671D59A00D04E71 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		865753601671D59A00D04E71 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865753611671D59A00D04E71 /* AppKit.framework */,
+				865753621671D59A00D04E71 /* CoreData.framework */,
+				865753631671D59A00D04E71 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		865753641671D59A00D04E71 /* Watching */ = {
+			isa = PBXGroup;
+			children = (
+				865753701671D59A00D04E71 /* WatchingAppDelegate.h */,
+				865753711671D59A00D04E71 /* WatchingAppDelegate.m */,
+				865753731671D59A00D04E71 /* MainMenu.xib */,
+				865753651671D59A00D04E71 /* Supporting Files */,
+			);
+			path = Watching;
+			sourceTree = "<group>";
+		};
+		865753651671D59A00D04E71 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				865753661671D59A00D04E71 /* Watching-Info.plist */,
+				865753671671D59A00D04E71 /* InfoPlist.strings */,
+				8657536A1671D59A00D04E71 /* main.m */,
+				8657536C1671D59A00D04E71 /* Watching-Prefix.pch */,
+				8657536D1671D59A00D04E71 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		865753591671D59A00D04E71 /* Watching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 865753781671D59A00D04E71 /* Build configuration list for PBXNativeTarget "Watching" */;
+			buildPhases = (
+				865753561671D59A00D04E71 /* Sources */,
+				865753571671D59A00D04E71 /* Frameworks */,
+				865753581671D59A00D04E71 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Watching;
+			productName = Watching;
+			productReference = 8657535A1671D59A00D04E71 /* Watching.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		865753511671D59A00D04E71 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Watching;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Olga Andreyeva";
+			};
+			buildConfigurationList = 865753541671D59A00D04E71 /* Build configuration list for PBXProject "Watching" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8657534F1671D59A00D04E71;
+			productRefGroup = 8657535B1671D59A00D04E71 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				865753591671D59A00D04E71 /* Watching */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		865753581671D59A00D04E71 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				865753691671D59A00D04E71 /* InfoPlist.strings in Resources */,
+				8657536F1671D59A00D04E71 /* Credits.rtf in Resources */,
+				865753751671D59A00D04E71 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		865753561671D59A00D04E71 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8657536B1671D59A00D04E71 /* main.m in Sources */,
+				865753721671D59A00D04E71 /* WatchingAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		865753671671D59A00D04E71 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				865753681671D59A00D04E71 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8657536D1671D59A00D04E71 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8657536E1671D59A00D04E71 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		865753731671D59A00D04E71 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				865753741671D59A00D04E71 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		865753761671D59A00D04E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		865753771671D59A00D04E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		865753791671D59A00D04E71 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Watching/Watching-Prefix.pch";
+				INFOPLIST_FILE = "Watching/Watching-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8657537A1671D59A00D04E71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Watching/Watching-Prefix.pch";
+				INFOPLIST_FILE = "Watching/Watching-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		865753541671D59A00D04E71 /* Build configuration list for PBXProject "Watching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				865753761671D59A00D04E71 /* Debug */,
+				865753771671D59A00D04E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		865753781671D59A00D04E71 /* Build configuration list for PBXNativeTarget "Watching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				865753791671D59A00D04E71 /* Debug */,
+				8657537A1671D59A00D04E71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 865753511671D59A00D04E71 /* Project object */;
+}
