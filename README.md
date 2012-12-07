@@ -52,7 +52,7 @@
 
 Примерный вариант интерфейса:
 
-![AskMe SS](http://www.dropbox.com/s/vjrhe2hmo2kieyo/AskMe-1.png)
+![AskMe SS](http://pix.am/nUE8/)
 
 Если делать на iOS, то можно использовать [MGBox2](https://github.com/sobri909/MGBox2).
 
