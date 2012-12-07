@@ -27,7 +27,10 @@
     [self updateDisplay];
 }
 
--(void)updateDisplay {
+-(void)updateDisplay {    
+//    UITextRange *range = [_display selectedTextRange];
+//    UITextPosition *pos = range.start;
+
     tmpDisplay = [[tmpDisplay stringByReplacingOccurrencesOfString:@"_" withString:@""] mutableCopy];
     [tmpDisplay insertString:@"_" atIndex:cursorPosition];
     _display.text = tmpDisplay;
@@ -59,8 +62,7 @@
     printf("result: %.15lf\n", [calc result]);
     if (calc.error)
     printf("error: %.4X", calc.error);
-    
-    tmpDisplay = [NSString stringWithFormat:@"%lf", [calc result]];
+    tmpDisplay = [NSString stringWithString:[[NSNumber numberWithDouble:[calc result]] stringValue]];
     cursorPosition = tmpDisplay.length;
     [self updateDisplay];
 }

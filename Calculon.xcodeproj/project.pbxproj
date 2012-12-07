@@ -90,6 +90,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D6226574166F3BF100380268 /* Calc */ = {
+			isa = PBXGroup;
+			children = (
+				D6D918D4166E8AB5006C661E /* Operand.h */,
+				D6D918D5166E8AB5006C661E /* Operand.m */,
+				D6D918D0166E8A40006C661E /* polishBrain.h */,
+				D6D918D1166E8A40006C661E /* polishBrain.m */,
+			);
+			name = Calc;
+			sourceTree = "<group>";
+		};
 		D6DC87EC166DCE67000A91F1 = {
 			isa = PBXGroup;
 			children = (
@@ -123,16 +134,13 @@
 		D6DC8801166DCE67000A91F1 /* Calculon */ = {
 			isa = PBXGroup;
 			children = (
-				D6D918D0166E8A40006C661E /* polishBrain.h */,
-				D6D918D1166E8A40006C661E /* polishBrain.m */,
+				D6226574166F3BF100380268 /* Calc */,
 				D6DC880A166DCE68000A91F1 /* AppDelegate.h */,
 				D6DC880B166DCE68000A91F1 /* AppDelegate.m */,
 				D6DC8813166DCE68000A91F1 /* ViewController.h */,
 				D6DC8814166DCE68000A91F1 /* ViewController.m */,
 				D6DC8816166DCE68000A91F1 /* ViewController.xib */,
 				D6DC8802166DCE68000A91F1 /* Supporting Files */,
-				D6D918D4166E8AB5006C661E /* Operand.h */,
-				D6D918D5166E8AB5006C661E /* Operand.m */,
 			);
 			path = Calculon;
 			sourceTree = "<group>";
