@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<buttons width="81" height="55" gapX="7" gapY="9">
+    
+    <button label="mrc" type="memory" x="0" y="0" width="1" height="1" key="" />
+    <button label="m+" type="memory" x="1" y="0" width="1" height="1" key="" />
+    <button label="m-" type="memory" x="2" y="0" width="1" height="1" key="" />
+    <button label="C" type="reset" x="3" y="0" width="1" height="1" key="ESCAPE" />
+    
+    <button label="√" type="operation" x="0" y="1" width="1" height="1" key="v" />
+    <button label="÷" type="operation" x="1" y="1" width="1" height="1" key="/" />
+    <button label="x" type="operation" x="2" y="1" width="1" height="1" key="*" />
+    <button label="⌫" type="del" x="3" y="1" width="1" height="1" key="DELETE" />
+    
+    <button label="7" type="num" x="0" y="2" width="1" height="1" key="7" />
+    <button label="8" type="num" x="1" y="2" width="1" height="1" key="8" />
+    <button label="9" type="num" x="2" y="2" width="1" height="1" key="9" />
+    <button label="–" type="operation" x="3" y="2" width="1" height="1" key="-" />
+    
+    <button label="4" type="num" x="0" y="3" width="1" height="1" key="4" />
+    <button label="5" type="num" x="1" y="3" width="1" height="1" key="5" />
+    <button label="6" type="num" x="2" y="3" width="1" height="1" key="6" />
+    <button label="+" type="operation" x="3" y="3" width="1" height="1" key="+" />
+    
+    <button label="1" type="num" x="0" y="4" width="1" height="1" key="1" />
+    <button label="2" type="num" x="1" y="4" width="1" height="1" key="2" />
+    <button label="3" type="num" x="2" y="4" width="1" height="1" key="3" />
+    <button label="=" type="result" x="3" y="4" width="1" height="2" key="ENTER" />
+    
+    <button label="0" type="num" x="0" y="5" width="2" height="1" key="0" />
+    <button label="." type="num" x="2" y="5" width="1" height="1" key="." />
+    
+</buttons>
