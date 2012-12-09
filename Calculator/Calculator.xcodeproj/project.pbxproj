@@ -32,7 +32,7 @@
 		271A4EA2166DEEF200362323 /* DigitsOnlyFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A4EA1166DEEF200362323 /* DigitsOnlyFormatter.m */; };
 		271A4EA6166E465600362323 /* PointingHandButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A4EA5166E465600362323 /* PointingHandButton.m */; };
 		271A4EA9166E52DD00362323 /* CalcGUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 271A4EA8166E52DD00362323 /* CalcGUI.m */; };
-		271A4EBF1670C94C00362323 /* calc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 271A4EBE1670C94B00362323 /* calc.iconset */; };
+		27BB0E0F1674CEA80040B0FA /* calc.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 27BB0E0E1674CEA80040B0FA /* calc.iconset */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,7 +74,7 @@
 		271A4EA5166E465600362323 /* PointingHandButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PointingHandButton.m; sourceTree = "<group>"; };
 		271A4EA7166E52DC00362323 /* CalcGUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcGUI.h; sourceTree = "<group>"; };
 		271A4EA8166E52DD00362323 /* CalcGUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcGUI.m; sourceTree = "<group>"; };
-		271A4EBE1670C94B00362323 /* calc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = calc.iconset; sourceTree = "<group>"; };
+		27BB0E0E1674CEA80040B0FA /* calc.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = calc.iconset; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,7 +164,7 @@
 		271A4E80166C9A4C00362323 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				271A4EBE1670C94B00362323 /* calc.iconset */,
+				27BB0E0E1674CEA80040B0FA /* calc.iconset */,
 				271A4E8E166CC49300362323 /* buttons.xml */,
 				271A4E6A166C9A3B00362323 /* bg-calc.png */,
 				271A4E93166CFB2D00362323 /* lcddot_tr.ttf */,
@@ -249,7 +249,7 @@
 				271A4E7F166C9A3B00362323 /* btn-result.png in Resources */,
 				271A4E8F166CC49400362323 /* buttons.xml in Resources */,
 				271A4E94166CFB2D00362323 /* lcddot_tr.ttf in Resources */,
-				271A4EBF1670C94C00362323 /* calc.iconset in Resources */,
+				27BB0E0F1674CEA80040B0FA /* calc.iconset in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

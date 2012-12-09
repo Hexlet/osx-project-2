@@ -708,8 +708,6 @@
 
 -(void) menuAction:(id)sender
 {
-    NSLog(@"menu act");
-    
     switch ([sender tag]) {
         case MENU_ITEM_SAVE_LOG:
             {
