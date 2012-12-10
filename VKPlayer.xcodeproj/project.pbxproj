@@ -33,6 +33,10 @@
 		47A4834F1659554000F0D5DD /* Vkontakte.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A4834B1659554000F0D5DD /* Vkontakte.m */; };
 		47A483501659554000F0D5DD /* VkontakteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A4834D1659554000F0D5DD /* VkontakteViewController.m */; };
 		47A483541659669300F0D5DD /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483531659669300F0D5DD /* ZeroViewController.m */; };
+		47BF2977167548B300AA1E8E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF2976167548B300AA1E8E /* AVFoundation.framework */; };
+		47D594CC167501A000409AF7 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D594CB167501A000409AF7 /* InitialViewController.m */; };
+		47D594D01675080200409AF7 /* Vkontakte+audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D594CF1675080200409AF7 /* Vkontakte+audio.m */; };
+		47D704E9165C244A000D5EF7 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D704E8165C244A000D5EF7 /* CustomSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,13 @@
 		47A4834D1659554000F0D5DD /* VkontakteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkontakteViewController.m; sourceTree = "<group>"; };
 		47A483521659669200F0D5DD /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
 		47A483531659669300F0D5DD /* ZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroViewController.m; sourceTree = "<group>"; };
+		47BF2976167548B300AA1E8E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		47D594CA167501A000409AF7 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
+		47D594CB167501A000409AF7 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
+		47D594CE1675080200409AF7 /* Vkontakte+audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vkontakte+audio.h"; sourceTree = "<group>"; };
+		47D594CF1675080200409AF7 /* Vkontakte+audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Vkontakte+audio.m"; sourceTree = "<group>"; };
+		47D704E7165C244A000D5EF7 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
+		47D704E8165C244A000D5EF7 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47BF2977167548B300AA1E8E /* AVFoundation.framework in Frameworks */,
 				4702DEDE1659346E008E7E55 /* UIKit.framework in Frameworks */,
 				4702DEE01659346E008E7E55 /* Foundation.framework in Frameworks */,
 				4702DEE21659346E008E7E55 /* CoreGraphics.framework in Frameworks */,
@@ -113,6 +125,7 @@
 		4702DECE1659346D008E7E55 = {
 			isa = PBXGroup;
 			children = (
+				47BF2976167548B300AA1E8E /* AVFoundation.framework */,
 				4702DEE31659346E008E7E55 /* VKPlayer */,
 				4702DF121659346E008E7E55 /* VKPlayerTests */,
 				4702DEDC1659346D008E7E55 /* Frameworks */,
@@ -147,6 +160,8 @@
 				4702DEEC1659346E008E7E55 /* AppDelegate.h */,
 				4702DEED1659346E008E7E55 /* AppDelegate.m */,
 				4702DEF51659346E008E7E55 /* MainStoryboard.storyboard */,
+				47D594CA167501A000409AF7 /* InitialViewController.h */,
+				47D594CB167501A000409AF7 /* InitialViewController.m */,
 				47A483521659669200F0D5DD /* ZeroViewController.h */,
 				47A483531659669300F0D5DD /* ZeroViewController.m */,
 				4702DEF81659346E008E7E55 /* FirstViewController.h */,
@@ -158,6 +173,8 @@
 				4702DF021659346E008E7E55 /* second.png */,
 				4702DF041659346E008E7E55 /* second@2x.png */,
 				4702DEE41659346E008E7E55 /* Supporting Files */,
+				47D704E7165C244A000D5EF7 /* CustomSegue.h */,
+				47D704E8165C244A000D5EF7 /* CustomSegue.m */,
 			);
 			path = VKPlayer;
 			sourceTree = "<group>";
@@ -210,6 +227,8 @@
 				47A483481659554000F0D5DD /* NSString+Gender.h */,
 				47A483491659554000F0D5DD /* NSString+Gender.m */,
 				47A4834A1659554000F0D5DD /* Vkontakte.h */,
+				47D594CE1675080200409AF7 /* Vkontakte+audio.h */,
+				47D594CF1675080200409AF7 /* Vkontakte+audio.m */,
 				47A4834B1659554000F0D5DD /* Vkontakte.m */,
 				47A4834C1659554000F0D5DD /* VkontakteViewController.h */,
 				47A4834D1659554000F0D5DD /* VkontakteViewController.m */,
@@ -349,6 +368,9 @@
 				47A4834F1659554000F0D5DD /* Vkontakte.m in Sources */,
 				47A483501659554000F0D5DD /* VkontakteViewController.m in Sources */,
 				47A483541659669300F0D5DD /* ZeroViewController.m in Sources */,
+				47D704E9165C244A000D5EF7 /* CustomSegue.m in Sources */,
+				47D594CC167501A000409AF7 /* InitialViewController.m in Sources */,
+				47D594D01675080200409AF7 /* Vkontakte+audio.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

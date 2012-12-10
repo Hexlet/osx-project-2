@@ -212,8 +212,8 @@
 
 @implementation Vkontakte
 
-NSString * const vkAppId = @"3245061";//@"YOUR_VK_APP_ID";
-NSString * const vkPermissions = @"wall,photos,offline";
+NSString * const vkAppId = @"3286841";//@"YOUR_VK_APP_ID";
+NSString * const vkPermissions = @"audio,wall,photos,offline";
 NSString * const vkRedirectUrl = @"http://oauth.vk.com/blank.html";
 
 @synthesize delegate;

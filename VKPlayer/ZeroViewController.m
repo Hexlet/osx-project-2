@@ -51,6 +51,8 @@
 - (void)gotoMainView
 {
     [self performSegueWithIdentifier:@"openMain" sender:self];
+    //[navCtrl pushViewController:ctrl animated:YES];
+
 }
 
 - (void)vkontakteDidFailedWithError:(NSError *)error
@@ -66,12 +68,14 @@
 - (void)vkontakteAuthControllerDidCancelled
 {
     NSLog(@"Cancel");
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)vkontakteDidFinishLogin:(Vkontakte *)vkontakte
 {
     NSLog(@"Finish");
     [self gotoMainView];
+    [self dismissModalViewControllerAnimated:YES];
 }
 
 @end
