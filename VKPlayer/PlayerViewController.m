@@ -1,18 +1,18 @@
 //
-//  InitialViewController.m
+//  PlaylistViewController.m
 //  VKPlayer
 //
-//  Created by phantom on 09.12.12.
+//  Created by phantom on 14.12.12.
 //  Copyright (c) 2012 kipelovets. All rights reserved.
 //
 
-#import "InitialViewController.h"
+#import "PlayerViewController.h"
 
-@interface InitialViewController ()
+@interface PlayerViewController ()
 
 @end
 
-@implementation InitialViewController
+@implementation PlayerViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

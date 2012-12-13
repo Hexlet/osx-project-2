@@ -9,6 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "Vkontakte.h"
 
-@interface ZeroViewController : UIViewController <VkontakteDelegate>
+@interface LoginViewController : UIViewController <VkontakteDelegate>
 - (void)gotoMainView;
 @end

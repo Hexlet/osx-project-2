@@ -6,15 +6,15 @@
 //  Copyright (c) 2012 kipelovets. All rights reserved.
 //
 
-#import "FirstViewController.h"
+#import "AudioViewController.h"
 #import "MBProgressHUD.h"
 #import <AVFoundation/AVFoundation.h>
 
-@interface FirstViewController ()
+@interface AudioViewController ()
 
 @end
 
-@implementation FirstViewController {
+@implementation AudioViewController {
     NSArray* userAudio;
     AVAudioPlayer * player;
 }

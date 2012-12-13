@@ -17,10 +17,9 @@
 		4702DEF21659346E008E7E55 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702DEF11659346E008E7E55 /* Default@2x.png */; };
 		4702DEF41659346E008E7E55 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702DEF31659346E008E7E55 /* Default-568h@2x.png */; };
 		4702DEF71659346E008E7E55 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4702DEF51659346E008E7E55 /* MainStoryboard.storyboard */; };
-		4702DEFA1659346E008E7E55 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702DEF91659346E008E7E55 /* FirstViewController.m */; };
+		4702DEFA1659346E008E7E55 /* AudioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702DEF91659346E008E7E55 /* AudioViewController.m */; };
 		4702DEFC1659346E008E7E55 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702DEFB1659346E008E7E55 /* first.png */; };
 		4702DEFE1659346E008E7E55 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702DEFD1659346E008E7E55 /* first@2x.png */; };
-		4702DF011659346E008E7E55 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702DF001659346E008E7E55 /* SecondViewController.m */; };
 		4702DF031659346E008E7E55 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702DF021659346E008E7E55 /* second.png */; };
 		4702DF051659346E008E7E55 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4702DF041659346E008E7E55 /* second@2x.png */; };
 		4702DF0D1659346E008E7E55 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4702DF0C1659346E008E7E55 /* SenTestingKit.framework */; };
@@ -28,15 +27,15 @@
 		4702DF0F1659346E008E7E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4702DEDF1659346E008E7E55 /* Foundation.framework */; };
 		4702DF171659346E008E7E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4702DF151659346E008E7E55 /* InfoPlist.strings */; };
 		4702DF1A1659346E008E7E55 /* VKPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702DF191659346E008E7E55 /* VKPlayerTests.m */; };
+		478FA57C167A5F6100FF62A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 478FA57B167A5F6100FF62A7 /* README.md */; };
+		478FA580167A6DD300FF62A7 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478FA57F167A6DD300FF62A7 /* PlayerViewController.m */; };
 		47A483421659468500F0D5DD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483411659468500F0D5DD /* MBProgressHUD.m */; };
 		47A4834E1659554000F0D5DD /* NSString+Gender.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483491659554000F0D5DD /* NSString+Gender.m */; };
 		47A4834F1659554000F0D5DD /* Vkontakte.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A4834B1659554000F0D5DD /* Vkontakte.m */; };
 		47A483501659554000F0D5DD /* VkontakteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A4834D1659554000F0D5DD /* VkontakteViewController.m */; };
-		47A483541659669300F0D5DD /* ZeroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483531659669300F0D5DD /* ZeroViewController.m */; };
+		47A483541659669300F0D5DD /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483531659669300F0D5DD /* LoginViewController.m */; };
 		47BF2977167548B300AA1E8E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47BF2976167548B300AA1E8E /* AVFoundation.framework */; };
-		47D594CC167501A000409AF7 /* InitialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D594CB167501A000409AF7 /* InitialViewController.m */; };
 		47D594D01675080200409AF7 /* Vkontakte+audio.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D594CF1675080200409AF7 /* Vkontakte+audio.m */; };
-		47D704E9165C244A000D5EF7 /* CustomSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D704E8165C244A000D5EF7 /* CustomSegue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,12 +63,10 @@
 		4702DEF11659346E008E7E55 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		4702DEF31659346E008E7E55 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		4702DEF61659346E008E7E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		4702DEF81659346E008E7E55 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		4702DEF91659346E008E7E55 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		4702DEF81659346E008E7E55 /* AudioViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AudioViewController.h; sourceTree = "<group>"; };
+		4702DEF91659346E008E7E55 /* AudioViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AudioViewController.m; sourceTree = "<group>"; };
 		4702DEFB1659346E008E7E55 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		4702DEFD1659346E008E7E55 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		4702DEFF1659346E008E7E55 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		4702DF001659346E008E7E55 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		4702DF021659346E008E7E55 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		4702DF041659346E008E7E55 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 		4702DF0B1659346E008E7E55 /* VKPlayerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VKPlayerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -78,6 +75,9 @@
 		4702DF161659346E008E7E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4702DF181659346E008E7E55 /* VKPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKPlayerTests.h; sourceTree = "<group>"; };
 		4702DF191659346E008E7E55 /* VKPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKPlayerTests.m; sourceTree = "<group>"; };
+		478FA57B167A5F6100FF62A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		478FA57E167A6DD300FF62A7 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
+		478FA57F167A6DD300FF62A7 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		47A483401659468500F0D5DD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		47A483411659468500F0D5DD /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
 		47A483481659554000F0D5DD /* NSString+Gender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Gender.h"; sourceTree = "<group>"; };
@@ -86,15 +86,11 @@
 		47A4834B1659554000F0D5DD /* Vkontakte.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vkontakte.m; sourceTree = "<group>"; };
 		47A4834C1659554000F0D5DD /* VkontakteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VkontakteViewController.h; sourceTree = "<group>"; };
 		47A4834D1659554000F0D5DD /* VkontakteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VkontakteViewController.m; sourceTree = "<group>"; };
-		47A483521659669200F0D5DD /* ZeroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZeroViewController.h; sourceTree = "<group>"; };
-		47A483531659669300F0D5DD /* ZeroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZeroViewController.m; sourceTree = "<group>"; };
+		47A483521659669200F0D5DD /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		47A483531659669300F0D5DD /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		47BF2976167548B300AA1E8E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		47D594CA167501A000409AF7 /* InitialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialViewController.h; sourceTree = "<group>"; };
-		47D594CB167501A000409AF7 /* InitialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialViewController.m; sourceTree = "<group>"; };
 		47D594CE1675080200409AF7 /* Vkontakte+audio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Vkontakte+audio.h"; sourceTree = "<group>"; };
 		47D594CF1675080200409AF7 /* Vkontakte+audio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Vkontakte+audio.m"; sourceTree = "<group>"; };
-		47D704E7165C244A000D5EF7 /* CustomSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomSegue.h; sourceTree = "<group>"; };
-		47D704E8165C244A000D5EF7 /* CustomSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomSegue.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,24 +153,17 @@
 			isa = PBXGroup;
 			children = (
 				47A4833E1659463C00F0D5DD /* Vendor */,
+				4702DEE41659346E008E7E55 /* Supporting Files */,
 				4702DEEC1659346E008E7E55 /* AppDelegate.h */,
 				4702DEED1659346E008E7E55 /* AppDelegate.m */,
 				4702DEF51659346E008E7E55 /* MainStoryboard.storyboard */,
-				47D594CA167501A000409AF7 /* InitialViewController.h */,
-				47D594CB167501A000409AF7 /* InitialViewController.m */,
-				47A483521659669200F0D5DD /* ZeroViewController.h */,
-				47A483531659669300F0D5DD /* ZeroViewController.m */,
-				4702DEF81659346E008E7E55 /* FirstViewController.h */,
-				4702DEF91659346E008E7E55 /* FirstViewController.m */,
-				4702DEFB1659346E008E7E55 /* first.png */,
-				4702DEFD1659346E008E7E55 /* first@2x.png */,
-				4702DEFF1659346E008E7E55 /* SecondViewController.h */,
-				4702DF001659346E008E7E55 /* SecondViewController.m */,
-				4702DF021659346E008E7E55 /* second.png */,
-				4702DF041659346E008E7E55 /* second@2x.png */,
-				4702DEE41659346E008E7E55 /* Supporting Files */,
-				47D704E7165C244A000D5EF7 /* CustomSegue.h */,
-				47D704E8165C244A000D5EF7 /* CustomSegue.m */,
+				47A483521659669200F0D5DD /* LoginViewController.h */,
+				47A483531659669300F0D5DD /* LoginViewController.m */,
+				4702DEF81659346E008E7E55 /* AudioViewController.h */,
+				4702DEF91659346E008E7E55 /* AudioViewController.m */,
+				478FA57B167A5F6100FF62A7 /* README.md */,
+				478FA57E167A6DD300FF62A7 /* PlayerViewController.h */,
+				478FA57F167A6DD300FF62A7 /* PlayerViewController.m */,
 			);
 			path = VKPlayer;
 			sourceTree = "<group>";
@@ -182,6 +171,10 @@
 		4702DEE41659346E008E7E55 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4702DEFB1659346E008E7E55 /* first.png */,
+				4702DEFD1659346E008E7E55 /* first@2x.png */,
+				4702DF021659346E008E7E55 /* second.png */,
+				4702DF041659346E008E7E55 /* second@2x.png */,
 				4702DEE51659346E008E7E55 /* VKPlayer-Info.plist */,
 				4702DEE61659346E008E7E55 /* InfoPlist.strings */,
 				4702DEE91659346E008E7E55 /* main.m */,
@@ -325,6 +318,7 @@
 				4702DEFE1659346E008E7E55 /* first@2x.png in Resources */,
 				4702DF031659346E008E7E55 /* second.png in Resources */,
 				4702DF051659346E008E7E55 /* second@2x.png in Resources */,
+				478FA57C167A5F6100FF62A7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,16 +355,14 @@
 			files = (
 				4702DEEA1659346E008E7E55 /* main.m in Sources */,
 				4702DEEE1659346E008E7E55 /* AppDelegate.m in Sources */,
-				4702DEFA1659346E008E7E55 /* FirstViewController.m in Sources */,
-				4702DF011659346E008E7E55 /* SecondViewController.m in Sources */,
+				4702DEFA1659346E008E7E55 /* AudioViewController.m in Sources */,
 				47A483421659468500F0D5DD /* MBProgressHUD.m in Sources */,
 				47A4834E1659554000F0D5DD /* NSString+Gender.m in Sources */,
 				47A4834F1659554000F0D5DD /* Vkontakte.m in Sources */,
 				47A483501659554000F0D5DD /* VkontakteViewController.m in Sources */,
-				47A483541659669300F0D5DD /* ZeroViewController.m in Sources */,
-				47D704E9165C244A000D5EF7 /* CustomSegue.m in Sources */,
-				47D594CC167501A000409AF7 /* InitialViewController.m in Sources */,
+				47A483541659669300F0D5DD /* LoginViewController.m in Sources */,
 				47D594D01675080200409AF7 /* Vkontakte+audio.m in Sources */,
+				478FA580167A6DD300FF62A7 /* PlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Vkontakte+audio.h"
 
-@interface FirstViewController : UIViewController <VkontakteAudioDelegate, UITableViewDataSource, UITableViewDelegate>
+@interface AudioViewController : UIViewController <VkontakteAudioDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *table;
 

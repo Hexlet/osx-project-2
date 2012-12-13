@@ -6,14 +6,14 @@
 //  Copyright (c) 2012 kipelovets. All rights reserved.
 //
 
-#import "ZeroViewController.h"
+#import "LoginViewController.h"
 #import "Vkontakte.h"
 
-@interface ZeroViewController ()
+@interface LoginViewController ()
 
 @end
 
-@implementation ZeroViewController
+@implementation LoginViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
