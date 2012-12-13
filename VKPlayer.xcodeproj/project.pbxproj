@@ -27,7 +27,6 @@
 		4702DF0F1659346E008E7E55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4702DEDF1659346E008E7E55 /* Foundation.framework */; };
 		4702DF171659346E008E7E55 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4702DF151659346E008E7E55 /* InfoPlist.strings */; };
 		4702DF1A1659346E008E7E55 /* VKPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702DF191659346E008E7E55 /* VKPlayerTests.m */; };
-		478FA57C167A5F6100FF62A7 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 478FA57B167A5F6100FF62A7 /* README.md */; };
 		478FA580167A6DD300FF62A7 /* PlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 478FA57F167A6DD300FF62A7 /* PlayerViewController.m */; };
 		47A483421659468500F0D5DD /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483411659468500F0D5DD /* MBProgressHUD.m */; };
 		47A4834E1659554000F0D5DD /* NSString+Gender.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A483491659554000F0D5DD /* NSString+Gender.m */; };
@@ -75,7 +74,6 @@
 		4702DF161659346E008E7E55 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4702DF181659346E008E7E55 /* VKPlayerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VKPlayerTests.h; sourceTree = "<group>"; };
 		4702DF191659346E008E7E55 /* VKPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VKPlayerTests.m; sourceTree = "<group>"; };
-		478FA57B167A5F6100FF62A7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		478FA57E167A6DD300FF62A7 /* PlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayerViewController.h; sourceTree = "<group>"; };
 		478FA57F167A6DD300FF62A7 /* PlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayerViewController.m; sourceTree = "<group>"; };
 		47A483401659468500F0D5DD /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
@@ -161,7 +159,6 @@
 				47A483531659669300F0D5DD /* LoginViewController.m */,
 				4702DEF81659346E008E7E55 /* AudioViewController.h */,
 				4702DEF91659346E008E7E55 /* AudioViewController.m */,
-				478FA57B167A5F6100FF62A7 /* README.md */,
 				478FA57E167A6DD300FF62A7 /* PlayerViewController.h */,
 				478FA57F167A6DD300FF62A7 /* PlayerViewController.m */,
 			);
@@ -318,7 +315,6 @@
 				4702DEFE1659346E008E7E55 /* first@2x.png in Resources */,
 				4702DF031659346E008E7E55 /* second.png in Resources */,
 				4702DF051659346E008E7E55 /* second@2x.png in Resources */,
-				478FA57C167A5F6100FF62A7 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
