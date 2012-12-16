@@ -8,15 +8,13 @@
 
 #import <Cocoa/Cocoa.h>
 
-#import "AppController.h"
-#import "HistoryModel.h"
-
-@interface AppDelegate : NSObject <NSApplicationDelegate, NSTextFieldDelegate, NSTableViewDataSource, NSTableViewDelegate> {
-    NSMutableArray *_tableContents;
+@interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSMutableArray *history;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (weak) IBOutlet NSTextField *textField;
+@property (weak) IBOutlet NSTableView *tableView;
 
 - (IBAction)calculateIt:(id)sender;
 @end

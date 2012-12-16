@@ -14,8 +14,6 @@
 		C7787406166B95BE0076ACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787405166B95BE0076ACE6 /* AppDelegate.m */; };
 		C7787409166B95BE0076ACE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7787407166B95BE0076ACE6 /* MainMenu.xib */; };
 		C7787410166B9C770076ACE6 /* calculator.png in Resources */ = {isa = PBXBuildFile; fileRef = C778740F166B9C770076ACE6 /* calculator.png */; };
-		C7787417166D0B5D0076ACE6 /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787416166D0B5D0076ACE6 /* AppController.m */; };
-		C778741A166D0E540076ACE6 /* HistoryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787419166D0E540076ACE6 /* HistoryModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,10 +31,6 @@
 		C7787405166B95BE0076ACE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C7787408166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		C778740F166B9C770076ACE6 /* calculator.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calculator.png; sourceTree = "<group>"; };
-		C7787415166D0B5D0076ACE6 /* AppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppController.h; sourceTree = "<group>"; };
-		C7787416166D0B5D0076ACE6 /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
-		C7787418166D0E540076ACE6 /* HistoryModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HistoryModel.h; sourceTree = "<group>"; };
-		C7787419166D0E540076ACE6 /* HistoryModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HistoryModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,11 +88,7 @@
 				C7787404166B95BE0076ACE6 /* AppDelegate.h */,
 				C7787405166B95BE0076ACE6 /* AppDelegate.m */,
 				C7787407166B95BE0076ACE6 /* MainMenu.xib */,
-				C7787418166D0E540076ACE6 /* HistoryModel.h */,
-				C7787419166D0E540076ACE6 /* HistoryModel.m */,
 				C77873F9166B95BE0076ACE6 /* Supporting Files */,
-				C7787415166D0B5D0076ACE6 /* AppController.h */,
-				C7787416166D0B5D0076ACE6 /* AppController.m */,
 			);
 			path = Calculatte;
 			sourceTree = "<group>";
@@ -182,8 +172,6 @@
 			files = (
 				C77873FF166B95BE0076ACE6 /* main.m in Sources */,
 				C7787406166B95BE0076ACE6 /* AppDelegate.m in Sources */,
-				C7787417166D0B5D0076ACE6 /* AppController.m in Sources */,
-				C778741A166D0E540076ACE6 /* HistoryModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +301,7 @@
 				C778740E166B95BE0076ACE6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

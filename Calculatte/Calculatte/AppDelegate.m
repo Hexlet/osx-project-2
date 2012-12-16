@@ -12,24 +12,31 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
-    [_textField setDelegate:self];
+    history = [[NSMutableArray alloc]init];
 }
 
 - (IBAction)calculateIt:(id)sender {
-    NSLog(@"%@", [_textField stringValue]);
+    NSString *expression = [_textField stringValue];
+    [history insertObject:expression atIndex:0];
+    [_tableView reloadData];
+//    NSLog(@"%@", expression);
+//    NSLog(@"%@", history);
 }
 
-- (void)controlTextDidEndEditing:(NSNotification *)obj{
-    NSLog(@"%@", [_textField stringValue]);
-    
-    HistoryModel *expression = [[HistoryModel alloc] init];
-    
-    expression.expression = @"323";
-    
-    AppController *appController = [[AppController alloc] init];
-    
-//    appController.historyArray: add
-    
+
+- (void)controlTextDidEndEditing:(NSNotification *) notification {
+    NSString *expression = [_textField stringValue];
+    [history insertObject:expression atIndex:0];
+    [_tableView reloadData];
+}
+
+-(NSInteger) numberOfRowsInTableView:(NSTableView*) tableView {
+    return (NSInteger) [history count];
+}
+
+-(id) tableView:(NSTableView*) tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
+    NSString *expression = [history objectAtIndex:row];
+    return expression;
 }
 
 @end
