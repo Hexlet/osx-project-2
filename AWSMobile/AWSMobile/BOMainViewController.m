@@ -35,4 +35,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)awsSignUp:(id)sender {
+    NSString *url = [NSString stringWithFormat:@"http://aws.amazon.com"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+}
+
 @end

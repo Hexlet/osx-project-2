@@ -24,8 +24,8 @@
                         <constraints>
                             <constraint firstItem="cjz-oL-0UK" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="997-r6-ilc"/>
                             <constraint firstItem="cjz-oL-0UK" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="BWc-do-8YH"/>
-                            <constraint firstItem="SPH-SJ-eeE" firstAttribute="centerX" secondItem="cjz-oL-0UK" secondAttribute="centerX" type="default" id="LT9-kd-ym8"/>
-                            <constraint firstItem="SPH-SJ-eeE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="Lxz-sI-TpX"/>
+                            <constraint firstItem="SPH-SJ-eeE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="146" id="R5b-jd-S7J"/>
+                            <constraint firstItem="SPH-SJ-eeE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="39" id="UdB-7T-1bF"/>
                             <constraint firstItem="cjz-oL-0UK" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="t1H-sa-PmP"/>
                             <constraint firstItem="cjz-oL-0UK" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="yKE-Ou-NQ6"/>
                         </constraints>
@@ -53,30 +53,71 @@
                                     <constraint firstAttribute="height" constant="128" id="suA-bc-26M"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUm-eQ-jkJ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="0y3-cv-hkL"/>
+                                    <constraint firstAttribute="width" constant="292" id="FNN-jQ-8db"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="signupbutton.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Sign Up">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="0.94936898362363309" blue="0.96323568564146356" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.45059867527173914" green="0.35664549393166617" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="(aws.amazon.com)">
+                                            <attributes>
+                                                <color key="NSColor" red="0.52156865600000002" green="0.2775673824999893" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="awsSignUp:" destination="pvj-cX-zKI" eventType="touchUpInside" id="IAz-1T-Oei"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" type="default" id="7iv-IX-P2C"/>
-                            <constraint firstItem="Acu-ny-C6n" firstAttribute="centerX" secondItem="Tyf-pJ-bLT" secondAttribute="centerX" type="default" id="CCe-Pc-UDY"/>
-                            <constraint firstItem="Acu-ny-C6n" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" constant="10" id="ETZ-nc-uhP"/>
+                            <constraint firstItem="BUm-eQ-jkJ" firstAttribute="centerX" secondItem="Tyf-pJ-bLT" secondAttribute="centerX" type="default" id="R9H-wh-E9z"/>
+                            <constraint firstItem="Acu-ny-C6n" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" constant="11" id="Tsv-8n-I2R"/>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="bottom" secondItem="gv9-xc-daS" secondAttribute="bottom" type="default" id="Vbr-sm-VcM"/>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="trailing" secondItem="gv9-xc-daS" secondAttribute="trailing" type="default" id="fWW-kE-QXh"/>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="leading" secondItem="gv9-xc-daS" secondAttribute="leading" type="default" id="g01-W8-SK9"/>
+                            <constraint firstItem="Acu-ny-C6n" firstAttribute="leading" secondItem="gv9-xc-daS" secondAttribute="leading" constant="39" id="krv-uu-Svv"/>
+                            <constraint firstAttribute="bottom" secondItem="BUm-eQ-jkJ" secondAttribute="bottom" constant="143" id="q0g-Rs-HIt"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MAs-pS-9fi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="568" y="79"/>
+            <point key="canvasLocation" x="615" y="71"/>
         </scene>
     </scenes>
     <resources>
         <image name="applogo.png" width="245" height="85"/>
         <image name="main_bg@2x.png" width="640" height="960"/>
+        <image name="signupbutton.png" width="292" height="42"/>
     </resources>
     <classes>
         <class className="BOMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOMainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="awsSignUp:"/>
+            </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
