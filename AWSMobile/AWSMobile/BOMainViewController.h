@@ -10,4 +10,6 @@
 
 @interface BOMainViewController : UIViewController
 
+- (IBAction)awsSignUp:(id)sender;
+
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1D015E1681DFC800DFE1B9 /* signupbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1D015D1681DFC800DFE1B9 /* signupbutton.png */; };
 		EC64C51116819EED0035838D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51016819EED0035838D /* UIKit.framework */; };
 		EC64C51316819EED0035838D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51216819EED0035838D /* Foundation.framework */; };
 		EC64C51516819EED0035838D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51416819EED0035838D /* CoreGraphics.framework */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC1D015D1681DFC800DFE1B9 /* signupbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupbutton.png; sourceTree = "<group>"; };
 		EC64C50C16819EED0035838D /* AWSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC64C51016819EED0035838D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC64C51216819EED0035838D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +71,7 @@
 		EC64C50116819EED0035838D = {
 			isa = PBXGroup;
 			children = (
+				EC1D015D1681DFC800DFE1B9 /* signupbutton.png */,
 				EC64C5521681B8930035838D /* applogo.png */,
 				EC64C5501681B5840035838D /* applogo@2x.png */,
 				EC64C54E1681B3BC0035838D /* Default.png */,
@@ -188,6 +191,7 @@
 				EC64C54F1681B3BC0035838D /* Default.png in Resources */,
 				EC64C5511681B5840035838D /* applogo@2x.png in Resources */,
 				EC64C5531681B8930035838D /* applogo.png in Resources */,
+				EC1D015E1681DFC800DFE1B9 /* signupbutton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

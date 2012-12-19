@@ -12,6 +12,7 @@
 @implementation ViewController
 
 - (void)viewDidAppear:(BOOL)animated {
+  
     [super viewDidAppear:animated];
     
     [UIView animateWithDuration:1.0 delay:0.2 options:0 animations:^{
