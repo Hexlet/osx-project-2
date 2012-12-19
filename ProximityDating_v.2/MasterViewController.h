@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ProfileDoc.h"
 
 @interface MasterViewController : UITableViewController
 
 @property (strong) NSMutableArray *datersProfiles;
 @property (strong) NSMutableArray *filteredProfiles;
+@property (nonatomic, retain) ProfileDoc *myProfile;
 
 @end

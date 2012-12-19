@@ -7,9 +7,9 @@
 //
 
 #import "MasterViewController.h"
-#import "ProfileData.h"
 #import "ProfileDoc.h"
 #import "DetailViewController.h"
+#import "AppDelegate.h"
 
 @interface MasterViewController () {
     NSMutableArray *_objects;
@@ -124,13 +124,39 @@
 
 -(void) viewWillAppear: (BOOL) animated
 {
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"removedFromShowList == %u", FALSE];
+    AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
+    self.myProfile = appDelegate.profile;
+    
+    NSPredicate *predicate;
+
+
+    if (_myProfile.data.lookingForPartner)
+    {
+        if (_myProfile.data.straight)
+        {
+            predicate = [NSPredicate predicateWithFormat:@"removedFromShowList == %u AND data.lookingForPartner == %u AND data.straight == %u AND data.isMale != %u",
+            FALSE, _myProfile.data.lookingForPartner, _myProfile.data.straight, _myProfile.data.isMale];
+        }
+        else
+        {
+            predicate = [NSPredicate predicateWithFormat:@"removedFromShowList == %u AND data.lookingForPartner == %u AND data.straight == %u AND data.isMale == %u",
+            FALSE, _myProfile.data.lookingForPartner, _myProfile.data.straight, _myProfile.data.isMale];
+        }
+    }
+    else
+    {
+            predicate = [NSPredicate predicateWithFormat:@"removedFromShowList == %u AND data.lookingForPartner == %u",
+            FALSE, _myProfile.data.lookingForPartner];
+    }
+    
     NSArray *filteredArray = [self.datersProfiles filteredArrayUsingPredicate:predicate];
     
     [self.datersProfiles removeAllObjects];
     [self.datersProfiles addObjectsFromArray:filteredArray];
     
     [self.tableView reloadData];
+    
+    
 }
 
 @end

@@ -31,6 +31,8 @@
 		84CA5E42168076D100193451 /* potatoBugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CA5E3A168076D100193451 /* potatoBugThumb.jpg */; };
 		84CA5E43168076D100193451 /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CA5E3B168076D100193451 /* wolfSpider.jpg */; };
 		84CA5E44168076D100193451 /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CA5E3C168076D100193451 /* wolfSpiderThumb.jpg */; };
+		84CA5E4B1681AE4300193451 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA5E4A1681AE4300193451 /* MyProfileViewController.m */; };
+		84CA5E4F1681BF5C00193451 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA5E4E1681BF5B00193451 /* MainTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +69,10 @@
 		84CA5E3A168076D100193451 /* potatoBugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = potatoBugThumb.jpg; path = Resources/potatoBugThumb.jpg; sourceTree = "<group>"; };
 		84CA5E3B168076D100193451 /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wolfSpider.jpg; path = Resources/wolfSpider.jpg; sourceTree = "<group>"; };
 		84CA5E3C168076D100193451 /* wolfSpiderThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = wolfSpiderThumb.jpg; path = Resources/wolfSpiderThumb.jpg; sourceTree = "<group>"; };
+		84CA5E491681AE4300193451 /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		84CA5E4A1681AE4300193451 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		84CA5E4D1681BF5B00193451 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
+		84CA5E4E1681BF5B00193451 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +153,10 @@
 				84CA5E19167F1EFC00193451 /* DetailViewController.m */,
 				84CA5E251680608C00193451 /* LogoViewController.h */,
 				84CA5E261680608D00193451 /* LogoViewController.m */,
+				84CA5E491681AE4300193451 /* MyProfileViewController.h */,
+				84CA5E4A1681AE4300193451 /* MyProfileViewController.m */,
+				84CA5E4D1681BF5B00193451 /* MainTabBarViewController.h */,
+				84CA5E4E1681BF5B00193451 /* MainTabBarViewController.m */,
 			);
 			name = GUI;
 			sourceTree = "<group>";
@@ -260,6 +270,8 @@
 				84CA5E271680608D00193451 /* LogoViewController.m in Sources */,
 				84CA5E2E16806D2E00193451 /* ProfileData.m in Sources */,
 				84CA5E3116806DB700193451 /* ProfileDoc.m in Sources */,
+				84CA5E4B1681AE4300193451 /* MyProfileViewController.m in Sources */,
+				84CA5E4F1681BF5C00193451 /* MainTabBarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +388,7 @@
 				84CA5E1F167F1EFC00193451 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

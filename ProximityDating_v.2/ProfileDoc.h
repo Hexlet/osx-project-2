@@ -15,6 +15,9 @@
 @property (strong) UIImage *thumbImage;
 @property (strong) UIImage *fullImage;
 
+@property (strong) NSString *thumbImageName;
+@property (strong) NSString *fullImageName;
+
 @property (assign) Boolean removedFromShowList;
 
 +(NSMutableArray*)getArrayWithData;
