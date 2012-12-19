@@ -25,14 +25,14 @@ AWS Mobile is application management AWS infrastructure services, including Amaz
 
 #### Requirements for use
 
-* iOS v4.1 or higher.
+* iOS v6.0 or higher.
 * You must sign up for [Amazon Web Services](http://aws.amazon.com).
 * You must sign up for each AWS product you want to use.
 * You need your AWS Access Key ID and Secret Access Key. To get your AWS Access Key ID and Secret Access Key go to aws.amazon.com. Important! Your Secret Access Key is a secret! )
 
 #### Requirements for compile
 
-* Requires Xcode v4 or later.
+* Requires Xcode v4.5 or later.
 * AWS SDK for iOS. [Install guide](http://docs.amazonwebservices.com/mobile/sdkforios/gsg/Welcome.html).
 
 #### Use application
@@ -52,22 +52,21 @@ With the AWS Mobile App developers can start and stop EC2 instances, view and pe
 
 #### Требования к использованию
 
-* Версия iOS не ниже 4.1 и выше.
+* Версия iOS не ниже 6.0 и выше.
 * Необходима регистрация аккаунта на портале [Amazon Web Services](http://aws.amazon.com).
 * Необходима регистрация в разделах отдельных сервисов Amazon AWS.
 * Необходимы регистрационные данные учетной записи Amazon AWS (Access Key ID и Secret Access Key).
 
 #### Требования к сборке проекта
 
-* Xcode не ниже 4 версии.
+* Xcode не ниже 4.5 версии.
 * AWS SDK for iOS. [Install guide](http://docs.amazonwebservices.com/mobile/sdkforios/gsg/Welcome.html).
 
 #### Возможности и использование приложения
 
 Посредством приложения AWS Mobile вы можете запускать, останавливать инстансы сервиса Amazon EC2. Для сервиса Amazon S3 предусмотрено управление корзинами (bucket) и закачка в них фотографий с вашего iPhone. 
 
-Пользовательский интерфейс все еще находится в разработке :(.
 
-![image](https://dl.dropbox.com/u/1713297/AWS%20Mobile_prototype.png)
+![image](https://dl.dropbox.com/u/1713297/AWS%20Mobile.png)
 
 ---
