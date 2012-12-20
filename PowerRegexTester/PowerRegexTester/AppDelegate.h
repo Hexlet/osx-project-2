@@ -12,6 +12,9 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
-@property (weak) IBOutlet NSMatrix *optionsMatrix;
+@property (weak) IBOutlet NSMatrix *options;
+@property (weak) IBOutlet NSTextField *pattern;
+
+- (IBAction)applyClick:(NSButton *)sender;
 
 @end
