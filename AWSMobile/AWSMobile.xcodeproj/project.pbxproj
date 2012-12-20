@@ -29,6 +29,12 @@
 		EC64C5511681B5840035838D /* applogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC64C5501681B5840035838D /* applogo@2x.png */; };
 		EC64C5531681B8930035838D /* applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC64C5521681B8930035838D /* applogo.png */; };
 		EC64C5561681B94D0035838D /* BOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C5551681B94D0035838D /* BOMainViewController.m */; };
+		ECE9C86D1682F9AF00E069BD /* ec2button.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C86B1682F9AF00E069BD /* ec2button.png */; };
+		ECE9C86E1682F9AF00E069BD /* ec2button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C86C1682F9AF00E069BD /* ec2button@2x.png */; };
+		ECE9C8721682F9C100E069BD /* s3button.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8701682F9C100E069BD /* s3button.png */; };
+		ECE9C8731682F9C100E069BD /* s3button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8711682F9C100E069BD /* s3button@2x.png */; };
+		ECE9C8761682FC3C00E069BD /* sheader.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8741682FC3C00E069BD /* sheader.png */; };
+		ECE9C8771682FC3C00E069BD /* sheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8751682FC3C00E069BD /* sheader@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +66,12 @@
 		EC64C5521681B8930035838D /* applogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogo.png; sourceTree = "<group>"; };
 		EC64C5541681B94D0035838D /* BOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOMainViewController.h; sourceTree = "<group>"; };
 		EC64C5551681B94D0035838D /* BOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOMainViewController.m; sourceTree = "<group>"; };
+		ECE9C86B1682F9AF00E069BD /* ec2button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ec2button.png; sourceTree = "<group>"; };
+		ECE9C86C1682F9AF00E069BD /* ec2button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ec2button@2x.png"; sourceTree = "<group>"; };
+		ECE9C8701682F9C100E069BD /* s3button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s3button.png; sourceTree = "<group>"; };
+		ECE9C8711682F9C100E069BD /* s3button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s3button@2x.png"; sourceTree = "<group>"; };
+		ECE9C8741682FC3C00E069BD /* sheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheader.png; sourceTree = "<group>"; };
+		ECE9C8751682FC3C00E069BD /* sheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sheader@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +91,12 @@
 		EC64C50116819EED0035838D = {
 			isa = PBXGroup;
 			children = (
+				ECE9C8741682FC3C00E069BD /* sheader.png */,
+				ECE9C8751682FC3C00E069BD /* sheader@2x.png */,
+				ECE9C8701682F9C100E069BD /* s3button.png */,
+				ECE9C8711682F9C100E069BD /* s3button@2x.png */,
+				ECE9C86B1682F9AF00E069BD /* ec2button.png */,
+				ECE9C86C1682F9AF00E069BD /* ec2button@2x.png */,
 				EC2728761682E4FF00E44A90 /* main.png */,
 				EC2728771682E4FF00E44A90 /* main@2x.png */,
 				EC2728721682E4F100E44A90 /* about.png */,
@@ -208,6 +226,12 @@
 				EC2728751682E4F100E44A90 /* about@2x.png in Resources */,
 				EC2728781682E4FF00E44A90 /* main.png in Resources */,
 				EC2728791682E4FF00E44A90 /* main@2x.png in Resources */,
+				ECE9C86D1682F9AF00E069BD /* ec2button.png in Resources */,
+				ECE9C86E1682F9AF00E069BD /* ec2button@2x.png in Resources */,
+				ECE9C8721682F9C100E069BD /* s3button.png in Resources */,
+				ECE9C8731682F9C100E069BD /* s3button@2x.png in Resources */,
+				ECE9C8761682FC3C00E069BD /* sheader.png in Resources */,
+				ECE9C8771682FC3C00E069BD /* sheader@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

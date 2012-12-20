@@ -57,7 +57,6 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BUm-eQ-jkJ">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="0y3-cv-hkL"/>
-                                    <constraint firstAttribute="width" constant="292" id="FNN-jQ-8db"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" backgroundImage="signupbutton.png">
@@ -89,16 +88,73 @@
                                     <action selector="awsSignUp:" destination="pvj-cX-zKI" eventType="touchUpInside" id="IAz-1T-Oei"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0YL-oe-TLg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="qor-Rl-Vdv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="s3button.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Amazon S3">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rzq-lY-CYu">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="O8O-fT-rmQ"/>
+                                    <constraint firstAttribute="width" constant="292" id="mkj-5c-Vhm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" backgroundImage="ec2button.png">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Amazon EC2">
+                                            <attributes>
+                                                <color key="NSColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="14" name="Helvetica-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="sheader.png" translatesAutoresizingMaskIntoConstraints="NO" id="asM-it-Fzb">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="XMF-69-kHA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="List Avaliable Services" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="276-Ei-d15">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="147" id="BVh-u8-Wy5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" type="default" id="7iv-IX-P2C"/>
-                            <constraint firstItem="BUm-eQ-jkJ" firstAttribute="centerX" secondItem="Tyf-pJ-bLT" secondAttribute="centerX" type="default" id="R9H-wh-E9z"/>
+                            <constraint firstItem="asM-it-Fzb" firstAttribute="centerY" secondItem="276-Ei-d15" secondAttribute="centerY" type="default" id="AuN-jK-udM"/>
+                            <constraint firstItem="asM-it-Fzb" firstAttribute="leading" secondItem="gv9-xc-daS" secondAttribute="leading" constant="-1" id="BkO-j9-yD0"/>
+                            <constraint firstItem="0YL-oe-TLg" firstAttribute="leading" secondItem="BUm-eQ-jkJ" secondAttribute="leading" type="default" id="DH4-fn-QD3"/>
+                            <constraint firstItem="asM-it-Fzb" firstAttribute="centerX" secondItem="Acu-ny-C6n" secondAttribute="centerX" type="default" id="Eys-Wi-2eK"/>
+                            <constraint firstItem="rzq-lY-CYu" firstAttribute="leading" secondItem="0YL-oe-TLg" secondAttribute="leading" type="default" id="G3O-dN-ycl"/>
+                            <constraint firstItem="rzq-lY-CYu" firstAttribute="centerX" secondItem="Tyf-pJ-bLT" secondAttribute="centerX" type="default" id="So4-aC-zO0"/>
                             <constraint firstItem="Acu-ny-C6n" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" constant="11" id="Tsv-8n-I2R"/>
+                            <constraint firstAttribute="bottom" secondItem="0YL-oe-TLg" secondAttribute="bottom" constant="105" id="UlR-38-dx1"/>
+                            <constraint firstItem="asM-it-Fzb" firstAttribute="bottom" secondItem="276-Ei-d15" secondAttribute="bottom" type="default" id="UyW-yf-PLj"/>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="bottom" secondItem="gv9-xc-daS" secondAttribute="bottom" type="default" id="Vbr-sm-VcM"/>
+                            <constraint firstItem="rzq-lY-CYu" firstAttribute="trailing" secondItem="0YL-oe-TLg" secondAttribute="trailing" type="default" id="WAc-yH-GtD"/>
+                            <constraint firstItem="rzq-lY-CYu" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" constant="194" id="Wmr-Z8-ggM"/>
+                            <constraint firstItem="0YL-oe-TLg" firstAttribute="trailing" secondItem="BUm-eQ-jkJ" secondAttribute="trailing" type="default" id="Xi9-bu-YIK"/>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="trailing" secondItem="gv9-xc-daS" secondAttribute="trailing" type="default" id="fWW-kE-QXh"/>
                             <constraint firstItem="Tyf-pJ-bLT" firstAttribute="leading" secondItem="gv9-xc-daS" secondAttribute="leading" type="default" id="g01-W8-SK9"/>
-                            <constraint firstItem="Acu-ny-C6n" firstAttribute="leading" secondItem="gv9-xc-daS" secondAttribute="leading" constant="39" id="krv-uu-Svv"/>
+                            <constraint firstItem="276-Ei-d15" firstAttribute="centerX" secondItem="rzq-lY-CYu" secondAttribute="centerX" type="default" id="kTJ-rV-KRw"/>
+                            <constraint firstItem="asM-it-Fzb" firstAttribute="top" secondItem="gv9-xc-daS" secondAttribute="top" constant="145" id="nMJ-DT-hdL"/>
                             <constraint firstAttribute="bottom" secondItem="BUm-eQ-jkJ" secondAttribute="bottom" constant="37" id="wKC-tR-dku"/>
                         </constraints>
                     </view>
@@ -155,8 +211,11 @@
     <resources>
         <image name="about.png" width="26" height="26"/>
         <image name="applogo.png" width="245" height="85"/>
+        <image name="ec2button.png" width="292" height="42"/>
         <image name="main.png" width="26" height="26"/>
         <image name="main_bg@2x.png" width="640" height="960"/>
+        <image name="s3button.png" width="292" height="42"/>
+        <image name="sheader.png" width="321" height="22"/>
         <image name="signupbutton.png" width="292" height="42"/>
     </resources>
     <classes>

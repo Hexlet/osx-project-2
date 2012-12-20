@@ -8,7 +8,7 @@
   *.mode2v3
   *.perspective
   *.perspective3
-  *.xcworkspace
-  xcuserdata
+  *.xcworkspace/*
+  xcuserdata/*
   *.moved-aside
 
