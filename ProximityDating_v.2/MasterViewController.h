@@ -12,7 +12,7 @@
 @interface MasterViewController : UITableViewController
 
 @property (strong) NSMutableArray *datersProfiles;
-@property (strong) NSMutableArray *filteredProfiles;
+@property (strong) NSMutableArray *fullListOfProfiles;
 @property (nonatomic, retain) ProfileDoc *myProfile;
 
 @end

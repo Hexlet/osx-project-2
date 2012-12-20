@@ -16,16 +16,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    //UIStoryboard *mainStoryboard = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle: nil];
-    
-    //MyProfileViewController *myProfileViewController = (MyProfileViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"myProfileViewID"];
-    
-    //MasterViewController *masterViewController = (MasterViewController*)[mainStoryboard instantiateViewControllerWithIdentifier: @"mainTabBar"];
-    
-    //myProfileViewController.myProfile = _profile;
-    //masterViewController.myProfile = _profile;
-    
+    /*
     ProfileDoc *profile1 = [[ProfileDoc alloc] init];
     profile1.data.name = @"Potato Bug";
     profile1.data.description = @"Potato Bug short description";
@@ -38,7 +29,7 @@
     profile1.fullImageName = @"potatoBug.jpg";
     
     [self saveSettings:profile1];
-    
+    */
     [self loadSettings];
     
     return YES;
@@ -60,6 +51,9 @@
 }
 
 -(void)saveSettings:(ProfileDoc *)d{
+    
+    NSLog(@"saveSettings %@", _profile.data.description);
+    
     _profile=d;
     
     NSUserDefaults *prefs = [NSUserDefaults standardUserDefaults];
@@ -100,6 +94,8 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    
+    [self saveSettings:_profile];
 }
 
 @end

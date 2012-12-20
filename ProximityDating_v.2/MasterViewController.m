@@ -18,8 +18,6 @@
 
 @implementation MasterViewController
 
-@synthesize datersProfiles = _datersProfiles;
-
 - (void)awakeFromNib
 {
     [super awakeFromNib];
@@ -35,6 +33,7 @@
     self.navigationItem.rightBarButtonItem = addButton;
     
     _datersProfiles = [ProfileDoc getArrayWithData];
+    _fullListOfProfiles = [ProfileDoc getArrayWithData];
 }
 
 - (void)didReceiveMemoryWarning
@@ -149,7 +148,7 @@
             FALSE, _myProfile.data.lookingForPartner];
     }
     
-    NSArray *filteredArray = [self.datersProfiles filteredArrayUsingPredicate:predicate];
+    NSArray *filteredArray = [self.fullListOfProfiles filteredArrayUsingPredicate:predicate];
     
     [self.datersProfiles removeAllObjects];
     [self.datersProfiles addObjectsFromArray:filteredArray];

@@ -10,15 +10,27 @@
 #import "ProfileDoc.h"
 #import "MasterViewController.h"
 
-@interface MyProfileViewController : UIViewController
+@interface MyProfileViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (strong) ProfileDoc *myProfile;
 @property (weak, nonatomic) IBOutlet UIImageView *myProfileImageField;
 @property (weak, nonatomic) IBOutlet UITextView *myProfileDescriptionField;
-
-- (IBAction)setMyGeographicPosition:(id)sender;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *myProfileGenderSelector;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *myProfileOrientationSelector;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *mySerachPreferenceSelector;
+
+
+@property (strong, nonatomic) UIImagePickerController * picker;
+
+- (IBAction)removeKeys:(id)sender;
+
+- (IBAction)setMyGeographicPosition:(id)sender;
+- (IBAction)changeProfilePictureTapped:(id)sender;
+- (IBAction)descriptionFieldTextChanged:(id)sender;
+
+- (IBAction)genderChanged:(id)sender;
+- (IBAction)orientationChanged:(id)sender;
+- (IBAction)lookingForChanged:(id)sender;
+
 
 @end
