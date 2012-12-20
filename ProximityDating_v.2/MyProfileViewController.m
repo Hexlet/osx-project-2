@@ -83,11 +83,10 @@
         self.picker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
         self.picker.allowsEditing = NO;
     }
-    //[self.navigationController presentModalViewController:_picker animated:YES];
+    [self.navigationController presentViewController:_picker animated:YES completion:nil];
 }
 
 - (IBAction)descriptionFieldTextChanged:(id)sender {
-    NSLog(@"descriptionFieldTextChanged");
     self.myProfile.data.description = self.myProfileDescriptionField.text;
 }
 
@@ -111,17 +110,25 @@
 #pragma mark UIImagePickerControllerDelegate
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    //[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
-    //[self dismissModalViewControllerAnimated:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
     
     UIImage *fullImage = (UIImage *) [info objectForKey:UIImagePickerControllerOriginalImage];
-    //UIImage *thumbImage = [fullImage imageByScalingAndCroppingForSize:CGSizeMake(44, 44)];
+    
+    [info objectForKey:UIImagePickerControllerReferenceURL];
+   
+    // Resize image
+    UIGraphicsBeginImageContext(CGSizeMake(44, 44));
+    [fullImage drawInRect: CGRectMake(0, 0, 44, 44)];
+    UIImage *thumbImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+
     self.myProfile.fullImage = fullImage;
-    //self.myProfile.thumbImage = thumbImage;
-    self.myProfileImageField.image = fullImage;
+    self.myProfile.thumbImage = thumbImage;
+    self.myProfileImageField.image = fullImage;    
 }
 @end

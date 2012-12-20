@@ -44,10 +44,14 @@
     _profile.data.isMale = [prefs boolForKey:@"data.isMale"];
     _profile.data.straight = [prefs boolForKey:@"data.straight"];
     _profile.data.lookingForPartner = [prefs boolForKey:@"data.lookingForPartner"];
-    _profile.thumbImage = [UIImage imageNamed:[prefs objectForKey:@"data.thumbImageName"]];
-    _profile.fullImage = [UIImage imageNamed:[prefs objectForKey:@"data.fullImageName"]];
-    _profile.thumbImageName = [prefs objectForKey:@"data.thumbImageName"];
-    _profile.fullImageName = [prefs objectForKey:@"data.fullImageName"];
+    
+    _profile.fullImage = [self loadImage];
+    
+    // Resize image
+    UIGraphicsBeginImageContext(CGSizeMake(44, 44));
+    [_profile.fullImage drawInRect: CGRectMake(0, 0, 44, 44)];
+    _profile.thumbImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
 }
 
 -(void)saveSettings:(ProfileDoc *)d{
@@ -65,8 +69,31 @@
     [prefs setBool:_profile.data.isMale forKey:@"data.isMale"];
     [prefs setBool:_profile.data.straight forKey:@"data.straight"];
     [prefs setBool:_profile.data.lookingForPartner forKey:@"data.lookingForPartner"];
-    [prefs setObject:_profile.thumbImageName forKey:@"data.thumbImageName"];
-    [prefs setObject:_profile.fullImageName forKey:@"data.fullImageName"];
+    
+    [self saveImage: _profile.fullImage];
+}
+
+- (void)saveImage: (UIImage*)image
+{
+    if (image != nil)
+    {
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                             NSUserDomainMask, YES);
+        NSString *documentsDirectory = [paths objectAtIndex:0];
+        NSString* path = [documentsDirectory stringByAppendingPathComponent: @"myProfileImage.png" ];
+        NSData* data = UIImagePNGRepresentation(image);
+        [data writeToFile:path atomically:YES];
+    }
+}
+
+- (UIImage*)loadImage
+{
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString* path = [documentsDirectory stringByAppendingPathComponent: @"myProfileImage.png" ];
+    UIImage* image = [UIImage imageWithContentsOfFile:path];
+    return image;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

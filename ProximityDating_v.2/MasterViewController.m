@@ -73,11 +73,6 @@
     cell.detailTextLabel.text = profile.data.description;
     cell.imageView.image = profile.thumbImage;
     
-    if (profile.removedFromShowList == TRUE)
-        NSLog(@"profile.removedFromShowList %@", @"true");
-    else
-        NSLog(@"profile.removedFromShowList %@", @"false");
-    
     return cell;
 }
 
