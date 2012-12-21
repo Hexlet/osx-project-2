@@ -96,7 +96,10 @@
     
     CLLocationDistance distance = [profile.data.location distanceFromLocation:_myProfile.data.location];
     
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"%4.0f m.", distance];
+    if (distance == -1)
+        cell.detailTextLabel.text = @"no data";
+    else
+        cell.detailTextLabel.text = [NSString stringWithFormat:@"%4.0f m.", distance];
     
     return cell;
 }
