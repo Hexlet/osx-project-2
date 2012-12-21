@@ -132,7 +132,6 @@
     
     NSPredicate *predicate;
 
-
     if (_myProfile.data.lookingForPartner)
     {
         if (_myProfile.data.straight)
@@ -163,6 +162,8 @@
 
 -(void)getDistanceAndSortArray
 {
+    
+    
     NSArray *sortedArray = [self.datersProfiles  sortedArrayUsingComparator:^NSComparisonResult(ProfileDoc *obj1, ProfileDoc *obj2) {
         CLLocationDistance distance1 = [obj1.data.location distanceFromLocation:_myProfile.data.location];
         CLLocationDistance distance2 = [obj2.data.location distanceFromLocation:_myProfile.data.location];
@@ -172,9 +173,22 @@
         else
             return NSOrderedDescending;
     }];
-    
-    [self.datersProfiles removeAllObjects];
-    [self.datersProfiles addObjectsFromArray:sortedArray];
+
+    /*
+    if (![self.searchBarValue.text isEqualToString:@""])
+    {
+        NSPredicate *predicate = [NSPredicate predicateWithFormat:@"data.name like %@",self.searchBarValue.text];
+        
+        NSArray *filteredAndSortedArray = [sortedArray filteredArrayUsingPredicate:predicate];
+        [self.datersProfiles removeAllObjects];
+        [self.datersProfiles addObjectsFromArray:filteredAndSortedArray];
+    }
+    else
+     */
+    {
+        [self.datersProfiles removeAllObjects];
+        [self.datersProfiles addObjectsFromArray:sortedArray];
+    }
     
     [self.tableView reloadData];
 }

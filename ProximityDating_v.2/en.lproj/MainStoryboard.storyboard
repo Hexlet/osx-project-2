@@ -7,50 +7,17 @@
         <!--Navigation Controller-->
         <scene sceneID="11">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
                 <navigationController id="3" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="9Uv-f5-xf9" kind="relationship" relationship="rootViewController" id="HvN-Ph-w96"/>
+                        <segue destination="j6x-fl-J1Y" kind="relationship" relationship="rootViewController" id="321-Jm-Bc6"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-393" y="64"/>
-        </scene>
-        <!--Logo View Controller-->
-        <scene sceneID="uHF-vt-0KC">
-            <objects>
-                <viewController storyboardIdentifier="logoViewID" id="9Uv-f5-xf9" customClass="LogoViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="79n-0j-2dF">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" image="shinigstar.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fiw-nZ-ra4"/>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="Fiw-nZ-ra4" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="W6D-1s-KwX"/>
-                            <constraint firstItem="Fiw-nZ-ra4" firstAttribute="top" secondItem="79n-0j-2dF" secondAttribute="top" constant="20" symbolic="YES" type="default" id="bpZ-bu-889"/>
-                            <constraint firstItem="Fiw-nZ-ra4" firstAttribute="leading" secondItem="79n-0j-2dF" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="kfR-q7-8V3"/>
-                            <constraint firstAttribute="bottom" secondItem="Fiw-nZ-ra4" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="wIR-ha-ews"/>
-                        </constraints>
-                    </view>
-                    <navigationItem key="navigationItem" id="nPv-rj-WGY">
-                        <barButtonItem key="rightBarButtonItem" title="next" id="hcb-aa-RH9">
-                            <connections>
-                                <segue destination="j6x-fl-J1Y" kind="push" identifier="toMainTabBarSearch" id="uqF-Hu-EBw"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                    <connections>
-                        <segue destination="j6x-fl-J1Y" kind="push" identifier="toMainTabBar" id="Nh1-R8-bjA"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lDE-sB-WZ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="28" y="64"/>
+            <point key="canvasLocation" x="23" y="64"/>
         </scene>
         <!--My Profile View Controller - My Profile-->
         <scene sceneID="jmM-8b-uaU">
@@ -340,15 +307,9 @@
             <point key="canvasLocation" x="1520" y="448"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="shinigstar.png" width="256" height="256"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
-    <inferredMetricsTieBreakers>
-        <segue reference="Nh1-R8-bjA"/>
-    </inferredMetricsTieBreakers>
 </document>
