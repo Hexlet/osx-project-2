@@ -30,11 +30,25 @@
 }
 
 - (NSRegularExpressionOptions) currentOptions {
-    NSArray *selectedCells = self.options.selectedCells;
     NSRegularExpressionOptions options = 0;
-    for (NSButtonCell *cell in selectedCells) {
-        if ([cell.identifier isEqualToString:@"CaseInsensitiveButtonCell"]) {
+    for (NSButtonCell *cell in self.options.cells) {
+        if (cell.state != NSOnState) {
+            continue;
+        }
+        if ([cell.identifier isEqualToString:@"CaseInsensitive"]) {
             options |= NSRegularExpressionCaseInsensitive;
+        } else if ([cell.identifier isEqualToString:@"DotMatchesLineSeparators"]) {
+            options |= NSRegularExpressionDotMatchesLineSeparators;
+        } else if ([cell.identifier isEqualToString:@"AnchorsMatchLines"]) {
+            options |= NSRegularExpressionAnchorsMatchLines;
+        } else if ([cell.identifier isEqualToString:@"IgnoreMetacharacters"]) {
+            options |= NSRegularExpressionIgnoreMetacharacters;
+        } else if ([cell.identifier isEqualToString:@"UseUnicodeWordBounds"]) {
+            options |= NSRegularExpressionUseUnicodeWordBoundaries;
+        } else if ([cell.identifier isEqualToString:@"UseUnixLineSeparators"]) {
+            options |= NSRegularExpressionUseUnixLineSeparators;
+        } else if ([cell.identifier isEqualToString:@"CommentsAndWhitespace"]) {
+            options |= NSRegularExpressionAllowCommentsAndWhitespace;
         }
     }
     return options;
