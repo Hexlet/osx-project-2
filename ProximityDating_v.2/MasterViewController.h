@@ -14,6 +14,7 @@
 
 @property (strong) NSMutableArray *datersProfiles;
 @property (strong) NSMutableArray *fullListOfProfiles;
+@property (strong) NSMutableArray *searchResults;
 @property (nonatomic, retain) ProfileDoc *myProfile;
 
 @end
