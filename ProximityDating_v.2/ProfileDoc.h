@@ -21,5 +21,6 @@
 @property (assign) Boolean removedFromShowList;
 
 +(NSMutableArray*)getArrayWithData;
++(UIImage *)resizeImage:(ProfileDoc *)profile;
 
 @end

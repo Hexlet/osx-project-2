@@ -18,15 +18,15 @@
 {
     /*
     ProfileDoc *profile1 = [[ProfileDoc alloc] init];
-    profile1.data.name = @"Potato Bug";
-    profile1.data.description = @"Potato Bug short description";
+    profile1.data.name = @"My name";
+    profile1.data.description = @"Mine short description";
     profile1.data.isMale = TRUE;
     profile1.data.straight = TRUE;
     profile1.data.lookingForPartner = TRUE;
-    profile1.thumbImage = [UIImage imageNamed:@"potatoBugThumb.jpg"];
-    profile1.fullImage = [UIImage imageNamed:@"potatoBug.jpg"];
-    profile1.thumbImageName = @"potatoBugThumb.jpg";
-    profile1.fullImageName = @"potatoBug.jpg";
+    profile1.thumbImage = [UIImage imageNamed:@"none.jpg"];
+    profile1.fullImage = [UIImage imageNamed:@"none.jpg"];
+    profile1.thumbImageName = @"none.jpg";
+    profile1.fullImageName = @"none.jpg";
     
     [self saveSettings:profile1];
     */
@@ -47,11 +47,7 @@
     
     _profile.fullImage = [self loadImage];
     
-    // Resize image
-    UIGraphicsBeginImageContext(CGSizeMake(44, 44));
-    [_profile.fullImage drawInRect: CGRectMake(0, 0, 44, 44)];
-    _profile.thumbImage = UIGraphicsGetImageFromCurrentImageContext();
-    UIGraphicsEndImageContext();
+    _profile.thumbImage = [ProfileDoc resizeImage:_profile];
 }
 
 -(void)saveSettings:(ProfileDoc *)d{
