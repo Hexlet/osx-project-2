@@ -21,8 +21,7 @@
 
 - (void)setLatitude:(double)latitude longitude:(double)longitude
 {
-    self.latitude = latitude;
-    self.longitude = longitude;
+    self.location = [[CLLocation alloc] initWithLatitude:latitude longitude:longitude];
 }
 
 @end

@@ -47,14 +47,8 @@
     AppDelegate *appDelegate = (AppDelegate *)[[UIApplication sharedApplication] delegate];
     self.myProfile = appDelegate.profile;
     
-    CLLocation *pinLocation = [[CLLocation alloc]
-                               initWithLatitude: ((ProfileDoc*)self.detailItem).data.latitude
-                               longitude: ((ProfileDoc*)self.detailItem).data.longitude];
-    
-    CLLocation *userLocation = [[CLLocation alloc]
-                                initWithLatitude:_myProfile.data.latitude
-                                longitude:_myProfile.data.longitude];
-    
+    CLLocation *pinLocation = ((ProfileDoc*)self.detailItem).data.location;
+    CLLocation *userLocation = _myProfile.data.location;
     CLLocationDistance distance = [pinLocation distanceFromLocation:userLocation];
     
     float userLon = userLocation.coordinate.longitude;

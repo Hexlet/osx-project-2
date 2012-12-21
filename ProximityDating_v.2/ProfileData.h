@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "CoreLocationController.h"
 
 @interface ProfileData : NSObject
 
@@ -16,8 +17,7 @@
 @property (assign) Boolean straight;
 @property (assign) Boolean lookingForPartner;
 
-@property (assign) double latitude;
-@property (assign) double longitude;
+@property (strong) CLLocation *location;
 
 - (void)initWithName:(NSString*)name description:(NSString*)description gender:(Boolean)isMale sexuality:(Boolean)straight lookingForPartner:(Boolean)lookingForPartner;
 - (void)setLatitude:(double)latitude longitude:(double)longitude;

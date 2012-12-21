@@ -34,6 +34,12 @@
     
     _datersProfiles = [ProfileDoc getArrayWithData];
     _fullListOfProfiles = [ProfileDoc getArrayWithData];
+    
+    [NSTimer scheduledTimerWithTimeInterval:2.0
+                                     target:self
+                                   selector:@selector(getDistanceAndSortArray)
+                                   userInfo:nil
+                                    repeats:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -72,15 +78,7 @@
     cell.textLabel.text = profile.data.name;
     cell.imageView.image = profile.thumbImage;
     
-    CLLocation *pinLocation = [[CLLocation alloc]
-                               initWithLatitude: profile.data.latitude
-                               longitude: profile.data.longitude];
-    
-    CLLocation *userLocation = [[CLLocation alloc]
-                                initWithLatitude:_myProfile.data.latitude
-                                longitude:_myProfile.data.longitude];
-    
-    CLLocationDistance distance = [pinLocation distanceFromLocation:userLocation];
+    CLLocationDistance distance = [profile.data.location distanceFromLocation:_myProfile.data.location];
     
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%4.0f m.", distance];
     
@@ -159,9 +157,26 @@
     [self.datersProfiles removeAllObjects];
     [self.datersProfiles addObjectsFromArray:filteredArray];
     
+    [self getDistanceAndSortArray];
+    
+}
+
+-(void)getDistanceAndSortArray
+{
+    NSArray *sortedArray = [self.datersProfiles  sortedArrayUsingComparator:^NSComparisonResult(ProfileDoc *obj1, ProfileDoc *obj2) {
+        CLLocationDistance distance1 = [obj1.data.location distanceFromLocation:_myProfile.data.location];
+        CLLocationDistance distance2 = [obj2.data.location distanceFromLocation:_myProfile.data.location];
+        
+        if (distance1 <= distance2)
+            return NSOrderedAscending;
+        else
+            return NSOrderedDescending;
+    }];
+    
+    [self.datersProfiles removeAllObjects];
+    [self.datersProfiles addObjectsFromArray:sortedArray];
+    
     [self.tableView reloadData];
-    
-    
 }
 
 @end
