@@ -66,13 +66,29 @@
     }
 }
 
+- (void)locationUpdate:(CLLocation *)location
+{
+    NSLog(@"LATITUDE: %f LONGITUDE: %f", location.coordinate.latitude, location.coordinate.longitude);
+    
+    [self.myProfile.data setLatitude:location.coordinate.latitude longitude:location.coordinate.longitude];
+}
+
+- (void)locationError:(NSError *)error
+{
+    NSLog(@"%@",[error description]);
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)setMyGeographicPosition:(id)sender {
+- (IBAction)setMyGeographicPosition:(id)sender
+{
+    CLController = [[CoreLocationController alloc] init];
+	CLController.delegate = self;
+	[CLController.locMgr startUpdatingLocation];
 }
 
 - (IBAction)changeProfilePictureTapped:(id)sender

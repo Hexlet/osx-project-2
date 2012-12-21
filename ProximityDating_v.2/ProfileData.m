@@ -10,16 +10,19 @@
 
 @implementation ProfileData
 
-- (id)initWithName:(NSString*)name description:(NSString*)description gender:(Boolean)isMale sexuality:(Boolean)straight lookingForPartner:(Boolean)lookingForPartner
+- (void)initWithName:(NSString*)name description:(NSString*)description gender:(Boolean)isMale sexuality:(Boolean)straight lookingForPartner:(Boolean)lookingForPartner
 {
-    if ((self = [super init])) {
         self.name = name;
         self.description = description;
         self.isMale = isMale;
         self.straight = straight;
         self.lookingForPartner = lookingForPartner;
-    }
-    return self;
+}
+
+- (void)setLatitude:(double)latitude longitude:(double)longitude
+{
+    self.latitude = latitude;
+    self.longitude = longitude;
 }
 
 @end

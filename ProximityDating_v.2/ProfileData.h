@@ -16,6 +16,9 @@
 @property (assign) Boolean straight;
 @property (assign) Boolean lookingForPartner;
 
-- (id)initWithName:(NSString*)name description:(NSString*)description gender:(Boolean)isMale sexuality:(Boolean)straight lookingForPartner:(Boolean)lookingForPartner;
+@property (assign) double latitude;
+@property (assign) double longitude;
 
+- (void)initWithName:(NSString*)name description:(NSString*)description gender:(Boolean)isMale sexuality:(Boolean)straight lookingForPartner:(Boolean)lookingForPartner;
+- (void)setLatitude:(double)latitude longitude:(double)longitude;
 @end

@@ -9,8 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "ProfileDoc.h"
 #import "MasterViewController.h"
+#import "CoreLocationController.h"
 
-@interface MyProfileViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface MyProfileViewController : UIViewController <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, CoreLocationControllerDelegate>
+{
+    CoreLocationController *CLController;
+}
 
 @property (strong) ProfileDoc *myProfile;
 @property (weak, nonatomic) IBOutlet UIImageView *myProfileImageField;

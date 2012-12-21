@@ -70,8 +70,19 @@
                              dequeueReusableCellWithIdentifier:@"MyBasicCell"];
     ProfileDoc *profile = [self.datersProfiles objectAtIndex:indexPath.row];
     cell.textLabel.text = profile.data.name;
-    cell.detailTextLabel.text = profile.data.description;
     cell.imageView.image = profile.thumbImage;
+    
+    CLLocation *pinLocation = [[CLLocation alloc]
+                               initWithLatitude: profile.data.latitude
+                               longitude: profile.data.longitude];
+    
+    CLLocation *userLocation = [[CLLocation alloc]
+                                initWithLatitude:_myProfile.data.latitude
+                                longitude:_myProfile.data.longitude];
+    
+    CLLocationDistance distance = [pinLocation distanceFromLocation:userLocation];
+    
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"%4.0f m.", distance];
     
     return cell;
 }

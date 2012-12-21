@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ProfileDoc.h"
+#import "CoreLocationController.h"
 
 @interface MasterViewController : UITableViewController
 

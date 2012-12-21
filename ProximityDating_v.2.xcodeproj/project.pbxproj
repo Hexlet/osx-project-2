@@ -33,6 +33,8 @@
 		84CA5E44168076D100193451 /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84CA5E3C168076D100193451 /* wolfSpiderThumb.jpg */; };
 		84CA5E4B1681AE4300193451 /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA5E4A1681AE4300193451 /* MyProfileViewController.m */; };
 		84CA5E4F1681BF5C00193451 /* MainTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA5E4E1681BF5B00193451 /* MainTabBarViewController.m */; };
+		84CA5E51168315F600193451 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84CA5E50168315F600193451 /* CoreLocation.framework */; };
+		84CA5E58168319C800193451 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84CA5E57168319C800193451 /* CoreLocationController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +75,9 @@
 		84CA5E4A1681AE4300193451 /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 		84CA5E4D1681BF5B00193451 /* MainTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTabBarViewController.h; sourceTree = "<group>"; };
 		84CA5E4E1681BF5B00193451 /* MainTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTabBarViewController.m; sourceTree = "<group>"; };
+		84CA5E50168315F600193451 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		84CA5E56168319C800193451 /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
+		84CA5E57168319C800193451 /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84CA5E51168315F600193451 /* CoreLocation.framework in Frameworks */,
 				84CA5DFB167F1EFC00193451 /* UIKit.framework in Frameworks */,
 				84CA5DFD167F1EFC00193451 /* Foundation.framework in Frameworks */,
 				84CA5DFF167F1EFC00193451 /* CoreGraphics.framework in Frameworks */,
@@ -92,6 +98,7 @@
 		84CA5DEB167F1EFC00193451 = {
 			isa = PBXGroup;
 			children = (
+				84CA5E50168315F600193451 /* CoreLocation.framework */,
 				84CA5E00167F1EFC00193451 /* ProximityDating_v.2 */,
 				84CA5DF9167F1EFC00193451 /* Frameworks */,
 				84CA5DF7167F1EFC00193451 /* Products */,
@@ -119,6 +126,7 @@
 		84CA5E00167F1EFC00193451 /* ProximityDating_v.2 */ = {
 			isa = PBXGroup;
 			children = (
+				84CA5E521683167200193451 /* Controllers */,
 				84CA5E22167F1F1800193451 /* Resources */,
 				84CA5E21167F1F1200193451 /* Model */,
 				84CA5E20167F1F0700193451 /* GUI */,
@@ -186,6 +194,15 @@
 				84CA5E23167F200B00193451 /* shinigstar.png */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		84CA5E521683167200193451 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84CA5E56168319C800193451 /* CoreLocationController.h */,
+				84CA5E57168319C800193451 /* CoreLocationController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +289,7 @@
 				84CA5E3116806DB700193451 /* ProfileDoc.m in Sources */,
 				84CA5E4B1681AE4300193451 /* MyProfileViewController.m in Sources */,
 				84CA5E4F1681BF5C00193451 /* MainTabBarViewController.m in Sources */,
+				84CA5E58168319C800193451 /* CoreLocationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

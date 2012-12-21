@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CoreLocationController.h"
+#import "ProfileDoc.h"
 
 @interface DetailViewController : UIViewController
 
 @property (strong, nonatomic) id detailItem;
+
+@property (strong) ProfileDoc *myProfile;
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImageField;
 @property (weak, nonatomic) IBOutlet UITextView *descriptionField;
