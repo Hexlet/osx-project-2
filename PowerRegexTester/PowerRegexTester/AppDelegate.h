@@ -16,5 +16,6 @@
 @property (weak) IBOutlet OptionsMatrix *options;
 @property (weak) IBOutlet NSTextField *pattern;
 @property (weak) IBOutlet NSTextField *source;
+@property (weak) IBOutlet NSTextField *url;
 
 @end
