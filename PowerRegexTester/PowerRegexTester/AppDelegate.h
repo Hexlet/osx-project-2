@@ -7,12 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "OptionsMatrix.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
 @property (assign) IBOutlet NSWindow *window;
 
-@property (weak) IBOutlet NSMatrix *options;
+@property (weak) IBOutlet OptionsMatrix *options;
 @property (weak) IBOutlet NSTextField *pattern;
 
 - (IBAction)applyClick:(NSButton *)sender;

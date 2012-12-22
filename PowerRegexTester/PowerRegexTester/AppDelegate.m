@@ -17,7 +17,7 @@
 - (IBAction)applyClick:(NSButton *)sender {
     NSString *pattern = self.pattern.stringValue;
     NSError *error;
-    NSRegularExpressionOptions options = [self currentOptions];
+    NSRegularExpressionOptions options = [self.options regexOptions];
     NSLog(@"Options: %li", options);
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern
                                                                            options:options
@@ -28,36 +28,5 @@
         NSLog(@"Match: %@", [source substringWithRange:match.range]);
     }
 }
-
-- (NSRegularExpressionOptions) currentOptions {
-    NSRegularExpressionOptions options = 0;
-    for (NSButtonCell *cell in self.options.cells) {
-        if (cell.state != NSOnState) {
-            continue;
-        }
-        if ([cell.identifier isEqualToString:@"CaseInsensitive"]) {
-            options |= NSRegularExpressionCaseInsensitive;
-        } else if ([cell.identifier isEqualToString:@"DotMatchesLineSeparators"]) {
-            options |= NSRegularExpressionDotMatchesLineSeparators;
-        } else if ([cell.identifier isEqualToString:@"AnchorsMatchLines"]) {
-            options |= NSRegularExpressionAnchorsMatchLines;
-        } else if ([cell.identifier isEqualToString:@"IgnoreMetacharacters"]) {
-            options |= NSRegularExpressionIgnoreMetacharacters;
-        } else if ([cell.identifier isEqualToString:@"UseUnicodeWordBounds"]) {
-            options |= NSRegularExpressionUseUnicodeWordBoundaries;
-        } else if ([cell.identifier isEqualToString:@"UseUnixLineSeparators"]) {
-            options |= NSRegularExpressionUseUnixLineSeparators;
-        } else if ([cell.identifier isEqualToString:@"CommentsAndWhitespace"]) {
-            options |= NSRegularExpressionAllowCommentsAndWhitespace;
-        }
-    }
-    return options;
-}
-
-
-
-
-
-
 
 @end

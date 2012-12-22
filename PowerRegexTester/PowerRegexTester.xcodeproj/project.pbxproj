@@ -17,6 +17,7 @@
 		69AD462016591A24003F0AEB /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69AD460016591A23003F0AEB /* Cocoa.framework */; };
 		69AD462816591A24003F0AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69AD462616591A24003F0AEB /* InfoPlist.strings */; };
 		69BA6C9F16596DFA008E84B8 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 69BA6C9E16596DFA008E84B8 /* icon.iconset */; };
+		69E21F691685DD65006E15E9 /* OptionsMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E21F681685DD65006E15E9 /* OptionsMatrix.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		69AD462516591A24003F0AEB /* PowerRegexTesterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PowerRegexTesterTests-Info.plist"; sourceTree = "<group>"; };
 		69AD462716591A24003F0AEB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		69BA6C9E16596DFA008E84B8 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = icon.iconset; path = ../icon.iconset; sourceTree = "<group>"; };
+		69E21F671685DD65006E15E9 /* OptionsMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMatrix.h; sourceTree = "<group>"; };
+		69E21F681685DD65006E15E9 /* OptionsMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMatrix.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,9 +116,11 @@
 		69AD460616591A23003F0AEB /* PowerRegexTester */ = {
 			isa = PBXGroup;
 			children = (
+				69AD461516591A24003F0AEB /* MainMenu.xib */,
 				69AD461216591A23003F0AEB /* AppDelegate.h */,
 				69AD461316591A23003F0AEB /* AppDelegate.m */,
-				69AD461516591A24003F0AEB /* MainMenu.xib */,
+				69E21F671685DD65006E15E9 /* OptionsMatrix.h */,
+				69E21F681685DD65006E15E9 /* OptionsMatrix.m */,
 				69AD460716591A23003F0AEB /* Supporting Files */,
 			);
 			path = PowerRegexTester;
@@ -262,6 +267,7 @@
 			files = (
 				69AD460D16591A23003F0AEB /* main.m in Sources */,
 				69AD461416591A23003F0AEB /* AppDelegate.m in Sources */,
+				69E21F691685DD65006E15E9 /* OptionsMatrix.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
