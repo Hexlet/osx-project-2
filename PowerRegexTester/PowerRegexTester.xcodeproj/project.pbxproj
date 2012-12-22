@@ -18,6 +18,7 @@
 		69AD462816591A24003F0AEB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 69AD462616591A24003F0AEB /* InfoPlist.strings */; };
 		69BA6C9F16596DFA008E84B8 /* icon.iconset in Resources */ = {isa = PBXBuildFile; fileRef = 69BA6C9E16596DFA008E84B8 /* icon.iconset */; };
 		69E21F691685DD65006E15E9 /* OptionsMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E21F681685DD65006E15E9 /* OptionsMatrix.m */; };
+		69E21F741685F38F006E15E9 /* FileDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E21F731685F38F006E15E9 /* FileDialog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		69BA6C9E16596DFA008E84B8 /* icon.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; name = icon.iconset; path = ../icon.iconset; sourceTree = "<group>"; };
 		69E21F671685DD65006E15E9 /* OptionsMatrix.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsMatrix.h; sourceTree = "<group>"; };
 		69E21F681685DD65006E15E9 /* OptionsMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMatrix.m; sourceTree = "<group>"; };
+		69E21F721685F38F006E15E9 /* FileDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDialog.h; sourceTree = "<group>"; };
+		69E21F731685F38F006E15E9 /* FileDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDialog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 				69AD461516591A24003F0AEB /* MainMenu.xib */,
 				69AD461216591A23003F0AEB /* AppDelegate.h */,
 				69AD461316591A23003F0AEB /* AppDelegate.m */,
+				69E21F721685F38F006E15E9 /* FileDialog.h */,
+				69E21F731685F38F006E15E9 /* FileDialog.m */,
 				69E21F671685DD65006E15E9 /* OptionsMatrix.h */,
 				69E21F681685DD65006E15E9 /* OptionsMatrix.m */,
 				69AD460716591A23003F0AEB /* Supporting Files */,
@@ -268,6 +273,7 @@
 				69AD460D16591A23003F0AEB /* main.m in Sources */,
 				69AD461416591A23003F0AEB /* AppDelegate.m in Sources */,
 				69E21F691685DD65006E15E9 /* OptionsMatrix.m in Sources */,
+				69E21F741685F38F006E15E9 /* FileDialog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

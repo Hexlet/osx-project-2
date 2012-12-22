@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FileDialog.h"
 
 @implementation AppDelegate
 
@@ -20,8 +21,21 @@
 
 - (IBAction)loadClick:(NSButton *)sender {
     NSURL *url = [NSURL URLWithString:self.url.stringValue];
-    if (!url) { return; }
+    if (url) {
+        [self loadStringFromUrl:url];
+    }
+}
+
+- (IBAction)fileClick:(NSButton *)sender {
+    NSURL *fileUrl = [[[FileDialog alloc] init] openFile];
+    if (fileUrl) {
+        [self loadStringFromUrl:fileUrl];
+        self.url.stringValue = fileUrl.absoluteString;
+    }
     
+}
+
+- (void) loadStringFromUrl:(NSURL *)url {
     NSProgressIndicator *indicator = [[NSProgressIndicator alloc] init];
     [indicator startAnimation:self];
     NSError *error;
