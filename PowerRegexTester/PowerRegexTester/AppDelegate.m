@@ -14,6 +14,10 @@
 
 }
 
+- (IBAction)clearClick:(NSButton *)sender {
+    self.source.stringValue = @"";
+}
+
 - (IBAction)applyClick:(NSButton *)sender {
     NSString *pattern = self.pattern.stringValue;
     NSError *error;
@@ -22,10 +26,12 @@
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern
                                                                            options:options
                                                                              error:&error];
-    NSString *source = @"example";
-    NSArray *matches = [regex matchesInString:source  options:0 range:NSMakeRange(0, source.length)];
+    NSString *sourceString = self.source.stringValue;
+    NSArray *matches = [regex matchesInString:sourceString
+                                      options:0
+                                        range:NSMakeRange(0, sourceString.length)];
     for (NSTextCheckingResult *match in matches) {
-        NSLog(@"Match: %@", [source substringWithRange:match.range]);
+        NSLog(@"Match: %@", [sourceString substringWithRange:match.range]);
     }
 }
 

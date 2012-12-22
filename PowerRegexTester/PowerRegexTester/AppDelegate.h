@@ -15,7 +15,6 @@
 
 @property (weak) IBOutlet OptionsMatrix *options;
 @property (weak) IBOutlet NSTextField *pattern;
-
-- (IBAction)applyClick:(NSButton *)sender;
+@property (weak) IBOutlet NSTextField *source;
 
 @end
