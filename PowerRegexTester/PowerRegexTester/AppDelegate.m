@@ -10,29 +10,14 @@
 #import "FileDialog.h"
 #import "NSRegularExpression+Ext.h"
 
-@interface AppDelegate()
-
-@property (nonatomic, readonly) NSText *sourceText;
-
-@end
-
 @implementation AppDelegate
-
-@synthesize sourceText = _sourceText;
-
-- (NSText *) sourceText {
-    if (!_sourceText) {
-        _sourceText = [self.window fieldEditor:YES forObject:self.source];
-    }
-    return _sourceText;
-}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
 }
 
 - (IBAction)clearClick:(NSButton *)sender {
-    self.source.stringValue = @"";
+    self.sourceView.string = @"";
 }
 
 - (IBAction)loadClick:(NSButton *)sender {
@@ -64,7 +49,7 @@
         [self.class handleError:error];
         return;
     }
-    self.source.stringValue = urlContents;
+    self.sourceView.string = urlContents;
 }
 
 - (IBAction)applyClick:(NSButton *)sender {
@@ -79,7 +64,7 @@
         return;
     }
     
-    NSString *sourceString = self.source.stringValue;
+    NSString *sourceString = self.sourceView.string;
     NSArray *matches = [regex allMatchesWithGroups:sourceString];
     for (NSArray *match in matches) {
         NSLog(@"-----------------");

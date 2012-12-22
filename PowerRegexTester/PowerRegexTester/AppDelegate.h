@@ -15,7 +15,8 @@
 
 @property (weak) IBOutlet OptionsMatrix *options;
 @property (weak) IBOutlet NSTextField *pattern;
-@property (weak) IBOutlet NSTextField *source;
+@property (assign) IBOutlet NSTextView *sourceView;
+
 @property (weak) IBOutlet NSTextField *url;
 @property (weak) IBOutlet NSProgressIndicator *loadProgress;
 
