@@ -17,5 +17,6 @@
 @property (weak) IBOutlet NSTextField *pattern;
 @property (weak) IBOutlet NSTextField *source;
 @property (weak) IBOutlet NSTextField *url;
+@property (weak) IBOutlet NSProgressIndicator *loadProgress;
 
 @end

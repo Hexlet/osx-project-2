@@ -36,13 +36,14 @@
 }
 
 - (void) loadStringFromUrl:(NSURL *)url {
-    NSProgressIndicator *indicator = [[NSProgressIndicator alloc] init];
-    [indicator startAnimation:self];
+    [self.loadProgress setHidden:NO];
+    [self.loadProgress startAnimation:self];
     NSError *error;
     NSString *urlContents = [NSString stringWithContentsOfURL:url
                                                      encoding:NSASCIIStringEncoding
                                                         error:&error];
-    [indicator stopAnimation:self];
+    [self.loadProgress stopAnimation:self];
+    [self.loadProgress setHidden:YES];
     if (error) {
         [self.class handleError:error];
         return;
