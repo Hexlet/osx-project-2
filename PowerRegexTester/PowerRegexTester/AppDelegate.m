@@ -9,11 +9,28 @@
 #import "AppDelegate.h"
 #import "FileDialog.h"
 #import "NSRegularExpression+Ext.h"
+#import "ResultsTableViewController.h"
+
+@interface AppDelegate()
+@property (nonatomic, readonly) ResultsTableViewController *resultsTableController;
+@end
 
 @implementation AppDelegate
+{
+    ResultsTableViewController *_resultsTableController;
+}
+
+@synthesize resultsTableController = _resultsTableController;
+
+- (ResultsTableViewController *)resultsTableController {
+    if (!_resultsTableController) {
+        _resultsTableController = [[ResultsTableViewController alloc] init];
+    }
+    return _resultsTableController;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-
+    self.resultsTable.dataSource = self.resultsTableController;
 }
 
 - (IBAction)clearClick:(NSButton *)sender {
@@ -33,7 +50,6 @@
         [self loadStringFromUrl:fileUrl];
         self.url.stringValue = fileUrl.absoluteString;
     }
-    
 }
 
 - (void) loadStringFromUrl:(NSURL *)url {
@@ -46,7 +62,7 @@
     [self.loadProgress stopAnimation:self];
     [self.loadProgress setHidden:YES];
     if (error) {
-        [self.class handleError:error];
+        [self handleError:error];
         return;
     }
     self.sourceView.string = urlContents;
@@ -60,7 +76,7 @@
                                                                            options:options
                                                                              error:&error];
     if (error) {
-        [self.class handleError:error];
+        [self handleError:error];
         return;
     }
     
@@ -75,7 +91,7 @@
     }
 }
 
-+ (void) handleError:(NSError *)error {
+- (void) handleError:(NSError *)error {
     NSLog(@"ERROR: %@", error.description);
 }
 
