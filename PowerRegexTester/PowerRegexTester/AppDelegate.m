@@ -8,8 +8,24 @@
 
 #import "AppDelegate.h"
 #import "FileDialog.h"
+#import "NSRegularExpression+Ext.h"
+
+@interface AppDelegate()
+
+@property (nonatomic, readonly) NSText *sourceText;
+
+@end
 
 @implementation AppDelegate
+
+@synthesize sourceText = _sourceText;
+
+- (NSText *) sourceText {
+    if (!_sourceText) {
+        _sourceText = [self.window fieldEditor:YES forObject:self.source];
+    }
+    return _sourceText;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 
@@ -55,7 +71,6 @@
     NSString *pattern = self.pattern.stringValue;
     NSError *error;
     NSRegularExpressionOptions options = [self.options regexOptions];
-    NSLog(@"Options: %li", options);
     NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:pattern
                                                                            options:options
                                                                              error:&error];
@@ -65,11 +80,13 @@
     }
     
     NSString *sourceString = self.source.stringValue;
-    NSArray *matches = [regex matchesInString:sourceString
-                                      options:0
-                                        range:NSMakeRange(0, sourceString.length)];
-    for (NSTextCheckingResult *match in matches) {
-        NSLog(@"Match: %@", [sourceString substringWithRange:match.range]);
+    NSArray *matches = [regex allMatchesWithGroups:sourceString];
+    for (NSArray *match in matches) {
+        NSLog(@"-----------------");
+        for (NSValue *group in match) {
+            NSRange range = group.rangeValue;
+            NSLog(@"\t%@", [sourceString substringWithRange:range]);
+        }
     }
 }
 
