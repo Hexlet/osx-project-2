@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ResultsTable : NSObject <NSTableViewDataSource>
+@interface ResultsTable : NSObject <NSTableViewDataSource, NSTableViewDelegate>
+
+- (void) setSourceString:(NSString *)string
+      andRangesOfMatches:(NSArray *)matches;
 
 @end

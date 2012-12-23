@@ -9,18 +9,33 @@
 #import "ResultsTable.h"
 
 @implementation ResultsTable
+{
+    NSString *sourceString;
+    NSArray *rangesOfMatches;
+}
 
+- (void) setSourceString:(NSString *)string
+      andRangesOfMatches:(NSArray *)matches
+{
+    sourceString = [string copy];
+    rangesOfMatches = [matches copy];
+}
+
+#pragma mark == NSTableViewDataSource implementation ==
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return 1; //todo
+    return rangesOfMatches.count;
 }
 
-- (id)tableView:(NSTableView *)tableView
-objectValueForTableColumn:(NSTableColumn *)tableColumn
-            row:(NSInteger)row
+- (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return nil;  //todo
+    return [self sourceSubstringForMatchWithIndex:row];
 }
 
+- (NSString *)sourceSubstringForMatchWithIndex:(NSInteger)index {
+    NSArray *match = rangesOfMatches[index];
+    NSRange range = ((NSValue *)match[0]).rangeValue;
+    return [sourceString substringWithRange:range];
+}
 
 @end

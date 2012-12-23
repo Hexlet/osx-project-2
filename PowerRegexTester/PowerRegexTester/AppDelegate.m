@@ -16,12 +16,8 @@
 @end
 
 @implementation AppDelegate
-{
-    ResultsTable *_results;
-}
 
 @synthesize results = _results;
-
 - (ResultsTable *)results {
     if (!_results) {
         _results = [[ResultsTable alloc] init];
@@ -31,6 +27,7 @@
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     self.resultsTableView.dataSource = self.results;
+    self.resultsTableView.delegate = self.results;
 }
 
 - (IBAction)clearClick:(NSButton *)sender {
@@ -82,13 +79,8 @@
     
     NSString *sourceString = self.sourceView.string;
     NSArray *matches = [regex allMatchesWithGroups:sourceString];
-    for (NSArray *match in matches) {
-        NSLog(@"-----------------");
-        for (NSValue *group in match) {
-            NSRange range = group.rangeValue;
-            NSLog(@"\t%@", [sourceString substringWithRange:range]);
-        }
-    }
+    [self.results setSourceString:self.sourceView.string andRangesOfMatches:matches];
+    [self.resultsTableView reloadData];
 }
 
 - (void) handleError:(NSError *)error {
