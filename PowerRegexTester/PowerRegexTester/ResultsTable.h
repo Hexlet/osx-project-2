@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface ResultsTableViewController : NSObject <NSTableViewDataSource>
+@interface ResultsTable : NSObject <NSTableViewDataSource>
 
 @end

@@ -6,13 +6,13 @@
 //  Copyright (c) 2012 Igor Redchuk. All rights reserved.
 //
 
-#import "ResultsTableViewController.h"
+#import "ResultsTable.h"
 
-@implementation ResultsTableViewController
+@implementation ResultsTable
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return 0; //todo
+    return 1; //todo
 }
 
 - (id)tableView:(NSTableView *)tableView

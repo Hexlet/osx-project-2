@@ -9,28 +9,28 @@
 #import "AppDelegate.h"
 #import "FileDialog.h"
 #import "NSRegularExpression+Ext.h"
-#import "ResultsTableViewController.h"
+#import "ResultsTable.h"
 
 @interface AppDelegate()
-@property (nonatomic, readonly) ResultsTableViewController *resultsTableController;
+@property (nonatomic, readonly) ResultsTable *results;
 @end
 
 @implementation AppDelegate
 {
-    ResultsTableViewController *_resultsTableController;
+    ResultsTable *_results;
 }
 
-@synthesize resultsTableController = _resultsTableController;
+@synthesize results = _results;
 
-- (ResultsTableViewController *)resultsTableController {
-    if (!_resultsTableController) {
-        _resultsTableController = [[ResultsTableViewController alloc] init];
+- (ResultsTable *)results {
+    if (!_results) {
+        _results = [[ResultsTable alloc] init];
     }
-    return _resultsTableController;
+    return _results;
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    self.resultsTable.dataSource = self.resultsTableController;
+    self.resultsTableView.dataSource = self.results;
 }
 
 - (IBAction)clearClick:(NSButton *)sender {

@@ -19,6 +19,6 @@
 
 @property (weak) IBOutlet NSTextField *url;
 @property (weak) IBOutlet NSProgressIndicator *loadProgress;
-@property (weak) IBOutlet NSTableView *resultsTable;
+@property (weak) IBOutlet NSTableView *resultsTableView;
 
 @end
