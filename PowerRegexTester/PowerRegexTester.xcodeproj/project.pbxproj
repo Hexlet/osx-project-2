@@ -23,6 +23,9 @@
 		69CD0E75168618DE004CE10B /* NSRegularExpression+Ext.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CD0E6F16860293004CE10B /* NSRegularExpression+Ext.m */; };
 		69E21F691685DD65006E15E9 /* OptionsMatrix.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E21F681685DD65006E15E9 /* OptionsMatrix.m */; };
 		69E21F741685F38F006E15E9 /* FileDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 69E21F731685F38F006E15E9 /* FileDialog.m */; };
+		69F126D9168779C8003577C4 /* ResultsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F126D8168779C8003577C4 /* ResultsItem.m */; };
+		69F126DC16877BD7003577C4 /* ResultsItemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F126DB16877BD7003577C4 /* ResultsItemTests.m */; };
+		69F126DD16877BFE003577C4 /* ResultsItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 69F126D8168779C8003577C4 /* ResultsItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,10 @@
 		69E21F681685DD65006E15E9 /* OptionsMatrix.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsMatrix.m; sourceTree = "<group>"; };
 		69E21F721685F38F006E15E9 /* FileDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDialog.h; sourceTree = "<group>"; };
 		69E21F731685F38F006E15E9 /* FileDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDialog.m; sourceTree = "<group>"; };
+		69F126D7168779C8003577C4 /* ResultsItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsItem.h; sourceTree = "<group>"; };
+		69F126D8168779C8003577C4 /* ResultsItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsItem.m; sourceTree = "<group>"; };
+		69F126DA16877BD7003577C4 /* ResultsItemTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsItemTests.h; sourceTree = "<group>"; };
+		69F126DB16877BD7003577C4 /* ResultsItemTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsItemTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +145,8 @@
 				69CD0E6F16860293004CE10B /* NSRegularExpression+Ext.m */,
 				69E21F671685DD65006E15E9 /* OptionsMatrix.h */,
 				69E21F681685DD65006E15E9 /* OptionsMatrix.m */,
+				69F126D7168779C8003577C4 /* ResultsItem.h */,
+				69F126D8168779C8003577C4 /* ResultsItem.m */,
 				69C03C4B16864D00000D4EB8 /* ResultsTable.h */,
 				69C03C4C16864D00000D4EB8 /* ResultsTable.m */,
 				69AD460716591A23003F0AEB /* Supporting Files */,
@@ -163,6 +172,8 @@
 			children = (
 				69CD0E711686164F004CE10B /* NSRegularExpressionExtTests.h */,
 				69CD0E721686164F004CE10B /* NSRegularExpressionExtTests.m */,
+				69F126DA16877BD7003577C4 /* ResultsItemTests.h */,
+				69F126DB16877BD7003577C4 /* ResultsItemTests.m */,
 				69AD462416591A24003F0AEB /* Supporting Files */,
 			);
 			path = PowerRegexTesterTests;
@@ -292,6 +303,7 @@
 				69E21F741685F38F006E15E9 /* FileDialog.m in Sources */,
 				69CD0E7016860293004CE10B /* NSRegularExpression+Ext.m in Sources */,
 				69C03C4D16864D00000D4EB8 /* ResultsTable.m in Sources */,
+				69F126D9168779C8003577C4 /* ResultsItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +313,8 @@
 			files = (
 				69CD0E75168618DE004CE10B /* NSRegularExpression+Ext.m in Sources */,
 				69CD0E731686164F004CE10B /* NSRegularExpressionExtTests.m in Sources */,
+				69F126DD16877BFE003577C4 /* ResultsItem.m in Sources */,
+				69F126DC16877BD7003577C4 /* ResultsItemTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

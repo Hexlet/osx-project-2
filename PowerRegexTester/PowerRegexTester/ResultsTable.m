@@ -7,35 +7,29 @@
 //
 
 #import "ResultsTable.h"
+#import "ResultsItem.h"
 
 @implementation ResultsTable
 {
     NSString *sourceString;
-    NSArray *rangesOfMatches;
+    NSArray *resultsItems;
 }
 
 - (void) setSourceString:(NSString *)string
       andRangesOfMatches:(NSArray *)matches
 {
-    sourceString = [string copy];
-    rangesOfMatches = [matches copy];
+    resultsItems = [ResultsItem resultsItemsFromMatchesWithGroups:matches andSourceString:string];
 }
 
 #pragma mark == NSTableViewDataSource implementation ==
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
 {
-    return rangesOfMatches.count;
+    return [resultsItems count];
 }
 
 - (id)tableView:(NSTableView *)tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
 {
-    return [self sourceSubstringForMatchWithIndex:row];
-}
-
-- (NSString *)sourceSubstringForMatchWithIndex:(NSInteger)index {
-    NSArray *match = rangesOfMatches[index];
-    NSRange range = ((NSValue *)match[0]).rangeValue;
-    return [sourceString substringWithRange:range];
+    return resultsItems[row];
 }
 
 @end
