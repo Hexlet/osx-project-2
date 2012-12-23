@@ -31,12 +31,20 @@
     STAssertEquals(range, itemCopy.rangeInSource, nil);
 }
 
--(void)test_description {
+-(void)test_description_whenLevelIs0_returnsStringProperty {
     NSString *string = @"the test";
     NSRange range = NSMakeRange(0, 1);
     NSUInteger level = 0;
     ResultsItem *item = [[ResultsItem alloc] initWithString:string rangeInSource:range groupLevel:level];
     STAssertEqualObjects(string, item.description, nil);
+}
+
+-(void)test_description_whenLevelIs1_returnsTabAndStringProperty {
+    NSString *string = @"test";
+    NSRange range = NSMakeRange(0, 1);
+    NSUInteger level = 1;
+    ResultsItem *item = [[ResultsItem alloc] initWithString:string rangeInSource:range groupLevel:level];
+    STAssertEqualObjects(@"\ttest", item.description, nil);
 }
 
 -(void)test_resultsItemsFromMatchesWithGroups_withEmptyArray_returnsEmptyArray {

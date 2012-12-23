@@ -1382,7 +1382,7 @@ wGw</bytes>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
 														<int key="NSCellFlags">75497536</int>
 														<int key="NSCellFlags2">2048</int>
-														<string key="NSContents">Results</string>
+														<string key="NSContents">Matches</string>
 														<reference key="NSSupport" ref="55971474"/>
 														<object class="NSColor" key="NSBackgroundColor">
 															<int key="NSColorSpace">3</int>
@@ -3206,30 +3206,6 @@ wGw</bytes>
 				<object class="IBPartialClassDescription">
 					<string key="className">AppDelegate</string>
 					<string key="superclassName">NSObject</string>
-					<dictionary class="NSMutableDictionary" key="actions">
-						<string key="applyClick:">NSButton</string>
-						<string key="clearClick:">NSButton</string>
-						<string key="fileClick:">NSButton</string>
-						<string key="loadClick:">NSButton</string>
-					</dictionary>
-					<dictionary class="NSMutableDictionary" key="actionInfosByName">
-						<object class="IBActionInfo" key="applyClick:">
-							<string key="name">applyClick:</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBActionInfo" key="clearClick:">
-							<string key="name">clearClick:</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBActionInfo" key="fileClick:">
-							<string key="name">fileClick:</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-						<object class="IBActionInfo" key="loadClick:">
-							<string key="name">loadClick:</string>
-							<string key="candidateClassName">NSButton</string>
-						</object>
-					</dictionary>
 					<dictionary class="NSMutableDictionary" key="outlets">
 						<string key="loadProgress">NSProgressIndicator</string>
 						<string key="options">OptionsMatrix</string>

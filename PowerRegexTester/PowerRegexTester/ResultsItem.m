@@ -53,7 +53,12 @@
 }
 
 -(NSString *)description {
-    return self.string;
+    NSMutableString *result = [NSMutableString string];
+    for (int i = 0; i < self.groupLevel; i++) {
+        [result appendString:@"\t"];
+    }
+    [result appendString:self.string];
+    return result;
 }
 
 @end

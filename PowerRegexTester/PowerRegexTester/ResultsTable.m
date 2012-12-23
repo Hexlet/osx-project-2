@@ -32,4 +32,11 @@
     return resultsItems[row];
 }
 
+#pragma mark == NSTableViewDelegate implementation ==
+- (BOOL) tableView:(NSTableView *)tableView isGroupRow:(NSInteger)row
+{
+    ResultsItem *item = resultsItems[row];
+    return item.groupLevel == 0;
+}
+
 @end
