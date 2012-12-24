@@ -21,6 +21,7 @@
 		87166E61165BD1C9009F328B /* AppLogo57.png in Resources */ = {isa = PBXBuildFile; fileRef = 87166E60165BD1C9009F328B /* AppLogo57.png */; };
 		87166E63165BD1D0009F328B /* AppLogo114.png in Resources */ = {isa = PBXBuildFile; fileRef = 87166E62165BD1D0009F328B /* AppLogo114.png */; };
 		87166E66165BD45A009F328B /* NoteBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 87166E65165BD45A009F328B /* NoteBackground.png */; };
+		8728EA141681E1AD00637A4C /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8728EA131681E1AD00637A4C /* XMLReader.m */; };
 		87882825165E08B9002615C9 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 87882824165E08B9002615C9 /* Common.m */; };
 		878D39BB1663BB4800C6FB43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */; };
 		87A34E2D165CD8B100299DAF /* ExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A34E2C165CD8B100299DAF /* ExchangeViewController.m */; };
@@ -28,6 +29,9 @@
 		87B304591663492C00CF3D60 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304561663492C00CF3D60 /* mail.png */; };
 		87B3045A1663492C00CF3D60 /* smallArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304571663492C00CF3D60 /* smallArrowDown.png */; };
 		87B3045B1663492C00CF3D60 /* smallArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304581663492C00CF3D60 /* smallArrowUp.png */; };
+		87C06E291681D21800858493 /* CurrencyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C06E281681D21800858493 /* CurrencyView.m */; };
+		87C16F8D16873639000B34DC /* ApplicationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C16F8C16873639000B34DC /* ApplicationSettings.m */; };
+		87C33F9A1682F0E300F86D79 /* CurrencyDescr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C33F991682F0E300F86D79 /* CurrencyDescr.plist */; };
 		87C5A69116639D8D0096C3F6 /* Note.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C5A69016639D8D0096C3F6 /* Note.m */; };
 		87C5A6D116639DA00096C3F6 /* AED.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87C5A69416639DA00096C3F6 /* AED.gif */; };
 		87C5A6D216639DA00096C3F6 /* ARS.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87C5A69516639DA00096C3F6 /* ARS.gif */; };
@@ -113,6 +117,8 @@
 		87166E60165BD1C9009F328B /* AppLogo57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogo57.png; path = NotesKeeper/Images/AppLogo57.png; sourceTree = "<group>"; };
 		87166E62165BD1D0009F328B /* AppLogo114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogo114.png; path = NotesKeeper/Images/AppLogo114.png; sourceTree = "<group>"; };
 		87166E65165BD45A009F328B /* NoteBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NoteBackground.png; path = NotesKeeper/Images/NoteBackground.png; sourceTree = "<group>"; };
+		8728EA121681E1AD00637A4C /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		8728EA131681E1AD00637A4C /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
 		87882823165E08B9002615C9 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		87882824165E08B9002615C9 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "NotesKeeper/Images/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -122,6 +128,11 @@
 		87B304561663492C00CF3D60 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail.png; path = NotesKeeper/Images/mail.png; sourceTree = "<group>"; };
 		87B304571663492C00CF3D60 /* smallArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallArrowDown.png; path = NotesKeeper/Images/smallArrowDown.png; sourceTree = "<group>"; };
 		87B304581663492C00CF3D60 /* smallArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallArrowUp.png; path = NotesKeeper/Images/smallArrowUp.png; sourceTree = "<group>"; };
+		87C06E271681D21800858493 /* CurrencyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyView.h; sourceTree = "<group>"; };
+		87C06E281681D21800858493 /* CurrencyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyView.m; sourceTree = "<group>"; };
+		87C16F8B16873639000B34DC /* ApplicationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationSettings.h; sourceTree = "<group>"; };
+		87C16F8C16873639000B34DC /* ApplicationSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationSettings.m; sourceTree = "<group>"; };
+		87C33F991682F0E300F86D79 /* CurrencyDescr.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = CurrencyDescr.plist; sourceTree = "<group>"; };
 		87C5A68F16639D8D0096C3F6 /* Note.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Note.h; sourceTree = "<group>"; };
 		87C5A69016639D8D0096C3F6 /* Note.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Note.m; sourceTree = "<group>"; };
 		87C5A69416639DA00096C3F6 /* AED.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = AED.gif; sourceTree = "<group>"; };
@@ -234,6 +245,8 @@
 		87166E3D165BD18A009F328B /* NotesKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				8728EA121681E1AD00637A4C /* XMLReader.h */,
+				8728EA131681E1AD00637A4C /* XMLReader.m */,
 				87A34E2B165CD8B100299DAF /* ExchangeViewController.h */,
 				87A34E2C165CD8B100299DAF /* ExchangeViewController.m */,
 				87166E46165BD18A009F328B /* NotesKeeperAppDelegate.h */,
@@ -249,6 +262,11 @@
 				87882824165E08B9002615C9 /* Common.m */,
 				87C5A68F16639D8D0096C3F6 /* Note.h */,
 				87C5A69016639D8D0096C3F6 /* Note.m */,
+				87C06E271681D21800858493 /* CurrencyView.h */,
+				87C06E281681D21800858493 /* CurrencyView.m */,
+				87C33F991682F0E300F86D79 /* CurrencyDescr.plist */,
+				87C16F8B16873639000B34DC /* ApplicationSettings.h */,
+				87C16F8C16873639000B34DC /* ApplicationSettings.m */,
 			);
 			path = NotesKeeper;
 			sourceTree = "<group>";
@@ -472,6 +490,7 @@
 				87C5A70C16639DA00096C3F6 /* XOF.gif in Resources */,
 				87C5A70D16639DA00096C3F6 /* ZAR.gif in Resources */,
 				878D39BB1663BB4800C6FB43 /* Default-568h@2x.png in Resources */,
+				87C33F9A1682F0E300F86D79 /* CurrencyDescr.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +509,9 @@
 				87A34E2D165CD8B100299DAF /* ExchangeViewController.m in Sources */,
 				87882825165E08B9002615C9 /* Common.m in Sources */,
 				87C5A69116639D8D0096C3F6 /* Note.m in Sources */,
+				87C06E291681D21800858493 /* CurrencyView.m in Sources */,
+				8728EA141681E1AD00637A4C /* XMLReader.m in Sources */,
+				87C16F8D16873639000B34DC /* ApplicationSettings.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,8 +10,12 @@
 
 @interface Note : NSObject
 @property NSString *filePath;
-//@property NSFileHandle  *NoteFile;
-//@property NSString *passwordHash;
+@property NSString *Text;
+@property NSString *noteName;
 
+-(UITableViewCell*) getTableViewCell;
 +(NSString *) getDocPath;
+-(id) initWithPath : (NSString*) path;
+-(bool) save;
+
 @end

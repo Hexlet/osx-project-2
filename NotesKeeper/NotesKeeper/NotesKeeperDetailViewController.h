@@ -4,6 +4,8 @@
 //  Copyright (c) 2012 apoidea. All rights reserved.
 
 #import <UIKit/UIKit.h>
+#import "Note.h"
+
 @interface NotesKeeperDetailViewController : UIViewController <UITextViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextView *txtNote;
@@ -16,5 +18,7 @@
 - (IBAction)btnMail_Clicked:(id)sender;
 - (IBAction)btnLock_Clicked:(id)sender;
 - (IBAction)btnCalc_Clicked:(id)sender;
+
+-(void) LoadData : (NSString*) path;
 
 @end

@@ -8,169 +8,147 @@
 
 #import "NotesKeeperMasterViewController.h"
 #import "NotesKeeperDetailViewController.h"
-#include "Common.h"
+#import "Common.h"
+#import "Note.h"
 
 @interface NotesKeeperMasterViewController ()
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
+    - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath;
 @end
 
 @implementation NotesKeeperMasterViewController
+NSMutableArray *tSource;
 
-- (void)awakeFromNib
-{
+- (void)awakeFromNib {
     [super awakeFromNib];
 }
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad{
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+	tSource = [[NSMutableArray alloc] init];
+		
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    [self LoadDataCells];
+
+	[_btnAdd setTarget:self];
+	[_btnAdd setAction:@selector(btnAdd_Clicked:)];
 }
 
--(void) viewDidAppear:(BOOL)animated
-{
+-(void) viewDidAppear:(BOOL)animated{
+
     [super viewDidAppear:animated];
     [self.navigationController setToolbarHidden:NO animated:YES];
-}
+        
+	if(Common.activeNote != nil)
+	{
+		if([[NSFileManager defaultManager] fileExistsAtPath:Common.activeNote.filePath])
+		{
+			if(![tSource containsObject: Common.activeNote.filePath])
+			{
+				[tSource addObject: Common.activeNote.filePath];
+				[self.tableView reloadData];
+			}
+			//Reload active node:
+			NSIndexPath *iPath = [NSIndexPath indexPathForRow:[tSource indexOfObject:Common.activeNote.filePath] inSection:0];
+			UITableViewCell *cell = [self.tableView cellForRowAtIndexPath:iPath];
+			Note *note = [[Note alloc] initWithPath:Common.activeNote.filePath];
+			cell.textLabel.text = note.noteName;
 
-- (void)didReceiveMemoryWarning
-{
+			//[self.tableView reloadData];
+
+			[self.tableView selectRowAtIndexPath:iPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
+		}
+
+		Common.activeNote.noteName = nil;
+		Common.activeNote = nil;
+	}
+}
+-(void) dealloc{
+	[tSource removeAllObjects];
+	tSource = nil;
+
+}
+-(void)didReceiveMemoryWarning{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender
-{
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-    
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-    
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-         // Replace this implementation with code to handle the error appropriately.
-         // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-}
-
 #pragma mark - Table View
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return [[self.fetchedResultsController sections] count];
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    id <NSFetchedResultsSectionInfo> sectionInfo = [self.fetchedResultsController sections][section];
-    return [sectionInfo numberOfObjects];
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return [tSource count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    [self configureCell:cell atIndexPath:indexPath];
+	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CELLID_CONST];
+
+	if(!cell)
+        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:CELLID_CONST];
+    
+    Note *note = [[Note alloc] initWithPath:[tSource objectAtIndex:indexPath.row]];
+    cell.textLabel.Text = note.noteName;
     return cell;
 }
 
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath{return YES;}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (editingStyle == UITableViewCellEditingStyleDelete)
+	{
+		//Delete file:
+		[[NSFileManager defaultManager] removeItemAtPath:[tSource objectAtIndex:indexPath.row] error:nil];
+
+		//[self.tableView beginUpdates];
+
+		//Delete object from array:
+		[tSource removeObjectAtIndex:indexPath.row];
+
+		//Delete cell:
+		[self.tableView deleteRowsAtIndexPaths:  [NSArray arrayWithObject: indexPath] withRowAnimation:UITableViewRowAnimationFade];
+
+		//[self.tableView endUpdates];
+		//[self.tableView reloadData];
+    }
 }
 
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.fetchedResultsController objectAtIndexPath:indexPath]];
-        
-        NSError *error = nil;
-        if (![context save:&error]) {
-             // Replace this implementation with code to handle the error appropriately.
-             // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-            NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
-        }
-    }   
-}
-
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath{
     // The table view should not be re-orderable.
     return NO;
 }
-
+/*
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    /*
     if ([[segue identifier] isEqualToString:@"showDetail"])
     {
-        //NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        //NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        //[[segue destinationViewController] setDetailItem:object];
-     }
-     */
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        [[segue destinationViewController] LoadData: [tSource objectAtIndex:indexPath.row]];
+	}
+    
+}
+*/
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+	[Common setActiveNote:[tSource objectAtIndex:indexPath.row]];
+	[self performSegueWithIdentifier:@"detailsViewcontroller" sender:self];
 }
 
 #pragma mark - Fetched results controller
 
-- (NSFetchedResultsController *)fetchedResultsController
-{
-    if (_fetchedResultsController != nil) {
-        return _fetchedResultsController;
-    }
-    
-    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-    // Edit the entity name as appropriate.
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Event" inManagedObjectContext:self.managedObjectContext];
-    [fetchRequest setEntity:entity];
-    
-    // Set the batch size to a suitable number.
-    [fetchRequest setFetchBatchSize:20];
-    
-    // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
-    NSArray *sortDescriptors = @[sortDescriptor];
-    
-    [fetchRequest setSortDescriptors:sortDescriptors];
-    
-    // Edit the section name key path and cache name if appropriate.
-    // nil for section name key path means "no sections".
-    NSFetchedResultsController *aFetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:fetchRequest managedObjectContext:self.managedObjectContext sectionNameKeyPath:nil cacheName:@"Master"];
-    aFetchedResultsController.delegate = self;
-    self.fetchedResultsController = aFetchedResultsController;
-    
-	NSError *error = nil;
-	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
-	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-	    abort();
-	}
-    
-    return _fetchedResultsController;
-}    
-
-- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller
-{
+- (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {
     [self.tableView beginUpdates];
 }
+- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller{
+    [self.tableView endUpdates];
+	[self.tableView reloadData];
+}
 
-- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo
-           atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type
-{
-    switch(type) {
+- (void)controller:(NSFetchedResultsController *)controller didChangeSection:(id <NSFetchedResultsSectionInfo>)sectionInfo atIndex:(NSUInteger)sectionIndex forChangeType:(NSFetchedResultsChangeType)type {
+    switch(type)
+	{
         case NSFetchedResultsChangeInsert:
             [self.tableView insertSections:[NSIndexSet indexSetWithIndex:sectionIndex] withRowAnimation:UITableViewRowAnimationFade];
             break;
@@ -181,13 +159,11 @@
     }
 }
 
-- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject
-       atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type
-      newIndexPath:(NSIndexPath *)newIndexPath
-{
+- (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath {
     UITableView *tableView = self.tableView;
     
-    switch(type) {
+    switch(type)
+	{
         case NSFetchedResultsChangeInsert:
             [tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationFade];
             break;
@@ -207,29 +183,41 @@
     }
 }
 
-- (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
+-(void) configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
 {
-    [self.tableView endUpdates];
+    NSLog(@"\nChekpoint #NJT980: configureCell\n");
 }
 
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
+#pragma mark - Other methods
+-(void) LoadDataCells {
+	[tSource removeAllObjects];
+	NSString *dir = [Note getDocPath];
+	NSArray *filesRaw = [[NSFileManager defaultManager] contentsOfDirectoryAtPath: dir error:nil];
+	NSPredicate *filter = [NSPredicate predicateWithFormat:@"self ENDSWITH '.noteskeeper'"];
+	NSArray *files = [filesRaw filteredArrayUsingPredicate:filter];
+
+	for(NSString *strVal in files)
+	{
+		NSString *fPath = [NSString stringWithFormat:@"%@/%@",dir,strVal];
+
+		if(![tSource containsObject:fPath])
+			[tSource addObject: fPath];
+	}
+
+	[self.tableView reloadData];
+}
+
+- (IBAction)btnOptions_Clicked:(id)sender {
+    [tSource removeAllObjects];
     [self.tableView reloadData];
-}
- */
-
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
-{
-    NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    
+    
+    [self LoadDataCells];
 }
 
-- (IBAction)btnOptions_Clicked:(id)sender
-{
-    [Common mbox: @"Synchronization settings\nUnder constrution.": @"Options"];
+-(void) btnAdd_Clicked: (id)sender {
+	[Common setActiveNoteAsNew];
+	[Common setEditMode: ENUM_WRITE];
+	[self performSegueWithIdentifier:@"detailsViewcontroller" sender:self];
 }
 @end

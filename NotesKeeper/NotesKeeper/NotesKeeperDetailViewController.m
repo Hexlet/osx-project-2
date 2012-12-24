@@ -22,14 +22,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWasShown:) name:UIKeyboardDidShowNotification object:nil];
     
     UIImage *image = [UIImage imageNamed: @"NoteBackground.png"];
     UIColor *color = [UIColor colorWithPatternImage:image];
     [self.txtNote setBackgroundColor:color];
-    _txtNote.editable = false;
+	_txtNote.text = Common.activeNote.Text;
 
+	
+    _txtNote.editable = false;
 }
 -(void) keyboardWasShown: (NSNotification *) notification
 {
@@ -40,11 +42,10 @@
     [_txtNote setNeedsDisplay];    
 }
 
-
 -(void) viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
-    [self.navigationController setToolbarHidden:YES animated:YES];
+    [self.navigationController setToolbarHidden:YES animated:NO];
     
     switch(Common.EditMode)
 	{
@@ -61,7 +62,6 @@
 		default:
 			break;
 	}
-
 }
 -(void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation
 {
@@ -92,7 +92,7 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//*********************************************************************************************************************************************************************************************************************
+//*******************************************************************************************************************
 - (void)textViewDidBeginEditing:(UITextView *)textView
 {
     [Common wl:@"Checkpoint #Begin edit"];
@@ -121,14 +121,24 @@
     _txtNote.editable = true;
     [_txtNote becomeFirstResponder];
 
+
+	NSLog(@"Path:%@",[Note getDocPath]);
+
 }
 - (IBAction)btnDone_Clicked:(id)sender
 {
+    _txtNote.editable = false;
+	Common.activeNote.Text = _txtNote.text;
+	[Common.activeNote save];
+
 	[Common setEditMode:ENUM_READ];
     [self.barEdit removeFromSuperview];
     [self.navigationController setNavigationBarHidden:false animated:NO];
-    
-    _txtNote.editable = false;
+
+
+	//NSLog(@"Checkpoint #0wkl1c:\nFilePath:%@, \nNotename: %@", Common.activeNote.filePath, Common.activeNote.noteName);
+
+
 }
 
 - (IBAction)btnMail_Clicked:(id)sender
@@ -145,6 +155,10 @@
 {
     [Common mbox:@"Under construction" : @"Show calculator"];
 }
-
-
+//****************************************************************************
+#pragma mark - Methods
+-(void) LoadData : (NSString*) path
+{
+	//note = [[Note alloc] initWithPath:@"AAAAAAAA"];
+}
 @end
