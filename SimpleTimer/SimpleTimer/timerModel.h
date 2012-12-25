@@ -14,9 +14,9 @@
     NSTimer  * timerObject;
 }
 
-@property NSNumber * hoursLeft;
-@property NSNumber * minutesLeft;
-@property NSNumber * secondsLeft;
+@property NSString * hoursLeft;
+@property NSString * minutesLeft;
+@property NSString * secondsLeft;
 
 
 -(timerModel *) init;

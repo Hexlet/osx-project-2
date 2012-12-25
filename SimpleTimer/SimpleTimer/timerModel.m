@@ -16,9 +16,7 @@
 -(timerModel *) init {
     self=[super init];
     if (self) {
-        _minutesLeft=[NSNumber numberWithInt:0];
-        _hoursLeft=[NSNumber numberWithInt:0];
-        _secondsLeft =[NSNumber numberWithInt:0];
+        [self assignValueFromIntegerTriplet:0 :0 :0];
         isArmed = [NSNumber numberWithBool:false];
     }
     return self;
@@ -53,7 +51,7 @@
 
 -(NSTimeInterval)triplet2interval{
 
-    return (NSTimeInterval)[_secondsLeft longValue]+ [_minutesLeft longValue]* 60 + [_hoursLeft longValue] * 3600;
+    return (NSTimeInterval)[_secondsLeft integerValue]+ [_minutesLeft integerValue]* 60 + [_hoursLeft integerValue] * 3600;
     
 }
 
@@ -99,9 +97,13 @@
 }
 
 -(void) assignValueFromIntegerTriplet:(int)hours :(int)minutes :(int)seconds {
-    [self setValue : [NSNumber numberWithInt:seconds] forKey: @"secondsLeft"];
-    [self setValue : [NSNumber numberWithInt:minutes] forKey: @"minutesLeft"];
-    [self setValue : [NSNumber numberWithInt:hours]   forKey: @"hoursLeft"];
+    NSString * secondsString = [[NSString alloc] initWithFormat: @"%.2d",seconds];
+    NSString * minutesString = [[NSString alloc] initWithFormat: @"%.2d",minutes];
+    NSString * hoursString = [[NSString alloc] initWithFormat: @"%.3d",hours];
+    
+    [self setValue : secondsString forKey: @"secondsLeft"];
+    [self setValue : minutesString forKey: @"minutesLeft"];
+    [self setValue : hoursString   forKey: @"hoursLeft"];
 }
 
 @end
