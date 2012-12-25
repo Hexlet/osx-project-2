@@ -20,14 +20,14 @@
          shouldBeEnabled = "No"
          ignoreCount = "0"
          continueAfterRunningActions = "No"
-         filePath = "SimpleTimer/timerModel.m"
-         timestampString = "377988195.606347"
+         filePath = "SimpleTimer/timerModel.h"
+         timestampString = "378126905.077117"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "85"
-         endingLineNumber = "85"
-         landmarkName = "-updateTripletFromInterval:"
-         landmarkType = "5">
+         startingLineNumber = "24"
+         endingLineNumber = "24"
+         landmarkName = "-initWithIntegerTriplet:::"
+         landmarkType = "4">
       </FileBreakpoint>
    </FileBreakpoints>
 </Bucket>

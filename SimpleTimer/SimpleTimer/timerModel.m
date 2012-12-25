@@ -81,9 +81,11 @@
 }
 
 -(void)updateTripletFromInterval: (NSTimeInterval )interval {
-    [self setValue: [NSNumber numberWithInt: (int)interval / 3600] forKey:@"hoursLeft"];
-     [self setValue: [NSNumber numberWithInt: (interval - [_hoursLeft intValue] ) /60 ] forKey:@"minutesLeft"];
-    [self setValue: [NSNumber numberWithInt: (int)ceil(interval) % 60] forKey: @"secondsLeft"] ;
+    int hours       = (int)interval / 3600;
+    int minutes     =(interval - [_hoursLeft intValue] ) /60;
+    int seconds     = (int)ceil(interval) % 60;
+    [self assignValueFromIntegerTriplet:hours :minutes: seconds];
+	
 }
 
 -(void) invalidateTimer {
@@ -94,6 +96,12 @@
 
 -(void) dealloc {
     [self invalidateTimer];
+}
+
+-(void) assignValueFromIntegerTriplet:(int)hours :(int)minutes :(int)seconds {
+    [self setValue : [NSNumber numberWithInt:seconds] forKey: @"secondsLeft"];
+    [self setValue : [NSNumber numberWithInt:minutes] forKey: @"minutesLeft"];
+    [self setValue : [NSNumber numberWithInt:hours]   forKey: @"hoursLeft"];
 }
 
 @end

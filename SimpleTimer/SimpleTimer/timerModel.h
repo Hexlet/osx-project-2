@@ -21,6 +21,7 @@
 
 -(timerModel *) init;
 
+-(void)assignValueFromIntegerTriplet: (int) hours: (int)minutes: (int) seconds  ;
 -(void)arm;
 -(void)disarm;
 
