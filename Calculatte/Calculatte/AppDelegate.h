@@ -7,8 +7,13 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "DDMathParser.h"
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
+    NSMutableString *lastExpression;
+    NSMutableString *evaluatedExpression;
+    NSStatusItem *statusBar;
+    DDMathEvaluator *eval;
     NSMutableArray *history;
 }
 
@@ -17,4 +22,5 @@
 @property (weak) IBOutlet NSTableView *tableView;
 
 - (IBAction)calculateIt:(id)sender;
+
 @end

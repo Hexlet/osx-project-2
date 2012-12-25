@@ -8,12 +8,12 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Calculatte/AppDelegate.m"
-         timestampString = "376764129.036333"
+         timestampString = "378080788.070891"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "21"
-         endingLineNumber = "21"
-         landmarkName = "-calculateIt:"
+         startingLineNumber = "18"
+         endingLineNumber = "18"
+         landmarkName = "-createStatusBar"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -21,12 +21,25 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "Calculatte/AppDelegate.m"
-         timestampString = "376764129.036333"
+         timestampString = "378061694.189586"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "22"
-         endingLineNumber = "22"
-         landmarkName = "-calculateIt:"
+         startingLineNumber = "11"
+         endingLineNumber = "11"
+         landmarkName = "@implementation AppDelegate"
+         landmarkType = "3">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "Calculatte/AppDelegate.m"
+         timestampString = "378146909.691992"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "54"
+         endingLineNumber = "54"
+         landmarkName = "-evaluateExpression"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>
