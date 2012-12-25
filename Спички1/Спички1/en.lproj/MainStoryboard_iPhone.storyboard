@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2843" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1929"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="screen1" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eP8-cb-WtK">
+                                <items>
+                                    <navigationItem title="Введите параметры" id="aIs-p2-9a1">
+                                        <barButtonItem key="rightBarButtonItem" title="Тянуть!" id="b0o-Ze-UMb">
+                                            <connections>
+                                                <segue destination="sO2-te-0IQ" kind="modal" modalTransitionStyle="flipHorizontal" id="V6D-yu-ppp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Всего спичек:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CvQ-A7-iht">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Коротких спичек:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0yG-Ky-FFO">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BAq-T8-R9t">
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eSh-YC-7fc">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minimumValue="2" maximumValue="6" translatesAutoresizingMaskIntoConstraints="NO" id="XPp-y9-X3H">
+                                <connections>
+                                    <action selector="matchesCountDidChanged:" destination="2" eventType="valueChanged" id="M1I-oF-yMC"/>
+                                    <action selector="runButtonClicked:" destination="2" eventType="valueChanged" id="A6b-RJ-djt"/>
+                                </connections>
+                            </stepper>
+                            <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minimumValue="1" maximumValue="2" translatesAutoresizingMaskIntoConstraints="NO" id="PB9-kT-u3h">
+                                <connections>
+                                    <action selector="runButtonClicked:" destination="2" eventType="valueChanged" id="B5N-IX-8iZ"/>
+                                    <action selector="shortMatchesCountDidChanged:" destination="2" eventType="valueChanged" id="Ei3-yk-fE4"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PB9-kT-u3h" firstAttribute="leading" secondItem="XPp-y9-X3H" secondAttribute="leading" type="default" id="4cf-ec-8vy"/>
+                            <constraint firstItem="eSh-YC-7fc" firstAttribute="top" secondItem="3" secondAttribute="top" constant="98" id="7aK-70-l5P"/>
+                            <constraint firstItem="eSh-YC-7fc" firstAttribute="baseline" secondItem="0yG-Ky-FFO" secondAttribute="baseline" type="default" id="CvZ-7X-qhd"/>
+                            <constraint firstItem="PB9-kT-u3h" firstAttribute="top" secondItem="3" secondAttribute="top" constant="99" id="DWa-8y-zNA"/>
+                            <constraint firstItem="BAq-T8-R9t" firstAttribute="top" secondItem="3" secondAttribute="top" constant="57" id="I0q-9v-Xpv"/>
+                            <constraint firstItem="eP8-cb-WtK" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="NVa-Yy-HlS"/>
+                            <constraint firstItem="CvQ-A7-iht" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="R0O-OS-JrA"/>
+                            <constraint firstAttribute="trailing" secondItem="BAq-T8-R9t" secondAttribute="trailing" constant="9" id="TlJ-nL-XEp"/>
+                            <constraint firstItem="eSh-YC-7fc" firstAttribute="leading" secondItem="PB9-kT-u3h" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="Uhv-nv-0kN"/>
+                            <constraint firstItem="0yG-Ky-FFO" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="XoA-dE-B55"/>
+                            <constraint firstItem="eP8-cb-WtK" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="Zlq-j5-Z5q"/>
+                            <constraint firstItem="XPp-y9-X3H" firstAttribute="top" secondItem="3" secondAttribute="top" constant="58" id="fVV-rb-KBu"/>
+                            <constraint firstItem="BAq-T8-R9t" firstAttribute="baseline" secondItem="CvQ-A7-iht" secondAttribute="baseline" type="default" id="oXL-d8-Yxw"/>
+                            <constraint firstItem="eP8-cb-WtK" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="vlS-W2-dyb"/>
+                            <constraint firstItem="BAq-T8-R9t" firstAttribute="leading" secondItem="XPp-y9-X3H" secondAttribute="trailing" constant="8" symbolic="YES" type="default" id="yMx-GD-0BY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="matcheCount" destination="BAq-T8-R9t" id="Avt-l0-msb"/>
+                        <outlet property="matchecCountStepper" destination="XPp-y9-X3H" id="KGY-zV-wSR"/>
+                        <outlet property="shortMatchesCount" destination="eSh-YC-7fc" id="pCd-ro-QNZ"/>
+                        <outlet property="shortMatchesCountStepper" destination="PB9-kT-u3h" id="TKM-lC-GY0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-7" y="23"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="zfX-Yn-4QV">
+            <objects>
+                <viewController id="sO2-te-0IQ" customClass="ViewController2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fLC-Vk-mHs">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="doski.png" translatesAutoresizingMaskIntoConstraints="NO" id="jW4-0L-Nia">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7aV-os-Hhb"/>
+                                </constraints>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HLz-GI-KyT">
+                                <items>
+                                    <navigationItem title="Тяните!" id="RcK-2Y-z8Y">
+                                        <barButtonItem key="leftBarButtonItem" title="Назад" id="1cA-IC-sAa">
+                                            <connections>
+                                                <segue destination="2" kind="modal" modalTransitionStyle="flipHorizontal" id="7gS-Ud-rDZ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jW4-0L-Nia" firstAttribute="leading" secondItem="fLC-Vk-mHs" secondAttribute="leading" type="default" id="GlO-H4-xoj"/>
+                            <constraint firstItem="HLz-GI-KyT" firstAttribute="top" secondItem="fLC-Vk-mHs" secondAttribute="top" type="default" id="HcG-Z9-LEk"/>
+                            <constraint firstItem="jW4-0L-Nia" firstAttribute="trailing" secondItem="fLC-Vk-mHs" secondAttribute="trailing" type="default" id="dia-8j-Re5"/>
+                            <constraint firstItem="HLz-GI-KyT" firstAttribute="leading" secondItem="fLC-Vk-mHs" secondAttribute="leading" type="default" id="gsa-am-Sbu"/>
+                            <constraint firstItem="HLz-GI-KyT" firstAttribute="trailing" secondItem="fLC-Vk-mHs" secondAttribute="trailing" type="default" id="vJE-r0-BmY"/>
+                            <constraint firstItem="jW4-0L-Nia" firstAttribute="top" secondItem="HLz-GI-KyT" secondAttribute="bottom" type="default" id="zcM-FA-85p"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hLV-20-Qnz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="23"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="doski.png" width="348" height="240"/>
+    </resources>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="matchesCountDidChanged:"/>
+                <relationship kind="action" name="runButtonClicked:"/>
+                <relationship kind="action" name="shortMatchesCountDidChanged:"/>
+                <relationship kind="outlet" name="matcheCount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="matchecCountStepper" candidateClass="UIStepper"/>
+                <relationship kind="outlet" name="shortMatchesCount" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="shortMatchesCountStepper" candidateClass="UIStepper"/>
+            </relationships>
+        </class>
+        <class className="ViewController2" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController2.h"/>
+            <relationships>
+                <relationship kind="action" name="controlPan1:" candidateClass="UIPanGestureRecognizer"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
