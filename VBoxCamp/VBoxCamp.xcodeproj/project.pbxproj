@@ -7,97 +7,112 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FDF8A0A9166CFDB0008B3DD4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FDF8A0A8166CFDB0008B3DD4 /* Cocoa.framework */; };
-		FDF8A0B3166CFDB0008B3DD4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FDF8A0B1166CFDB0008B3DD4 /* InfoPlist.strings */; };
-		FDF8A0B5166CFDB0008B3DD4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF8A0B4166CFDB0008B3DD4 /* main.m */; };
-		FDF8A0B9166CFDB0008B3DD4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FDF8A0B7166CFDB0008B3DD4 /* Credits.rtf */; };
-		FDF8A0BC166CFDB0008B3DD4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FDF8A0BB166CFDB0008B3DD4 /* AppDelegate.m */; };
-		FDF8A0BF166CFDB0008B3DD4 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDF8A0BD166CFDB0008B3DD4 /* MainMenu.xib */; };
+		FD183433168A3DB000D3E677 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD183432168A3DB000D3E677 /* Cocoa.framework */; };
+		FD18343D168A3DB000D3E677 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FD18343B168A3DB000D3E677 /* InfoPlist.strings */; };
+		FD18343F168A3DB000D3E677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD18343E168A3DB000D3E677 /* main.m */; };
+		FD183443168A3DB000D3E677 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FD183441168A3DB000D3E677 /* Credits.rtf */; };
+		FD183446168A3DB000D3E677 /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = FD183445168A3DB000D3E677 /* Document.m */; };
+		FD183449168A3DB000D3E677 /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD183447168A3DB000D3E677 /* Document.xib */; };
+		FD18344C168A3DB000D3E677 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD18344A168A3DB000D3E677 /* MainMenu.xib */; };
+		FD183453168A3DC400D3E677 /* DiskArbitration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD183452168A3DC400D3E677 /* DiskArbitration.framework */; };
+		FD183456168A478300D3E677 /* Volume.m in Sources */ = {isa = PBXBuildFile; fileRef = FD183455168A478300D3E677 /* Volume.m */; };
+		FD18345C168A619F00D3E677 /* vboxcamp.icns in Resources */ = {isa = PBXBuildFile; fileRef = FD18345B168A619F00D3E677 /* vboxcamp.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FDF8A0A4166CFDB0008B3DD4 /* VBoxCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBoxCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FDF8A0A8166CFDB0008B3DD4 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		FDF8A0AB166CFDB0008B3DD4 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		FDF8A0AC166CFDB0008B3DD4 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		FDF8A0AD166CFDB0008B3DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FDF8A0B0166CFDB0008B3DD4 /* VBoxCamp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VBoxCamp-Info.plist"; sourceTree = "<group>"; };
-		FDF8A0B2166CFDB0008B3DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FDF8A0B4166CFDB0008B3DD4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FDF8A0B6166CFDB0008B3DD4 /* VBoxCamp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBoxCamp-Prefix.pch"; sourceTree = "<group>"; };
-		FDF8A0B8166CFDB0008B3DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FDF8A0BA166CFDB0008B3DD4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		FDF8A0BB166CFDB0008B3DD4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		FDF8A0BE166CFDB0008B3DD4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FD18342E168A3DB000D3E677 /* VBoxCamp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VBoxCamp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD183432168A3DB000D3E677 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FD183435168A3DB000D3E677 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FD183436168A3DB000D3E677 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FD183437168A3DB000D3E677 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FD18343A168A3DB000D3E677 /* VBoxCamp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VBoxCamp-Info.plist"; sourceTree = "<group>"; };
+		FD18343C168A3DB000D3E677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FD18343E168A3DB000D3E677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FD183440168A3DB000D3E677 /* VBoxCamp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VBoxCamp-Prefix.pch"; sourceTree = "<group>"; };
+		FD183442168A3DB000D3E677 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FD183444168A3DB000D3E677 /* Document.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		FD183445168A3DB000D3E677 /* Document.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		FD183448168A3DB000D3E677 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/Document.xib; sourceTree = "<group>"; };
+		FD18344B168A3DB000D3E677 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FD183452168A3DC400D3E677 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = System/Library/Frameworks/DiskArbitration.framework; sourceTree = SDKROOT; };
+		FD183454168A478300D3E677 /* Volume.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Volume.h; sourceTree = "<group>"; };
+		FD183455168A478300D3E677 /* Volume.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Volume.m; sourceTree = "<group>"; };
+		FD18345B168A619F00D3E677 /* vboxcamp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = vboxcamp.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FDF8A0A1166CFDAF008B3DD4 /* Frameworks */ = {
+		FD18342B168A3DB000D3E677 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF8A0A9166CFDB0008B3DD4 /* Cocoa.framework in Frameworks */,
+				FD183453168A3DC400D3E677 /* DiskArbitration.framework in Frameworks */,
+				FD183433168A3DB000D3E677 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FDF8A099166CFDAF008B3DD4 = {
+		FD183423168A3DB000D3E677 = {
 			isa = PBXGroup;
 			children = (
-				FDF8A0AE166CFDB0008B3DD4 /* VBoxCamp */,
-				FDF8A0A7166CFDB0008B3DD4 /* Frameworks */,
-				FDF8A0A5166CFDB0008B3DD4 /* Products */,
+				FD18345B168A619F00D3E677 /* vboxcamp.icns */,
+				FD183438168A3DB000D3E677 /* VBoxCamp */,
+				FD183431168A3DB000D3E677 /* Frameworks */,
+				FD18342F168A3DB000D3E677 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FDF8A0A5166CFDB0008B3DD4 /* Products */ = {
+		FD18342F168A3DB000D3E677 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FDF8A0A4166CFDB0008B3DD4 /* VBoxCamp.app */,
+				FD18342E168A3DB000D3E677 /* VBoxCamp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FDF8A0A7166CFDB0008B3DD4 /* Frameworks */ = {
+		FD183431168A3DB000D3E677 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDF8A0A8166CFDB0008B3DD4 /* Cocoa.framework */,
-				FDF8A0AA166CFDB0008B3DD4 /* Other Frameworks */,
+				FD183452168A3DC400D3E677 /* DiskArbitration.framework */,
+				FD183432168A3DB000D3E677 /* Cocoa.framework */,
+				FD183434168A3DB000D3E677 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FDF8A0AA166CFDB0008B3DD4 /* Other Frameworks */ = {
+		FD183434168A3DB000D3E677 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FDF8A0AB166CFDB0008B3DD4 /* AppKit.framework */,
-				FDF8A0AC166CFDB0008B3DD4 /* CoreData.framework */,
-				FDF8A0AD166CFDB0008B3DD4 /* Foundation.framework */,
+				FD183435168A3DB000D3E677 /* AppKit.framework */,
+				FD183436168A3DB000D3E677 /* CoreData.framework */,
+				FD183437168A3DB000D3E677 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
-		FDF8A0AE166CFDB0008B3DD4 /* VBoxCamp */ = {
+		FD183438168A3DB000D3E677 /* VBoxCamp */ = {
 			isa = PBXGroup;
 			children = (
-				FDF8A0BA166CFDB0008B3DD4 /* AppDelegate.h */,
-				FDF8A0BB166CFDB0008B3DD4 /* AppDelegate.m */,
-				FDF8A0BD166CFDB0008B3DD4 /* MainMenu.xib */,
-				FDF8A0AF166CFDB0008B3DD4 /* Supporting Files */,
+				FD183444168A3DB000D3E677 /* Document.h */,
+				FD183445168A3DB000D3E677 /* Document.m */,
+				FD183447168A3DB000D3E677 /* Document.xib */,
+				FD18344A168A3DB000D3E677 /* MainMenu.xib */,
+				FD183439168A3DB000D3E677 /* Supporting Files */,
+				FD183454168A478300D3E677 /* Volume.h */,
+				FD183455168A478300D3E677 /* Volume.m */,
 			);
 			path = VBoxCamp;
 			sourceTree = "<group>";
 		};
-		FDF8A0AF166CFDB0008B3DD4 /* Supporting Files */ = {
+		FD183439168A3DB000D3E677 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				FDF8A0B0166CFDB0008B3DD4 /* VBoxCamp-Info.plist */,
-				FDF8A0B1166CFDB0008B3DD4 /* InfoPlist.strings */,
-				FDF8A0B4166CFDB0008B3DD4 /* main.m */,
-				FDF8A0B6166CFDB0008B3DD4 /* VBoxCamp-Prefix.pch */,
-				FDF8A0B7166CFDB0008B3DD4 /* Credits.rtf */,
+				FD18343A168A3DB000D3E677 /* VBoxCamp-Info.plist */,
+				FD18343B168A3DB000D3E677 /* InfoPlist.strings */,
+				FD18343E168A3DB000D3E677 /* main.m */,
+				FD183440168A3DB000D3E677 /* VBoxCamp-Prefix.pch */,
+				FD183441168A3DB000D3E677 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -105,13 +120,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FDF8A0A3166CFDAF008B3DD4 /* VBoxCamp */ = {
+		FD18342D168A3DB000D3E677 /* VBoxCamp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FDF8A0C2166CFDB0008B3DD4 /* Build configuration list for PBXNativeTarget "VBoxCamp" */;
+			buildConfigurationList = FD18344F168A3DB000D3E677 /* Build configuration list for PBXNativeTarget "VBoxCamp" */;
 			buildPhases = (
-				FDF8A0A0166CFDAF008B3DD4 /* Sources */,
-				FDF8A0A1166CFDAF008B3DD4 /* Frameworks */,
-				FDF8A0A2166CFDAF008B3DD4 /* Resources */,
+				FD18342A168A3DB000D3E677 /* Sources */,
+				FD18342B168A3DB000D3E677 /* Frameworks */,
+				FD18342C168A3DB000D3E677 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -119,81 +134,92 @@
 			);
 			name = VBoxCamp;
 			productName = VBoxCamp;
-			productReference = FDF8A0A4166CFDB0008B3DD4 /* VBoxCamp.app */;
+			productReference = FD18342E168A3DB000D3E677 /* VBoxCamp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FDF8A09B166CFDAF008B3DD4 /* Project object */ = {
+		FD183425168A3DB000D3E677 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "goodman116@gmail.com";
 			};
-			buildConfigurationList = FDF8A09E166CFDAF008B3DD4 /* Build configuration list for PBXProject "VBoxCamp" */;
+			buildConfigurationList = FD183428168A3DB000D3E677 /* Build configuration list for PBXProject "VBoxCamp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = FDF8A099166CFDAF008B3DD4;
-			productRefGroup = FDF8A0A5166CFDB0008B3DD4 /* Products */;
+			mainGroup = FD183423168A3DB000D3E677;
+			productRefGroup = FD18342F168A3DB000D3E677 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FDF8A0A3166CFDAF008B3DD4 /* VBoxCamp */,
+				FD18342D168A3DB000D3E677 /* VBoxCamp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FDF8A0A2166CFDAF008B3DD4 /* Resources */ = {
+		FD18342C168A3DB000D3E677 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF8A0B3166CFDB0008B3DD4 /* InfoPlist.strings in Resources */,
-				FDF8A0B9166CFDB0008B3DD4 /* Credits.rtf in Resources */,
-				FDF8A0BF166CFDB0008B3DD4 /* MainMenu.xib in Resources */,
+				FD18343D168A3DB000D3E677 /* InfoPlist.strings in Resources */,
+				FD183443168A3DB000D3E677 /* Credits.rtf in Resources */,
+				FD183449168A3DB000D3E677 /* Document.xib in Resources */,
+				FD18344C168A3DB000D3E677 /* MainMenu.xib in Resources */,
+				FD18345C168A619F00D3E677 /* vboxcamp.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FDF8A0A0166CFDAF008B3DD4 /* Sources */ = {
+		FD18342A168A3DB000D3E677 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDF8A0B5166CFDB0008B3DD4 /* main.m in Sources */,
-				FDF8A0BC166CFDB0008B3DD4 /* AppDelegate.m in Sources */,
+				FD18343F168A3DB000D3E677 /* main.m in Sources */,
+				FD183446168A3DB000D3E677 /* Document.m in Sources */,
+				FD183456168A478300D3E677 /* Volume.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FDF8A0B1166CFDB0008B3DD4 /* InfoPlist.strings */ = {
+		FD18343B168A3DB000D3E677 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDF8A0B2166CFDB0008B3DD4 /* en */,
+				FD18343C168A3DB000D3E677 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		FDF8A0B7166CFDB0008B3DD4 /* Credits.rtf */ = {
+		FD183441168A3DB000D3E677 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDF8A0B8166CFDB0008B3DD4 /* en */,
+				FD183442168A3DB000D3E677 /* en */,
 			);
 			name = Credits.rtf;
 			sourceTree = "<group>";
 		};
-		FDF8A0BD166CFDB0008B3DD4 /* MainMenu.xib */ = {
+		FD183447168A3DB000D3E677 /* Document.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FDF8A0BE166CFDB0008B3DD4 /* en */,
+				FD183448168A3DB000D3E677 /* en */,
+			);
+			name = Document.xib;
+			sourceTree = "<group>";
+		};
+		FD18344A168A3DB000D3E677 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD18344B168A3DB000D3E677 /* en */,
 			);
 			name = MainMenu.xib;
 			sourceTree = "<group>";
@@ -201,7 +227,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FDF8A0C0166CFDB0008B3DD4 /* Debug */ = {
+		FD18344D168A3DB000D3E677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -231,7 +257,7 @@
 			};
 			name = Debug;
 		};
-		FDF8A0C1166CFDB0008B3DD4 /* Release */ = {
+		FD18344E168A3DB000D3E677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -254,25 +280,27 @@
 			};
 			name = Release;
 		};
-		FDF8A0C3166CFDB0008B3DD4 /* Debug */ = {
+		FD183450168A3DB000D3E677 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VBoxCamp/VBoxCamp-Prefix.pch";
 				INFOPLIST_FILE = "VBoxCamp/VBoxCamp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		FDF8A0C4166CFDB0008B3DD4 /* Release */ = {
+		FD183451168A3DB000D3E677 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "VBoxCamp/VBoxCamp-Prefix.pch";
 				INFOPLIST_FILE = "VBoxCamp/VBoxCamp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -281,24 +309,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FDF8A09E166CFDAF008B3DD4 /* Build configuration list for PBXProject "VBoxCamp" */ = {
+		FD183428168A3DB000D3E677 /* Build configuration list for PBXProject "VBoxCamp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDF8A0C0166CFDB0008B3DD4 /* Debug */,
-				FDF8A0C1166CFDB0008B3DD4 /* Release */,
+				FD18344D168A3DB000D3E677 /* Debug */,
+				FD18344E168A3DB000D3E677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FDF8A0C2166CFDB0008B3DD4 /* Build configuration list for PBXNativeTarget "VBoxCamp" */ = {
+		FD18344F168A3DB000D3E677 /* Build configuration list for PBXNativeTarget "VBoxCamp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FDF8A0C3166CFDB0008B3DD4 /* Debug */,
-				FDF8A0C4166CFDB0008B3DD4 /* Release */,
+				FD183450168A3DB000D3E677 /* Debug */,
+				FD183451168A3DB000D3E677 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FDF8A09B166CFDAF008B3DD4 /* Project object */;
+	rootObject = FD183425168A3DB000D3E677 /* Project object */;
 }

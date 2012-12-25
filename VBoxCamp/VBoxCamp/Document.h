@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Document.h
 //  VBoxCamp
 //
 //  Created by Dmitriy Zavorokhin on 12/26/12.
@@ -8,7 +8,10 @@
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc, (const char **)argv);
+@interface Document : NSDocument {
+     NSArray *volumes;
 }
+
+@property IBOutlet NSTableView *volumesTableView;
+
+@end

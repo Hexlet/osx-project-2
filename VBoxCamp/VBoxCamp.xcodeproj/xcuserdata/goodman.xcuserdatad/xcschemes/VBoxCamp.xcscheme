@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FDF8A0A3166CFDAF008B3DD4"
+               BlueprintIdentifier = "FD18342D168A3DB000D3E677"
                BuildableName = "VBoxCamp.app"
                BlueprintName = "VBoxCamp"
                ReferencedContainer = "container:VBoxCamp.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDF8A0A3166CFDAF008B3DD4"
+            BlueprintIdentifier = "FD18342D168A3DB000D3E677"
             BuildableName = "VBoxCamp.app"
             BlueprintName = "VBoxCamp"
             ReferencedContainer = "container:VBoxCamp.xcodeproj">
@@ -51,7 +51,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDF8A0A3166CFDAF008B3DD4"
+            BlueprintIdentifier = "FD18342D168A3DB000D3E677"
             BuildableName = "VBoxCamp.app"
             BlueprintName = "VBoxCamp"
             ReferencedContainer = "container:VBoxCamp.xcodeproj">
@@ -69,7 +69,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FDF8A0A3166CFDAF008B3DD4"
+            BlueprintIdentifier = "FD18342D168A3DB000D3E677"
             BuildableName = "VBoxCamp.app"
             BlueprintName = "VBoxCamp"
             ReferencedContainer = "container:VBoxCamp.xcodeproj">
