@@ -13,11 +13,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     
-    //[timer setValue : [NSNumber numberWithInt:0] forKey: @"secondsLeft"];
-    //[timer setValue : [NSNumber numberWithInt:10] forKey: @"minutesLeft"];
-    //[timer setValue : [NSNumber numberWithInt:1] forKey: @"hoursLeft"];
     [timer assignValueFromIntegerTriplet:0 :1 :11];
-    
     [timer arm];
 
 }
@@ -29,6 +25,10 @@
         
     }
     return self;
+}
+
+-(IBAction)resetTimer:(id)sender {
+    [timer disarm];
 }
 
 @end

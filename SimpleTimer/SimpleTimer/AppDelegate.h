@@ -15,4 +15,6 @@
 
 @property (assign) IBOutlet NSWindow *window;
 
+-(IBAction)resetTimer:(id)sender;
+
 @end

@@ -47,6 +47,7 @@
 -(void)disarm{
     [self invalidateTimer];
     isArmed=NO;
+    [self assignValueFromIntegerTriplet:0 :0 :0];
 }
 
 -(NSTimeInterval)triplet2interval{

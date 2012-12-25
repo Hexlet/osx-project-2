@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "SimpleTimer/timerModel.m"
-         timestampString = "378129047.296597"
+         timestampString = "378131199.220392"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "52"
-         endingLineNumber = "52"
+         startingLineNumber = "53"
+         endingLineNumber = "53"
          landmarkName = "-triplet2interval"
          landmarkType = "5">
       </FileBreakpoint>

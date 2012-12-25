@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF283FCD1689CC5D0052FB9B /* PresetsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = DF283FCC1689CC5D0052FB9B /* PresetsPanel.m */; };
+		DF283FD11689CD630052FB9B /* panelController.m in Sources */ = {isa = PBXBuildFile; fileRef = DF283FD01689CD630052FB9B /* panelController.m */; };
+		DF283FD31689CF360052FB9B /* Presets.xib in Resources */ = {isa = PBXBuildFile; fileRef = DF283FD21689CF360052FB9B /* Presets.xib */; };
 		DFB6DC261687581F0068D201 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DFB6DC251687581F0068D201 /* Cocoa.framework */; };
 		DFB6DC301687581F0068D201 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DFB6DC2E1687581F0068D201 /* InfoPlist.strings */; };
 		DFB6DC321687581F0068D201 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6DC311687581F0068D201 /* main.m */; };
@@ -18,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF283FCB1689CC5D0052FB9B /* PresetsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresetsPanel.h; sourceTree = "<group>"; };
+		DF283FCC1689CC5D0052FB9B /* PresetsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresetsPanel.m; sourceTree = "<group>"; };
+		DF283FCF1689CD630052FB9B /* panelController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = panelController.h; sourceTree = "<group>"; };
+		DF283FD01689CD630052FB9B /* panelController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = panelController.m; sourceTree = "<group>"; };
+		DF283FD21689CF360052FB9B /* Presets.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Presets.xib; sourceTree = "<group>"; };
 		DFB6DC211687581F0068D201 /* SimpleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DFB6DC251687581F0068D201 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DFB6DC281687581F0068D201 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -92,6 +100,11 @@
 				DFB6DC3A1687581F0068D201 /* MainMenu.xib */,
 				DFB6DC4216875A8A0068D201 /* timerModel.h */,
 				DFB6DC4316875A8A0068D201 /* timerModel.m */,
+				DF283FCB1689CC5D0052FB9B /* PresetsPanel.h */,
+				DF283FCC1689CC5D0052FB9B /* PresetsPanel.m */,
+				DF283FCF1689CD630052FB9B /* panelController.h */,
+				DF283FD01689CD630052FB9B /* panelController.m */,
+				DF283FD21689CF360052FB9B /* Presets.xib */,
 				DFDE1EE0168799C30017A365 /* 3.mp3 */,
 				DFB6DC2C1687581F0068D201 /* Supporting Files */,
 			);
@@ -165,6 +178,7 @@
 				DFB6DC361687581F0068D201 /* Credits.rtf in Resources */,
 				DFB6DC3C1687581F0068D201 /* MainMenu.xib in Resources */,
 				DFDE1EE1168799C30017A365 /* 3.mp3 in Resources */,
+				DF283FD31689CF360052FB9B /* Presets.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +192,8 @@
 				DFB6DC321687581F0068D201 /* main.m in Sources */,
 				DFB6DC391687581F0068D201 /* AppDelegate.m in Sources */,
 				DFB6DC4416875A8A0068D201 /* timerModel.m in Sources */,
+				DF283FCD1689CC5D0052FB9B /* PresetsPanel.m in Sources */,
+				DF283FD11689CD630052FB9B /* panelController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
