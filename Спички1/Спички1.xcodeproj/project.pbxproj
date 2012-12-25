@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B530109916890BF8006FC025 /* Setup.m in Sources */ = {isa = PBXBuildFile; fileRef = B530109816890BF8006FC025 /* Setup.m */; };
 		B5D6E3B8166B8BD900EB1111 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D6E3B7166B8BD900EB1111 /* UIKit.framework */; };
 		B5D6E3BA166B8BD900EB1111 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D6E3B9166B8BD900EB1111 /* Foundation.framework */; };
 		B5D6E3BC166B8BD900EB1111 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5D6E3BB166B8BD900EB1111 /* CoreGraphics.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B530109716890BF8006FC025 /* Setup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Setup.h; sourceTree = "<group>"; };
+		B530109816890BF8006FC025 /* Setup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Setup.m; sourceTree = "<group>"; };
 		B5D6E3B3166B8BD900EB1111 /* Спички1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Спички1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5D6E3B7166B8BD900EB1111 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B5D6E3B9166B8BD900EB1111 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -62,11 +65,11 @@
 		B5D6E3E8166B8BD900EB1111 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B5D6E3EA166B8BD900EB1111 /* ______1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "______1Tests.h"; sourceTree = "<group>"; };
 		B5D6E3EB166B8BD900EB1111 /* ______1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______1Tests.m"; sourceTree = "<group>"; };
-		B5D6E3F9166B971B00EB1111 /* spichka1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spichka1.png; path = ../../../../../Users/Maksim/Desktop/spichka1.png; sourceTree = "<group>"; };
+		B5D6E3F9166B971B00EB1111 /* spichka1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spichka1.png; path = Files/spichka1.png; sourceTree = SOURCE_ROOT; };
 		B5D6E3FB166B9EF900EB1111 /* ViewController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController2.h; sourceTree = "<group>"; };
 		B5D6E3FC166B9EF900EB1111 /* ViewController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController2.m; sourceTree = "<group>"; };
-		B5D6E402166BA1DF00EB1111 /* doski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doski.png; path = ../../../../../Users/Maksim/Desktop/doski.png; sourceTree = "<group>"; };
-		B5DB0889166BA4BB0002112D /* spichka-s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spichka-s.png"; path = "../../../../../Users/Maksim/Desktop/spichka-s.png"; sourceTree = "<group>"; };
+		B5D6E402166BA1DF00EB1111 /* doski.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = doski.png; path = ../Files/doski.png; sourceTree = "<group>"; };
+		B5DB0889166BA4BB0002112D /* spichka-s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spichka-s.png"; path = "../Files/spichka-s.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				B5D6E3FB166B9EF900EB1111 /* ViewController2.h */,
 				B5D6E3FC166B9EF900EB1111 /* ViewController2.m */,
 				B5D6E3BE166B8BD900EB1111 /* Supporting Files */,
+				B530109716890BF8006FC025 /* Setup.h */,
+				B530109816890BF8006FC025 /* Setup.m */,
 			);
 			path = "Спички1";
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				B5D6E3C8166B8BD900EB1111 /* AppDelegate.m in Sources */,
 				B5D6E3D7166B8BD900EB1111 /* ViewController.m in Sources */,
 				B5D6E3FD166B9EF900EB1111 /* ViewController2.m in Sources */,
+				B530109916890BF8006FC025 /* Setup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
