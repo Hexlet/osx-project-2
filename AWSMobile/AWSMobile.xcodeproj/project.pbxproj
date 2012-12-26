@@ -35,6 +35,9 @@
 		ECE9C8731682F9C100E069BD /* s3button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8711682F9C100E069BD /* s3button@2x.png */; };
 		ECE9C8761682FC3C00E069BD /* sheader.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8741682FC3C00E069BD /* sheader.png */; };
 		ECE9C8771682FC3C00E069BD /* sheader@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8751682FC3C00E069BD /* sheader@2x.png */; };
+		ECEC5838168ADD1300DDA258 /* BOS3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ECEC5837168ADD1300DDA258 /* BOS3ViewController.m */; };
+		ECEC583B168AE28D00DDA258 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ECEC583A168AE28D00DDA258 /* Settings.bundle */; };
+		ECEC5850168AE54200DDA258 /* AWSiOSSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECEC584F168AE54200DDA258 /* AWSiOSSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +75,10 @@
 		ECE9C8711682F9C100E069BD /* s3button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "s3button@2x.png"; sourceTree = "<group>"; };
 		ECE9C8741682FC3C00E069BD /* sheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sheader.png; sourceTree = "<group>"; };
 		ECE9C8751682FC3C00E069BD /* sheader@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sheader@2x.png"; sourceTree = "<group>"; };
+		ECEC5836168ADD1300DDA258 /* BOS3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOS3ViewController.h; sourceTree = "<group>"; };
+		ECEC5837168ADD1300DDA258 /* BOS3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOS3ViewController.m; sourceTree = "<group>"; };
+		ECEC583A168AE28D00DDA258 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		ECEC584F168AE54200DDA258 /* AWSiOSSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSiOSSDK.framework; path = "../../../aws-ios-sdk-1.4.4/AWSiOSSDK.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ECEC5850168AE54200DDA258 /* AWSiOSSDK.framework in Frameworks */,
 				EC64C51116819EED0035838D /* UIKit.framework in Frameworks */,
 				EC64C51316819EED0035838D /* Foundation.framework in Frameworks */,
 				EC64C51516819EED0035838D /* CoreGraphics.framework in Frameworks */,
@@ -91,6 +99,7 @@
 		EC64C50116819EED0035838D = {
 			isa = PBXGroup;
 			children = (
+				ECEC584F168AE54200DDA258 /* AWSiOSSDK.framework */,
 				ECE9C8741682FC3C00E069BD /* sheader.png */,
 				ECE9C8751682FC3C00E069BD /* sheader@2x.png */,
 				ECE9C8701682F9C100E069BD /* s3button.png */,
@@ -110,6 +119,7 @@
 				EC64C5481681A6130035838D /* Default@2x.png */,
 				EC64C5461681A1570035838D /* icon_57@2x.png */,
 				EC64C5441681A0200035838D /* icon_114@2x.png */,
+				ECEC583A168AE28D00DDA258 /* Settings.bundle */,
 				EC64C51616819EED0035838D /* AWSMobile */,
 				EC64C50F16819EED0035838D /* Frameworks */,
 				EC64C50D16819EED0035838D /* Products */,
@@ -140,6 +150,8 @@
 				EC64C51F16819EED0035838D /* AppDelegate.h */,
 				EC64C52016819EED0035838D /* AppDelegate.m */,
 				EC64C52816819EED0035838D /* MainStoryboard.storyboard */,
+				ECEC5836168ADD1300DDA258 /* BOS3ViewController.h */,
+				ECEC5837168ADD1300DDA258 /* BOS3ViewController.m */,
 				EC64C52B16819EED0035838D /* ViewController.h */,
 				EC64C52C16819EED0035838D /* ViewController.m */,
 				EC64C5541681B94D0035838D /* BOMainViewController.h */,
@@ -232,6 +244,7 @@
 				ECE9C8731682F9C100E069BD /* s3button@2x.png in Resources */,
 				ECE9C8761682FC3C00E069BD /* sheader.png in Resources */,
 				ECE9C8771682FC3C00E069BD /* sheader@2x.png in Resources */,
+				ECEC583B168AE28D00DDA258 /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +259,7 @@
 				EC64C52116819EED0035838D /* AppDelegate.m in Sources */,
 				EC64C52D16819EED0035838D /* ViewController.m in Sources */,
 				EC64C5561681B94D0035838D /* BOMainViewController.m in Sources */,
+				ECEC5838168ADD1300DDA258 /* BOS3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +338,10 @@
 		EC64C53116819EED0035838D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../aws-ios-sdk-1.4.4\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWSMobile/AWSMobile-Prefix.pch";
 				INFOPLIST_FILE = "AWSMobile/AWSMobile-Info.plist";
@@ -336,6 +354,10 @@
 		EC64C53216819EED0035838D /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../aws-ios-sdk-1.4.4\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AWSMobile/AWSMobile-Prefix.pch";
 				INFOPLIST_FILE = "AWSMobile/AWSMobile-Info.plist";
