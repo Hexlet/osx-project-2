@@ -8,89 +8,97 @@
 
 #import "BOS3ViewController.h"
 
-@interface BOS3ViewController ()
-
-@end
+static AmazonS3Client *s3 = nil;
 
 @implementation BOS3ViewController
 
 - (void)viewDidLoad {
   
-  [super viewDidLoad];
+    [super viewDidLoad];
   
-  AmazonS3Client *s3 = [self connection];
+    s3 = [self connection];
   
-  bucketsList = [[NSMutableArray alloc] init];
-  [bucketsList addObjectsFromArray:[s3 listBuckets]];
+    //Load buckets array
+    bucketsList = [[NSMutableArray alloc] init];
+    [bucketsList addObjectsFromArray:[s3 listBuckets]];
 }
 
 #pragma mark Connection Method
 
 - (AmazonS3Client *)connection {
-  
-  AmazonS3Client *s3 = [[AmazonS3Client alloc] initWithAccessKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"akey"]  withSecretKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"skey"]];
-  return s3;
+    
+    @try {
+        AmazonS3Client *s3 = [[AmazonS3Client alloc] initWithAccessKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"akey"]  withSecretKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"skey"]];
+        return s3;
+    }
+    @catch (AmazonClientException *exception) {
+        UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"AWS Exception" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [erralert show];
+    }
 }
 
 #pragma mark Manage Table
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   
-  return [bucketsList count];
+    return [bucketsList count]; //Return the number of rows in the section
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  NSString *listTitle = @"All Buckets";
+    NSString *listTitle = @"All Buckets";
   
-  UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:listTitle];
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:listTitle];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:listTitle];
+    }
   
-  if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:listTitle];
-  }
+    NSMutableString *bucketName = (NSMutableString *)[[bucketsList objectAtIndex:indexPath.row] name];
   
-  NSMutableString *bucketName = (NSMutableString *)[[bucketsList objectAtIndex:indexPath.row] name];
-  
-  cell.textLabel.text = bucketName;
-  
-  AmazonS3Client *s3 = [self connection];
-  
-  cell.detailTextLabel.text = [NSString stringWithFormat:@"Bucket region: %@", [self getAwsRegionName:[s3 getBucketLocation:bucketName]]];
-  return cell;
+    cell.textLabel.text = bucketName;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Bucket region: %@", [self getAwsRegionName:[s3 getBucketLocation:bucketName]]];
+    
+    return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  if (editingStyle == UITableViewCellEditingStyleDelete) {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
     
-    S3Bucket *bucketForDelete = [bucketsList objectAtIndex:indexPath.row];
-    [bucketsList removeObjectAtIndex:indexPath.row];
-    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        S3Bucket *bucketForDelete = [bucketsList objectAtIndex:indexPath.row];
+        [bucketsList removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
-    @try {
-      AmazonS3Client *s3 = [self connection];
+        @try {
       
-      if ([[s3 listObjectsInBucket:[bucketForDelete name]] count] == 0) {
-        [s3 deleteBucketWithName:[bucketForDelete name]];
-      } else {
-        
-      }
+            if ([[s3 listObjectsInBucket:[bucketForDelete name]] count] == 0) {
+                [s3 deleteBucketWithName:[bucketForDelete name]];
+            } else {
+                
+                NSArray *objectsForDelete = [s3 listObjectsInBucket:[bucketForDelete name]];
+                
+                for (int i=0; i<[objectsForDelete count]; i++) {
+                    [s3 deleteObjectWithKey:[[objectsForDelete objectAtIndex:i] key] withBucket:[bucketForDelete name]];
+                }
+                
+                [s3 deleteBucketWithName:[bucketForDelete name]];
+            }
+        }
+        @catch (AmazonClientException *exception) {
+            UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Delete error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [erralert show];
+
+        }
     }
-    @catch (AmazonClientException *exception) {
-      NSLog(@"Can't delete bucket from Amazon S3!");
-    }
-  }
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
   
 }
 
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 #pragma mark -
@@ -129,7 +137,7 @@
 }
 
 - (IBAction)back:(id)sender {
-  [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

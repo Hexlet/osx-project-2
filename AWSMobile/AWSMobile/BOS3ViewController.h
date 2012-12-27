@@ -11,9 +11,8 @@
 
 @interface BOS3ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
   
-  NSMutableArray *bucketsList;
-  IBOutlet UITableView *bucketsTableView;
-  
+    NSMutableArray *bucketsList;
+    IBOutlet UITableView *bucketsTableView;
 }
 
 - (IBAction)back:(id)sender;

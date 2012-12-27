@@ -300,7 +300,9 @@
         <class className="BOS3ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOS3ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="addBucket:"/>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="outlet" name="bucketsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

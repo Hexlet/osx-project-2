@@ -8,9 +8,6 @@
 
 #import "BOMainViewController.h"
 
-@interface BOMainViewController ()
-
-@end
 
 @implementation BOMainViewController
 
