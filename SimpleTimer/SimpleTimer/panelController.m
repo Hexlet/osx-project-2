@@ -22,7 +22,6 @@
 
 
 -(IBAction)showPresets:(id)sender {
-    NSLog(@"show presets");
     [presets showWindow:self];
 }
 

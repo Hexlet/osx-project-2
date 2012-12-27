@@ -107,4 +107,12 @@
     [self setValue : hoursString   forKey: @"hoursLeft"];
 }
 
+-(IBAction)arm5minutes:(id)sender {
+    NSLog(@"Going to disarm timer");
+    [self disarm];
+    //[self assignValueFromIntegerTriplet:0 :5 :0];
+    //[self arm ];
+}
+
+
 @end
