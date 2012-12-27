@@ -8,9 +8,7 @@
 
 #import "BOAddS3BucketViewController.h"
 
-@interface BOAddS3BucketViewController ()
-
-@end
+static AmazonS3Client *s3 = nil;
 
 @implementation BOAddS3BucketViewController
 
@@ -23,10 +21,26 @@
     return self;
 }
 
+#pragma mark Connection Method
+
+- (AmazonS3Client *)connection {
+    
+    @try {
+        AmazonS3Client *s3 = [[AmazonS3Client alloc] initWithAccessKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"akey"]  withSecretKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"skey"]];
+        return s3;
+    }
+    @catch (AmazonClientException *exception) {
+        UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"AWS Exception" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [erralert show];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+	
+    s3 = [self connection];
+    pickerRegions = [BORegionsHelper getAllRegions];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,7 +54,35 @@
 }
 
 - (IBAction)done:(id)sender {
-    
+    @try {
+        if (newBucketName.text != @"") {
+            S3Region *newBucketRegion = [S3Region regionWithString:[BORegionsHelper getRegionKey:[pickerRegions objectAtIndex:[selectRegionPicker selectedRowInComponent:0]]]];
+            [s3 createBucket:[[S3CreateBucketRequest alloc] initWithName:newBucketName.text andRegion:newBucketRegion]];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
+    @catch (AmazonClientException *exception) {
+        UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Can't create bucket!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [erralert show];
+    }
+
+}
+
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView {
+    return 1; //We need only one component
+}
+
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component {
+    return [pickerRegions count];
+}
+
+- (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component {
+    return [pickerRegions objectAtIndex:row];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return YES;
 }
 
 @end

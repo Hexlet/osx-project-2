@@ -11,6 +11,7 @@
 @interface BORegionsHelper : NSDictionary
 
 + (void)allRegions;
++ (NSArray *)getAllRegions;
 + (NSString *)getRegionRealName:(NSString *)region;
 + (NSString *)getRegionKey:(NSString *)regionName;
 

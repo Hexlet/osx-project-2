@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AWSiOSSDK/S3/AmazonS3Client.h>
+#import "BORegionsHelper.h"
 
-@interface BOAddS3BucketViewController : UIViewController
+@interface BOAddS3BucketViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate> {
+    NSArray *pickerRegions;
+    IBOutlet UIPickerView *selectRegionPicker;
+    IBOutlet UITextField *newBucketName;
+}
 
 - (IBAction)cancel:(id)sender;
 - (IBAction)done:(id)sender;

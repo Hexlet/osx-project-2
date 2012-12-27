@@ -221,8 +221,20 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="main_bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Del-uC-g4y"/>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-cX-Z5K">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bgx-5b-Rfd" id="CN2-E8-iT9"/>
+                                </connections>
                             </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-LS-hVZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="4NB-4V-QOG"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="bgx-5b-Rfd" id="DeQ-vN-BKL"/>
+                                    <outlet property="delegate" destination="bgx-5b-Rfd" id="iGI-he-58t"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -232,7 +244,10 @@
                             <constraint firstItem="Bt6-cX-Z5K" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="87" id="V9K-P3-3no"/>
                             <constraint firstItem="Bt6-cX-Z5K" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Xgf-6O-p0n"/>
                             <constraint firstItem="Del-uC-g4y" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="YhA-N8-nTn"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="153" id="h50-g5-QzA"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="j3z-sX-o4Z"/>
                             <constraint firstItem="Del-uC-g4y" firstAttribute="bottom" secondItem="MVg-J4-mz3" secondAttribute="bottom" type="default" id="pwA-xj-cjb"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="q7s-jP-nuy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="iQK-yh-N0e">
@@ -247,6 +262,10 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="newBucketName" destination="Bt6-cX-Z5K" id="aaF-1U-h1r"/>
+                        <outlet property="selectRegionPicker" destination="gyb-LS-hVZ" id="oHY-g4-MWU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Tfo-ct-AEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -361,6 +380,8 @@
             <relationships>
                 <relationship kind="action" name="cancel:"/>
                 <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="newBucketName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="selectRegionPicker" candidateClass="UIPickerView"/>
             </relationships>
         </class>
         <class className="BOMainViewController" superclassName="UIViewController">

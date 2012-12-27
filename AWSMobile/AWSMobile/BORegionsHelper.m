@@ -30,6 +30,16 @@ static NSDictionary *regions = nil;
                                                      @"ap-southeast-2", nil]];
 }
 
++ (NSArray *)getAllRegions {
+    return [NSArray arrayWithObjects:@"Ireland",
+            @"Sao Paulo",
+            @"USA Standart Location",
+            @"Northern California",
+            @"Oregon",
+            @"Tokyo",
+            @"Sydney", nil];
+}
+
 + (NSString *)getRegionRealName:(NSString *)region {
     [self allRegions];
     return [regions objectForKey:region];
