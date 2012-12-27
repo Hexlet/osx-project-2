@@ -56,7 +56,7 @@ static AmazonS3Client *s3 = nil;
     NSMutableString *bucketName = (NSMutableString *)[[bucketsList objectAtIndex:indexPath.row] name];
   
     cell.textLabel.text = bucketName;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Bucket region: %@", [self getAwsRegionName:[s3 getBucketLocation:bucketName]]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Bucket region: %@", [BORegionsHelper getRegionRealName:[[s3 getBucketLocation:bucketName] description]]];
     
     return cell;
 }
@@ -99,35 +99,6 @@ static AmazonS3Client *s3 = nil;
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-}
-
-#pragma mark -
-
-- (NSString *)getAwsRegionName:(S3Region *)region {
-  
-  NSString *regionName = [[NSString alloc] init];
-  
-  if (region.description == @"eu-west-1") {
-    regionName = @"Ireland";
-  } else if (region.description == @"sa-east-1") {
-    regionName = @"Sao Paulo";
-  } else if (region.description == @"") {
-    regionName = @"USA Standart Location";
-  } else if (region.description == @"us-west-1") {
-    regionName = @"Northern California";
-  } else if (region.description == @"us-west-2") {
-    regionName = @"Oregon";
-  } else if (region.description == @"ap-northeast-1") {
-    regionName = @"Tokyo";
-  } else if (region.description == @"ap-southeast-1") {
-    regionName = @"Singapore";
-  } else if (region.description == @"ap-southeast-2") {
-    regionName = @"Sydney";
-  } else {
-    regionName = @"Unknown Region";
-  }
-  
-  return regionName;
 }
 
 #pragma mark Add New Bucket Method

@@ -15,9 +15,6 @@
   !default.perspectivev3
   !default.xcworkspace
   *.xcworkspace
-  */*.xcworkspace/
-  AWSMobile/AWSMobile.xcodeproj/xcuserdata/
-  AWSMobile/AWSMobile.xcodeproj/project.xcworkspace/
   xcuserdata
   profile
   *.moved-aside

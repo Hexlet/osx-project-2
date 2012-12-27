@@ -210,6 +210,48 @@
             </objects>
             <point key="canvasLocation" x="521" y="258"/>
         </scene>
+        <!--AddS3 Bucket View Controller-->
+        <scene sceneID="AGW-tv-EJm">
+            <objects>
+                <viewController id="bgx-5b-Rfd" customClass="BOAddS3BucketViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVg-J4-mz3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="main_bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Del-uC-g4y"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-cX-Z5K">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="DwK-EC-HCu"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" type="default" id="HVz-7l-Vio"/>
+                            <constraint firstAttribute="trailing" secondItem="Bt6-cX-Z5K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Tra-lj-I6G"/>
+                            <constraint firstItem="Bt6-cX-Z5K" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="87" id="V9K-P3-3no"/>
+                            <constraint firstItem="Bt6-cX-Z5K" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Xgf-6O-p0n"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="YhA-N8-nTn"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="bottom" secondItem="MVg-J4-mz3" secondAttribute="bottom" type="default" id="pwA-xj-cjb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="iQK-yh-N0e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="S3P-QR-45A">
+                            <connections>
+                                <action selector="cancel:" destination="bgx-5b-Rfd" id="oDO-w7-jDL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JLX-CC-CqZ">
+                            <connections>
+                                <action selector="done:" destination="bgx-5b-Rfd" id="njD-g1-0ab"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfo-ct-AEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3083" y="594"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="nRO-yZ-J50">
             <objects>
@@ -255,6 +297,11 @@
                                 <action selector="back:" destination="wfR-eg-ba5" id="8BF-Q9-QiU"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TZL-As-hDY">
+                            <connections>
+                                <segue destination="Ick-tg-y9R" kind="modal" modalTransitionStyle="flipHorizontal" id="qzh-Ct-Mtv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bH7-As-RwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -279,6 +326,24 @@
             </objects>
             <point key="canvasLocation" x="1584" y="196"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VNm-UO-qdU">
+            <objects>
+                <navigationController id="Ick-tg-y9R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oYE-TU-npm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bgx-5b-Rfd" kind="relationship" relationship="rootViewController" id="9ZB-0w-eSw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbX-Lm-jLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621" y="594"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about.png" width="26" height="26"/>
@@ -291,6 +356,13 @@
         <image name="signupbutton.png" width="292" height="42"/>
     </resources>
     <classes>
+        <class className="BOAddS3BucketViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BOAddS3BucketViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+            </relationships>
+        </class>
         <class className="BOMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOMainViewController.h"/>
             <relationships>
