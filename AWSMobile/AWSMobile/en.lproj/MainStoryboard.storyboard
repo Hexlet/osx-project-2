@@ -318,10 +318,14 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="TZL-As-hDY">
                             <connections>
+                                <action selector="addBucket:" destination="wfR-eg-ba5" id="Edy-hv-NDW"/>
                                 <segue destination="Ick-tg-y9R" kind="modal" modalTransitionStyle="flipHorizontal" id="qzh-Ct-Mtv"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bucketsTableView" destination="xzY-7N-NjJ" id="v6h-mN-dPt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bH7-As-RwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

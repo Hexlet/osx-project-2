@@ -21,6 +21,13 @@ static AmazonS3Client *s3 = nil;
     //Load buckets array
     bucketsList = [[NSMutableArray alloc] init];
     [bucketsList addObjectsFromArray:[s3 listBuckets]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reload) name:@"reloadRequest" object:nil];
+}
+
+- (void)reload {
+    [bucketsList removeAllObjects];
+    [bucketsList addObjectsFromArray:[s3 listBuckets]];
+    [bucketsTableView reloadData];
 }
 
 #pragma mark Connection Method
@@ -104,11 +111,15 @@ static AmazonS3Client *s3 = nil;
 #pragma mark Add New Bucket Method
 
 - (IBAction)addBucket:(id)sender {
-  
+   
 }
 
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (void)viewDidUnload {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end
