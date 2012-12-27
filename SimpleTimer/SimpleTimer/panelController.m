@@ -14,7 +14,7 @@
 
 -(id) init {
     self = [super init];
-    if (!presets) {
+    if (self) {
         presets = [[PresetsPanel alloc] init];
     }
     return self;
