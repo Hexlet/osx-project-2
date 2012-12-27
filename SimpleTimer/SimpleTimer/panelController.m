@@ -12,13 +12,18 @@
 @implementation panelController
 
 
-
--(IBAction)showPresets:(id)sender {
+-(id) init {
+    self = [super init];
     if (!presets) {
         presets = [[PresetsPanel alloc] init];
     }
-    [presets showWindow:self];
+    return self;
+}
 
+
+-(IBAction)showPresets:(id)sender {
+    NSLog(@"show presets");
+    [presets showWindow:self];
 }
 
 @end
