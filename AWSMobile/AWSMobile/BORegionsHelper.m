@@ -16,24 +16,23 @@ static NSDictionary *regions = nil;
 + (void)allRegions {
     regions = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"Ireland",
                                                      @"Sao Paulo",
-                                                     @"USA Standart Location",
                                                      @"Northern California",
                                                      @"Oregon",
                                                      @"Tokyo",
-                                                     @"Sydney", nil]
+                                                     @"Sydney",
+                                                     @"US Standard", nil]
                                             forKeys:[NSArray arrayWithObjects:@"eu-west-1",
                                                      @"sa-east-1",
-                                                     @"",
                                                      @"us-west-1",
                                                      @"us-west-2",
                                                      @"ap-northeast-1",
-                                                     @"ap-southeast-2", nil]];
+                                                     @"ap-southeast-2",
+                                                     @"", nil]];
 }
 
 + (NSArray *)getAllRegions {
     return [NSArray arrayWithObjects:@"Ireland",
             @"Sao Paulo",
-            @"USA Standart Location",
             @"Northern California",
             @"Oregon",
             @"Tokyo",

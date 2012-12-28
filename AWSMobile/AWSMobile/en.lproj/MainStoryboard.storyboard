@@ -210,7 +210,7 @@
             </objects>
             <point key="canvasLocation" x="521" y="258"/>
         </scene>
-        <!--AddS3 Bucket View Controller-->
+        <!--AddS3 Bucket View Controller - New Bucket-->
         <scene sceneID="AGW-tv-EJm">
             <objects>
                 <viewController id="bgx-5b-Rfd" customClass="BOAddS3BucketViewController" sceneMemberID="viewController">
@@ -219,13 +219,6 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="main_bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Del-uC-g4y"/>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-cX-Z5K">
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
-                                <connections>
-                                    <outlet property="delegate" destination="bgx-5b-Rfd" id="CN2-E8-iT9"/>
-                                </connections>
-                            </textField>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-LS-hVZ">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="216" id="4NB-4V-QOG"/>
@@ -235,22 +228,67 @@
                                     <outlet property="delegate" destination="bgx-5b-Rfd" id="iGI-he-58t"/>
                                 </connections>
                             </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="addbucketname_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="q5l-Cf-E2k"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New bucket name" textAlignment="center" minimumFontSize="17" background="newbucketTF_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-cX-Z5K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="0lZ-zf-0KN"/>
+                                    <constraint firstAttribute="width" constant="300" id="mdK-cs-r70"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bgx-5b-Rfd" id="CN2-E8-iT9"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose region:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y04-f2-YZi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BSR-Qa-AGa"/>
+                                    <constraint firstAttribute="width" constant="116" id="dJ0-4N-kiB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wws-uG-wxH">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="rFH-EL-xCO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">A bucket is a container for objects stored in Amazon S3. When creating a bucket, you can choose a Region to optimize for latency, minimize costs, or address regulatory requirements. </string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="13" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Del-uC-g4y" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="DwK-EC-HCu"/>
+                            <constraint firstItem="Bt6-cX-Z5K" firstAttribute="centerY" secondItem="q5l-Cf-E2k" secondAttribute="centerY" type="default" id="3nS-0D-Lxa"/>
+                            <constraint firstItem="q5l-Cf-E2k" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="5Go-Hx-atv"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="AxV-Fk-Zwb"/>
                             <constraint firstItem="Del-uC-g4y" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" type="default" id="HVz-7l-Vio"/>
-                            <constraint firstAttribute="trailing" secondItem="Bt6-cX-Z5K" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="Tra-lj-I6G"/>
-                            <constraint firstItem="Bt6-cX-Z5K" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="87" id="V9K-P3-3no"/>
-                            <constraint firstItem="Bt6-cX-Z5K" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Xgf-6O-p0n"/>
+                            <constraint firstItem="y04-f2-YZi" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KDL-lo-aUO"/>
+                            <constraint firstItem="q5l-Cf-E2k" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="121" id="Ni9-jc-qeh"/>
+                            <constraint firstItem="wws-uG-wxH" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QeE-eW-fzb"/>
+                            <constraint firstItem="q5l-Cf-E2k" firstAttribute="centerX" secondItem="Bt6-cX-Z5K" secondAttribute="centerX" type="default" id="RgQ-DE-LVf"/>
                             <constraint firstItem="Del-uC-g4y" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="YhA-N8-nTn"/>
-                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="153" id="h50-g5-QzA"/>
+                            <constraint firstItem="wws-uG-wxH" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="10" id="ctq-qC-cjf"/>
                             <constraint firstItem="gyb-LS-hVZ" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="j3z-sX-o4Z"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="bottom" secondItem="MVg-J4-mz3" secondAttribute="bottom" type="default" id="pAd-R2-aI1"/>
                             <constraint firstItem="Del-uC-g4y" firstAttribute="bottom" secondItem="MVg-J4-mz3" secondAttribute="bottom" type="default" id="pwA-xj-cjb"/>
                             <constraint firstItem="gyb-LS-hVZ" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="q7s-jP-nuy"/>
+                            <constraint firstItem="y04-f2-YZi" firstAttribute="top" secondItem="q5l-Cf-E2k" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rwe-Oe-Z8v"/>
+                            <constraint firstAttribute="trailing" secondItem="wws-uG-wxH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="znz-V7-TGb"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="iQK-yh-N0e">
+                    <navigationItem key="navigationItem" title="New Bucket" id="iQK-yh-N0e">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="S3P-QR-45A">
                             <connections>
                                 <action selector="cancel:" destination="bgx-5b-Rfd" id="oDO-w7-jDL"/>
@@ -271,7 +309,7 @@
             </objects>
             <point key="canvasLocation" x="3083" y="594"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller - S3 Buckets-->
         <scene sceneID="nRO-yZ-J50">
             <objects>
                 <viewController id="wfR-eg-ba5" customClass="BOS3ViewController" sceneMemberID="viewController">
@@ -310,7 +348,7 @@
                             <constraint firstItem="xzY-7N-NjJ" firstAttribute="leading" secondItem="4j3-87-lB9" secondAttribute="leading" type="default" id="ncb-3A-rsD"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cVe-ZH-HDK">
+                    <navigationItem key="navigationItem" title="S3 Buckets" id="cVe-ZH-HDK">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="ron-6X-IVM">
                             <connections>
                                 <action selector="back:" destination="wfR-eg-ba5" id="8BF-Q9-QiU"/>
@@ -370,10 +408,12 @@
     </scenes>
     <resources>
         <image name="about.png" width="26" height="26"/>
+        <image name="addbucketname_bg.png" width="320" height="41"/>
         <image name="applogo.png" width="245" height="85"/>
         <image name="ec2button.png" width="292" height="42"/>
         <image name="main.png" width="26" height="26"/>
         <image name="main_bg@2x.png" width="640" height="960"/>
+        <image name="newbucketTF_bg.png" width="300" height="34"/>
         <image name="s3button.png" width="292" height="42"/>
         <image name="sheader.png" width="321" height="22"/>
         <image name="signupbutton.png" width="292" height="42"/>

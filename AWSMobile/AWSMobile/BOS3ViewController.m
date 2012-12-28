@@ -62,8 +62,13 @@ static AmazonS3Client *s3 = nil;
   
     NSMutableString *bucketName = (NSMutableString *)[[bucketsList objectAtIndex:indexPath.row] name];
   
+    //Prepare cell lables
+    cell.imageView.image = [UIImage imageNamed:@"bucket.png"];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_bg.png"]];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = bucketName;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Bucket region: %@", [BORegionsHelper getRegionRealName:[[s3 getBucketLocation:bucketName] description]]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Objects: %i Location: %@", [[s3 listObjectsInBucket:bucketName] count], [BORegionsHelper getRegionRealName:[[s3 getBucketLocation:bucketName] description]]];
     
     return cell;
 }

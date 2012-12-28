@@ -56,8 +56,11 @@ static AmazonS3Client *s3 = nil;
 - (IBAction)done:(id)sender {
     @try {
         if (newBucketName.text != @"") {
+            
             S3Region *newBucketRegion = [S3Region regionWithString:[BORegionsHelper getRegionKey:[pickerRegions objectAtIndex:[selectRegionPicker selectedRowInComponent:0]]]];
-            [s3 createBucket:[[S3CreateBucketRequest alloc] initWithName:newBucketName.text andRegion:newBucketRegion]];
+            
+            [s3 createBucket:[[S3CreateBucketRequest alloc] initWithName:[[newBucketName text] lowercaseString] andRegion:newBucketRegion]];
+
             NSNotification *notification = [NSNotification notificationWithName:@"reloadRequest" object:self];
             [[NSNotificationCenter defaultCenter] postNotification:notification];
             [self dismissViewControllerAnimated:YES completion:nil];
