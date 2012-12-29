@@ -57,6 +57,7 @@
 }
 
 -(void) timerTick: (NSTimer *) nsTimerObject {
+    
     // Return unless timer was armed in some place in code
     if (!isArmed) return;
     
@@ -114,8 +115,8 @@
 -(IBAction)arm5minutes:(id)sender {
     NSLog(@"Going to disarm timer");
     [self disarm];
-    //[self assignValueFromIntegerTriplet:0 :5 :0];
-    //[self arm ];
+    [self assignValueFromIntegerTriplet:0 :5 :0];
+    [self arm ];
 }
 
 

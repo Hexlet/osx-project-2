@@ -13,9 +13,10 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     
-    [timer assignValueFromIntegerTriplet:0 :0 :11];
-    [timer arm];
-
+    //[timer assignValueFromIntegerTriplet:0 :0 :11];
+    //[timer arm];
+    //[timer arm5minutes:@"ignored"];
+    
 }
 
 -(AppDelegate *) init {
