@@ -13,7 +13,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification
 {
     
-    [timer assignValueFromIntegerTriplet:0 :1 :11];
+    [timer assignValueFromIntegerTriplet:0 :0 :11];
     [timer arm];
 
 }

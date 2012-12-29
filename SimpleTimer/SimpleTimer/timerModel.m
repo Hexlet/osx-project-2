@@ -67,7 +67,11 @@
     if (secondsTillTrigger <= 0) {
         // Send message to play sound
         NSLog(@"Trigger timer");
-        NSBeep();
+        //NSBeep();
+        
+        // Maybe i should became NSSound delegate and free resources as it finishes playing
+        NSSound *ring = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"mp3"] byReference:NO];
+        [ring play];
     
         // Disarm timer
         [self disarm];
