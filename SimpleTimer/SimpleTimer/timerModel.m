@@ -45,8 +45,9 @@
 }
 
 -(void)disarm{
-    [self invalidateTimer];
     isArmed=NO;
+    [self invalidateTimer];
+    timerObject=NULL;
     [self assignValueFromIntegerTriplet:0 :0 :0];
 }
 

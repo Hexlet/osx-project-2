@@ -15,7 +15,7 @@
     
     //[timer assignValueFromIntegerTriplet:0 :0 :11];
     //[timer arm];
-    //[timer arm5minutes:@"ignored"];
+    [timer arm5minutes:@"this param is ignored for now"];
     
 }
 
