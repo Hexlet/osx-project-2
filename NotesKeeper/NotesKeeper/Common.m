@@ -27,10 +27,10 @@ static EnumEditMode _editmode = ENUM_READ;
 + (void) wl: (NSString *) comment{
     NSLog(@"%@",comment);   
 }
-+ (void) wlCGRect: (NSString *) comment : (CGRect) value{
++ (void) wlCGRect: (NSString *) comment frame: (CGRect) value{
     NSLog
     (
-        @"X:%@, Y:%@, Width:%@, Height:%@",
+        @"\n%@  X:%@, Y:%@, Width:%@, Height:%@", comment,
         [NSString stringWithFormat: @"%g", value.origin.x],
         [NSString stringWithFormat: @"%g", value.origin.y],
         [NSString stringWithFormat: @"%g", value.size.width],

@@ -23,6 +23,7 @@
 		_filePath = [NSString stringWithFormat: @"%@/%@.noteskeeper", [Note getDocPath], (NSString *) CFBridgingRelease(uuidString)];
 		_Text = @"";
 		_noteName = @"Noname";
+		_changeDate = [NSDate date];
 	}
 	return self;
 }
@@ -36,24 +37,32 @@
 			//get attribute (Name):
 			const char *attrName = [@"Name" UTF8String];
 			const char *fPath = [_filePath fileSystemRepresentation];
-			int bufferLen = getxattr(fPath,attrName,NULL,0,0,0);
+			//int bufferLen = getxattr(fPath,attrName,NULL,0,0,0);
+			ssize_t bufferLen = getxattr(fPath,attrName,NULL,0,0,0);
 			if(bufferLen > 0)
 			{
+
 				char *buffer = malloc(bufferLen);
-				getxattr(fPath, attrName, buffer, 25, 0, 0);
+				getxattr(fPath, attrName, buffer, 255, 0, 0);
 				_noteName = [[NSString alloc] initWithBytes:buffer length:bufferLen encoding:NSUTF8StringEncoding];
 				free(buffer);
+
 			}
 			else
 				_noteName = @"Unnamed";
 			
 			//get Text:
 			_Text = [[NSString alloc] initWithData: [NSData dataWithContentsOfFile:_filePath] encoding:NSUTF8StringEncoding];
+
+			//get change date:
+			_changeDate = [[[NSFileManager defaultManager] attributesOfItemAtPath:_filePath error:nil] fileModificationDate];
+
 		}
 		else
 		{
 			_noteName = @"Missing";
 			_Text = @"";
+			_changeDate = [NSDate date];
 		}
 	}
 	return self;
@@ -78,8 +87,8 @@
 		if(range.length > 0)
 		sTitle = [sTitle substringToIndex:range.location];
 
-		if (sTitle.length > 12)
-			_noteName = [sTitle substringToIndex:12];
+		if (sTitle.length > 25) //12
+			_noteName = [sTitle substringToIndex:25];
 		else
 			_noteName = sTitle;
 
@@ -88,15 +97,17 @@
 		const char *fPath = [_filePath fileSystemRepresentation];
 		NSData *encodedString = [_noteName dataUsingEncoding: NSUTF8StringEncoding];
 		setxattr(fPath, attrName, [encodedString bytes], [encodedString length], 0, 0);
+		_changeDate = [NSDate date];
 	}
 
 	return allok;
 }
-
+/*
 -(UITableViewCell*) getTableViewCell
 {
-	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:CELLID_CONST];
+	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: CELLID_CONST];
 	cell.textLabel.text = _noteName;
 	return cell;
 }
+*/
 @end

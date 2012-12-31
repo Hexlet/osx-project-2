@@ -87,10 +87,13 @@ NSMutableArray *tSource;
 	UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CELLID_CONST];
 
 	if(!cell)
-        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier:CELLID_CONST];
-    
+        cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:CELLID_CONST];    
     Note *note = [[Note alloc] initWithPath:[tSource objectAtIndex:indexPath.row]];
+
     cell.textLabel.Text = note.noteName;
+	NSDateFormatter *df = [[NSDateFormatter alloc] init];
+	[df setDateStyle:NSDateFormatterMediumStyle];
+	cell.detailTextLabel.text = [df stringFromDate:note.changeDate];
     return cell;
 }
 

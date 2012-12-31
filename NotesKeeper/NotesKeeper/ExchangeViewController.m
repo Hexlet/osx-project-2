@@ -20,7 +20,7 @@ NSDictionary *dicCurrDescr;
 BOOL isSynchronizing;
 
 #pragma mark - Main view managing methods:
--(void)viewDidLoad {
+-(void) viewDidLoad {
     [super viewDidLoad];
 	_picker.showsSelectionIndicator = YES;
 	currencyCodes = [[NSMutableArray alloc]init];
@@ -53,8 +53,11 @@ BOOL isSynchronizing;
     [super viewDidAppear:animated];
     [self.navigationController setToolbarHidden:YES animated:YES];
     [self.navigationController setNavigationBarHidden:NO animated:YES];
+	[Common doEvents];
+	[self alignControls];
+
 }
--(void)didReceiveMemoryWarning {
+-(void) didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
@@ -62,6 +65,44 @@ BOOL isSynchronizing;
 	[super viewWillDisappear:animated];
 	[[NSNotificationCenter defaultCenter] removeObserver: self name:UIKeyboardDidShowNotification object:nil];
 	[[NSNotificationCenter defaultCenter] removeObserver:self name:UIKeyboardWillHideNotification object:nil];
+}
+-(void) didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation{
+	[super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
+	[self alignControls];
+}
+-(void) alignControls{
+
+	bool isPortrait;
+
+	if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight)
+		isPortrait = NO;
+	else
+		isPortrait = YES;
+
+	_lblHeader.hidden = !isPortrait;
+	_lblBankname.hidden = !isPortrait;
+	_lblColon.hidden = !isPortrait;
+	_lblRateLeft.hidden = !isPortrait;
+	_lblRateRight.hidden = !isPortrait;
+
+	float fWidth = isPortrait ? 127 : 150;
+	float xVal = _txtRateRight.superview.frame.size.width - 20 - fWidth;
+
+	if (isPortrait)
+	{
+		[_txtRateLeft setFrame:CGRectMake(20, 90, 127, 30)];
+		[_txtRateRight setFrame: CGRectMake(xVal, 90, 127, 30)];
+		[_lblUpdate setFrame:CGRectMake(0, 129, self.view.frame.size.width, 21)];
+		_indicator.frame = CGRectMake(([UIScreen mainScreen].applicationFrame.size.width / 2) - 10, 59, 20, 20);
+	}
+	else
+	{
+		float sWidth = (self.view.frame.size.width);
+		[_txtRateLeft setFrame: CGRectMake(20, 5, fWidth, 30)];
+		[_txtRateRight setFrame: CGRectMake(xVal, 5, fWidth, 30)];
+		[_lblUpdate setFrame:CGRectMake((sWidth/2) - 65, 5, 130, 30)];
+		_indicator.frame = CGRectMake((sWidth/2) - 10, 30, 20, 20);
+	}
 }
 
 #pragma mark - User interactions:
@@ -74,13 +115,34 @@ BOOL isSynchronizing;
 #pragma mark - Keyboard events:
 -(void) keyboardWillShow: (NSNotification *) notification {
 
+	bool isPortrait = UIInterfaceOrientationIsPortrait([UIDevice currentDevice].orientation);
+
+/*
+	if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight)
+		isPortrait = NO;
+	else
+		isPortrait = YES;
+*/
+
 	_keyBar.hidden = false;
 
 	[UIView beginAnimations:nil context:NULL];
-	[UIView setAnimationDuration:1.3];
+	[UIView setAnimationDuration:0.3];
+	//[UIView setAnimationCurve: UIViewAnimationOptionTransitionCurlUp];
 
 	CGRect frame = self.keyBar.frame;
-	frame.origin.y = self.view.frame.size.height - 260.0;
+	if(isPortrait)
+	{
+		frame.size.height = 44;
+		frame.origin.y = self.view.frame.size.height - 260;
+	}
+	else
+	{
+		frame.size.height = 55;
+		frame.origin.y = self.view.frame.size.height - 217;
+	}
+
+
 	self.keyBar.frame = frame;
 
 	[UIView commitAnimations];
@@ -292,9 +354,9 @@ Backdoor:
 }
 -(void) setCurrency: (NSString *) code forComponent: (NSInteger) component{
 	if(component == 0)
-		self.lblRateLeft.text = [dicCurrDescr valueForKey:code];
+		_lblRateLeft.text = [dicCurrDescr valueForKey:code];
 	else
-		self.lblRateRight.text = [dicCurrDescr valueForKey:code];
+		_lblRateRight.text = [dicCurrDescr valueForKey:code];
 }
 -(void) calculate: (NSInteger) component{
    
@@ -314,7 +376,8 @@ Backdoor:
         }
         else
             y = 0;
-        _txtRateLeft.text = [formatter stringFromNumber: [NSNumber numberWithFloat: y]];
+
+		_txtRateLeft.text = [formatter stringFromNumber: [NSNumber numberWithFloat: y]];
 		[ApplicationSettings setRateLeft:_txtRateLeft.text];
     }
     else

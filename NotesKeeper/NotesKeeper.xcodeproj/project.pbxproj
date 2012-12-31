@@ -29,6 +29,7 @@
 		87B304591663492C00CF3D60 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304561663492C00CF3D60 /* mail.png */; };
 		87B3045A1663492C00CF3D60 /* smallArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304571663492C00CF3D60 /* smallArrowDown.png */; };
 		87B3045B1663492C00CF3D60 /* smallArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304581663492C00CF3D60 /* smallArrowUp.png */; };
+		87BCBCDE1689862100BBB699 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87BCBCDD1689862100BBB699 /* MessageUI.framework */; };
 		87C06E291681D21800858493 /* CurrencyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C06E281681D21800858493 /* CurrencyView.m */; };
 		87C16F8D16873639000B34DC /* ApplicationSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 87C16F8C16873639000B34DC /* ApplicationSettings.m */; };
 		87C33F9A1682F0E300F86D79 /* CurrencyDescr.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87C33F991682F0E300F86D79 /* CurrencyDescr.plist */; };
@@ -128,6 +129,7 @@
 		87B304561663492C00CF3D60 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail.png; path = NotesKeeper/Images/mail.png; sourceTree = "<group>"; };
 		87B304571663492C00CF3D60 /* smallArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallArrowDown.png; path = NotesKeeper/Images/smallArrowDown.png; sourceTree = "<group>"; };
 		87B304581663492C00CF3D60 /* smallArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallArrowUp.png; path = NotesKeeper/Images/smallArrowUp.png; sourceTree = "<group>"; };
+		87BCBCDD1689862100BBB699 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		87C06E271681D21800858493 /* CurrencyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CurrencyView.h; sourceTree = "<group>"; };
 		87C06E281681D21800858493 /* CurrencyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CurrencyView.m; sourceTree = "<group>"; };
 		87C16F8B16873639000B34DC /* ApplicationSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationSettings.h; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87BCBCDE1689862100BBB699 /* MessageUI.framework in Frameworks */,
 				87166E36165BD18A009F328B /* UIKit.framework in Frameworks */,
 				87166E38165BD18A009F328B /* Foundation.framework in Frameworks */,
 				87166E3A165BD18A009F328B /* CoreGraphics.framework in Frameworks */,
@@ -216,6 +219,7 @@
 		87166E26165BD18A009F328B = {
 			isa = PBXGroup;
 			children = (
+				87BCBCDD1689862100BBB699 /* MessageUI.framework */,
 				87166E64165BD3EA009F328B /* Images */,
 				87166E3D165BD18A009F328B /* NotesKeeper */,
 				87166E34165BD18A009F328B /* Frameworks */,

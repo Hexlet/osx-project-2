@@ -12,8 +12,9 @@
 @property NSString *filePath;
 @property NSString *Text;
 @property NSString *noteName;
+@property NSDate *changeDate;
 
--(UITableViewCell*) getTableViewCell;
+//-(UITableViewCell*) getTableViewCell;
 +(NSString *) getDocPath;
 -(id) initWithPath : (NSString*) path;
 -(bool) save;
