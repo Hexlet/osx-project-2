@@ -1510,9 +1510,6 @@
 			<object class="NSCustomObject" id="755631768">
 				<string key="NSClassName">NSFontManager</string>
 			</object>
-			<object class="NSCustomObject" id="11462115">
-				<string key="NSClassName">panelController</string>
-			</object>
 			<object class="NSUserDefaultsController" id="288852335">
 				<bool key="NSSharedInstance">YES</bool>
 			</object>
@@ -2208,6 +2205,14 @@
 					<int key="connectionID">642</int>
 				</object>
 				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">showPresetsWindow:</string>
+						<reference key="source" ref="976324537"/>
+						<reference key="destination" ref="1019724750"/>
+					</object>
+					<int key="connectionID">647</int>
+				</object>
+				<object class="IBConnectionRecord">
 					<object class="IBBindingConnection" key="connection">
 						<string key="label">value: self.timer.hoursLeft</string>
 						<reference key="source" ref="714821244"/>
@@ -2270,14 +2275,6 @@
 						</object>
 					</object>
 					<int key="connectionID">619</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">showPresets:</string>
-						<reference key="source" ref="11462115"/>
-						<reference key="destination" ref="1019724750"/>
-					</object>
-					<int key="connectionID">645</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -3730,11 +3727,6 @@
 						<reference key="parent" ref="439893737"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">644</int>
-						<reference key="object" ref="11462115"/>
-						<reference key="parent" ref="0"/>
-					</object>
-					<object class="IBObjectRecord">
 						<int key="objectID">646</int>
 						<reference key="object" ref="1049711576"/>
 						<reference key="parent" ref="439893737"/>
@@ -3943,7 +3935,6 @@
 				<string key="615.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="616.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="641.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
-				<string key="644.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="646.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="72.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
 				<string key="73.IBPluginDependency">com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -3961,7 +3952,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">646</int>
+			<int key="maxID">647</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes"/>
 		<int key="IBDocument.localizationMode">0</int>

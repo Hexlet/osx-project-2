@@ -24,5 +24,5 @@
 -(void)assignValueFromIntegerTriplet: (int) hours: (int)minutes: (int) seconds  ;
 -(void)arm;
 -(void)disarm;
--(IBAction)arm5minutes:(id)sender;
+-(void)armWithIntegerHours:(int) hours andMinutes: (int) minutes andSeconds: (int) seconds;
 @end

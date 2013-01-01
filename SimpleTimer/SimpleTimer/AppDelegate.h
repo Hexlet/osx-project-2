@@ -8,13 +8,18 @@
 
 #import <Cocoa/Cocoa.h>
 #import "timerModel.h"
+#import "PresetsPanel.h"
+
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
     timerModel * timer;
+    PresetsPanel * presets;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 
 -(IBAction)resetTimer:(id)sender;
+-(IBAction)showPresetsWindow:(id)sender;
+-(IBAction)arm5minutes:(id)sender;
 
 @end
