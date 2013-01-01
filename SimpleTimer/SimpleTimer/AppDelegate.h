@@ -20,6 +20,6 @@
 
 -(IBAction)resetTimer:(id)sender;
 -(IBAction)showPresetsWindow:(id)sender;
--(IBAction)arm5minutes:(id)sender;
+-(IBAction)armTimer:(id)sender;
 
 @end

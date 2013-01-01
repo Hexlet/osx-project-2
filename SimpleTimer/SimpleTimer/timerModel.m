@@ -68,9 +68,6 @@
     // If already triggered:
     if (secondsTillTrigger <= 0) {
         // Send message to play sound
-        NSLog(@"Trigger timer");
-        //NSBeep();
-        
         // Maybe i should became NSSound delegate and free resources as it finishes playing
         NSSound *ring = [[NSSound alloc] initWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"3" ofType:@"mp3"] byReference:NO];
         [ring play];
@@ -86,9 +83,10 @@
 }
 
 -(void)updateTripletFromInterval: (NSTimeInterval )interval {
-    int hours       = (int)interval / 3600;
-    int minutes     =(interval - [_hoursLeft intValue] ) /60;
-    int seconds     = (int)ceil(interval) % 60;
+    int hours   =    (int)interval   / 3600;
+    int minutes =  ( (int)interval   / 60 ) % 60;
+    int seconds =    (int)interval   % 60;
+    
     [self assignValueFromIntegerTriplet:hours :minutes: seconds];
 	
 }
@@ -114,7 +112,6 @@
 }
 
 -(void)armWithIntegerHours:(int)hours andMinutes:(int)minutes andSeconds :(int)seconds {
-    NSLog(@"Going to arm timer with %d %d %d", hours, minutes, seconds);
     [self disarm];
     [self assignValueFromIntegerTriplet:hours : minutes : seconds];
     [self arm ];
