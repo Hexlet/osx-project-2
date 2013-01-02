@@ -85,7 +85,7 @@
 -(void)updateTripletFromInterval: (NSTimeInterval )interval {
     int hours   =    (int)interval   / 3600;
     int minutes =  ( (int)interval   / 60 ) % 60;
-    int seconds =    (int)interval   % 60;
+    int seconds =    (int)ceil(interval)   % 60;
     
     [self assignValueFromIntegerTriplet:hours :minutes: seconds];
 	

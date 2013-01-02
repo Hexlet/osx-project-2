@@ -16,7 +16,7 @@
     
     //[timer assignValueFromIntegerTriplet:0 :0 :11];
     //[timer arm];
-    [timer armWithIntegerHours:0 andMinutes:0 andSeconds:1];
+    //[timer armWithIntegerHours:0 andMinutes:2 andSeconds:3];
     
 }
 
