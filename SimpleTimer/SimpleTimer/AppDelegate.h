@@ -8,12 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 #import "timerModel.h"
-#import "PresetsPanel.h"
 
 
 @interface AppDelegate : NSObject <NSApplicationDelegate>{
     timerModel * timer;
-    PresetsPanel * presets;
+    NSWindowController * presets;
 }
 
 @property (assign) IBOutlet NSWindow *window;

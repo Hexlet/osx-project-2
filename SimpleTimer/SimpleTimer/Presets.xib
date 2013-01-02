@@ -187,7 +187,6 @@
 							<string key="NSFrame">{{93, 20}, {60, 60}}</string>
 							<reference key="NSSuperview" ref="714356660"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<int key="NSTag">7</int>
 							<bool key="NSEnabled">YES</bool>

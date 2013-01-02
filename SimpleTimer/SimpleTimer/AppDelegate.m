@@ -24,7 +24,7 @@
     self=[super init];
     if (self) {
         timer   = [[timerModel alloc] init];
-        presets = [[PresetsPanel alloc] initWithWindowNibName:@"Presets" owner:self];
+        presets = [[NSWindowController alloc] initWithWindowNibName:@"Presets" owner:self];
         
     }
     return self;
