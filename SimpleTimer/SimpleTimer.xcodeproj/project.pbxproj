@@ -15,6 +15,7 @@
 		DFB6DC391687581F0068D201 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6DC381687581F0068D201 /* AppDelegate.m */; };
 		DFB6DC3C1687581F0068D201 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFB6DC3A1687581F0068D201 /* MainMenu.xib */; };
 		DFB6DC4416875A8A0068D201 /* timerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DFB6DC4316875A8A0068D201 /* timerModel.m */; };
+		DFD22EFC1694314700A73382 /* ManualSet.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFD22EFB1694314700A73382 /* ManualSet.xib */; };
 		DFDE1EE1168799C30017A365 /* 3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DFDE1EE0168799C30017A365 /* 3.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,7 @@
 		DFB6DC3B1687581F0068D201 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		DFB6DC4216875A8A0068D201 /* timerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timerModel.h; sourceTree = "<group>"; };
 		DFB6DC4316875A8A0068D201 /* timerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = timerModel.m; sourceTree = "<group>"; };
+		DFD22EFB1694314700A73382 /* ManualSet.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ManualSet.xib; sourceTree = "<group>"; };
 		DFDE1EE0168799C30017A365 /* 3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 3.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +97,7 @@
 				DFB6DC4216875A8A0068D201 /* timerModel.h */,
 				DFB6DC4316875A8A0068D201 /* timerModel.m */,
 				DF283FD21689CF360052FB9B /* Presets.xib */,
+				DFD22EFB1694314700A73382 /* ManualSet.xib */,
 				DFDE1EE0168799C30017A365 /* 3.mp3 */,
 				DFB6DC2C1687581F0068D201 /* Supporting Files */,
 			);
@@ -169,6 +172,7 @@
 				DFB6DC3C1687581F0068D201 /* MainMenu.xib in Resources */,
 				DFDE1EE1168799C30017A365 /* 3.mp3 in Resources */,
 				DF283FD31689CF360052FB9B /* Presets.xib in Resources */,
+				DFD22EFC1694314700A73382 /* ManualSet.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

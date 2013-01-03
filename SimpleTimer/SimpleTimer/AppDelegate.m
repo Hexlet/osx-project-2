@@ -25,7 +25,8 @@
     if (self) {
         timer   = [[timerModel alloc] init];
         presets = [[NSWindowController alloc] initWithWindowNibName:@"Presets" owner:self];
-        
+        manualSetController = [[NSWindowController alloc] initWithWindowNibName:@"ManualSet" owner:self];
+//        [[manualSetController window] ];
     }
     return self;
 }
@@ -36,6 +37,10 @@
 
 -(IBAction)showPresetsWindow:(id)sender {
     [presets showWindow:self];
+}
+
+-(IBAction)showManualSetWindow:(id)sender {
+    [manualSetController showWindow:self];
 }
 
 -(IBAction)armTimer:(id)sender{
@@ -73,6 +78,36 @@
 
     [timer armWithIntegerHours: hours andMinutes:minutes andSeconds :seconds];
 
+}
+
+-(IBAction)manualArmTimer:(id)sender{
+    
+    if ( [[_manualHours stringValue  ] length ] == 0 ) {
+        return [self reportInvalidInput:@"You have to input hours value between 0 and 999"];
+    }
+    if ( [[_manualMinutes stringValue  ] length ] == 0 ) {
+        return [self reportInvalidInput:@"You have to input minues value between 0 and 59"];
+    }
+    long enteredHours = [[_manualHours stringValue] integerValue];
+    long enteredMinutes = [[_manualMinutes stringValue] integerValue];
+    if (enteredHours < 0 || enteredHours > 999 ) {
+        return [self reportInvalidInput:@"You have to input hours value between 0 and 999"];
+    }
+    
+    if (enteredMinutes < 0 || enteredMinutes > 59) {
+        return [self reportInvalidInput:@"You have to input minues value between 0 and 59"];
+    }
+    
+    if (enteredHours==0 && enteredMinutes == 0) {
+        return [self reportInvalidInput:@"Please, use reset button to set zero values"];
+    }
+    
+    [timer armWithIntegerHours:(int)enteredHours andMinutes:(int)enteredMinutes andSeconds:0];
+    //[_manualSetPanel performClose:self];
+}
+
+-(void)reportInvalidInput: (NSString * )message {
+    NSRunAlertPanel( @"Invalid input", message, @"Ok", nil, nil);
 }
 
 @end
