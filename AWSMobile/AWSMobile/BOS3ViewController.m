@@ -53,9 +53,10 @@ static AmazonS3Client *s3 = nil;
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
-    NSString *listTitle = @"All Buckets";
+    NSString *listTitle = @"Buckets";
   
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:listTitle];
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:listTitle];
     }
@@ -100,13 +101,18 @@ static AmazonS3Client *s3 = nil;
         @catch (AmazonClientException *exception) {
             UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Delete error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
             [erralert show];
-
         }
     }
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BOObjectsViewController *objectsView = [self.storyboard instantiateViewControllerWithIdentifier:@"Objects"];
+    objectsView.thisName = [[bucketsList objectAtIndex:indexPath.row] name];
+    [self.navigationController pushViewController:objectsView animated:YES];
+}
+
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-  
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -119,8 +125,16 @@ static AmazonS3Client *s3 = nil;
    
 }
 
+#pragma mark -
+
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -
+
+- (IBAction)refresh:(id)sender {
+    [self reload];
 }
 
 - (void)viewDidUnload {

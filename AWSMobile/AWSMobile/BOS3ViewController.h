@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AWSiOSSDK/S3/AmazonS3Client.h>
 #import "BORegionsHelper.h"
+#import "BOObjectsViewController.h"
 
 @interface BOS3ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
   
@@ -18,5 +19,6 @@
 
 - (IBAction)back:(id)sender;
 - (IBAction)addBucket:(id)sender;
+- (IBAction)refresh:(id)sender;
 
 @end

@@ -20,6 +20,7 @@
 		EC2728751682E4F100E44A90 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728731682E4F100E44A90 /* about@2x.png */; };
 		EC2728781682E4FF00E44A90 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728761682E4FF00E44A90 /* main.png */; };
 		EC2728791682E4FF00E44A90 /* main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728771682E4FF00E44A90 /* main@2x.png */; };
+		EC339233168EB82C00854B73 /* BOObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC339232168EB82C00854B73 /* BOObjectsViewController.m */; };
 		EC64C51116819EED0035838D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51016819EED0035838D /* UIKit.framework */; };
 		EC64C51316819EED0035838D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51216819EED0035838D /* Foundation.framework */; };
 		EC64C51516819EED0035838D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51416819EED0035838D /* CoreGraphics.framework */; };
@@ -64,6 +65,8 @@
 		EC2728731682E4F100E44A90 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
 		EC2728761682E4FF00E44A90 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		EC2728771682E4FF00E44A90 /* main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main@2x.png"; sourceTree = "<group>"; };
+		EC339231168EB82C00854B73 /* BOObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOObjectsViewController.h; sourceTree = "<group>"; };
+		EC339232168EB82C00854B73 /* BOObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOObjectsViewController.m; sourceTree = "<group>"; };
 		EC64C50C16819EED0035838D /* AWSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC64C51016819EED0035838D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC64C51216819EED0035838D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +183,8 @@
 				EC64C51F16819EED0035838D /* AppDelegate.h */,
 				EC64C52016819EED0035838D /* AppDelegate.m */,
 				EC64C52816819EED0035838D /* MainStoryboard.storyboard */,
+				EC339231168EB82C00854B73 /* BOObjectsViewController.h */,
+				EC339232168EB82C00854B73 /* BOObjectsViewController.m */,
 				EC7EBB48168C3C9100293758 /* BORegionsHelper.h */,
 				EC7EBB49168C3C9100293758 /* BORegionsHelper.m */,
 				EC7EBB44168C399A00293758 /* BOAddS3BucketViewController.h */,
@@ -304,6 +309,7 @@
 				ECEC5838168ADD1300DDA258 /* BOS3ViewController.m in Sources */,
 				EC7EBB46168C399A00293758 /* BOAddS3BucketViewController.m in Sources */,
 				EC7EBB4A168C3C9100293758 /* BORegionsHelper.m in Sources */,
+				EC339233168EB82C00854B73 /* BOObjectsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
