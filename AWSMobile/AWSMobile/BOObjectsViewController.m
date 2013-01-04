@@ -17,8 +17,10 @@ static AmazonS3Client *s3 = nil;
     [super viewDidLoad];
     
     s3 = [self connection];
+    
     objects = [[NSMutableArray alloc] init];
-	objects = (NSMutableArray *)[s3 listObjectsInBucket:_bucketName];
+    [objects addObjectsFromArray:[s3 listObjectsInBucket:_bucketName]];
+
 }
 
 - (AmazonS3Client *)connection {
@@ -33,7 +35,7 @@ static AmazonS3Client *s3 = nil;
     }
 }
 
-#pragma mark Manage Table
+#pragma mark Manage Objects Table
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -45,6 +47,7 @@ static AmazonS3Client *s3 = nil;
     NSString *cellid = @"oCell";
     
     UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:cellid];
+    
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellid];
     }
@@ -59,14 +62,31 @@ static AmazonS3Client *s3 = nil;
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        
+        @try {
+            [s3 deleteObjectWithKey:[[objects objectAtIndex:indexPath.row] key] withBucket:_bucketName];
+        }
+        @catch (AmazonClientException *exception) {
+            UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Delete object error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [erralert show];
+        }
+        
+        [objects removeObjectAtIndex:indexPath.row];
+        
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        
+    }
+    
 }
-
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark Upload Photo Methods
 
 - (IBAction)upload:(id)sender {
     imagePicker = [[UIImagePickerController alloc] init];
@@ -75,10 +95,13 @@ static AmazonS3Client *s3 = nil;
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+    
     imageForUpload = [info objectForKey:UIImagePickerControllerOriginalImage];
+    
     @try {
+        //Date
         NSDate *date = [NSDate date];
-        NSString *imgName = [NSString stringWithFormat:@"Go_%@.jpg", date];
+        NSString *imgName = [NSString stringWithFormat:@"myphoto_%@.jpg", date];
         S3PutObjectRequest *upl = [[S3PutObjectRequest alloc] initWithKey:imgName inBucket:_bucketName];
         upl.contentType = @"image/jpeg";
         NSData *imageData = UIImageJPEGRepresentation(imageForUpload, 1.0);
@@ -86,7 +109,7 @@ static AmazonS3Client *s3 = nil;
         [s3 putObject:upl];
     }
     @catch (AmazonClientException *exception) {
-        UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"AWS Exception" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Upload error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [erralert show];
     }
     [self dismissViewControllerAnimated:YES completion:nil];

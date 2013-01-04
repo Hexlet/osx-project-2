@@ -24,6 +24,8 @@ static AmazonS3Client *s3 = nil;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reload) name:@"reloadRequest" object:nil];
 }
 
+#pragma mark Reload Data Method
+
 - (void)reload {
     [bucketsList removeAllObjects];
     [bucketsList addObjectsFromArray:[s3 listBuckets]];

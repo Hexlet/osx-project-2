@@ -473,6 +473,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="objectsTableView" destination="i9b-zk-pUw" id="Ebw-ZF-0Z7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q8N-Fe-5ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -548,6 +551,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOObjectsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="upload:"/>
+                <relationship kind="outlet" name="objectsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="BOS3ViewController" superclassName="UIViewController">

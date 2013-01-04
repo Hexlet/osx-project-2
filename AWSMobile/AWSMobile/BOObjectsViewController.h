@@ -11,6 +11,7 @@
 
 @interface BOObjectsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     NSMutableArray *objects;
+    IBOutlet UITableView *objectsTableView;
     UIImagePickerController *imagePicker;
     UIImage *imageForUpload;
 }
