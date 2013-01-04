@@ -210,7 +210,106 @@
             </objects>
             <point key="canvasLocation" x="521" y="258"/>
         </scene>
-        <!--View Controller-->
+        <!--AddS3 Bucket View Controller - New Bucket-->
+        <scene sceneID="AGW-tv-EJm">
+            <objects>
+                <viewController id="bgx-5b-Rfd" customClass="BOAddS3BucketViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MVg-J4-mz3">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="main_bg@2x.png" translatesAutoresizingMaskIntoConstraints="NO" id="Del-uC-g4y"/>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gyb-LS-hVZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="4NB-4V-QOG"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="bgx-5b-Rfd" id="DeQ-vN-BKL"/>
+                                    <outlet property="delegate" destination="bgx-5b-Rfd" id="iGI-he-58t"/>
+                                </connections>
+                            </pickerView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="addbucketname_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="q5l-Cf-E2k"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="New bucket name" textAlignment="center" minimumFontSize="17" background="newbucketTF_bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bt6-cX-Z5K">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="0lZ-zf-0KN"/>
+                                    <constraint firstAttribute="width" constant="300" id="mdK-cs-r70"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="bgx-5b-Rfd" id="CN2-E8-iT9"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose region:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y04-f2-YZi">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="BSR-Qa-AGa"/>
+                                    <constraint firstAttribute="width" constant="116" id="dJ0-4N-kiB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" usesAttributedText="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wws-uG-wxH">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="88" id="rFH-EL-xCO"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment>
+                                        <string key="content">A bucket is a container for objects stored in Amazon S3. When creating a bucket, you can choose a Region to optimize for latency, minimize costs, or address regulatory requirements. </string>
+                                        <attributes>
+                                            <color key="NSColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <font key="NSFont" size="13" name="Helvetica"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="justified" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Bt6-cX-Z5K" firstAttribute="centerY" secondItem="q5l-Cf-E2k" secondAttribute="centerY" type="default" id="3nS-0D-Lxa"/>
+                            <constraint firstItem="q5l-Cf-E2k" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="5Go-Hx-atv"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="AxV-Fk-Zwb"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" type="default" id="HVz-7l-Vio"/>
+                            <constraint firstItem="y04-f2-YZi" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="KDL-lo-aUO"/>
+                            <constraint firstItem="q5l-Cf-E2k" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="121" id="Ni9-jc-qeh"/>
+                            <constraint firstItem="wws-uG-wxH" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="QeE-eW-fzb"/>
+                            <constraint firstItem="q5l-Cf-E2k" firstAttribute="centerX" secondItem="Bt6-cX-Z5K" secondAttribute="centerX" type="default" id="RgQ-DE-LVf"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="YhA-N8-nTn"/>
+                            <constraint firstItem="wws-uG-wxH" firstAttribute="top" secondItem="MVg-J4-mz3" secondAttribute="top" constant="10" id="ctq-qC-cjf"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="trailing" secondItem="MVg-J4-mz3" secondAttribute="trailing" type="default" id="j3z-sX-o4Z"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="bottom" secondItem="MVg-J4-mz3" secondAttribute="bottom" type="default" id="pAd-R2-aI1"/>
+                            <constraint firstItem="Del-uC-g4y" firstAttribute="bottom" secondItem="MVg-J4-mz3" secondAttribute="bottom" type="default" id="pwA-xj-cjb"/>
+                            <constraint firstItem="gyb-LS-hVZ" firstAttribute="leading" secondItem="MVg-J4-mz3" secondAttribute="leading" type="default" id="q7s-jP-nuy"/>
+                            <constraint firstItem="y04-f2-YZi" firstAttribute="top" secondItem="q5l-Cf-E2k" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="rwe-Oe-Z8v"/>
+                            <constraint firstAttribute="trailing" secondItem="wws-uG-wxH" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="znz-V7-TGb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="New Bucket" id="iQK-yh-N0e">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="S3P-QR-45A">
+                            <connections>
+                                <action selector="cancel:" destination="bgx-5b-Rfd" id="oDO-w7-jDL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="JLX-CC-CqZ">
+                            <connections>
+                                <action selector="done:" destination="bgx-5b-Rfd" id="njD-g1-0ab"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="newBucketName" destination="Bt6-cX-Z5K" id="aaF-1U-h1r"/>
+                        <outlet property="selectRegionPicker" destination="gyb-LS-hVZ" id="oHY-g4-MWU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tfo-ct-AEc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3083" y="594"/>
+        </scene>
+        <!--View Controller - S3 Buckets-->
         <scene sceneID="nRO-yZ-J50">
             <objects>
                 <viewController id="wfR-eg-ba5" customClass="BOS3ViewController" sceneMemberID="viewController">
@@ -225,12 +324,24 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 </imageView>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="Cell" id="4EB-AL-hrB">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="Buckets" textLabel="RSB-So-T3E" detailTextLabel="M3g-CK-aZV" style="IBUITableViewCellStyleSubtitle" id="4EB-AL-hrB">
                                         <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSB-So-T3E">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Subtitle" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3g-CK-aZV">
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.50196078431372548" green="0.50196078431372548" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                     </tableViewCell>
@@ -240,22 +351,43 @@
                                     <outlet property="delegate" destination="wfR-eg-ba5" id="cuW-GF-8bM"/>
                                 </connections>
                             </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-ig-ewQ">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="refresh" id="Ueq-aT-CG5">
+                                        <connections>
+                                            <action selector="refresh:" destination="wfR-eg-ba5" id="ljf-sR-JyZ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Fl8-ig-ewQ" firstAttribute="trailing" secondItem="4j3-87-lB9" secondAttribute="trailing" type="default" id="DQv-EM-4K6"/>
+                            <constraint firstItem="Fl8-ig-ewQ" firstAttribute="leading" secondItem="4j3-87-lB9" secondAttribute="leading" type="default" id="Vhy-1s-cUd"/>
                             <constraint firstItem="xzY-7N-NjJ" firstAttribute="bottom" secondItem="4j3-87-lB9" secondAttribute="bottom" type="default" id="YAf-sh-LXr"/>
                             <constraint firstItem="xzY-7N-NjJ" firstAttribute="top" secondItem="4j3-87-lB9" secondAttribute="top" type="default" id="YIR-Pm-BYu"/>
                             <constraint firstItem="xzY-7N-NjJ" firstAttribute="trailing" secondItem="4j3-87-lB9" secondAttribute="trailing" type="default" id="kLO-Du-84C"/>
                             <constraint firstItem="xzY-7N-NjJ" firstAttribute="leading" secondItem="4j3-87-lB9" secondAttribute="leading" type="default" id="ncb-3A-rsD"/>
+                            <constraint firstItem="Fl8-ig-ewQ" firstAttribute="bottom" secondItem="4j3-87-lB9" secondAttribute="bottom" type="default" id="s6M-Zh-UcP"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="cVe-ZH-HDK">
+                    <navigationItem key="navigationItem" title="S3 Buckets" id="cVe-ZH-HDK">
                         <barButtonItem key="leftBarButtonItem" title="Close" id="ron-6X-IVM">
                             <connections>
                                 <action selector="back:" destination="wfR-eg-ba5" id="8BF-Q9-QiU"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="TZL-As-hDY">
+                            <connections>
+                                <action selector="addBucket:" destination="wfR-eg-ba5" id="Edy-hv-NDW"/>
+                                <segue destination="Ick-tg-y9R" kind="modal" modalTransitionStyle="flipHorizontal" id="qzh-Ct-Mtv"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="bucketsTableView" destination="xzY-7N-NjJ" id="v6h-mN-dPt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bH7-As-RwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -279,28 +411,152 @@
             </objects>
             <point key="canvasLocation" x="1584" y="196"/>
         </scene>
+        <!--Objects View Controller-->
+        <scene sceneID="uX9-Dg-8oH">
+            <objects>
+                <viewController storyboardIdentifier="Objects" id="L4r-eS-lmy" customClass="BOObjectsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5vV-Xy-wYM">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="i9b-zk-pUw">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <imageView key="tableFooterView" userInteractionEnabled="NO" contentMode="scaleToFill" image="main_bg@2x.png" id="RAB-0n-LHi">
+                                    <rect key="frame" x="0.0" y="66" width="320" height="480"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" indentationWidth="10" reuseIdentifier="oCell" textLabel="j8A-oW-NxZ" style="IBUITableViewCellStyleDefault" id="Px9-2k-EIr">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j8A-oW-NxZ">
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="L4r-eS-lmy" id="7Tu-3F-m1S"/>
+                                    <outlet property="delegate" destination="L4r-eS-lmy" id="8Tg-Z6-Vtb"/>
+                                </connections>
+                            </tableView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zur-pE-jv0">
+                                <items>
+                                    <barButtonItem style="plain" systemItem="camera" id="UWe-Lt-DND"/>
+                                    <barButtonItem systemItem="flexibleSpace" id="aAL-jy-pM3"/>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="i9b-zk-pUw" firstAttribute="bottom" secondItem="5vV-Xy-wYM" secondAttribute="bottom" type="default" id="Agf-QM-myj"/>
+                            <constraint firstItem="zur-pE-jv0" firstAttribute="leading" secondItem="5vV-Xy-wYM" secondAttribute="leading" type="default" id="Imv-v0-qar"/>
+                            <constraint firstItem="zur-pE-jv0" firstAttribute="bottom" secondItem="5vV-Xy-wYM" secondAttribute="bottom" type="default" id="VU3-Fb-fGU"/>
+                            <constraint firstItem="i9b-zk-pUw" firstAttribute="trailing" secondItem="5vV-Xy-wYM" secondAttribute="trailing" type="default" id="YuF-N0-ABQ"/>
+                            <constraint firstItem="zur-pE-jv0" firstAttribute="trailing" secondItem="5vV-Xy-wYM" secondAttribute="trailing" type="default" id="eUO-fr-zRM"/>
+                            <constraint firstItem="i9b-zk-pUw" firstAttribute="leading" secondItem="5vV-Xy-wYM" secondAttribute="leading" type="default" id="ebc-IJ-vXK"/>
+                            <constraint firstItem="i9b-zk-pUw" firstAttribute="top" secondItem="5vV-Xy-wYM" secondAttribute="top" type="default" id="mvL-sC-Uid"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0ni-Yi-haU">
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="guA-Kr-blj">
+                            <connections>
+                                <action selector="upload:" destination="L4r-eS-lmy" id="Jo4-UQ-6r2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q8N-Fe-5ZO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3083" y="4"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="VNm-UO-qdU">
+            <objects>
+                <navigationController id="Ick-tg-y9R" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="oYE-TU-npm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="bgx-5b-Rfd" kind="relationship" relationship="rootViewController" id="9ZB-0w-eSw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fbX-Lm-jLZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621" y="594"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jyN-8k-zhV">
+            <objects>
+                <navigationController storyboardIdentifier="ObjectsNav" id="Uo2-E9-eTe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="FEV-ZP-f5k"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZPS-0u-XIv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L4r-eS-lmy" kind="relationship" relationship="rootViewController" id="RgM-ZA-gzU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Du-a5-fbe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2621" y="4"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about.png" width="26" height="26"/>
+        <image name="addbucketname_bg.png" width="320" height="41"/>
         <image name="applogo.png" width="245" height="85"/>
         <image name="ec2button.png" width="292" height="42"/>
         <image name="main.png" width="26" height="26"/>
         <image name="main_bg@2x.png" width="640" height="960"/>
+        <image name="newbucketTF_bg.png" width="300" height="34"/>
         <image name="s3button.png" width="292" height="42"/>
         <image name="sheader.png" width="321" height="22"/>
         <image name="signupbutton.png" width="292" height="42"/>
     </resources>
     <classes>
+        <class className="BOAddS3BucketViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BOAddS3BucketViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="done:"/>
+                <relationship kind="outlet" name="newBucketName" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="selectRegionPicker" candidateClass="UIPickerView"/>
+            </relationships>
+        </class>
         <class className="BOMainViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOMainViewController.h"/>
             <relationships>
                 <relationship kind="action" name="awsSignUp:"/>
             </relationships>
         </class>
+        <class className="BOObjectsViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/BOObjectsViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="upload:"/>
+            </relationships>
+        </class>
         <class className="BOS3ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOS3ViewController.h"/>
             <relationships>
+                <relationship kind="action" name="addBucket:"/>
                 <relationship kind="action" name="back:"/>
+                <relationship kind="action" name="refresh:"/>
+                <relationship kind="outlet" name="bucketsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

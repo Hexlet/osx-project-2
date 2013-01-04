@@ -8,128 +8,137 @@
 
 #import "BOS3ViewController.h"
 
-@interface BOS3ViewController ()
-
-@end
+static AmazonS3Client *s3 = nil;
 
 @implementation BOS3ViewController
 
 - (void)viewDidLoad {
   
-  [super viewDidLoad];
+    [super viewDidLoad];
   
-  AmazonS3Client *s3 = [self connection];
+    s3 = [self connection];
   
-  bucketsList = [[NSMutableArray alloc] init];
-  [bucketsList addObjectsFromArray:[s3 listBuckets]];
+    //Load buckets array
+    bucketsList = [[NSMutableArray alloc] init];
+    [bucketsList addObjectsFromArray:[s3 listBuckets]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reload) name:@"reloadRequest" object:nil];
+}
+
+- (void)reload {
+    [bucketsList removeAllObjects];
+    [bucketsList addObjectsFromArray:[s3 listBuckets]];
+    [bucketsTableView reloadData];
 }
 
 #pragma mark Connection Method
 
 - (AmazonS3Client *)connection {
-  
-  AmazonS3Client *s3 = [[AmazonS3Client alloc] initWithAccessKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"akey"]  withSecretKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"skey"]];
-  return s3;
+    
+    @try {
+        AmazonS3Client *s3 = [[AmazonS3Client alloc] initWithAccessKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"akey"]  withSecretKey:[[NSUserDefaults standardUserDefaults] stringForKey:@"skey"]];
+        return s3;
+    }
+    @catch (AmazonClientException *exception) {
+        UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"AWS Exception" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+        [erralert show];
+    }
 }
 
 #pragma mark Manage Table
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
   
-  return [bucketsList count];
+    return [bucketsList count]; //Return the number of rows in the section
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  NSString *listTitle = @"All Buckets";
+    NSString *listTitle = @"Buckets";
   
-  UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:listTitle];
+    UITableViewCell *cell = (UITableViewCell *)[tableView dequeueReusableCellWithIdentifier:listTitle];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:listTitle];
+    }
   
-  if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:listTitle];
-  }
+    NSMutableString *bucketName = (NSMutableString *)[[bucketsList objectAtIndex:indexPath.row] name];
   
-  NSMutableString *bucketName = (NSMutableString *)[[bucketsList objectAtIndex:indexPath.row] name];
-  
-  cell.textLabel.text = bucketName;
-  
-  AmazonS3Client *s3 = [self connection];
-  
-  cell.detailTextLabel.text = [NSString stringWithFormat:@"Bucket region: %@", [self getAwsRegionName:[s3 getBucketLocation:bucketName]]];
-  return cell;
+    //Prepare cell lables
+    cell.imageView.image = [UIImage imageNamed:@"bucket.png"];
+    cell.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"cell_bg.png"]];
+    cell.textLabel.backgroundColor = [UIColor clearColor];
+    cell.detailTextLabel.backgroundColor = [UIColor clearColor];
+    cell.textLabel.text = bucketName;
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Objects: %i Location: %@", [[s3 listObjectsInBucket:bucketName] count], [BORegionsHelper getRegionRealName:[[s3 getBucketLocation:bucketName] description]]];
+    
+    return cell;
 }
 
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  if (editingStyle == UITableViewCellEditingStyleDelete) {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
     
-    S3Bucket *bucketForDelete = [bucketsList objectAtIndex:indexPath.row];
-    [bucketsList removeObjectAtIndex:indexPath.row];
-    [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
+        S3Bucket *bucketForDelete = [bucketsList objectAtIndex:indexPath.row];
+        [bucketsList removeObjectAtIndex:indexPath.row];
+        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
     
-    @try {
-      AmazonS3Client *s3 = [self connection];
+        @try {
       
-      if ([[s3 listObjectsInBucket:[bucketForDelete name]] count] == 0) {
-        [s3 deleteBucketWithName:[bucketForDelete name]];
-      } else {
-        
-      }
+            if ([[s3 listObjectsInBucket:[bucketForDelete name]] count] == 0) {
+                [s3 deleteBucketWithName:[bucketForDelete name]];
+            } else {
+                
+                NSArray *objectsForDelete = [s3 listObjectsInBucket:[bucketForDelete name]];
+                
+                for (int i=0; i<[objectsForDelete count]; i++) {
+                    [s3 deleteObjectWithKey:[[objectsForDelete objectAtIndex:i] key] withBucket:[bucketForDelete name]];
+                }
+                
+                [s3 deleteBucketWithName:[bucketForDelete name]];
+            }
+        }
+        @catch (AmazonClientException *exception) {
+            UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Delete error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [erralert show];
+        }
     }
-    @catch (AmazonClientException *exception) {
-      NSLog(@"Can't delete bucket from Amazon S3!");
-    }
-  }
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BOObjectsViewController *objectsView = [self.storyboard instantiateViewControllerWithIdentifier:@"Objects"];
+    objectsView.bucketName = [[bucketsList objectAtIndex:indexPath.row] name];
+    [self.navigationController pushViewController:objectsView animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath {
-  
+    
 }
 
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
-}
-
-#pragma mark -
-
-- (NSString *)getAwsRegionName:(S3Region *)region {
-  
-  NSString *regionName = [[NSString alloc] init];
-  
-  if (region.description == @"eu-west-1") {
-    regionName = @"Ireland";
-  } else if (region.description == @"sa-east-1") {
-    regionName = @"Sao Paulo";
-  } else if (region.description == @"") {
-    regionName = @"USA Standart Location";
-  } else if (region.description == @"us-west-1") {
-    regionName = @"Northern California";
-  } else if (region.description == @"us-west-2") {
-    regionName = @"Oregon";
-  } else if (region.description == @"ap-northeast-1") {
-    regionName = @"Tokyo";
-  } else if (region.description == @"ap-southeast-1") {
-    regionName = @"Singapore";
-  } else if (region.description == @"ap-southeast-2") {
-    regionName = @"Sydney";
-  } else {
-    regionName = @"Unknown Region";
-  }
-  
-  return regionName;
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
 }
 
 #pragma mark Add New Bucket Method
 
 - (IBAction)addBucket:(id)sender {
-  
+   
 }
 
+#pragma mark -
+
 - (IBAction)back:(id)sender {
-  [self dismissViewControllerAnimated:YES completion:nil];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark -
+
+- (IBAction)refresh:(id)sender {
+    [self reload];
+}
+
+- (void)viewDidUnload {
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 @end

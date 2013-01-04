@@ -7,11 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EC1134C8168D935200D2ED83 /* newbucketTF_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1134C6168D935200D2ED83 /* newbucketTF_bg.png */; };
+		EC1134C9168D935200D2ED83 /* newbucketTF_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1134C7168D935200D2ED83 /* newbucketTF_bg@2x.png */; };
+		EC1149F6168DAD1F00F9C634 /* addbucketname_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1149F4168DAD1F00F9C634 /* addbucketname_bg.png */; };
+		EC1149F7168DAD1F00F9C634 /* addbucketname_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1149F5168DAD1F00F9C634 /* addbucketname_bg@2x.png */; };
+		EC19AFE6168D744900135CCC /* bucket.png in Resources */ = {isa = PBXBuildFile; fileRef = EC19AFE2168D744900135CCC /* bucket.png */; };
+		EC19AFE7168D744900135CCC /* bucket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC19AFE3168D744900135CCC /* bucket@2x.png */; };
+		EC19AFE8168D744900135CCC /* cell_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = EC19AFE4168D744900135CCC /* cell_bg.png */; };
+		EC19AFE9168D744900135CCC /* cell_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC19AFE5168D744900135CCC /* cell_bg@2x.png */; };
 		EC1D015E1681DFC800DFE1B9 /* signupbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = EC1D015D1681DFC800DFE1B9 /* signupbutton.png */; };
 		EC2728741682E4F100E44A90 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728721682E4F100E44A90 /* about.png */; };
 		EC2728751682E4F100E44A90 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728731682E4F100E44A90 /* about@2x.png */; };
 		EC2728781682E4FF00E44A90 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728761682E4FF00E44A90 /* main.png */; };
 		EC2728791682E4FF00E44A90 /* main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728771682E4FF00E44A90 /* main@2x.png */; };
+		EC339233168EB82C00854B73 /* BOObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC339232168EB82C00854B73 /* BOObjectsViewController.m */; };
 		EC64C51116819EED0035838D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51016819EED0035838D /* UIKit.framework */; };
 		EC64C51316819EED0035838D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51216819EED0035838D /* Foundation.framework */; };
 		EC64C51516819EED0035838D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51416819EED0035838D /* CoreGraphics.framework */; };
@@ -29,6 +38,8 @@
 		EC64C5511681B5840035838D /* applogo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC64C5501681B5840035838D /* applogo@2x.png */; };
 		EC64C5531681B8930035838D /* applogo.png in Resources */ = {isa = PBXBuildFile; fileRef = EC64C5521681B8930035838D /* applogo.png */; };
 		EC64C5561681B94D0035838D /* BOMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC64C5551681B94D0035838D /* BOMainViewController.m */; };
+		EC7EBB46168C399A00293758 /* BOAddS3BucketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EBB45168C399A00293758 /* BOAddS3BucketViewController.m */; };
+		EC7EBB4A168C3C9100293758 /* BORegionsHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EBB49168C3C9100293758 /* BORegionsHelper.m */; };
 		ECE9C86D1682F9AF00E069BD /* ec2button.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C86B1682F9AF00E069BD /* ec2button.png */; };
 		ECE9C86E1682F9AF00E069BD /* ec2button@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C86C1682F9AF00E069BD /* ec2button@2x.png */; };
 		ECE9C8721682F9C100E069BD /* s3button.png in Resources */ = {isa = PBXBuildFile; fileRef = ECE9C8701682F9C100E069BD /* s3button.png */; };
@@ -41,11 +52,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EC1134C6168D935200D2ED83 /* newbucketTF_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newbucketTF_bg.png; sourceTree = "<group>"; };
+		EC1134C7168D935200D2ED83 /* newbucketTF_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "newbucketTF_bg@2x.png"; sourceTree = "<group>"; };
+		EC1149F4168DAD1F00F9C634 /* addbucketname_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addbucketname_bg.png; sourceTree = "<group>"; };
+		EC1149F5168DAD1F00F9C634 /* addbucketname_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "addbucketname_bg@2x.png"; sourceTree = "<group>"; };
+		EC19AFE2168D744900135CCC /* bucket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bucket.png; sourceTree = "<group>"; };
+		EC19AFE3168D744900135CCC /* bucket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bucket@2x.png"; sourceTree = "<group>"; };
+		EC19AFE4168D744900135CCC /* cell_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_bg.png; sourceTree = "<group>"; };
+		EC19AFE5168D744900135CCC /* cell_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cell_bg@2x.png"; sourceTree = "<group>"; };
 		EC1D015D1681DFC800DFE1B9 /* signupbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signupbutton.png; sourceTree = "<group>"; };
 		EC2728721682E4F100E44A90 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
 		EC2728731682E4F100E44A90 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
 		EC2728761682E4FF00E44A90 /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		EC2728771682E4FF00E44A90 /* main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main@2x.png"; sourceTree = "<group>"; };
+		EC339231168EB82C00854B73 /* BOObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOObjectsViewController.h; sourceTree = "<group>"; };
+		EC339232168EB82C00854B73 /* BOObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOObjectsViewController.m; sourceTree = "<group>"; };
 		EC64C50C16819EED0035838D /* AWSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC64C51016819EED0035838D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC64C51216819EED0035838D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -69,6 +90,10 @@
 		EC64C5521681B8930035838D /* applogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = applogo.png; sourceTree = "<group>"; };
 		EC64C5541681B94D0035838D /* BOMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOMainViewController.h; sourceTree = "<group>"; };
 		EC64C5551681B94D0035838D /* BOMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOMainViewController.m; sourceTree = "<group>"; };
+		EC7EBB44168C399A00293758 /* BOAddS3BucketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOAddS3BucketViewController.h; sourceTree = "<group>"; };
+		EC7EBB45168C399A00293758 /* BOAddS3BucketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOAddS3BucketViewController.m; sourceTree = "<group>"; };
+		EC7EBB48168C3C9100293758 /* BORegionsHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BORegionsHelper.h; sourceTree = "<group>"; };
+		EC7EBB49168C3C9100293758 /* BORegionsHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BORegionsHelper.m; sourceTree = "<group>"; };
 		ECE9C86B1682F9AF00E069BD /* ec2button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ec2button.png; sourceTree = "<group>"; };
 		ECE9C86C1682F9AF00E069BD /* ec2button@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ec2button@2x.png"; sourceTree = "<group>"; };
 		ECE9C8701682F9C100E069BD /* s3button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = s3button.png; sourceTree = "<group>"; };
@@ -101,8 +126,16 @@
 			children = (
 				ECEC584F168AE54200DDA258 /* AWSiOSSDK.framework */,
 				ECE9C8741682FC3C00E069BD /* sheader.png */,
+				EC1149F4168DAD1F00F9C634 /* addbucketname_bg.png */,
+				EC1149F5168DAD1F00F9C634 /* addbucketname_bg@2x.png */,
+				EC19AFE2168D744900135CCC /* bucket.png */,
+				EC19AFE3168D744900135CCC /* bucket@2x.png */,
+				EC19AFE4168D744900135CCC /* cell_bg.png */,
+				EC19AFE5168D744900135CCC /* cell_bg@2x.png */,
 				ECE9C8751682FC3C00E069BD /* sheader@2x.png */,
 				ECE9C8701682F9C100E069BD /* s3button.png */,
+				EC1134C6168D935200D2ED83 /* newbucketTF_bg.png */,
+				EC1134C7168D935200D2ED83 /* newbucketTF_bg@2x.png */,
 				ECE9C8711682F9C100E069BD /* s3button@2x.png */,
 				ECE9C86B1682F9AF00E069BD /* ec2button.png */,
 				ECE9C86C1682F9AF00E069BD /* ec2button@2x.png */,
@@ -150,6 +183,12 @@
 				EC64C51F16819EED0035838D /* AppDelegate.h */,
 				EC64C52016819EED0035838D /* AppDelegate.m */,
 				EC64C52816819EED0035838D /* MainStoryboard.storyboard */,
+				EC339231168EB82C00854B73 /* BOObjectsViewController.h */,
+				EC339232168EB82C00854B73 /* BOObjectsViewController.m */,
+				EC7EBB48168C3C9100293758 /* BORegionsHelper.h */,
+				EC7EBB49168C3C9100293758 /* BORegionsHelper.m */,
+				EC7EBB44168C399A00293758 /* BOAddS3BucketViewController.h */,
+				EC7EBB45168C399A00293758 /* BOAddS3BucketViewController.m */,
 				ECEC5836168ADD1300DDA258 /* BOS3ViewController.h */,
 				ECEC5837168ADD1300DDA258 /* BOS3ViewController.m */,
 				EC64C52B16819EED0035838D /* ViewController.h */,
@@ -245,6 +284,14 @@
 				ECE9C8761682FC3C00E069BD /* sheader.png in Resources */,
 				ECE9C8771682FC3C00E069BD /* sheader@2x.png in Resources */,
 				ECEC583B168AE28D00DDA258 /* Settings.bundle in Resources */,
+				EC19AFE6168D744900135CCC /* bucket.png in Resources */,
+				EC19AFE7168D744900135CCC /* bucket@2x.png in Resources */,
+				EC19AFE8168D744900135CCC /* cell_bg.png in Resources */,
+				EC19AFE9168D744900135CCC /* cell_bg@2x.png in Resources */,
+				EC1134C8168D935200D2ED83 /* newbucketTF_bg.png in Resources */,
+				EC1134C9168D935200D2ED83 /* newbucketTF_bg@2x.png in Resources */,
+				EC1149F6168DAD1F00F9C634 /* addbucketname_bg.png in Resources */,
+				EC1149F7168DAD1F00F9C634 /* addbucketname_bg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +307,9 @@
 				EC64C52D16819EED0035838D /* ViewController.m in Sources */,
 				EC64C5561681B94D0035838D /* BOMainViewController.m in Sources */,
 				ECEC5838168ADD1300DDA258 /* BOS3ViewController.m in Sources */,
+				EC7EBB46168C399A00293758 /* BOAddS3BucketViewController.m in Sources */,
+				EC7EBB4A168C3C9100293758 /* BORegionsHelper.m in Sources */,
+				EC339233168EB82C00854B73 /* BOObjectsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

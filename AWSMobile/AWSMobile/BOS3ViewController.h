@@ -8,16 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import <AWSiOSSDK/S3/AmazonS3Client.h>
+#import "BORegionsHelper.h"
+#import "BOObjectsViewController.h"
 
 @interface BOS3ViewController : UIViewController<UITableViewDelegate, UITableViewDataSource> {
   
-  NSMutableArray *bucketsList;
-  IBOutlet UITableView *bucketsTableView;
-  
+    NSMutableArray *bucketsList;
+    IBOutlet UITableView *bucketsTableView;
 }
 
 - (IBAction)back:(id)sender;
 - (IBAction)addBucket:(id)sender;
-- (NSString *)getAwsRegionName:(S3Region *)region;
+- (IBAction)refresh:(id)sender;
 
 @end

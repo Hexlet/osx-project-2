@@ -5,6 +5,9 @@
   */build/*
   build/
   *.pbxuser
+  *.xcodeproj/*.pbxuser
+  *.xcodeproj/xcuserdata/
+  *.xcodeproj/xcuserdata/*
   !default.pbxuser
   *.mode1v3
   !default.mode1v3
@@ -14,12 +17,8 @@
   *.perspectivev3
   !default.perspectivev3
   !default.xcworkspace
-  *.xcworkspace
-  *.xcworkspace/*
-  */*.xcworkspace/
-  xcuserdata
-  xcuserdata/*
-  */xcuserdata/
+  *.xcodeproj/*.xcworkspace/
+  *.xcodeproj/*.xcworkspace/*
   profile
   *.moved-aside
 
