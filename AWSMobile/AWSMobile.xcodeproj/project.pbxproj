@@ -21,6 +21,7 @@
 		EC2728781682E4FF00E44A90 /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728761682E4FF00E44A90 /* main.png */; };
 		EC2728791682E4FF00E44A90 /* main@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EC2728771682E4FF00E44A90 /* main@2x.png */; };
 		EC339233168EB82C00854B73 /* BOObjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC339232168EB82C00854B73 /* BOObjectsViewController.m */; };
+		EC4F38CF1696E9E40008C28A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC4F38CE1696E9E40008C28A /* MobileCoreServices.framework */; };
 		EC64C51116819EED0035838D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51016819EED0035838D /* UIKit.framework */; };
 		EC64C51316819EED0035838D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51216819EED0035838D /* Foundation.framework */; };
 		EC64C51516819EED0035838D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC64C51416819EED0035838D /* CoreGraphics.framework */; };
@@ -67,6 +68,7 @@
 		EC2728771682E4FF00E44A90 /* main@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "main@2x.png"; sourceTree = "<group>"; };
 		EC339231168EB82C00854B73 /* BOObjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BOObjectsViewController.h; sourceTree = "<group>"; };
 		EC339232168EB82C00854B73 /* BOObjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BOObjectsViewController.m; sourceTree = "<group>"; };
+		EC4F38CE1696E9E40008C28A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EC64C50C16819EED0035838D /* AWSMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWSMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC64C51016819EED0035838D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EC64C51216819EED0035838D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -111,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC4F38CF1696E9E40008C28A /* MobileCoreServices.framework in Frameworks */,
 				ECEC5850168AE54200DDA258 /* AWSiOSSDK.framework in Frameworks */,
 				EC64C51116819EED0035838D /* UIKit.framework in Frameworks */,
 				EC64C51316819EED0035838D /* Foundation.framework in Frameworks */,
@@ -124,6 +127,7 @@
 		EC64C50116819EED0035838D = {
 			isa = PBXGroup;
 			children = (
+				EC4F38CE1696E9E40008C28A /* MobileCoreServices.framework */,
 				ECEC584F168AE54200DDA258 /* AWSiOSSDK.framework */,
 				ECE9C8741682FC3C00E069BD /* sheader.png */,
 				EC1149F4168DAD1F00F9C634 /* addbucketname_bg.png */,

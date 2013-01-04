@@ -102,17 +102,34 @@ static AmazonS3Client *s3 = nil;
         //Date
         NSDate *date = [NSDate date];
         NSString *imgName = [NSString stringWithFormat:@"myphoto_%@.jpg", date];
-        S3PutObjectRequest *upl = [[S3PutObjectRequest alloc] initWithKey:imgName inBucket:_bucketName];
-        upl.contentType = @"image/jpeg";
+        
+        S3PutObjectRequest *uploadRequest = [[S3PutObjectRequest alloc] initWithKey:imgName inBucket:_bucketName];
+        uploadRequest.contentType = @"image/jpeg";
         NSData *imageData = UIImageJPEGRepresentation(imageForUpload, 1.0);
-        upl.data = imageData;
-        [s3 putObject:upl];
+        uploadRequest.data = imageData;
+        
+        [s3 putObject:uploadRequest];
     }
     @catch (AmazonClientException *exception) {
         UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Upload error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [erralert show];
     }
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+- (IBAction)useCamera:(id)sender {
+    if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+        
+        UIImagePickerController *camPicker = [[UIImagePickerController alloc] init];
+        camPicker.delegate = self;
+        camPicker.sourceType = UIImagePickerControllerSourceTypeCamera;
+        camPicker.mediaTypes = [NSArray arrayWithObjects:(NSString *) kUTTypeImage, nil];
+        camPicker.allowsEditing = NO;
+        [self presentViewController:camPicker animated:YES completion:nil];
+    
+    } else {
+        NSLog(@"No camera!");
+    }
 }
 
 @end

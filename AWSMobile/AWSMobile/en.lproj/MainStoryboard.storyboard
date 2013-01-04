@@ -450,7 +450,11 @@
                             </tableView>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zur-pE-jv0">
                                 <items>
-                                    <barButtonItem style="plain" systemItem="camera" id="UWe-Lt-DND"/>
+                                    <barButtonItem style="plain" systemItem="camera" id="UWe-Lt-DND">
+                                        <connections>
+                                            <action selector="useCamera:" destination="L4r-eS-lmy" id="DDD-fv-4eE"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem systemItem="flexibleSpace" id="aAL-jy-pM3"/>
                                 </items>
                             </toolbar>
@@ -551,6 +555,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/BOObjectsViewController.h"/>
             <relationships>
                 <relationship kind="action" name="upload:"/>
+                <relationship kind="action" name="useCamera:"/>
                 <relationship kind="outlet" name="objectsTableView" candidateClass="UITableView"/>
             </relationships>
         </class>

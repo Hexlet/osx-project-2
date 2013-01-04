@@ -34,7 +34,7 @@
 
 #pragma mark AWS SignUp Button
 
-- (void)awsSignUp:(id)sender {
+- (IBAction)awsSignUp:(id)sender {
     NSString *url = [NSString stringWithFormat:@"http://aws.amazon.com"];
     [[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
 }
