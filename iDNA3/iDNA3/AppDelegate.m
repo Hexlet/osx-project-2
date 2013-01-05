@@ -62,6 +62,7 @@
     size = size >= 4 ? size : 4;
     length = length >= 5 ? length : 5;
     rate = rate > 0 ? rate : 1;
+    rate = rate < 99 ? rate : 99;
     
     [self setValue:[NSNumber numberWithInteger:size] forKey: @"populationSize"];
     [self setValue:[NSNumber numberWithInteger:length] forKey: @"DNALength"];

@@ -1352,7 +1352,6 @@
 							<string key="NSFrame">{{364, 18}, {116, 25}}</string>
 							<reference key="NSSuperview" ref="439893737"/>
 							<reference key="NSWindow"/>
-							<reference key="NSNextKeyView"/>
 							<string key="NSReuseIdentifierKey">_NS:22</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSButtonCell" key="NSCell" id="498518657">
@@ -1626,7 +1625,7 @@
 										<boolean value="YES" key="allowsFloats"/>
 										<integer value="1040" key="formatterBehavior"/>
 										<reference key="locale" ref="987101970"/>
-										<real value="100" key="maximum"/>
+										<real value="99" key="maximum"/>
 										<real value="1" key="minimum"/>
 										<string key="negativeInfinitySymbol">-∞</string>
 										<string key="nilSymbol"/>
@@ -1646,7 +1645,7 @@
 										<reference key="NSAttributes" ref="360020927"/>
 									</object>
 									<real value="1" key="NS.min"/>
-									<real value="100" key="NS.max"/>
+									<real value="99" key="NS.max"/>
 									<object class="NSDecimalNumberHandler" key="NS.rounding">
 										<int key="NS.roundingmode">3</int>
 										<bool key="NS.raise.overflow">YES</bool>
@@ -1730,14 +1729,14 @@
 							<string key="NSReuseIdentifierKey">_NS:9</string>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSSliderCell" key="NSCell" id="727491062">
-								<int key="NSCellFlags">-2080112384</int>
+								<int key="NSCellFlags">67371264</int>
 								<int key="NSCellFlags2">32768</int>
 								<string key="NSContents"/>
 								<string key="NSCellIdentifier">_NS:9</string>
 								<reference key="NSControlView" ref="634183637"/>
-								<double key="NSMaxValue">100</double>
+								<double key="NSMaxValue">99</double>
 								<double key="NSMinValue">1</double>
-								<double key="NSValue">20</double>
+								<double key="NSValue">19.722364050196848</double>
 								<double key="NSAltIncValue">0.0</double>
 								<int key="NSNumberOfTickMarks">0</int>
 								<int key="NSTickMarkPosition">1</int>
@@ -1859,7 +1858,7 @@
 															<string key="NSFrameSize">{436, 127}</string>
 															<reference key="NSSuperview" ref="767209687"/>
 															<reference key="NSWindow"/>
-															<reference key="NSNextKeyView" ref="31297436"/>
+															<reference key="NSNextKeyView" ref="776000706"/>
 															<string key="NSReuseIdentifierKey">_NS:13</string>
 															<object class="NSTextContainer" key="NSTextContainer" id="723085282">
 																<object class="NSLayoutManager" key="NSLayoutManager">
@@ -2116,7 +2115,7 @@ wGw</bytes>
 											<string key="NSFrame">{{12, 13}, {438, 129}}</string>
 											<reference key="NSSuperview" ref="216401842"/>
 											<reference key="NSWindow"/>
-											<reference key="NSNextKeyView" ref="776000706"/>
+											<reference key="NSNextKeyView" ref="767209687"/>
 											<string key="NSReuseIdentifierKey">_NS:9</string>
 											<int key="NSsFlags">133650</int>
 											<reference key="NSVScroller" ref="31297436"/>

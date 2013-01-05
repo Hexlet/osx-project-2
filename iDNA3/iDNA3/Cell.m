@@ -148,7 +148,7 @@ char nucleoBase[] = {'A', 'C', 'G', 'T'};
     
     char child[DNALength];
 
-    int matingCase = arc4random() % 3;
+    int matingCase = arc4random() % 5;
     
     switch (matingCase)
     {
@@ -159,6 +159,12 @@ char nucleoBase[] = {'A', 'C', 'G', 'T'};
                 break;
             
         case 2: for(int i = 0; i < DNALength; i++) child[i] = (i > 0.2 * DNALength && i < 0.8 * DNALength)  ? arrayB[i] : arrayA[i];
+                break;
+            
+        case 3: for(int i = 0; i < DNALength; i++) child[i] = (BOOL)(arc4random() % 2) ? arrayA[i] : arrayB[i];
+                break;
+            
+        case 4: for(int i = 0; i < DNALength; i++) child[i] = (BOOL)!(arc4random() % 3) ? nucleoBase[arc4random() % 4] : ((BOOL)(arc4random() % 2) ? arrayA[i] : arrayB[i]);
                 break;
     }
     
