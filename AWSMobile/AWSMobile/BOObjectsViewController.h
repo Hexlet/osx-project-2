@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <AWSiOSSDK/S3/AmazonS3Client.h>
 #import <MobileCoreServices/MobileCoreServices.h>
+#import "BOObjectDetailViewController.h"
 
 @interface BOObjectsViewController : UIViewController<UITableViewDelegate, UITableViewDataSource, UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
     NSMutableArray *objects;

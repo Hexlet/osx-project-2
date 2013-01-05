@@ -71,7 +71,7 @@ static AmazonS3Client *s3 = nil;
     cell.textLabel.backgroundColor = [UIColor clearColor];
     cell.detailTextLabel.backgroundColor = [UIColor clearColor];
     cell.textLabel.text = bucketName;
-    cell.detailTextLabel.text = [NSString stringWithFormat:@"Objects: %i Location: %@", [[s3 listObjectsInBucket:bucketName] count], [BORegionsHelper getRegionRealName:[[s3 getBucketLocation:bucketName] description]]];
+    cell.detailTextLabel.text = [NSString stringWithFormat:@"Creae date: %@", [[bucketsList objectAtIndex:indexPath.row] creationDate]];
     
     return cell;
 }

@@ -80,6 +80,17 @@ static AmazonS3Client *s3 = nil;
     
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    BOObjectDetailViewController *objectDetailView = [self.storyboard instantiateViewControllerWithIdentifier:@"Detail"];
+    
+    objectDetailView.thisImage = [objects objectAtIndex:indexPath.row];
+    objectDetailView.inBucket = _bucketName;
+    
+    [self.navigationController pushViewController:objectDetailView animated:YES];
+}
+
+
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -114,8 +125,11 @@ static AmazonS3Client *s3 = nil;
         UIAlertView *erralert = [[UIAlertView alloc] initWithTitle:@"Upload error!" message:[exception message] delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
         [erralert show];
     }
+    [self reload];
     [self dismissViewControllerAnimated:YES completion:nil];
 }
+
+#pragma mark Camera
 
 - (IBAction)useCamera:(id)sender {
     if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
@@ -130,6 +144,14 @@ static AmazonS3Client *s3 = nil;
     } else {
         NSLog(@"No camera!");
     }
+}
+
+#pragma mark Reload
+
+- (void)reload {
+    [objects removeAllObjects];
+    [objects addObjectsFromArray:[s3 listObjectsInBucket:_bucketName]];
+    [objectsTableView reloadData];
 }
 
 @end
