@@ -24,8 +24,8 @@
     self=[super init];
     if (self) {
         timer   = [[timerModel alloc] init];
-        presets = [[NSWindowController alloc] initWithWindowNibName:@"Presets" owner:self];
-        manualSetController = [[NSWindowController alloc] initWithWindowNibName:@"ManualSet" owner:self];
+        // presets = [[NSWindowController alloc] initWithWindowNibName:@"Presets" owner:self];
+        // manualSetController = [[NSWindowController alloc] initWithWindowNibName:@"ManualSet" owner:self];
 //        [[manualSetController window] ];
     }
     return self;
@@ -36,10 +36,12 @@
 }
 
 -(IBAction)showPresetsWindow:(id)sender {
+    presets = [[NSWindowController alloc] initWithWindowNibName:@"Presets" owner:self];
     [presets showWindow:self];
 }
 
 -(IBAction)showManualSetWindow:(id)sender {
+    manualSetController = [[NSWindowController alloc] initWithWindowNibName:@"ManualSet" owner:self];
     [manualSetController showWindow:self];
 }
 
@@ -77,7 +79,8 @@
     };
 
     [timer armWithIntegerHours: hours andMinutes:minutes andSeconds :seconds];
-
+    [_presetPanel performClose:self];
+    
 }
 
 -(IBAction)manualArmTimer:(id)sender{
@@ -103,7 +106,7 @@
     }
     
     [timer armWithIntegerHours:(int)enteredHours andMinutes:(int)enteredMinutes andSeconds:0];
-    //[_manualSetPanel performClose:self];
+    [_manualSetPanel performClose:self];
 }
 
 -(void)reportInvalidInput: (NSString * )message {
