@@ -22,6 +22,7 @@ static AmazonS3Client *s3 = nil;
     bucketsList = [[NSMutableArray alloc] init];
     [bucketsList addObjectsFromArray:[s3 listBuckets]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reload) name:@"reloadRequest" object:nil];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 #pragma mark Reload Data Method

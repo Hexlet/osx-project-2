@@ -41,6 +41,7 @@ static AmazonS3Client *s3 = nil;
 	
     s3 = [self connection];
     pickerRegions = [BORegionsHelper getAllRegions];
+    self.navigationController.navigationBar.barStyle = UIBarStyleBlack;
 }
 
 - (void)didReceiveMemoryWarning

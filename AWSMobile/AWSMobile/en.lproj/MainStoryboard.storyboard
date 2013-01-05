@@ -208,7 +208,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zkd-j7-ayQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="521" y="258"/>
+            <point key="canvasLocation" x="537" y="151"/>
         </scene>
         <!--AddS3 Bucket View Controller - New Bucket-->
         <scene sceneID="AGW-tv-EJm">
@@ -351,7 +351,7 @@
                                     <outlet property="delegate" destination="wfR-eg-ba5" id="cuW-GF-8bM"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-ig-ewQ">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="Fl8-ig-ewQ">
                                 <items>
                                     <barButtonItem style="plain" systemItem="refresh" id="Ueq-aT-CG5">
                                         <connections>
@@ -605,7 +605,7 @@
                                     <outlet property="delegate" destination="L4r-eS-lmy" id="8Tg-Z6-Vtb"/>
                                 </connections>
                             </tableView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zur-pE-jv0">
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" translatesAutoresizingMaskIntoConstraints="NO" id="zur-pE-jv0">
                                 <items>
                                     <barButtonItem style="plain" systemItem="camera" id="UWe-Lt-DND">
                                         <connections>
