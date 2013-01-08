@@ -14,29 +14,23 @@ static NSDictionary *regions = nil;
 @implementation BORegionsHelper
 
 + (void)allRegions {
-    regions = [[NSDictionary alloc] initWithObjects:[NSArray arrayWithObjects:@"Ireland",
-                                                     @"Sao Paulo",
-                                                     @"Northern California",
-                                                     @"Oregon",
-                                                     @"Tokyo",
-                                                     @"Sydney",
-                                                     @"US Standard", nil]
-                                            forKeys:[NSArray arrayWithObjects:@"eu-west-1",
-                                                     @"sa-east-1",
-                                                     @"us-west-1",
-                                                     @"us-west-2",
-                                                     @"ap-northeast-1",
-                                                     @"ap-southeast-2",
-                                                     @"", nil]];
+    
+    regions = @{@"eu-west-1" : @"Ireland",
+                @"sa-east-1" : @"Sao Paulo",
+                @"us-west-1" : @"Northern California",
+                @"us-west-2" : @"Oregon",
+                @"ap-northeast-1" : @"Tokyo",
+                @"ap-northeast-2" : @"Sydney",
+                @"" : @"US Standard"};
 }
 
 + (NSArray *)getAllRegions {
-    return [NSArray arrayWithObjects:@"Ireland",
+    return @[@"Ireland",
             @"Sao Paulo",
             @"Northern California",
             @"Oregon",
             @"Tokyo",
-            @"Sydney", nil];
+            @"Sydney"];
 }
 
 + (NSString *)getRegionRealName:(NSString *)region {
