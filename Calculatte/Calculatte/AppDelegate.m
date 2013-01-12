@@ -7,12 +7,13 @@
 //
 
 #import "AppDelegate.h"
+#import "MainWindowController.h"
 
 @implementation AppDelegate
 
 -(void)activateApp{
     [NSApp activateIgnoringOtherApps:YES];
-    [_window makeKeyAndOrderFront:self];
+    [mainWindow showWindow:self];
 }
 
 -(void)createStatusBar {
@@ -23,10 +24,11 @@
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    history = [[NSMutableArray alloc]init];
-    eval = [DDMathEvaluator sharedMathEvaluator];
 
     [self createStatusBar];
+    
+    mainWindow = [[MainWindowController alloc] init];
+    [mainWindow showWindow:self];
     
     [NSEvent addGlobalMonitorForEventsMatchingMask:NSKeyDownMask handler:^(NSEvent *event){
         
@@ -34,65 +36,10 @@
 
         if(([event modifierFlags] & NSControlKeyMask) && (character == 48)) { // Ctrl+0
             [NSApp activateIgnoringOtherApps:YES];
-            [_window makeKeyAndOrderFront:self];
+            [mainWindow showWindow:self];
         }
     }];
     
-}
-
-- (void)evaluateExpression {
-
-    NSString *expression = [_textField stringValue];
-    
-    // Remove whitaspace before and after
-    expression = [expression stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-    
-    if ([expression isEqualToString: lastExpression]) {
-        NSArray *expressionParts = [expression componentsSeparatedByString:@"="];
-        NSString *lastPart = [[expressionParts objectAtIndex:[expressionParts count] - 1] stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-        
-        evaluatedExpression = [lastPart mutableCopy];
-        
-    }
-    else {
-        
-        evaluatedExpression = [expression mutableCopy];
-        
-        NSString *result;
-        @try {
-            result = [[eval evaluateString:expression withSubstitutions:nil] stringValue];
-        }
-        @catch (NSException *exception) {
-            result = @"ERROR";
-        }
-        
-        [evaluatedExpression appendString:@" = "];
-        [evaluatedExpression appendString:result];
-    }
-    
-    [_textField setStringValue:evaluatedExpression];
-    [history insertObject:evaluatedExpression atIndex:0];
-    [_tableView reloadData];
-    
-    lastExpression = evaluatedExpression;
-    
-}
-
-- (IBAction)calculateIt:(id)sender {
-    [self evaluateExpression];
-}
-
-- (void)controlTextDidEndEditing:(NSNotification *) notification {
-    [self evaluateExpression];
-}
-
--(NSInteger) numberOfRowsInTableView:(NSTableView*) tableView {
-    return (NSInteger) [history count];
-}
-
--(id) tableView:(NSTableView*) tableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row {
-    NSString *expression = [history objectAtIndex:row];
-    return expression;
 }
 
 @end

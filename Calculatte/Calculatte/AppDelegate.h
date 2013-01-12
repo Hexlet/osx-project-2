@@ -7,20 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DDMathParser.h"
+
+@class MainWindowController;
 
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
-    NSMutableString *lastExpression;
-    NSMutableString *evaluatedExpression;
     NSStatusItem *statusBar;
-    DDMathEvaluator *eval;
-    NSMutableArray *history;
+    MainWindowController *mainWindow;
 }
-
-@property (assign) IBOutlet NSWindow *window;
-@property (weak) IBOutlet NSTextField *textField;
-@property (weak) IBOutlet NSTableView *tableView;
-
-- (IBAction)calculateIt:(id)sender;
 
 @end

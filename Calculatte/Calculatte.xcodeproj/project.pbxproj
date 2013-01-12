@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C7053C0A1688F8E000EB5B7B /* coffe_cup_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C7053C091688F8E000EB5B7B /* coffe_cup_icon.png */; };
+		C75D4F821696D5FB0091CE61 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D4F801696D5FB0091CE61 /* MainWindowController.m */; };
+		C75D4F831696D5FB0091CE61 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C75D4F811696D5FB0091CE61 /* MainWindowController.xib */; };
 		C77873F3166B95BE0076ACE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77873F2166B95BE0076ACE6 /* Cocoa.framework */; };
 		C77873FD166B95BE0076ACE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C77873FB166B95BE0076ACE6 /* InfoPlist.strings */; };
 		C77873FF166B95BE0076ACE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C77873FE166B95BE0076ACE6 /* main.m */; };
@@ -39,6 +41,9 @@
 
 /* Begin PBXFileReference section */
 		C7053C091688F8E000EB5B7B /* coffe_cup_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffe_cup_icon.png; sourceTree = "<group>"; };
+		C75D4F7F1696D5FB0091CE61 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		C75D4F801696D5FB0091CE61 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		C75D4F811696D5FB0091CE61 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
 		C77873EE166B95BE0076ACE6 /* Calculatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C77873F2166B95BE0076ACE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		C77873F5166B95BE0076ACE6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -154,6 +159,9 @@
 			children = (
 				C7787404166B95BE0076ACE6 /* AppDelegate.h */,
 				C7787405166B95BE0076ACE6 /* AppDelegate.m */,
+				C75D4F7F1696D5FB0091CE61 /* MainWindowController.h */,
+				C75D4F801696D5FB0091CE61 /* MainWindowController.m */,
+				C75D4F811696D5FB0091CE61 /* MainWindowController.xib */,
 				C7787407166B95BE0076ACE6 /* MainMenu.xib */,
 				C77873F9166B95BE0076ACE6 /* Supporting Files */,
 			);
@@ -280,6 +288,7 @@
 				C7787403166B95BE0076ACE6 /* Credits.rtf in Resources */,
 				C7787409166B95BE0076ACE6 /* MainMenu.xib in Resources */,
 				C7053C0A1688F8E000EB5B7B /* coffe_cup_icon.png in Resources */,
+				C75D4F831696D5FB0091CE61 /* MainWindowController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +322,7 @@
 				C78E1EE3167DF964001648B5 /* DDParserTypes.m in Sources */,
 				C78E1EE4167DF964001648B5 /* DDTypes.m in Sources */,
 				C78E1EE5167DF964001648B5 /* NSString+DDMathParsing.m in Sources */,
+				C75D4F821696D5FB0091CE61 /* MainWindowController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
