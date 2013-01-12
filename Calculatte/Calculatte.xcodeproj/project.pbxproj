@@ -1,0 +1,460 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C7053C0A1688F8E000EB5B7B /* coffe_cup_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = C7053C091688F8E000EB5B7B /* coffe_cup_icon.png */; };
+		C75D4F821696D5FB0091CE61 /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = C75D4F801696D5FB0091CE61 /* MainWindowController.m */; };
+		C75D4F831696D5FB0091CE61 /* MainWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C75D4F811696D5FB0091CE61 /* MainWindowController.xib */; };
+		C77873F3166B95BE0076ACE6 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C77873F2166B95BE0076ACE6 /* Cocoa.framework */; };
+		C77873FD166B95BE0076ACE6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C77873FB166B95BE0076ACE6 /* InfoPlist.strings */; };
+		C77873FF166B95BE0076ACE6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C77873FE166B95BE0076ACE6 /* main.m */; };
+		C7787403166B95BE0076ACE6 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = C7787401166B95BE0076ACE6 /* Credits.rtf */; };
+		C7787406166B95BE0076ACE6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C7787405166B95BE0076ACE6 /* AppDelegate.m */; };
+		C7787409166B95BE0076ACE6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = C7787407166B95BE0076ACE6 /* MainMenu.xib */; };
+		C78E1ED1167DF964001648B5 /* _DDFunctionContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EA5167DF964001648B5 /* _DDFunctionContainer.m */; };
+		C78E1ED2167DF964001648B5 /* _DDFunctionExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EA7167DF964001648B5 /* _DDFunctionExpression.m */; };
+		C78E1ED3167DF964001648B5 /* _DDFunctionTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EA9167DF964001648B5 /* _DDFunctionTerm.m */; };
+		C78E1ED4167DF964001648B5 /* _DDFunctionUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EAB167DF964001648B5 /* _DDFunctionUtilities.m */; };
+		C78E1ED5167DF964001648B5 /* _DDGroupTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EAD167DF964001648B5 /* _DDGroupTerm.m */; };
+		C78E1ED6167DF964001648B5 /* _DDNumberExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EAF167DF964001648B5 /* _DDNumberExpression.m */; };
+		C78E1ED7167DF964001648B5 /* _DDNumberTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EB1167DF964001648B5 /* _DDNumberTerm.m */; };
+		C78E1ED8167DF964001648B5 /* _DDOperatorInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EB3167DF964001648B5 /* _DDOperatorInfo.m */; };
+		C78E1ED9167DF964001648B5 /* _DDOperatorTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EB5167DF964001648B5 /* _DDOperatorTerm.m */; };
+		C78E1EDA167DF964001648B5 /* _DDParserTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EB7167DF964001648B5 /* _DDParserTerm.m */; };
+		C78E1EDB167DF964001648B5 /* _DDRewriteRule.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EB9167DF964001648B5 /* _DDRewriteRule.m */; };
+		C78E1EDC167DF964001648B5 /* _DDVariableExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EBB167DF964001648B5 /* _DDVariableExpression.m */; };
+		C78E1EDD167DF964001648B5 /* _DDVariableTerm.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EBD167DF964001648B5 /* _DDVariableTerm.m */; };
+		C78E1EDE167DF964001648B5 /* DDExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EBF167DF964001648B5 /* DDExpression.m */; };
+		C78E1EDF167DF964001648B5 /* DDMathEvaluator.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EC2167DF964001648B5 /* DDMathEvaluator.m */; };
+		C78E1EE0167DF964001648B5 /* DDMathStringToken.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EC6167DF964001648B5 /* DDMathStringToken.m */; };
+		C78E1EE1167DF964001648B5 /* DDMathStringTokenizer.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1EC8167DF964001648B5 /* DDMathStringTokenizer.m */; };
+		C78E1EE2167DF964001648B5 /* DDParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1ECA167DF964001648B5 /* DDParser.m */; };
+		C78E1EE3167DF964001648B5 /* DDParserTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1ECC167DF964001648B5 /* DDParserTypes.m */; };
+		C78E1EE4167DF964001648B5 /* DDTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1ECE167DF964001648B5 /* DDTypes.m */; };
+		C78E1EE5167DF964001648B5 /* NSString+DDMathParsing.m in Sources */ = {isa = PBXBuildFile; fileRef = C78E1ED0167DF964001648B5 /* NSString+DDMathParsing.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C7053C091688F8E000EB5B7B /* coffe_cup_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coffe_cup_icon.png; sourceTree = "<group>"; };
+		C75D4F7F1696D5FB0091CE61 /* MainWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		C75D4F801696D5FB0091CE61 /* MainWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
+		C75D4F811696D5FB0091CE61 /* MainWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindowController.xib; sourceTree = "<group>"; };
+		C77873EE166B95BE0076ACE6 /* Calculatte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Calculatte.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C77873F2166B95BE0076ACE6 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		C77873F5166B95BE0076ACE6 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C77873F6166B95BE0076ACE6 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C77873F7166B95BE0076ACE6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C77873FA166B95BE0076ACE6 /* Calculatte-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Calculatte-Info.plist"; sourceTree = "<group>"; };
+		C77873FC166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C77873FE166B95BE0076ACE6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C7787400166B95BE0076ACE6 /* Calculatte-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Calculatte-Prefix.pch"; sourceTree = "<group>"; };
+		C7787402166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		C7787404166B95BE0076ACE6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C7787405166B95BE0076ACE6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C7787408166B95BE0076ACE6 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		C78E1EA4167DF964001648B5 /* _DDFunctionContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDFunctionContainer.h; sourceTree = "<group>"; };
+		C78E1EA5167DF964001648B5 /* _DDFunctionContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDFunctionContainer.m; sourceTree = "<group>"; };
+		C78E1EA6167DF964001648B5 /* _DDFunctionExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDFunctionExpression.h; sourceTree = "<group>"; };
+		C78E1EA7167DF964001648B5 /* _DDFunctionExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDFunctionExpression.m; sourceTree = "<group>"; };
+		C78E1EA8167DF964001648B5 /* _DDFunctionTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDFunctionTerm.h; sourceTree = "<group>"; };
+		C78E1EA9167DF964001648B5 /* _DDFunctionTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDFunctionTerm.m; sourceTree = "<group>"; };
+		C78E1EAA167DF964001648B5 /* _DDFunctionUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDFunctionUtilities.h; sourceTree = "<group>"; };
+		C78E1EAB167DF964001648B5 /* _DDFunctionUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDFunctionUtilities.m; sourceTree = "<group>"; };
+		C78E1EAC167DF964001648B5 /* _DDGroupTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDGroupTerm.h; sourceTree = "<group>"; };
+		C78E1EAD167DF964001648B5 /* _DDGroupTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDGroupTerm.m; sourceTree = "<group>"; };
+		C78E1EAE167DF964001648B5 /* _DDNumberExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDNumberExpression.h; sourceTree = "<group>"; };
+		C78E1EAF167DF964001648B5 /* _DDNumberExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDNumberExpression.m; sourceTree = "<group>"; };
+		C78E1EB0167DF964001648B5 /* _DDNumberTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDNumberTerm.h; sourceTree = "<group>"; };
+		C78E1EB1167DF964001648B5 /* _DDNumberTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDNumberTerm.m; sourceTree = "<group>"; };
+		C78E1EB2167DF964001648B5 /* _DDOperatorInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDOperatorInfo.h; sourceTree = "<group>"; };
+		C78E1EB3167DF964001648B5 /* _DDOperatorInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDOperatorInfo.m; sourceTree = "<group>"; };
+		C78E1EB4167DF964001648B5 /* _DDOperatorTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDOperatorTerm.h; sourceTree = "<group>"; };
+		C78E1EB5167DF964001648B5 /* _DDOperatorTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDOperatorTerm.m; sourceTree = "<group>"; };
+		C78E1EB6167DF964001648B5 /* _DDParserTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDParserTerm.h; sourceTree = "<group>"; };
+		C78E1EB7167DF964001648B5 /* _DDParserTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDParserTerm.m; sourceTree = "<group>"; };
+		C78E1EB8167DF964001648B5 /* _DDRewriteRule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDRewriteRule.h; sourceTree = "<group>"; };
+		C78E1EB9167DF964001648B5 /* _DDRewriteRule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDRewriteRule.m; sourceTree = "<group>"; };
+		C78E1EBA167DF964001648B5 /* _DDVariableExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDVariableExpression.h; sourceTree = "<group>"; };
+		C78E1EBB167DF964001648B5 /* _DDVariableExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDVariableExpression.m; sourceTree = "<group>"; };
+		C78E1EBC167DF964001648B5 /* _DDVariableTerm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _DDVariableTerm.h; sourceTree = "<group>"; };
+		C78E1EBD167DF964001648B5 /* _DDVariableTerm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _DDVariableTerm.m; sourceTree = "<group>"; };
+		C78E1EBE167DF964001648B5 /* DDExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDExpression.h; sourceTree = "<group>"; };
+		C78E1EBF167DF964001648B5 /* DDExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDExpression.m; sourceTree = "<group>"; };
+		C78E1EC0167DF964001648B5 /* DDMathEvaluator+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DDMathEvaluator+Private.h"; sourceTree = "<group>"; };
+		C78E1EC1167DF964001648B5 /* DDMathEvaluator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMathEvaluator.h; sourceTree = "<group>"; };
+		C78E1EC2167DF964001648B5 /* DDMathEvaluator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMathEvaluator.m; sourceTree = "<group>"; };
+		C78E1EC3167DF964001648B5 /* DDMathParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMathParser.h; sourceTree = "<group>"; };
+		C78E1EC4167DF964001648B5 /* DDMathParserMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMathParserMacros.h; sourceTree = "<group>"; };
+		C78E1EC5167DF964001648B5 /* DDMathStringToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMathStringToken.h; sourceTree = "<group>"; };
+		C78E1EC6167DF964001648B5 /* DDMathStringToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMathStringToken.m; sourceTree = "<group>"; };
+		C78E1EC7167DF964001648B5 /* DDMathStringTokenizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDMathStringTokenizer.h; sourceTree = "<group>"; };
+		C78E1EC8167DF964001648B5 /* DDMathStringTokenizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDMathStringTokenizer.m; sourceTree = "<group>"; };
+		C78E1EC9167DF964001648B5 /* DDParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDParser.h; sourceTree = "<group>"; };
+		C78E1ECA167DF964001648B5 /* DDParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDParser.m; sourceTree = "<group>"; };
+		C78E1ECB167DF964001648B5 /* DDParserTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDParserTypes.h; sourceTree = "<group>"; };
+		C78E1ECC167DF964001648B5 /* DDParserTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDParserTypes.m; sourceTree = "<group>"; };
+		C78E1ECD167DF964001648B5 /* DDTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTypes.h; sourceTree = "<group>"; };
+		C78E1ECE167DF964001648B5 /* DDTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTypes.m; sourceTree = "<group>"; };
+		C78E1ECF167DF964001648B5 /* NSString+DDMathParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DDMathParsing.h"; sourceTree = "<group>"; };
+		C78E1ED0167DF964001648B5 /* NSString+DDMathParsing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DDMathParsing.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C77873EB166B95BE0076ACE6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77873F3166B95BE0076ACE6 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C77873E3166B95BE0076ACE6 = {
+			isa = PBXGroup;
+			children = (
+				C78E1EA3167DF964001648B5 /* DDMathParser */,
+				C7053C091688F8E000EB5B7B /* coffe_cup_icon.png */,
+				C77873F8166B95BE0076ACE6 /* Calculatte */,
+				C77873F1166B95BE0076ACE6 /* Frameworks */,
+				C77873EF166B95BE0076ACE6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C77873EF166B95BE0076ACE6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C77873EE166B95BE0076ACE6 /* Calculatte.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C77873F1166B95BE0076ACE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77873F2166B95BE0076ACE6 /* Cocoa.framework */,
+				C77873F4166B95BE0076ACE6 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C77873F4166B95BE0076ACE6 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C77873F5166B95BE0076ACE6 /* AppKit.framework */,
+				C77873F6166B95BE0076ACE6 /* CoreData.framework */,
+				C77873F7166B95BE0076ACE6 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		C77873F8166B95BE0076ACE6 /* Calculatte */ = {
+			isa = PBXGroup;
+			children = (
+				C7787404166B95BE0076ACE6 /* AppDelegate.h */,
+				C7787405166B95BE0076ACE6 /* AppDelegate.m */,
+				C75D4F7F1696D5FB0091CE61 /* MainWindowController.h */,
+				C75D4F801696D5FB0091CE61 /* MainWindowController.m */,
+				C75D4F811696D5FB0091CE61 /* MainWindowController.xib */,
+				C7787407166B95BE0076ACE6 /* MainMenu.xib */,
+				C77873F9166B95BE0076ACE6 /* Supporting Files */,
+			);
+			path = Calculatte;
+			sourceTree = "<group>";
+		};
+		C77873F9166B95BE0076ACE6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C77873FA166B95BE0076ACE6 /* Calculatte-Info.plist */,
+				C77873FB166B95BE0076ACE6 /* InfoPlist.strings */,
+				C77873FE166B95BE0076ACE6 /* main.m */,
+				C7787400166B95BE0076ACE6 /* Calculatte-Prefix.pch */,
+				C7787401166B95BE0076ACE6 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C78E1EA3167DF964001648B5 /* DDMathParser */ = {
+			isa = PBXGroup;
+			children = (
+				C78E1EA4167DF964001648B5 /* _DDFunctionContainer.h */,
+				C78E1EA5167DF964001648B5 /* _DDFunctionContainer.m */,
+				C78E1EA6167DF964001648B5 /* _DDFunctionExpression.h */,
+				C78E1EA7167DF964001648B5 /* _DDFunctionExpression.m */,
+				C78E1EA8167DF964001648B5 /* _DDFunctionTerm.h */,
+				C78E1EA9167DF964001648B5 /* _DDFunctionTerm.m */,
+				C78E1EAA167DF964001648B5 /* _DDFunctionUtilities.h */,
+				C78E1EAB167DF964001648B5 /* _DDFunctionUtilities.m */,
+				C78E1EAC167DF964001648B5 /* _DDGroupTerm.h */,
+				C78E1EAD167DF964001648B5 /* _DDGroupTerm.m */,
+				C78E1EAE167DF964001648B5 /* _DDNumberExpression.h */,
+				C78E1EAF167DF964001648B5 /* _DDNumberExpression.m */,
+				C78E1EB0167DF964001648B5 /* _DDNumberTerm.h */,
+				C78E1EB1167DF964001648B5 /* _DDNumberTerm.m */,
+				C78E1EB2167DF964001648B5 /* _DDOperatorInfo.h */,
+				C78E1EB3167DF964001648B5 /* _DDOperatorInfo.m */,
+				C78E1EB4167DF964001648B5 /* _DDOperatorTerm.h */,
+				C78E1EB5167DF964001648B5 /* _DDOperatorTerm.m */,
+				C78E1EB6167DF964001648B5 /* _DDParserTerm.h */,
+				C78E1EB7167DF964001648B5 /* _DDParserTerm.m */,
+				C78E1EB8167DF964001648B5 /* _DDRewriteRule.h */,
+				C78E1EB9167DF964001648B5 /* _DDRewriteRule.m */,
+				C78E1EBA167DF964001648B5 /* _DDVariableExpression.h */,
+				C78E1EBB167DF964001648B5 /* _DDVariableExpression.m */,
+				C78E1EBC167DF964001648B5 /* _DDVariableTerm.h */,
+				C78E1EBD167DF964001648B5 /* _DDVariableTerm.m */,
+				C78E1EBE167DF964001648B5 /* DDExpression.h */,
+				C78E1EBF167DF964001648B5 /* DDExpression.m */,
+				C78E1EC0167DF964001648B5 /* DDMathEvaluator+Private.h */,
+				C78E1EC1167DF964001648B5 /* DDMathEvaluator.h */,
+				C78E1EC2167DF964001648B5 /* DDMathEvaluator.m */,
+				C78E1EC3167DF964001648B5 /* DDMathParser.h */,
+				C78E1EC4167DF964001648B5 /* DDMathParserMacros.h */,
+				C78E1EC5167DF964001648B5 /* DDMathStringToken.h */,
+				C78E1EC6167DF964001648B5 /* DDMathStringToken.m */,
+				C78E1EC7167DF964001648B5 /* DDMathStringTokenizer.h */,
+				C78E1EC8167DF964001648B5 /* DDMathStringTokenizer.m */,
+				C78E1EC9167DF964001648B5 /* DDParser.h */,
+				C78E1ECA167DF964001648B5 /* DDParser.m */,
+				C78E1ECB167DF964001648B5 /* DDParserTypes.h */,
+				C78E1ECC167DF964001648B5 /* DDParserTypes.m */,
+				C78E1ECD167DF964001648B5 /* DDTypes.h */,
+				C78E1ECE167DF964001648B5 /* DDTypes.m */,
+				C78E1ECF167DF964001648B5 /* NSString+DDMathParsing.h */,
+				C78E1ED0167DF964001648B5 /* NSString+DDMathParsing.m */,
+			);
+			name = DDMathParser;
+			path = External/DDMathParser/DDMathParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C77873ED166B95BE0076ACE6 /* Calculatte */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C778740C166B95BE0076ACE6 /* Build configuration list for PBXNativeTarget "Calculatte" */;
+			buildPhases = (
+				C77873EA166B95BE0076ACE6 /* Sources */,
+				C77873EB166B95BE0076ACE6 /* Frameworks */,
+				C77873EC166B95BE0076ACE6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Calculatte;
+			productName = Calculatte;
+			productReference = C77873EE166B95BE0076ACE6 /* Calculatte.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C77873E5166B95BE0076ACE6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Alex Bakoushin";
+			};
+			buildConfigurationList = C77873E8166B95BE0076ACE6 /* Build configuration list for PBXProject "Calculatte" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C77873E3166B95BE0076ACE6;
+			productRefGroup = C77873EF166B95BE0076ACE6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C77873ED166B95BE0076ACE6 /* Calculatte */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C77873EC166B95BE0076ACE6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77873FD166B95BE0076ACE6 /* InfoPlist.strings in Resources */,
+				C7787403166B95BE0076ACE6 /* Credits.rtf in Resources */,
+				C7787409166B95BE0076ACE6 /* MainMenu.xib in Resources */,
+				C7053C0A1688F8E000EB5B7B /* coffe_cup_icon.png in Resources */,
+				C75D4F831696D5FB0091CE61 /* MainWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C77873EA166B95BE0076ACE6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C77873FF166B95BE0076ACE6 /* main.m in Sources */,
+				C7787406166B95BE0076ACE6 /* AppDelegate.m in Sources */,
+				C78E1ED1167DF964001648B5 /* _DDFunctionContainer.m in Sources */,
+				C78E1ED2167DF964001648B5 /* _DDFunctionExpression.m in Sources */,
+				C78E1ED3167DF964001648B5 /* _DDFunctionTerm.m in Sources */,
+				C78E1ED4167DF964001648B5 /* _DDFunctionUtilities.m in Sources */,
+				C78E1ED5167DF964001648B5 /* _DDGroupTerm.m in Sources */,
+				C78E1ED6167DF964001648B5 /* _DDNumberExpression.m in Sources */,
+				C78E1ED7167DF964001648B5 /* _DDNumberTerm.m in Sources */,
+				C78E1ED8167DF964001648B5 /* _DDOperatorInfo.m in Sources */,
+				C78E1ED9167DF964001648B5 /* _DDOperatorTerm.m in Sources */,
+				C78E1EDA167DF964001648B5 /* _DDParserTerm.m in Sources */,
+				C78E1EDB167DF964001648B5 /* _DDRewriteRule.m in Sources */,
+				C78E1EDC167DF964001648B5 /* _DDVariableExpression.m in Sources */,
+				C78E1EDD167DF964001648B5 /* _DDVariableTerm.m in Sources */,
+				C78E1EDE167DF964001648B5 /* DDExpression.m in Sources */,
+				C78E1EDF167DF964001648B5 /* DDMathEvaluator.m in Sources */,
+				C78E1EE0167DF964001648B5 /* DDMathStringToken.m in Sources */,
+				C78E1EE1167DF964001648B5 /* DDMathStringTokenizer.m in Sources */,
+				C78E1EE2167DF964001648B5 /* DDParser.m in Sources */,
+				C78E1EE3167DF964001648B5 /* DDParserTypes.m in Sources */,
+				C78E1EE4167DF964001648B5 /* DDTypes.m in Sources */,
+				C78E1EE5167DF964001648B5 /* NSString+DDMathParsing.m in Sources */,
+				C75D4F821696D5FB0091CE61 /* MainWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C77873FB166B95BE0076ACE6 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C77873FC166B95BE0076ACE6 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C7787401166B95BE0076ACE6 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7787402166B95BE0076ACE6 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		C7787407166B95BE0076ACE6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C7787408166B95BE0076ACE6 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C778740A166B95BE0076ACE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		C778740B166B95BE0076ACE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C778740D166B95BE0076ACE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Calculatte/Calculatte-Prefix.pch";
+				INFOPLIST_FILE = "Calculatte/Calculatte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C778740E166B95BE0076ACE6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Calculatte/Calculatte-Prefix.pch";
+				INFOPLIST_FILE = "Calculatte/Calculatte-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C77873E8166B95BE0076ACE6 /* Build configuration list for PBXProject "Calculatte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C778740A166B95BE0076ACE6 /* Debug */,
+				C778740B166B95BE0076ACE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C778740C166B95BE0076ACE6 /* Build configuration list for PBXNativeTarget "Calculatte" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C778740D166B95BE0076ACE6 /* Debug */,
+				C778740E166B95BE0076ACE6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C77873E5166B95BE0076ACE6 /* Project object */;
+}
