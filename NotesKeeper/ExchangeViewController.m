@@ -72,12 +72,7 @@ BOOL isSynchronizing;
 }
 -(void) alignControls{
 
-	bool isPortrait;
-
-	if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight)
-		isPortrait = NO;
-	else
-		isPortrait = YES;
+	bool isPortrait = ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait || [UIDevice currentDevice].orientation == UIDeviceOrientationUnknown);
 
 	_lblHeader.hidden = !isPortrait;
 	_lblBankname.hidden = !isPortrait;
@@ -114,16 +109,7 @@ BOOL isSynchronizing;
 
 #pragma mark - Keyboard events:
 -(void) keyboardWillShow: (NSNotification *) notification {
-
-	bool isPortrait = UIInterfaceOrientationIsPortrait([UIDevice currentDevice].orientation);
-
-/*
-	if([UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeLeft || [UIDevice currentDevice].orientation == UIInterfaceOrientationLandscapeRight)
-		isPortrait = NO;
-	else
-		isPortrait = YES;
-*/
-
+	bool isPortrait = ([UIDevice currentDevice].orientation == UIDeviceOrientationPortrait || [UIDevice currentDevice].orientation == UIDeviceOrientationUnknown);
 	_keyBar.hidden = false;
 
 	[UIView beginAnimations:nil context:NULL];

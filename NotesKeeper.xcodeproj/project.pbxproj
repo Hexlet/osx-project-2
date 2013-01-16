@@ -24,8 +24,10 @@
 		8728EA141681E1AD00637A4C /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8728EA131681E1AD00637A4C /* XMLReader.m */; };
 		87882825165E08B9002615C9 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 87882824165E08B9002615C9 /* Common.m */; };
 		878D39BB1663BB4800C6FB43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */; };
+		879E436716A59B4E00041732 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 879E436616A59B4E00041732 /* Copy.png */; };
 		87A34E2D165CD8B100299DAF /* ExchangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A34E2C165CD8B100299DAF /* ExchangeViewController.m */; };
 		87AFCD0A166396C900628715 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = 87AFCD09166396C900628715 /* options.png */; };
+		87B211D2169B09B2008DC210 /* UICalc.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B211D1169B09B2008DC210 /* UICalc.m */; };
 		87B304591663492C00CF3D60 /* mail.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304561663492C00CF3D60 /* mail.png */; };
 		87B3045A1663492C00CF3D60 /* smallArrowDown.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304571663492C00CF3D60 /* smallArrowDown.png */; };
 		87B3045B1663492C00CF3D60 /* smallArrowUp.png in Resources */ = {isa = PBXBuildFile; fileRef = 87B304581663492C00CF3D60 /* smallArrowUp.png */; };
@@ -95,6 +97,7 @@
 		87C5A70B16639DA00096C3F6 /* XCD.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87C5A6CE16639DA00096C3F6 /* XCD.gif */; };
 		87C5A70C16639DA00096C3F6 /* XOF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87C5A6CF16639DA00096C3F6 /* XOF.gif */; };
 		87C5A70D16639DA00096C3F6 /* ZAR.gif in Resources */ = {isa = PBXBuildFile; fileRef = 87C5A6D016639DA00096C3F6 /* ZAR.gif */; };
+		87E7757F169DA5FC0052420C /* kbPattern01.png in Resources */ = {isa = PBXBuildFile; fileRef = 87E7757E169DA5FC0052420C /* kbPattern01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -123,9 +126,12 @@
 		87882823165E08B9002615C9 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		87882824165E08B9002615C9 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "NotesKeeper/Images/Default-568h@2x.png"; sourceTree = "<group>"; };
+		879E436616A59B4E00041732 /* Copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Copy.png; path = NotesKeeper/Images/Copy.png; sourceTree = "<group>"; };
 		87A34E2B165CD8B100299DAF /* ExchangeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExchangeViewController.h; sourceTree = "<group>"; };
 		87A34E2C165CD8B100299DAF /* ExchangeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExchangeViewController.m; sourceTree = "<group>"; };
 		87AFCD09166396C900628715 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = options.png; path = NotesKeeper/Images/options.png; sourceTree = "<group>"; };
+		87B211D0169B09B2008DC210 /* UICalc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICalc.h; sourceTree = "<group>"; };
+		87B211D1169B09B2008DC210 /* UICalc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICalc.m; sourceTree = "<group>"; };
 		87B304561663492C00CF3D60 /* mail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mail.png; path = NotesKeeper/Images/mail.png; sourceTree = "<group>"; };
 		87B304571663492C00CF3D60 /* smallArrowDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallArrowDown.png; path = NotesKeeper/Images/smallArrowDown.png; sourceTree = "<group>"; };
 		87B304581663492C00CF3D60 /* smallArrowUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smallArrowUp.png; path = NotesKeeper/Images/smallArrowUp.png; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 		87C5A6CE16639DA00096C3F6 /* XCD.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = XCD.gif; sourceTree = "<group>"; };
 		87C5A6CF16639DA00096C3F6 /* XOF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = XOF.gif; sourceTree = "<group>"; };
 		87C5A6D016639DA00096C3F6 /* ZAR.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ZAR.gif; sourceTree = "<group>"; };
+		87E7757E169DA5FC0052420C /* kbPattern01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = kbPattern01.png; path = NotesKeeper/Images/kbPattern01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +278,8 @@
 				87C33F991682F0E300F86D79 /* CurrencyDescr.plist */,
 				87C16F8B16873639000B34DC /* ApplicationSettings.h */,
 				87C16F8C16873639000B34DC /* ApplicationSettings.m */,
+				87B211D0169B09B2008DC210 /* UICalc.h */,
+				87B211D1169B09B2008DC210 /* UICalc.m */,
 			);
 			path = NotesKeeper;
 			sourceTree = "<group>";
@@ -289,6 +298,8 @@
 		87166E64165BD3EA009F328B /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				879E436616A59B4E00041732 /* Copy.png */,
+				87E7757E169DA5FC0052420C /* kbPattern01.png */,
 				878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */,
 				87C5A69316639DA00096C3F6 /* Currency */,
 				87AFCD09166396C900628715 /* options.png */,
@@ -495,6 +506,8 @@
 				87C5A70D16639DA00096C3F6 /* ZAR.gif in Resources */,
 				878D39BB1663BB4800C6FB43 /* Default-568h@2x.png in Resources */,
 				87C33F9A1682F0E300F86D79 /* CurrencyDescr.plist in Resources */,
+				87E7757F169DA5FC0052420C /* kbPattern01.png in Resources */,
+				879E436716A59B4E00041732 /* Copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +529,7 @@
 				87C06E291681D21800858493 /* CurrencyView.m in Sources */,
 				8728EA141681E1AD00637A4C /* XMLReader.m in Sources */,
 				87C16F8D16873639000B34DC /* ApplicationSettings.m in Sources */,
+				87B211D2169B09B2008DC210 /* UICalc.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

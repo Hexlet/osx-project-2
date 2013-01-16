@@ -94,19 +94,24 @@
                                             <action selector="btnMail_Clicked:" destination="21" id="e3X-Q1-6h9"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="€￥" id="d4m-Ua-7gB" userLabel="btnExchange">
+                                    <barButtonItem title="?" id="NPg-Z3-wPB" userLabel="btnAction">
+                                        <connections>
+                                            <action selector="btnLock_Clicked:" destination="21" id="sa2-ge-2rJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="€¥$" id="d4m-Ua-7gB" userLabel="btnExchange">
                                         <connections>
                                             <segue destination="Yri-bM-FRB" kind="push" id="Wgg-gt-c35"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="Calculator ∑" id="YBa-N2-BjF" userLabel="btnCalc">
+                                    <barButtonItem title="🔢" id="YBa-N2-BjF" userLabel="btnCalc">
                                         <connections>
                                             <action selector="btnCalc_Clicked:" destination="21" id="ga8-xp-mwF"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="🔑" id="Vff-XL-us1" userLabel="btnLock">
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aAQ-HM-2g3" userLabel="flex">
                                         <connections>
-                                            <action selector="btnLock_Clicked:" destination="21" id="Lb1-a0-7kY"/>
+                                            <action selector="btnAction_Clicked:" destination="21" id="rxG-fd-JXN"/>
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem systemItem="done" id="mqV-br-vfU" userLabel="btnDone">
@@ -139,6 +144,8 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="barEdit" destination="h8T-2M-b0R" id="hJ0-ez-7l0"/>
+                        <outlet property="btnAction" destination="NPg-Z3-wPB" id="iYg-EG-Zto"/>
+                        <outlet property="btnCalc" destination="YBa-N2-BjF" id="G6b-UT-VYb"/>
                         <outlet property="btnEdit" destination="fpZ-Nb-zpZ" id="eye-4g-Mh0"/>
                         <outlet property="mainView" destination="22" id="l5n-aU-w8E"/>
                         <outlet property="txtNote" destination="0ch-Dv-Y7x" id="zQT-8r-aXa"/>
@@ -313,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3f-KF-C1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="630"/>
+            <point key="canvasLocation" x="1412" y="642"/>
         </scene>
     </scenes>
     <resources>
@@ -326,6 +333,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="tn8-lq-hgL"/>
+        <segue reference="Wgg-gt-c35"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,7 +13,7 @@
 
 typedef enum {ENUM_READ = 0,ENUM_WRITE,ENUM_CALC,ENUM_RATE} EnumEditMode;
 
-+(EnumEditMode) EditMode;
++ (EnumEditMode) EditMode;
 + (void) setEditMode : (EnumEditMode) value;
 + (void) doEvents;
 + (void) wl: (NSString *) comment;

@@ -27,7 +27,6 @@
 	}
 	return self;
 }
-
 -(id) initWithPath : (NSString*) path {
 	if(self = [super init])
 	{
@@ -67,11 +66,9 @@
 	}
 	return self;
 }
-
 +(NSString *) getDocPath{
 	return NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask,YES)[0];
 }
-
 -(bool) save {
 	NSError *error;
 
@@ -102,12 +99,4 @@
 
 	return allok;
 }
-/*
--(UITableViewCell*) getTableViewCell
-{
-	UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleDefault reuseIdentifier: CELLID_CONST];
-	cell.textLabel.text = _noteName;
-	return cell;
-}
-*/
 @end
