@@ -94,11 +94,6 @@
                                             <action selector="btnMail_Clicked:" destination="21" id="e3X-Q1-6h9"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem title="?" id="NPg-Z3-wPB" userLabel="btnAction">
-                                        <connections>
-                                            <action selector="btnLock_Clicked:" destination="21" id="sa2-ge-2rJ"/>
-                                        </connections>
-                                    </barButtonItem>
                                     <barButtonItem title="€¥$" id="d4m-Ua-7gB" userLabel="btnExchange">
                                         <connections>
                                             <segue destination="Yri-bM-FRB" kind="push" id="Wgg-gt-c35"/>
@@ -114,7 +109,12 @@
                                             <action selector="btnAction_Clicked:" destination="21" id="rxG-fd-JXN"/>
                                         </connections>
                                     </barButtonItem>
-                                    <barButtonItem systemItem="done" id="mqV-br-vfU" userLabel="btnDone">
+                                    <barButtonItem title="????" id="NPg-Z3-wPB" userLabel="btnAction">
+                                        <connections>
+                                            <action selector="btnLock_Clicked:" destination="21" id="sa2-ge-2rJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Done" id="mqV-br-vfU" userLabel="btnDone">
                                         <connections>
                                             <action selector="btnDone_Clicked:" destination="21" id="uXg-7n-eqi"/>
                                         </connections>
@@ -135,7 +135,7 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="GiX-tO-hpL" userLabel="tBar">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="fpZ-Nb-zpZ" userLabel="btnEdit">
+                        <barButtonItem key="rightBarButtonItem" title=" Edit " id="fpZ-Nb-zpZ" userLabel="btnEdit">
                             <connections>
                                 <action selector="btnEdit_Clicked:" destination="21" id="1io-FL-fqv"/>
                             </connections>
@@ -153,7 +153,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="64"/>
+            <point key="canvasLocation" x="946" y="-20"/>
         </scene>
         <!--ExchangeViewController-->
         <scene sceneID="iKe-GY-Ggv">
@@ -320,7 +320,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a3f-KF-C1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1412" y="642"/>
+            <point key="canvasLocation" x="1451" y="329"/>
         </scene>
     </scenes>
     <resources>

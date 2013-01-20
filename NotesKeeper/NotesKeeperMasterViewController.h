@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <CoreData/CoreData.h>
 
-@interface NotesKeeperMasterViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface NotesKeeperMasterViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, UIAlertViewDelegate>
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnExchange;
 @property (weak, nonatomic) IBOutlet UIBarButtonItem *btnAdd;
 

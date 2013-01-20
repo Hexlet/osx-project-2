@@ -22,23 +22,16 @@ bool isKeyboardPresent;
 
     UIColor *color = [UIColor colorWithPatternImage:image];
     [self.txtNote setBackgroundColor:color];
+	[Common.activeNote loadNoteText];
 	_txtNote.text = Common.activeNote.Text;
     _txtNote.editable = false;
 	isKeyboardPresent = false;
 }
-/*
--(void) keyboardWasShown: (NSNotification *) notification {
-	isKeyboardPresent = true;
-	[self alignControls];
-}
--(void) keyboardWasHidden: (NSNotification *) notofication{
-	isKeyboardPresent = false;
-	[self alignControls];
-}
-*/
 -(void) viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     [self.navigationController setToolbarHidden:YES animated:YES];
+
+	_btnEdit.title = Common.activeNote.isLocked ? @"🔐 Edit" : @" Edit ";
 
 	_calc = [[UICalc alloc] init];
 	[self.view addSubview: _calc];
@@ -116,34 +109,27 @@ bool isKeyboardPresent;
 	}
 	_txtNote.frame = rect;
 }
-/*
-#pragma mark -
-- (void)textViewDidBeginEditing:(UITextView *)textView{
-	
-    [Common wl:@"Checkpoint #Begin edit"];
-}
-- (void)textViewDidEndEditing:(UITextView *)textView{
-    [Common wl:@"Checkpoint #End edit"];
-}
-*/
 #pragma mark - Button actions
 -(void) btnEdit_SetCalc:(BOOL) isVisible{
 
 	if(isVisible)
 	{
-		[_btnAction setTitle:@"📝"];
-		[_btnCalc setTitle: @"ABC"];
+		[_btnAction setTitle:@"Copy"];
+		[_btnCalc setTitle: @"Text"];
 	}
 	else
 	{
-		[_btnAction setTitle:@"🔒"];
-		[_btnCalc setTitle: @"123"]; //Calculator ∑"];
+		_btnAction.title = Common.activeNote.isLocked ? @" 🔒 " : @" 🔓 ";
+
+
+
+		[_btnCalc setTitle: @"Calc"]; //Calculator ∑"];
 	}
 
 }
-- (IBAction)btnAction_Clicked:(id)sender {
+-(IBAction)btnAction_Clicked:(id)sender {
 }
-- (IBAction)btnEdit_Clicked:(id)sender{
+-(IBAction)btnEdit_Clicked:(id)sender{
 
 	[Common setEditMode:ENUM_WRITE];
     _barEdit.frame = CGRectMake(0, 0, self.navigationController.navigationBar.frame.size.width, self.navigationController.navigationBar.frame.size.height);
@@ -160,7 +146,7 @@ bool isKeyboardPresent;
 	[self btnEdit_SetCalc:NO];
 	[_calc resetData: true];
 }
-- (IBAction)btnDone_Clicked:(id)sender{
+-(IBAction)btnDone_Clicked:(id)sender{
 
 	if(!_calc.hidden)
 		[_calc setHidden:YES];
@@ -171,15 +157,15 @@ bool isKeyboardPresent;
 	isKeyboardPresent = false;
 	self.barEdit.hidden = true;
     [self.navigationController setNavigationBarHidden:false animated:YES];
-
-
 	Common.activeNote.Text = _txtNote.text;
 	[Common.activeNote save];
 	[Common setEditMode:ENUM_READ];
-
+	[_btnEdit setTitle: Common.activeNote.isLocked ? @"🔐 Edit" : @" Edit " ];
 	[self alignControls];
+
+	[self.navigationController popToRootViewControllerAnimated:YES];
 }
-- (IBAction)btnCalc_Clicked:(id)sender{
+-(IBAction)btnCalc_Clicked:(id)sender{
 	if(_calc.hidden)
 	{
 		[_calc setHidden:NO];
@@ -201,17 +187,35 @@ bool isKeyboardPresent;
 	}
 	[self alignControls];
 }
-- (IBAction)btnLock_Clicked:(id)sender{
-
+-(IBAction)btnLock_Clicked:(id)sender{
+	UIAlertView *achtung = [UIAlertView alloc];
 	if(Common.EditMode == ENUM_CALC)
 	{
-		UIAlertView *achtung = [[UIAlertView alloc] initWithTitle:@"Calculator" message:_calc.txtDisplay.text delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Copy", @"Insert", nil];
+		achtung = [achtung initWithTitle:@"Calculator" message:_calc.txtDisplay.text delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles: @"Copy", @"Insert", nil];
 		achtung.tag = 1;
 		[achtung show];
 	}
 	else
 	{
-			[Common mbox:@"Under construction" : @"Lock" ];
+
+		if(Common.activeNote.isLocked)
+		{
+			achtung = [achtung initWithTitle:@"Unlock note"
+									 message:@"Do you want to remove protection?"
+									delegate:self
+						   cancelButtonTitle:@"No"
+						   otherButtonTitles:@"Yes", nil];
+			achtung.tag = 2;
+			[achtung show];
+		}
+		else
+		{
+			achtung = [[UIAlertView alloc] initWithTitle:@"Lock note" message:@"Enter password" delegate:self cancelButtonTitle:@"Cancel" otherButtonTitles:@"Apply", nil];
+			[achtung setAlertViewStyle:UIAlertViewStylePlainTextInput];
+			achtung.tag = 3;
+			[achtung show];
+		}
+
 	}
 }
 -(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
@@ -225,12 +229,21 @@ bool isKeyboardPresent;
 				[_txtNote insertText:_calc.txtDisplay.text];
 			}
 			break;
+		case 2:
+			if(buttonIndex == 1)
+				[Common.activeNote setSecret:@""];
+			
+			_btnAction.title = Common.activeNote.isLocked ? @" 🔒 " : @" 🔓 ";
+			break;
+		case 3:
+			if(buttonIndex == 1)
+				[Common.activeNote setSecret:[[alertView textFieldAtIndex:0] text]];
+
+			_btnAction.title = Common.activeNote.isLocked ? @" 🔒 " : @" 🔓 ";
+			break;
 		default:
+			NSLog(@"tag%i.buttonIndex: %i", alertView.tag, buttonIndex);
 			break;
 	}
-
 }
-
-
-
 @end

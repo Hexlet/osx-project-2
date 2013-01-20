@@ -19,11 +19,8 @@ typedef enum {ENUM_READ = 0,ENUM_WRITE,ENUM_CALC,ENUM_RATE} EnumEditMode;
 + (void) wl: (NSString *) comment;
 + (void) wlCGRect: (NSString *) comment frame : (CGRect) value;
 + (void) mbox: (NSString *) messageText : (NSString *) caption;
-
-+ (NSString *) encrypt : (NSString *) text : (NSString *) password;
-+ (NSString *) decrypt : (NSString *) text : (NSString *) password;
-
 + (Note*) activeNote;
 + (void) setActiveNoteAsNew;
-+ (void) setActiveNote : (NSString*) fullPath;
++ (void) setActiveNoteByPath : (NSString*) fullPath;
++ (void) setActiveNoteByNote : (Note *) note;
 @end

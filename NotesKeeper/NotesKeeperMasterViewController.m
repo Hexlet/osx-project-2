@@ -57,9 +57,7 @@ NSMutableArray *tSource;
 
 			[self.tableView selectRowAtIndexPath:iPath animated:YES scrollPosition:UITableViewScrollPositionMiddle];
 		}
-
-		Common.activeNote.noteName = nil;
-		Common.activeNote = nil;
+		[Common setActiveNoteByNote: nil];
 	}
 }
 -(void) dealloc{
@@ -88,9 +86,9 @@ NSMutableArray *tSource;
 
 	if(!cell)
         cell = [[UITableViewCell alloc] initWithStyle: UITableViewCellStyleSubtitle reuseIdentifier:CELLID_CONST];    
-    Note *note = [[Note alloc] initWithPath:[tSource objectAtIndex:indexPath.row]];
 
-    cell.textLabel.Text = note.noteName;
+	Note *note = [[Note alloc] initWithPath:[tSource objectAtIndex:indexPath.row]];
+	cell.textLabel.Text = note.noteName;
 	NSDateFormatter *df = [[NSDateFormatter alloc] init];
 	[df setDateStyle:NSDateFormatterMediumStyle];
 	cell.detailTextLabel.text = [df stringFromDate:note.changeDate];
@@ -133,12 +131,45 @@ NSMutableArray *tSource;
     
 }
 */
--(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-	[Common setActiveNote:[tSource objectAtIndex:indexPath.row]];
-	[self performSegueWithIdentifier:@"detailsViewcontroller" sender:self];
-}
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	Note *note = [[Note alloc] initWithPath:[tSource objectAtIndex:indexPath.row]];
+	[Common setActiveNoteByNote:note];
 
+	if(note.isLocked)
+	{
+		UIAlertView *achtung = [[UIAlertView alloc] initWithTitle:@"Enter password"
+														  message:nil
+														 delegate:self
+												cancelButtonTitle:@"Cancel"
+												otherButtonTitles:@"Ok",nil];
+		[achtung setAlertViewStyle:UIAlertViewStyleSecureTextInput];
+		achtung.tag = 2;
+		[achtung show];
+	}
+	else
+		[self performSegueWithIdentifier:@"detailsViewcontroller" sender:self];
+
+}
+-(void) alertView: (UIAlertView *) alertView willDismissWithButtonIndex:(NSInteger)buttonIndex{
+
+
+}
+-(void) alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+	switch(alertView.tag)
+	{
+		case 2:
+			if(buttonIndex == 1)
+			{
+				if([Common.activeNote checkPassword:[[alertView textFieldAtIndex:0] text]])
+					[self performSegueWithIdentifier:@"detailsViewcontroller" sender:self];
+				else
+					[Common mbox:nil:@"Wrong password!"];
+			}
+			break;
+		default:
+			break;
+	}
+}
 #pragma mark - Fetched results controller
 
 - (void)controllerWillChangeContent:(NSFetchedResultsController *)controller {

@@ -18,7 +18,12 @@ static EnumEditMode _editmode = ENUM_READ;
 
 + (Note*) activeNote{return  active_note;}
 + (void) setActiveNoteAsNew {active_note = [[Note alloc] init];}
-+ (void) setActiveNote : (NSString*) fullPath{ active_note = [[Note alloc] initWithPath:fullPath];}
++ (void) setActiveNoteByPath : (NSString*) fullPath{
+	active_note = [[Note alloc] initWithPath:fullPath];
+}
++ (void) setActiveNoteByNote : (Note *) note{
+	active_note = note;
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 + (void) doEvents {
@@ -40,14 +45,5 @@ static EnumEditMode _editmode = ENUM_READ;
 + (void) mbox: (NSString *) messageText : (NSString *) caption{
     UIAlertView *achtung = [[UIAlertView alloc] initWithTitle:caption message:messageText delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil];
     [achtung show];
-}
-
-+ (NSString *) encrypt : (NSString *) text : (NSString *) password
-{
-	return @"under construction";
-}
-+ (NSString *) decrypt : (NSString *) text : (NSString *) password
-{
-	return @"under construction";
 }
 @end

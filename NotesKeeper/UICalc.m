@@ -9,8 +9,6 @@
 #import "UICalc.h"
 
 @interface UICalc()
-
-
 @property int curAction;
 @property int prevAction;
 @property NSString *priVal;
@@ -312,7 +310,6 @@
 	if(resetText)
 		_txtDisplay.text = @"0";
 
-
 	_priVal = @"0";
 	_secVal = @"";
 	_preVal = @"0";
@@ -370,7 +367,7 @@
 		switch (action)
 		{
 			case 13:
-				resVal = [NSString stringWithFormat:@"%f", val1/val2 ];
+				resVal = [NSString stringWithFormat:@"%f", val1 / val2 ];
 				break;
 			case 14:
 				resVal = [NSString stringWithFormat:@"%f", val1 * val2];

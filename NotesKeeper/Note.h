@@ -18,5 +18,8 @@
 +(NSString *) getDocPath;
 -(id) initWithPath : (NSString*) path;
 -(bool) save;
-
+-(bool) isLocked;
+-(bool) checkPassword: (NSString *) password;
+-(void) setSecret: (NSString *) password;
+-(void) loadNoteText;
 @end

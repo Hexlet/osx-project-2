@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		79D2FE5916A942C70012E7A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79D2FE5816A942C60012E7A1 /* Security.framework */; };
 		87166E36165BD18A009F328B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87166E35165BD18A009F328B /* UIKit.framework */; };
 		87166E38165BD18A009F328B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87166E37165BD18A009F328B /* Foundation.framework */; };
 		87166E3A165BD18A009F328B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87166E39165BD18A009F328B /* CoreGraphics.framework */; };
@@ -22,6 +23,7 @@
 		87166E63165BD1D0009F328B /* AppLogo114.png in Resources */ = {isa = PBXBuildFile; fileRef = 87166E62165BD1D0009F328B /* AppLogo114.png */; };
 		87166E66165BD45A009F328B /* NoteBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 87166E65165BD45A009F328B /* NoteBackground.png */; };
 		8728EA141681E1AD00637A4C /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8728EA131681E1AD00637A4C /* XMLReader.m */; };
+		878416AD16ABE0A500187DCF /* CryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 878416AC16ABE0A500187DCF /* CryptorEngine.m */; };
 		87882825165E08B9002615C9 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 87882824165E08B9002615C9 /* Common.m */; };
 		878D39BB1663BB4800C6FB43 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */; };
 		879E436716A59B4E00041732 /* Copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 879E436616A59B4E00041732 /* Copy.png */; };
@@ -101,6 +103,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79D2FE5816A942C60012E7A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		87166E31165BD18A009F328B /* NotesKeeper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NotesKeeper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87166E35165BD18A009F328B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		87166E37165BD18A009F328B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -123,6 +126,8 @@
 		87166E65165BD45A009F328B /* NoteBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = NoteBackground.png; path = NotesKeeper/Images/NoteBackground.png; sourceTree = "<group>"; };
 		8728EA121681E1AD00637A4C /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		8728EA131681E1AD00637A4C /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		878416AB16ABE0A500187DCF /* CryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptorEngine.h; sourceTree = "<group>"; };
+		878416AC16ABE0A500187DCF /* CryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptorEngine.m; sourceTree = "<group>"; };
 		87882823165E08B9002615C9 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		87882824165E08B9002615C9 /* Common.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Common.m; sourceTree = "<group>"; };
 		878D39BA1663BB4800C6FB43 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "NotesKeeper/Images/Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -212,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D2FE5916A942C70012E7A1 /* Security.framework in Frameworks */,
 				87BCBCDE1689862100BBB699 /* MessageUI.framework in Frameworks */,
 				87166E36165BD18A009F328B /* UIKit.framework in Frameworks */,
 				87166E38165BD18A009F328B /* Foundation.framework in Frameworks */,
@@ -226,7 +232,6 @@
 		87166E26165BD18A009F328B = {
 			isa = PBXGroup;
 			children = (
-				87BCBCDD1689862100BBB699 /* MessageUI.framework */,
 				87166E64165BD3EA009F328B /* Images */,
 				87166E3D165BD18A009F328B /* NotesKeeper */,
 				87166E34165BD18A009F328B /* Frameworks */,
@@ -245,6 +250,8 @@
 		87166E34165BD18A009F328B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79D2FE5816A942C60012E7A1 /* Security.framework */,
+				87BCBCDD1689862100BBB699 /* MessageUI.framework */,
 				87166E35165BD18A009F328B /* UIKit.framework */,
 				87166E37165BD18A009F328B /* Foundation.framework */,
 				87166E39165BD18A009F328B /* CoreGraphics.framework */,
@@ -256,6 +263,8 @@
 		87166E3D165BD18A009F328B /* NotesKeeper */ = {
 			isa = PBXGroup;
 			children = (
+				878416AB16ABE0A500187DCF /* CryptorEngine.h */,
+				878416AC16ABE0A500187DCF /* CryptorEngine.m */,
 				8728EA121681E1AD00637A4C /* XMLReader.h */,
 				8728EA131681E1AD00637A4C /* XMLReader.m */,
 				87A34E2B165CD8B100299DAF /* ExchangeViewController.h */,
@@ -530,6 +539,7 @@
 				8728EA141681E1AD00637A4C /* XMLReader.m in Sources */,
 				87C16F8D16873639000B34DC /* ApplicationSettings.m in Sources */,
 				87B211D2169B09B2008DC210 /* UICalc.m in Sources */,
+				878416AD16ABE0A500187DCF /* CryptorEngine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,6 +622,7 @@
 				GCC_PREFIX_HEADER = "NotesKeeper/NotesKeeper-Prefix.pch";
 				INFOPLIST_FILE = "NotesKeeper/NotesKeeper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -623,6 +634,7 @@
 				GCC_PREFIX_HEADER = "NotesKeeper/NotesKeeper-Prefix.pch";
 				INFOPLIST_FILE = "NotesKeeper/NotesKeeper-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
