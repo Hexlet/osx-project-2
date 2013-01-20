@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3">
+    <dependencies>
+        <development version="4500" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="11">
+            <objects>
+                <navigationController toolbarHidden="NO" id="3" sceneMemberID="viewController">
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="4">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="w3N-2Y-zEu">
+                        <rect key="frame" x="0.0" y="436" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="12" kind="relationship" relationship="rootViewController" id="19"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="10" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-28" y="329"/>
+        </scene>
+        <!--MainViewController-->
+        <scene sceneID="18">
+            <objects>
+                <tableViewController storyboardIdentifier="" title="Master" hidesBottomBarWhenPushed="YES" clearsSelectionOnViewWillAppear="NO" id="12" userLabel="MainViewController" customClass="NotesKeeperMasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="13" userLabel="tabMain">
+                        <rect key="frame" x="0.0" y="64" width="320" height="372"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="separatorColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                        <sections/>
+                        <connections>
+                            <outlet property="dataSource" destination="12" id="16"/>
+                            <outlet property="delegate" destination="12" id="15"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems>
+                        <barButtonItem enabled="NO" image="options.png" style="plain" id="xTl-8h-vWA" userLabel="btnOptions">
+                            <connections>
+                                <action selector="btnOptions_Clicked:" destination="12" id="KQr-db-5wL"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="w5X-9M-Ch0"/>
+                        <barButtonItem title="Exchange Rate" id="L1R-Ks-B0k" userLabel="btnExchange">
+                            <connections>
+                                <segue destination="Yri-bM-FRB" kind="push" identifier="showExchange" id="tn8-lq-hgL"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="NotesKeeper" id="36" userLabel="tBar">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dw7-Ep-wzh" userLabel="btnAdd"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="btnAdd" destination="dw7-Ep-wzh" id="sG5-d0-iMU"/>
+                        <outlet property="btnExchange" destination="L1R-Ks-B0k" id="0eo-nV-of0"/>
+                        <segue destination="21" kind="push" identifier="detailsViewcontroller" id="u44-pz-VUe"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="17" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="416" y="329"/>
+        </scene>
+        <!--NoteViewController-->
+        <scene sceneID="24">
+            <objects>
+                <viewController storyboardIdentifier="" title="Detail" id="21" userLabel="NoteViewController" customClass="NotesKeeperDetailViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="22" userLabel="mainView">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="TopLeft" directionalLockEnabled="YES" alwaysBounceVertical="YES" pagingEnabled="YES" delaysContentTouches="NO" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="0ch-Dv-Y7x" userLabel="txtNote">
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" keyboardKey="YES" updatesFrequently="YES"/>
+                                </accessibility>
+                                <string key="text">С точки зрения банальной эрудиции каждый индивидуум, критически мотивирующий абстракцию, не может игнорировать критерии утопического субъективизма, концептуально интерпретируя общепринятые дефанизирующие поляризаторы, поэтому консенсус, достигнутый диалектической материальной классификацией всеобщих мотиваций в парадогматических связях предикатов, решает проблему усовершенствования формирующих геотрансплантационных квазипузлистатов всех кинетически коррелирующих аспектов. Исходя из этого, мы пришли к выводу, что каждый произвольно выбранный предикативно абсорбирующий объект рациональной мистической индукции можно дискретно детерминировать с аппликацией ситуационной парадигмы коммуникативно-функционального типа при наличии детекторно-архаического дистрибутивного образа в Гилбертовом конвергеционном пространстве, однако при параллельном колаборационном анализе спектрографических множеств, изоморфно релятивных к мультиполосным гиперболическим параболоидам, интерпретирующим антропоцентрический многочлен Нео-Лагранжа, возникает позиционный сигнификатизм гентильной теории психоанализа, в результате чего надо принять во внимание следующее: поскольку не только эзотерический, но и экзистенциальный апперцепционный энтрополог антецедентно пассивизированный высокоматериальной субстанцией, обладает призматической идиосинхрацией, но так как валентностный фактор отрицателен, то и, соответственно, антагонистический дискредитизм деградирует в эксгибиционном направлении, поскольку, находясь в препубертатном состоянии, практически каждый субъект, меланхолически осознавая эмбриональную клаустрофобию, может экстраполировать любой процесс интеграции и дифференциации в обоих направлениях, отсюда следует, что в результате синхронизации, ограниченной минимально допустимой интерполяцией образа, все методы конвергенционной концепции требуют практически традиционных трансформаций неоколониализма. Неоколонии, размножающиеся почкованием, имеют вегетационный период от трёх до восьми фенотипических гомозигот, но все они являются лишь фундаментальным базисом социогенетической надстройки криогенно-креативного процесса геронтологизации. Увеличить этот базис можно с помощью гектаплазменного ускорителя биоинертных коллоидных клеток контагиозной конкретизации, однако введение конкретизации влечёт за собой применение методов теории множеств и дистрибутивного анализа, что обусловлено тем, что трансцендентальная поликонденсация нероноспоры в перплексном хаосе может инбабулировать комплексный морфоз только тогда, когда конституент доминанты квазитенденциально универсален, и происходит довольно внезапно. Очевидно, что всё вышесказанное проливает свет на теорию предикативных ощущений субъекта, абсолютно нефункциональных в условиях абстрактного хаоса.</string>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <connections>
+                                    <outlet property="delegate" destination="21" id="g7r-WB-Fxx"/>
+                                </connections>
+                            </textView>
+                            <toolbar hidden="YES" clipsSubviews="YES" contentMode="top" horizontalHuggingPriority="1" verticalHuggingPriority="1" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" translatesAutoresizingMaskIntoConstraints="NO" id="h8T-2M-b0R" userLabel="barEdit">
+                                <items>
+                                    <barButtonItem image="mail.png" id="YzT-xx-D57" userLabel="btnMail">
+                                        <connections>
+                                            <action selector="btnMail_Clicked:" destination="21" id="e3X-Q1-6h9"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="€¥$" id="d4m-Ua-7gB" userLabel="btnExchange">
+                                        <connections>
+                                            <segue destination="Yri-bM-FRB" kind="push" id="Wgg-gt-c35"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="🔢" id="YBa-N2-BjF" userLabel="btnCalc">
+                                        <connections>
+                                            <action selector="btnCalc_Clicked:" destination="21" id="ga8-xp-mwF"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="aAQ-HM-2g3" userLabel="flex">
+                                        <connections>
+                                            <action selector="btnAction_Clicked:" destination="21" id="rxG-fd-JXN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="????" id="NPg-Z3-wPB" userLabel="btnAction">
+                                        <connections>
+                                            <action selector="btnLock_Clicked:" destination="21" id="sa2-ge-2rJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Done" id="mqV-br-vfU" userLabel="btnDone">
+                                        <connections>
+                                            <action selector="btnDone_Clicked:" destination="21" id="uXg-7n-eqi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="h8T-2M-b0R" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="GfB-At-IjF"/>
+                            <constraint firstItem="0ch-Dv-Y7x" firstAttribute="bottom" secondItem="22" secondAttribute="bottom" type="default" id="Hqo-CH-jPd"/>
+                            <constraint firstItem="0ch-Dv-Y7x" firstAttribute="top" secondItem="22" secondAttribute="top" type="default" id="JJh-nI-jBx"/>
+                            <constraint firstItem="0ch-Dv-Y7x" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="MCn-Ct-NAm"/>
+                            <constraint firstItem="0ch-Dv-Y7x" firstAttribute="leading" secondItem="22" secondAttribute="leading" type="default" id="QED-62-1sb"/>
+                            <constraint firstItem="h8T-2M-b0R" firstAttribute="trailing" secondItem="22" secondAttribute="trailing" type="default" id="T4X-jx-Mev"/>
+                            <constraint firstItem="h8T-2M-b0R" firstAttribute="top" secondItem="22" secondAttribute="top" type="default" id="Ygy-kl-l2j"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="GiX-tO-hpL" userLabel="tBar">
+                        <barButtonItem key="rightBarButtonItem" title=" Edit " id="fpZ-Nb-zpZ" userLabel="btnEdit">
+                            <connections>
+                                <action selector="btnEdit_Clicked:" destination="21" id="1io-FL-fqv"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="barEdit" destination="h8T-2M-b0R" id="hJ0-ez-7l0"/>
+                        <outlet property="btnAction" destination="NPg-Z3-wPB" id="iYg-EG-Zto"/>
+                        <outlet property="btnCalc" destination="YBa-N2-BjF" id="G6b-UT-VYb"/>
+                        <outlet property="btnEdit" destination="fpZ-Nb-zpZ" id="eye-4g-Mh0"/>
+                        <outlet property="mainView" destination="22" id="l5n-aU-w8E"/>
+                        <outlet property="txtNote" destination="0ch-Dv-Y7x" id="zQT-8r-aXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="23" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="946" y="-20"/>
+        </scene>
+        <!--ExchangeViewController-->
+        <scene sceneID="iKe-GY-Ggv">
+            <objects>
+                <viewController title="Exchange Rate" id="Yri-bM-FRB" userLabel="ExchangeViewController" customClass="ExchangeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CAx-pF-ybs">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BvV-E7-DtB">
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" playsSound="YES" staticText="YES"/>
+                                    <bool key="isElement" value="NO"/>
+                                </accessibility>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="216" id="GQd-HW-oCD"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="Yri-bM-FRB" id="pd8-LC-Ezr"/>
+                                    <outlet property="delegate" destination="Yri-bM-FRB" id="RjR-Ps-uEn"/>
+                                </connections>
+                            </pickerView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Currency Exchange Rates" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtx-7r-0sG" userLabel="lblHeader">
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="The Europian Central Bank" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVf-ZB-N0C" userLabel="lblBankname">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="dAl-IS-rsd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="*****************" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="Yod-6o-tab" userLabel="lblRateLeft">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="R1x-Yf-zQZ"/>
+                                    <constraint firstAttribute="height" constant="35" id="aly-Qp-0XJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="bottomRight" text="*****************" textAlignment="right" lineBreakMode="clip" numberOfLines="2" baselineAdjustment="none" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="135" translatesAutoresizingMaskIntoConstraints="NO" id="i8n-FN-uFM" userLabel="lblRateRight">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="135" id="evZ-Ds-hSV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="13"/>
+                                <color key="textColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="732-Yg-yZd" userLabel="lblColon">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="O1w-SO-7Ul"/>
+                                    <constraint firstAttribute="height" constant="21" id="ad2-9X-MEm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="rXe-Gp-siL" userLabel="txtRateLeft">
+                                <color key="backgroundColor" red="0.91685675182481752" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="96G-1d-Rp7"/>
+                                    <constraint firstAttribute="height" constant="30" id="bWq-gc-iBV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Yri-bM-FRB" id="v5h-GT-lyp"/>
+                                </connections>
+                            </textField>
+                            <textField autoresizesSubviews="NO" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XMq-i6-uKl" userLabel="txtRateRight">
+                                <color key="backgroundColor" red="0.91685675180000004" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="127" id="vvv-WM-LtN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="decimalPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Yri-bM-FRB" id="eV8-Tg-Gbc"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="scaleToFill" text="Last updated: never RRRRRRREEEEEEWWWWWWWEERERWERWERWEWER" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="h9w-ls-cHq" userLabel="lblUpdate">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="67b-sC-p9e"/>
+                                    <constraint firstAttribute="width" constant="242" id="7Qy-RT-HAj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="Ez9-Rf-0oN" userLabel="indicator"/>
+                            <toolbar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xwp-cy-o6e" userLabel="keyBar">
+                                <color key="backgroundColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="eYg-4H-YWt"/>
+                                    <barButtonItem title="   Done   " style="done" id="5HB-8k-rP6">
+                                        <connections>
+                                            <action selector="btnDone_Clicked:" destination="Yri-bM-FRB" id="6Mz-KI-0c5"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="EcU-RX-aQP"/>
+                                </items>
+                                <color key="tintColor" name="keyboardFocusIndicatorColor" catalog="System" colorSpace="catalog"/>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95294123888015747" green="0.97647064924240112" blue="0.91372555494308472" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ez9-Rf-0oN" firstAttribute="centerX" secondItem="cVf-ZB-N0C" secondAttribute="centerX" type="default" id="1B5-yS-59n"/>
+                            <constraint firstItem="rXe-Gp-siL" firstAttribute="top" secondItem="CAx-pF-ybs" secondAttribute="top" constant="90" id="5v4-k9-KLH"/>
+                            <constraint firstItem="XMq-i6-uKl" firstAttribute="bottom" secondItem="rXe-Gp-siL" secondAttribute="bottom" type="default" id="7gG-QN-iLF"/>
+                            <constraint firstItem="mtx-7r-0sG" firstAttribute="leading" secondItem="CAx-pF-ybs" secondAttribute="leading" type="default" id="9aW-V2-XgB"/>
+                            <constraint firstItem="Xwp-cy-o6e" firstAttribute="leading" secondItem="CAx-pF-ybs" secondAttribute="leading" type="default" id="ABi-N7-1J1"/>
+                            <constraint firstItem="Yod-6o-tab" firstAttribute="leading" secondItem="rXe-Gp-siL" secondAttribute="leading" type="default" id="CS8-pj-2rf"/>
+                            <constraint firstItem="BvV-E7-DtB" firstAttribute="bottom" secondItem="CAx-pF-ybs" secondAttribute="bottom" type="default" id="E1K-fZ-3KU"/>
+                            <constraint firstItem="XMq-i6-uKl" firstAttribute="top" secondItem="rXe-Gp-siL" secondAttribute="top" type="default" id="ILK-Sp-gBi"/>
+                            <constraint firstItem="mtx-7r-0sG" firstAttribute="trailing" secondItem="CAx-pF-ybs" secondAttribute="trailing" type="default" id="N5b-bD-ieY"/>
+                            <constraint firstItem="Yod-6o-tab" firstAttribute="top" secondItem="i8n-FN-uFM" secondAttribute="top" type="default" id="Umj-Vs-7ub"/>
+                            <constraint firstItem="mtx-7r-0sG" firstAttribute="top" secondItem="CAx-pF-ybs" secondAttribute="top" constant="8" id="WFt-cB-e6O"/>
+                            <constraint firstItem="Xwp-cy-o6e" firstAttribute="trailing" secondItem="CAx-pF-ybs" secondAttribute="trailing" type="default" id="X4f-vr-f5N"/>
+                            <constraint firstAttribute="trailing" secondItem="i8n-FN-uFM" secondAttribute="trailing" constant="16" id="XIk-oX-rkq"/>
+                            <constraint firstItem="XMq-i6-uKl" firstAttribute="trailing" secondItem="i8n-FN-uFM" secondAttribute="trailing" type="default" id="XeJ-ci-wM1"/>
+                            <constraint firstItem="BvV-E7-DtB" firstAttribute="leading" secondItem="CAx-pF-ybs" secondAttribute="leading" type="default" id="Zs7-4U-pvQ"/>
+                            <constraint firstItem="Yod-6o-tab" firstAttribute="leading" secondItem="CAx-pF-ybs" secondAttribute="leading" constant="15" id="bO0-Nd-Hnr"/>
+                            <constraint firstItem="732-Yg-yZd" firstAttribute="top" secondItem="i8n-FN-uFM" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="biH-xz-eHg"/>
+                            <constraint firstItem="Xwp-cy-o6e" firstAttribute="bottom" secondItem="BvV-E7-DtB" secondAttribute="top" type="default" id="dPg-Nc-cWh"/>
+                            <constraint firstItem="Yod-6o-tab" firstAttribute="top" secondItem="CAx-pF-ybs" secondAttribute="top" constant="51" id="eCi-v3-oxY"/>
+                            <constraint firstItem="h9w-ls-cHq" firstAttribute="top" secondItem="732-Yg-yZd" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="g5Z-x3-tRo"/>
+                            <constraint firstItem="cVf-ZB-N0C" firstAttribute="centerX" secondItem="mtx-7r-0sG" secondAttribute="centerX" type="default" id="hSV-gL-M3j"/>
+                            <constraint firstItem="Ez9-Rf-0oN" firstAttribute="top" secondItem="CAx-pF-ybs" secondAttribute="top" constant="59" id="hkK-4e-bok"/>
+                            <constraint firstItem="h9w-ls-cHq" firstAttribute="centerX" secondItem="732-Yg-yZd" secondAttribute="centerX" type="default" id="jQu-z7-vGd"/>
+                            <constraint firstItem="cVf-ZB-N0C" firstAttribute="top" secondItem="CAx-pF-ybs" secondAttribute="top" constant="35" id="qN4-tU-kaa"/>
+                            <constraint firstItem="Ez9-Rf-0oN" firstAttribute="centerX" secondItem="732-Yg-yZd" secondAttribute="centerX" type="default" id="ryl-V5-hhx"/>
+                            <constraint firstItem="BvV-E7-DtB" firstAttribute="trailing" secondItem="CAx-pF-ybs" secondAttribute="trailing" type="default" id="vcG-b6-olF"/>
+                            <constraint firstItem="Yod-6o-tab" firstAttribute="baseline" secondItem="i8n-FN-uFM" secondAttribute="baseline" type="default" id="xq5-cF-0ib"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="yUb-U0-nFR" userLabel="tBar">
+                        <barButtonItem key="rightBarButtonItem" systemItem="refresh" id="v0T-GC-SSG" userLabel="btnReload">
+                            <connections>
+                                <action selector="btnReload:" destination="Yri-bM-FRB" id="ydu-cn-aW7"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="indicator" destination="Ez9-Rf-0oN" id="ug8-AJ-jDs"/>
+                        <outlet property="keyBar" destination="Xwp-cy-o6e" id="1qJ-7i-8QG"/>
+                        <outlet property="lblBankname" destination="cVf-ZB-N0C" id="cjg-sm-rcd"/>
+                        <outlet property="lblColon" destination="732-Yg-yZd" id="ZE5-5h-zrF"/>
+                        <outlet property="lblHeader" destination="mtx-7r-0sG" id="PNY-Nx-0XE"/>
+                        <outlet property="lblRateLeft" destination="Yod-6o-tab" id="Pk5-n9-WA1"/>
+                        <outlet property="lblRateRight" destination="i8n-FN-uFM" id="8Nl-12-YxR"/>
+                        <outlet property="lblUpdate" destination="h9w-ls-cHq" id="9uo-5d-z4b"/>
+                        <outlet property="picker" destination="BvV-E7-DtB" id="kgl-5l-L8H"/>
+                        <outlet property="txtRateLeft" destination="rXe-Gp-siL" id="d7J-fr-FtQ"/>
+                        <outlet property="txtRateRight" destination="XMq-i6-uKl" id="hAd-q1-GUM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a3f-KF-C1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1451" y="329"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mail.png" width="24" height="16"/>
+        <image name="options.png" width="24" height="24"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="Wgg-gt-c35"/>
+    </inferredMetricsTieBreakers>
+</document>
