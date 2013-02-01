@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  SimpleTimer
+
+  Created by Maxim on 01.02.13.
+  Copyright (c) 2013 AppleKiller. All rights reserved.
+*/
+"MSG_INVALID_TIME_TITLE" = "Недопустимые входные данные";
+"MSG_HOURS_RANGE"        = "Необходимо вводить значение часов между 0 и 999";
+"MSG_MINUTES_RANGE"      = "Необходимо вводить значение минут между 0 и 59";
+"MSG_HOURS_MINUTES_ZERO" = "Пожалуйста, используйте кнопку Сбросить для установки нулевых значений";

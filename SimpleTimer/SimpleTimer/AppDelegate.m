@@ -18,6 +18,7 @@
     //[timer arm];
     //[timer armWithIntegerHours:0 andMinutes:2 andSeconds:3];
     
+    
 }
 
 -(AppDelegate *) init {
@@ -84,33 +85,36 @@
 }
 
 -(IBAction)manualArmTimer:(id)sender{
-    
+
     if ( [[_manualHours stringValue  ] length ] == 0 ) {
-        return [self reportInvalidInput:@"You have to input hours value between 0 and 999"];
+        return [self reportInvalidInputWithLocaleKey:@"MSG_HOURS_RANGE"];
     }
     if ( [[_manualMinutes stringValue  ] length ] == 0 ) {
-        return [self reportInvalidInput:@"You have to input minues value between 0 and 59"];
+        return [self reportInvalidInputWithLocaleKey:@"MSG_MINUTES_RANGE"];
     }
     long enteredHours = [[_manualHours stringValue] integerValue];
     long enteredMinutes = [[_manualMinutes stringValue] integerValue];
     if (enteredHours < 0 || enteredHours > 999 ) {
-        return [self reportInvalidInput:@"You have to input hours value between 0 and 999"];
+        return [self reportInvalidInputWithLocaleKey:@"MSG_HOURS_RANGE"];
     }
     
     if (enteredMinutes < 0 || enteredMinutes > 59) {
-        return [self reportInvalidInput:@"You have to input minues value between 0 and 59"];
+        return [self reportInvalidInputWithLocaleKey:@"MSG_MINUTES_RANGE"];
     }
     
     if (enteredHours==0 && enteredMinutes == 0) {
-        return [self reportInvalidInput:@"Please, use reset button to set zero values"];
+        return [self reportInvalidInputWithLocaleKey:@"MSG_HOURS_MINUTES_ZERO"];
     }
     
     [timer armWithIntegerHours:(int)enteredHours andMinutes:(int)enteredMinutes andSeconds:0];
     [_manualSetPanel performClose:self];
 }
 
--(void)reportInvalidInput: (NSString * )message {
-    NSRunAlertPanel( @"Invalid input", message, @"Ok", nil, nil);
+-(void)reportInvalidInputWithLocaleKey: (NSString * ) key {
+    NSString *alertTitle = NSLocalizedString(@"MSG_INVALID_TIME_TITLE", @"window title" );
+    NSString *message = NSLocalizedString(key, nil);
+    NSRunAlertPanel( alertTitle  , message, @"Ok", nil, nil);
+    
 }
 
 @end

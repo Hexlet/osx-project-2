@@ -32,6 +32,6 @@
 -(IBAction)armTimer:(id)sender;
 -(IBAction)manualArmTimer:(id)sender;
 
--(void)reportInvalidInput: (NSString * )message;
+-(void)reportInvalidInputWithLocaleKey: (NSString * )message;
 
 @end
