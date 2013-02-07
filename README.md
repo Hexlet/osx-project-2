@@ -2,14 +2,12 @@
 ============
 Бинарный файл приложения доступен в архиве проекта. Полный путь можно узнать запустив в терминале из 
 корня репозитория (результат работы git clone) слудующую команду:
-{% highlight bash %}
+
 find . -name SimpleTimer -type f -perm 755
-{% endhighlight %}
 
 На случай если при копировании из git права доступа сбрасываются, можно воспользоваться командой:
-{% highlight bash %}
+
 find . -name SimpleTimer -type f | grep MacOS | xargs -I% chmod 755 "%"
-{% endhighlight %}
 
 
 Проект 2. Идея и интерфейс приложения (SimpleTimer)
