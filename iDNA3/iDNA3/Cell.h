@@ -19,7 +19,7 @@
 - (Cell *)initWithBaseCell:(Cell *)base andMutationPercents:(int)percents;
 - (void)changeDNALength:(NSInteger)length;
 - (void)changeDNAString:(NSString *)string;
-- (NSString *) DNAString;
+- (NSString *)DNAString;
 - (void)mutateWithBaseCell:(Cell *)base andMutationPercents:(int)percents;
 - (void)mutateWithPercents:(int)percents;
 - (void)matingWithParrentA:(Cell *)parentA andParrentB:(Cell *)parentB;

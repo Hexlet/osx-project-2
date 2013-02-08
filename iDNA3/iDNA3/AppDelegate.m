@@ -50,7 +50,6 @@
     [self pause:self];                      //  [pause setEnabled: NO];
     [window makeFirstResponder: nil];       //  disable focus
     
-    
 }
 
 
@@ -103,7 +102,7 @@
 {
     NSInteger percent = (DNALength - distance) *100 / DNALength;
     
-    [bestMatch setStringValue:[NSString stringWithFormat: @"Best individual match - %ld%%", percent]];
+    [bestMatch setStringValue:[NSString stringWithFormat: NSLocalizedString(@"BEST_MATCH", "Best match"), percent]];  // [bestMatch setStringValue:[NSString stringWithFormat: @"Best individual match - %ld%%", percent]];
     [matchIndicator setIntegerValue: percent];
     smallestDistance = distance;
 }
@@ -111,13 +110,13 @@
 
 - (void)setGeneration:(NSInteger)gen
 {
-    [currentGeneration setStringValue:[NSString stringWithFormat: @"Generation: %ld", gen]];
+    [currentGeneration setStringValue:[NSString stringWithFormat: NSLocalizedString(@"GENERATION", "Generation"), gen]];    // [currentGeneration setStringValue:[NSString stringWithFormat: @"Generation: %ld", gen]];
     generation = gen;
 }
 
 
 - (IBAction)startEvolution:(id)sender
-{
+{ 
     [self performSelectorInBackground:@selector(performEvolutionInBackground) withObject:nil];
 }
 
@@ -146,9 +145,9 @@
     if ([[goalDNA DNAString] length] != [string length])
     {
         NSAlert *alert = [[NSAlert alloc] init];
-        [alert addButtonWithTitle:@"Proceed"];
-        [alert addButtonWithTitle:@"Cancel"];
-        [alert setMessageText:@"New DNA has different size!"];
+        [alert addButtonWithTitle:NSLocalizedString(@"PROCEED", "Proceed")];            // [alert addButtonWithTitle:@"Proceed"];
+        [alert addButtonWithTitle:NSLocalizedString(@"CANCEL", "Cancel")];              // [alert addButtonWithTitle:@"Cancel"];
+        [alert setMessageText:NSLocalizedString(@"MISMATCH_DNA", "Different size")];    // [alert setMessageText:@"New DNA has different size!"];
         [alert beginSheetModalForWindow:window modalDelegate:self didEndSelector:@selector(loadAlert:returnCode:contextInfo:) contextInfo:nil];
     }
     else
@@ -176,6 +175,16 @@
     [lenthSlider setEnabled: NO];
     [rateSlider setEnabled: NO];
     
+    NSPoint mlPoint = [NSEvent mouseLocation];
+    
+    while (mlPoint.x == [NSEvent mouseLocation].x || mlPoint.y == [NSEvent mouseLocation].y);
+    
+    float distance = sqrtf((mlPoint.x - [NSEvent mouseLocation].x) * (mlPoint.x - [NSEvent mouseLocation].x) + (mlPoint.y - [NSEvent mouseLocation].y) * (mlPoint.y - [NSEvent mouseLocation].y)) * 100;
+    
+//    NSLog(@"Distance = %f", distance);
+    
+    srandom((unsigned)distance);
+    
     if (generation == 1 || done == YES)
     {
         done = NO;
@@ -202,10 +211,10 @@
         
         do
         {
-            int indexA = arc4random() % (populationSize / 2);
+            int indexA = random() % (populationSize / 2);
             int indexB;
             
-            while ((indexB = arc4random() % (populationSize / 2)) == indexA);
+            while ((indexB = random() % (populationSize / 2)) == indexA);
             
             [population[i] matingWithParrentA:population[indexA] andParrentB:population[indexB]];
         }
@@ -232,20 +241,20 @@
         
         switch (generation)
         {
-            case 1:     info = @"1th";
+            case 1:     info = NSLocalizedString(@"GENERATION_1", "1th");   // @"1th";
                 break;
                 
-            case 2:     info = @"2nd";
+            case 2:     info = NSLocalizedString(@"GENERATION_2", "2nd");   // @"2nd";
                 break;
                 
-            case 3:     info = @"3rd";
+            case 3:     info = NSLocalizedString(@"GENERATION_3", "3rd");   // @"3rd";
                 break;
                 
-            default:    info = [NSString stringWithFormat:@"%ldth", generation];
+            default:    info = [NSString stringWithFormat:NSLocalizedString(@"GENERATION_NXT", "...th"), generation];   // [NSString stringWithFormat:@"%ldth", generation];
         }
         
-        [alert addButtonWithTitle:@"Ok"];
-        [alert setMessageText:[NSString stringWithFormat:@"Total match reached at %@ generation", info]];
+        [alert addButtonWithTitle:NSLocalizedString(@"OK", "Ok")];                                                      // [alert addButtonWithTitle:@"Ok"];
+        [alert setMessageText:[NSString stringWithFormat:NSLocalizedString(@"MATCH_REATCHED", "Match reached"), info]]; // [alert setMessageText:[NSString stringWithFormat:@"Total match reached at %@ generation", info]];
         [alert beginSheetModalForWindow:window modalDelegate:self didEndSelector:nil contextInfo:nil];
     }
 }
@@ -273,6 +282,24 @@
     done = YES;
 }
 
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender
+{
+        NSAlert *alert = [NSAlert alertWithMessageText:NSLocalizedString(@"WANT_QUIT", "want to quit?")
+                                         defaultButton:NSLocalizedString(@"_YES_", "Yes")
+                                       alternateButton:NSLocalizedString(@"_NO_", "No")
+                                           otherButton:nil
+                             informativeTextWithFormat:@""];
+    
+        [alert beginSheetModalForWindow:window modalDelegate:self didEndSelector:@selector(quitAlert:returnCode:contextInfo:) contextInfo:nil];
+    
+        return NSTerminateLater;
+}
+
+- (void)quitAlert:(NSAlert *)alert returnCode:(int)button contextInfo:(void *)context
+{
+    
+    [NSApp replyToApplicationShouldTerminate: (button == NSAlertDefaultReturn) ? NSTerminateNow : NSTerminateCancel];
+}
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *)theApplication
 {
